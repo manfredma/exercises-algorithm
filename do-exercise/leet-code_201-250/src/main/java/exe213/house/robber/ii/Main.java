@@ -24,7 +24,7 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 package exe213.house.robber.ii;
 
 /**
- * @author manfred on 2019/9/30.
+ * LeetCode 第 213 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

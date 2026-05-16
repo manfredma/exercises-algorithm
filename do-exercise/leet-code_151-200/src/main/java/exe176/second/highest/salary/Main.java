@@ -19,13 +19,12 @@ If there is no second highest salary, then the query should return null.
 | 200                 |
 +---------------------+
 
-
  */
 
 package exe176.second.highest.salary;
 
 /**
- * @author manfred on 2019/9/16.
+ * LeetCode 第 176 题的测试入口。
  */
 public class Main {
 }

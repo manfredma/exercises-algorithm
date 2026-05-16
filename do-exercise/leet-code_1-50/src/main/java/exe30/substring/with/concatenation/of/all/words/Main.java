@@ -20,7 +20,7 @@ Output: []
 package exe30.substring.with.concatenation.of.all.words;
 
 /**
- * @author Manfred since 2019/5/22
+ * LeetCode 第 30 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

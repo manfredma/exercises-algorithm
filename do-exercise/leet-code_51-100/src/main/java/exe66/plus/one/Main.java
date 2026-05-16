@@ -21,7 +21,7 @@ Explanation: The array represents the integer 4321.
 package exe66.plus.one;
 
 /**
- * @author Manfred since 2019/7/16
+ * LeetCode 第 66 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

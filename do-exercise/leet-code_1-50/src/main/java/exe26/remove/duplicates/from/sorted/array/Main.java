@@ -37,7 +37,7 @@ for (int i = 0; i < len; i++) {
 package exe26.remove.duplicates.from.sorted.array;
 
 /**
- * @author Manfred since 2019/5/22
+ * LeetCode 第 26 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

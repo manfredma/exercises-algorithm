@@ -4,8 +4,6 @@ package manfred.end.algorithm.string.match;
  * KMP 算法是根据三位作者（D.E.Knuth，J.H.Morris 和 V.R.Pratt）的名字来命名的
  * 算法思想：
  * -> 与BM算法类似, 主要基于好前缀的思想来做
- *
- * @author Manfred since 2019/8/21
  */
 public class KMP implements StringMatcher {
     @Override
@@ -26,7 +24,6 @@ public class KMP implements StringMatcher {
         }
         return false;
     }
-
 
     // b 表示模式串，m 表示模式串的长度
     private int[] getNexts(String b) {

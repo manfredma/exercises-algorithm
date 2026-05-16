@@ -19,6 +19,9 @@ class Node {
     }
 };
 */
+/**
+ * LeetCode 第138题 复制带随机指针的链表，使用哈希表建立原节点到克隆节点的映射后补全 random 指针。
+ */
 class Solution {
     public Node copyRandomList(Node head) {
         if (null == head) {

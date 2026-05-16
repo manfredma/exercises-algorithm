@@ -15,7 +15,7 @@ Output: 6
 package exe85.maximal.rectangle;
 
 /**
- * @author Manfred since 2019/7/19
+ * LeetCode 第 85 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

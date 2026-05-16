@@ -18,7 +18,7 @@ Note: Your solution should be in logarithmic time complexity.
 package exe172.factorial.trailing.zeroes;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 172 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

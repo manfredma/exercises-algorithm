@@ -16,7 +16,7 @@ try coding another solution using the divide and conquer approach, which is more
 package exe53.maximum.subarray;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 53 题的测试入口。
  */
 public class Main {
 

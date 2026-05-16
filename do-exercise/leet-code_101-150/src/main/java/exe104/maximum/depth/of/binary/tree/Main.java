@@ -20,7 +20,7 @@ return its depth = 3.
 package exe104.maximum.depth.of.binary.tree;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 104 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

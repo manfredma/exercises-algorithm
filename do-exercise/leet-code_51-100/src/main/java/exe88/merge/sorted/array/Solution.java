@@ -1,7 +1,7 @@
 package exe88.merge.sorted.array;
 
 /**
- * @author manfred
+ * LeetCode 第 88 题的解法实现。
  */
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {

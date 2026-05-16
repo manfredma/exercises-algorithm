@@ -4,11 +4,7 @@ Your iterator will be initialized with the root node of a BST.
 
 Calling next() will return the next smallest number in the BST.
 
-
-
 Example:
-
-
 
 BSTIterator iterator = new BSTIterator(root);
 iterator.next();    // return 3
@@ -21,7 +17,6 @@ iterator.hasNext(); // return true
 iterator.next();    // return 20
 iterator.hasNext(); // return false
 
-
 Note:
 
 next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
@@ -32,7 +27,7 @@ there will be at least a next smallest number in the BST when next() is called.
 package exe173.binary.search.tree.iterator;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 173 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

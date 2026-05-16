@@ -28,7 +28,6 @@ A solution set is:
 ]
  */
 
-
 package exe40.combination.sum2;
 
 /**

@@ -10,7 +10,7 @@ Output: 1->2->3->4->5
 package exe203.remove.linked.list.elements;
 
 /**
- * @author manfred on 2019/9/17.
+ * LeetCode 第 203 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

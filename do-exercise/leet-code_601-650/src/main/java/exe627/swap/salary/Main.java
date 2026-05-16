@@ -7,8 +7,6 @@ change all f values to m and vice versa) with a single update statement and no i
 
 Note that you must write a single update statement, DO NOT write any select statement for this problem.
 
-
-
 Example:
 
 | id | name | sex | salary |

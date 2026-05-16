@@ -29,7 +29,7 @@ package exe239.sliding.window.maximum;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 239 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package exe387.first.unique.character.in.a.string;
 
+/**
+ * LeetCode 第387题 字符串中的第一个唯一字符，用长度为26的计数数组统计频次后线性扫描找到首个唯一字符。
+ */
 class Solution {
     public int firstUniqChar(String s) {
         if (null == s || "".equals(s)) {

@@ -12,7 +12,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 package exe16.sum3.closest;
 
 /**
- * @author Manfred since 2019/5/20
+ * LeetCode 第 16 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

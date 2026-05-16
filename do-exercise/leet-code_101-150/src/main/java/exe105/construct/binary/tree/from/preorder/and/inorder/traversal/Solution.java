@@ -1,6 +1,5 @@
 package exe105.construct.binary.tree.from.preorder.and.inorder.traversal;
 
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

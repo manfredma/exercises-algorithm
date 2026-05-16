@@ -16,7 +16,7 @@ Output:
 package exe131.palindrome.partitioning;
 
 /**
- * @author manfred on 2019/9/8.
+ * LeetCode 第 131 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

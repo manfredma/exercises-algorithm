@@ -16,13 +16,12 @@ Output:
   []
 ]
 
-
  */
 
 package exe90.subsets.ii;
 
 /**
- * @author manfred on 2019/8/24.
+ * LeetCode 第 90 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

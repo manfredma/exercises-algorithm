@@ -1,6 +1,5 @@
 package exe173.binary.search.tree.iterator;
 
-
 import java.util.Stack;
 
 /**

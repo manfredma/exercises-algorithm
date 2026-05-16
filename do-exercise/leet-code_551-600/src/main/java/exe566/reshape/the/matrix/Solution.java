@@ -1,5 +1,8 @@
 package exe566.reshape.the.matrix;
 
+/**
+ * LeetCode 第566题 重塑矩阵，通过线性索引映射将矩阵重新按目标行列数排列。
+ */
 class Solution {
     public int[][] matrixReshape(int[][] nums, int r, int c) {
         int or = nums.length;

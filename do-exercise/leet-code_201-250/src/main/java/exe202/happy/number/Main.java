@@ -21,7 +21,7 @@ Explanation:
 package exe202.happy.number;
 
 /**
- * @author Manfred since 2019/8/30
+ * LeetCode 第 202 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

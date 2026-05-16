@@ -15,7 +15,7 @@ Output: 0
 package exe201.bitwise.and.of.numbers.range;
 
 /**
- * @author manfred on 2019/9/17.
+ * LeetCode 第 201 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

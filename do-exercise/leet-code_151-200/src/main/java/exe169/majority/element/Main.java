@@ -17,7 +17,7 @@ Output: 2
 package exe169.majority.element;
 
 /**
- * @author manfred on 2019/8/31.
+ * LeetCode 第 169 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

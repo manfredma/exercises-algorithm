@@ -25,7 +25,7 @@ Return:
 package exe113.path.sum.ii;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 113 题的测试入口。
  */
 public class Main {
 }

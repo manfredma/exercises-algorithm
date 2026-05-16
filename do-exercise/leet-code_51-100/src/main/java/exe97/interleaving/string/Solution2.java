@@ -5,6 +5,9 @@ import java.util.Arrays;
 /*
 动态规划版本
  */
+/**
+ * LeetCode 第97题 交错字符串的动态规划解法，用二维 dp 数组判断 s3 是否由 s1 和 s2 交错组成。
+ */
 class Solution2 {
     public boolean isInterleave(String s1, String s2, String s3) {
         if ("".equals(s1)) {

@@ -20,7 +20,7 @@ Explanation:
 package exe199.binary.tree.right.side.view;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 199 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

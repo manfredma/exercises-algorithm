@@ -13,8 +13,6 @@ other rooms are either empty (0's) or contain magic orbs that increase the knigh
 In order to reach the princess as quickly as possible,
 the knight decides to move only rightward or downward in each step.
 
-
-
 Write a function to determine the knight's minimum initial health so that he is able to rescue the princess.
 
 For example, given the dungeon below, the initial health of the knight must be at least 7
@@ -23,7 +21,6 @@ if he follows the optimal path RIGHT-> RIGHT -> DOWN -> DOWN.
 -2 (K)	-3	   3
 -5	    -10	   1
 10	    30	   -5 (P)
-
 
 Note:
 
@@ -36,7 +33,7 @@ package exe174.dungeon.game;
 import java.util.Arrays;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 174 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

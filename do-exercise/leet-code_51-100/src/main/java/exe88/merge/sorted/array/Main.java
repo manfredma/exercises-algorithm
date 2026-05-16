@@ -15,11 +15,10 @@ Output: [1,2,2,3,5,6]
 
  */
 
-
 package exe88.merge.sorted.array;
 
 /**
- * @author manfred on 2019/8/23.
+ * LeetCode 第 88 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

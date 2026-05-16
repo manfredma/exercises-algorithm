@@ -20,7 +20,7 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 package exe112.path.sum;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 112 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

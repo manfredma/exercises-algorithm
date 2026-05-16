@@ -27,7 +27,7 @@ You may assume that all operations are valid (for example, no pop or top operati
 package exe225.implement.stack.using.queues;
 
 /**
- * @author Manfred since 2019/10/8
+ * LeetCode 第 225 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

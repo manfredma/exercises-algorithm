@@ -26,7 +26,7 @@ Your solution should be in logarithmic complexity.
 package exe162.find.peak.element;
 
 /**
- * @author manfred on 2019/9/15.
+ * LeetCode 第 162 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

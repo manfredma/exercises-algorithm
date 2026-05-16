@@ -24,7 +24,7 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 package exe54.spiral.matrix;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 54 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -47,9 +47,8 @@ Output: false
  */
 package exe44.wildcard.matching;
 
-
 /**
- * @author Manfred since 2019/5/31
+ * LeetCode 第 44 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -71,7 +70,6 @@ public class Main {
         System.out.println(solution.isMatch("aa", "*") + ", expect = true");
         System.out.println(solution.isMatch("cb", "?a") + ", expect = false");
         System.out.println(solution.isMatch("acdcb", "a*c?b") + ", expect = false");
-
 
     }
 }

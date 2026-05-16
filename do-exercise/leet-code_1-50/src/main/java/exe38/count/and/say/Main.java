@@ -15,8 +15,6 @@ Given an integer n where 1 ≤ n ≤ 30, generate the nth term of the count-and-
 
 Note: Each term of the sequence of integers will be represented as a string.
 
-
-
 Example 1:
 
 Input: 1

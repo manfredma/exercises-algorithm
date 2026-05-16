@@ -213,7 +213,6 @@ public class RBTree<T extends Comparable> {
         System.out.println("\nEnd RBTree ----------------------------------------");
     }
 
-
     public void remove(T key) {
         Optional<RBTreeNode<T>> find = find(key);
         find.ifPresent(this::remove);

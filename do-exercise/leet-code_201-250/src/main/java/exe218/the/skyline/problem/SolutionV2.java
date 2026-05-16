@@ -76,7 +76,6 @@ class SolutionV2 {
         List<Integer> sortedKeyPoints = new ArrayList<>(keyPoints).stream()
                 .sorted().collect(Collectors.toList());
 
-
         List<List<Integer>> result = new ArrayList<>();
         int lastHeight = 0;
         for (Integer keyPoint : sortedKeyPoints) {
@@ -97,7 +96,6 @@ class SolutionV2 {
                     height = building[2];
                 }
             }
-
 
             if (height != lastHeight) {
                 List<Integer> keyPointWithHeight = new ArrayList<>();

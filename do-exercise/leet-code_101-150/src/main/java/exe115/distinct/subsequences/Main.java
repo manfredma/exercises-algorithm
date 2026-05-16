@@ -42,7 +42,7 @@ babgbag
 package exe115.distinct.subsequences;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 115 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

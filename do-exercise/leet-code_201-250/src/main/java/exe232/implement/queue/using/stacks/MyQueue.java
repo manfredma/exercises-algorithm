@@ -15,7 +15,6 @@ class MyQueue {
     private Stack<Integer> a;
     private Stack<Integer> b;
 
-
     public MyQueue() {
         a = new Stack<>();
         b = new Stack<>();

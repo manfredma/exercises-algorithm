@@ -50,7 +50,7 @@ Output: false
 package exe87.scramble.string;
 
 /**
- * @author Manfred since 2019/7/19
+ * LeetCode 第 87 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

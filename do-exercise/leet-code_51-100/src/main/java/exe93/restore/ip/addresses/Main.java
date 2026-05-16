@@ -10,7 +10,7 @@ Output: ["255.255.11.135", "255.255.111.35"]
 package exe93.restore.ip.addresses;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 93 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

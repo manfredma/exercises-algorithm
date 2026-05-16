@@ -29,7 +29,7 @@ LFUCache cache = new LFUCache( 2 );
 package exe460.lfu.cache;
 
 /**
- * @author Manfred since 2019/8/22
+ * LeetCode 第 460 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -85,7 +85,6 @@ public class Main {
         }
 
     }
-
 
     private static void test2() {
         LFUCache cache = new LFUCache(1);

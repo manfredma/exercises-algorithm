@@ -23,7 +23,7 @@ You may assume that all words are consist of lowercase letters a-z.
 package exe211.add.and.search.word.data.structure.design;
 
 /**
- * @author Manfred since 2019/9/24
+ * LeetCode 第 211 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

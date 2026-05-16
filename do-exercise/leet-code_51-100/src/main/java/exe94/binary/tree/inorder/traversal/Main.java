@@ -18,7 +18,7 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 package exe94.binary.tree.inorder.traversal;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 94 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

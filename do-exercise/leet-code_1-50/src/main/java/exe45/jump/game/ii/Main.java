@@ -20,7 +20,7 @@ You can assume that you can always reach the last index.
 package exe45.jump.game.ii;
 
 /**
- * @author Manfred since 2019/7/3
+ * LeetCode 第 45 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

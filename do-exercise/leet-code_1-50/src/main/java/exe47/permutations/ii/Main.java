@@ -15,7 +15,7 @@ Output:
 package exe47.permutations.ii;
 
 /**
- * @author Manfred since 2019/7/3
+ * LeetCode 第 47 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

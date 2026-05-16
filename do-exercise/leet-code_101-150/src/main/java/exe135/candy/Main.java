@@ -23,7 +23,7 @@ Explanation: You can allocate to the first, second and third child with 1, 2, 1 
 package exe135.candy;
 
 /**
- * @author manfred on 2019/9/10.
+ * LeetCode 第 135 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -1,8 +1,6 @@
 /*
 The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 
-
-
 Given an integer n, return all distinct solutions to the n-queens puzzle.
 
 Each solution contains a distinct board configuration of the n-queens' placement,
@@ -27,7 +25,7 @@ Explanation: There exist two distinct solutions to the 4-queens puzzle as shown 
 package exe51.n.queens;
 
 /**
- * @author Manfred since 2019/7/4
+ * LeetCode 第 51 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

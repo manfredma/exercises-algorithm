@@ -19,10 +19,8 @@ Return the following binary tree:
  */
 package exe106.construct.binary.tree.from.inorder.and.postorder.traversal;
 
-
-
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 106 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

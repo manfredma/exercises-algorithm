@@ -23,7 +23,7 @@ Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-
 package exe188.best.time.to.buy.and.sell.stock.iv;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 188 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

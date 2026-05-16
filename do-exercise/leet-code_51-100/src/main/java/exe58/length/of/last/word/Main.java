@@ -14,7 +14,7 @@ Output: 5
 package exe58.length.of.last.word;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 58 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

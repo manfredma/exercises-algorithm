@@ -24,6 +24,9 @@ Example 5:
 Input: num = "3456237490", target = 9191
 Output: []
  */
+/**
+ * LeetCode 第282题 给表达式添加运算符 的测试入口。
+ */
 public class Main {
 
 }

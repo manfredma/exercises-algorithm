@@ -19,7 +19,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 package exe109.convert.sorted.list.to.binary.search.tree;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 109 题的测试入口。
  */
 public class Main {
 

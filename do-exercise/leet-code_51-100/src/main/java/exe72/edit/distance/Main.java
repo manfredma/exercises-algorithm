@@ -29,7 +29,7 @@ exection -> execution (insert 'u')
 package exe72.edit.distance;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 72 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

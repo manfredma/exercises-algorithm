@@ -1,7 +1,7 @@
 package exe1108.defanging.an.ip.address;
 
 /**
- * @author manfred on 2021/5/9.
+ * LeetCode 第 1108 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

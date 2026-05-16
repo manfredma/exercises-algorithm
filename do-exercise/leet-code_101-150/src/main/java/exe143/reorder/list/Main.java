@@ -16,7 +16,7 @@ Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
 package exe143.reorder.list;
 
 /**
- * @author manfred on 2019/9/13.
+ * LeetCode 第 143 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

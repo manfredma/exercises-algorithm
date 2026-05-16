@@ -3,7 +3,6 @@ Given a non-negative index k where k ≤ 33, return the kth index row of the Pas
 
 Note that the row index starts from 0.
 
-
 In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
 Example:
@@ -18,7 +17,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 package exe119.pascals.triangle.ii;
 
 /**
- * @author Manfred since 2019/8/28
+ * LeetCode 第 119 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

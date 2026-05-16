@@ -1,7 +1,7 @@
 package exe234.palindrome.linked.list;
 
 /**
- * @author manfred on 2023/6/7.
+ * LeetCode 第 234 题的测试入口。
  */
 public class Main {
 }

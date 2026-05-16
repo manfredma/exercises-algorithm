@@ -20,7 +20,7 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 package exe28.implement.strstr;
 
 /**
- * @author Manfred since 2019/5/22
+ * LeetCode 第 28 题的测试入口。
  */
 public class Main {
 }

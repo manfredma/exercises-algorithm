@@ -5,7 +5,6 @@ package manfred.end.data.structure.tree.red.black.tree;
  */
 public class RBTreeNode<T> {
 
-
     public static final int RED = 1;
     public static final int BLACK = 0;
 
@@ -24,7 +23,6 @@ public class RBTreeNode<T> {
      * 存储的内容
      */
     private T key;
-
 
     private RBTreeNode<T> left = (RBTreeNode<T>) NIL_NODE;
 
@@ -96,7 +94,6 @@ public class RBTreeNode<T> {
     public boolean notLeafNode() {
         return this != NIL_NODE;
     }
-
 
     public RBTreeNode<T> getParent() {
         return parent;

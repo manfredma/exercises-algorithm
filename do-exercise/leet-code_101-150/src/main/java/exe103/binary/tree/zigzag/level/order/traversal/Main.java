@@ -19,7 +19,7 @@ return its zigzag level order traversal as:
 package exe103.binary.tree.zigzag.level.order.traversal;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 103 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -29,7 +29,7 @@ You may assume that there are no duplicate edges in the input prerequisites.
 package exe207.course.schedule;
 
 /**
- * @author Manfred since 2019/9/23
+ * LeetCode 第 207 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

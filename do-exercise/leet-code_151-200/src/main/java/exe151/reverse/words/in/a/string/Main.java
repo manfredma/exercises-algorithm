@@ -1,8 +1,6 @@
 /*
 Given an input string, reverse the string word by word.
 
-
-
 Example 1:
 
 Input: "the sky is blue"
@@ -18,7 +16,6 @@ Input: "a good   example"
 Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
-
 Note:
 
 A word is defined as a sequence of non-space characters.
@@ -29,7 +26,7 @@ You need to reduce multiple spaces between two words to a single space in the re
 package exe151.reverse.words.in.a.string;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 151 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

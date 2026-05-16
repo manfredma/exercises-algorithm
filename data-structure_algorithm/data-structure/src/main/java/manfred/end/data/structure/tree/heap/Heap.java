@@ -2,8 +2,6 @@ package manfred.end.data.structure.tree.heap;
 
 /**
  * 大顶堆
- *
- * @author Manfred since 2019/8/21
  */
 public class Heap {
     /**
@@ -53,7 +51,6 @@ public class Heap {
             }
         }
     }
-
 
     public int removeMax() {
         // 判断堆中是否数据

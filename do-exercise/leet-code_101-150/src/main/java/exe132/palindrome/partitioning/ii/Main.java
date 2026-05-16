@@ -13,7 +13,7 @@ Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cu
 package exe132.palindrome.partitioning.ii;
 
 /**
- * @author manfred on 2019/9/8.
+ * LeetCode 第 132 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

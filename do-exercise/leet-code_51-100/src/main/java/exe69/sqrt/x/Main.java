@@ -20,7 +20,7 @@ Explanation: The square root of 8 is 2.82842..., and since
 package exe69.sqrt.x;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 69 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

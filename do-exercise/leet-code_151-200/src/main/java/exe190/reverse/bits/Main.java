@@ -1,8 +1,6 @@
 /*
 Reverse bits of a given 32 bits unsigned integer.
 
-
-
 Example 1:
 
 Input: 00000010100101000001111010011100
@@ -16,7 +14,6 @@ Output: 10111111111111111111111111111111
 Explanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293,
 so return 3221225471 which its binary representation is 10101111110010110010011101101001.
 
-
 Note:
 
 Note that in some languages such as Java, there is no unsigned integer type.
@@ -26,7 +23,6 @@ In Java, the compiler represents the signed integers using 2's complement notati
 Therefore, in Example 2 above the input represents the signed integer -3 and
 the output represents the signed integer -1073741825.
 
-
 Follow up:
 
 If this function is called many times, how would you optimize it?
@@ -34,7 +30,7 @@ If this function is called many times, how would you optimize it?
 package exe190.reverse.bits;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 190 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

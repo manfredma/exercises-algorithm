@@ -15,7 +15,7 @@ Output:
 package exe59.spiral.matrix.ii;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 59 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

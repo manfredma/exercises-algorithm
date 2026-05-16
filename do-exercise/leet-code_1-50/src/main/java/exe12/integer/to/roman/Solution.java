@@ -44,7 +44,6 @@ class Solution {
             left -= 50;
         }
 
-
         // 处理 > 10 部分
         while (left >= 10) {
             result = result + "X";

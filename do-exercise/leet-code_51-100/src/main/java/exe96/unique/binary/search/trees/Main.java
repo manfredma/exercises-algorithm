@@ -19,7 +19,7 @@ Given n = 3, there are a total of 5 unique BST's:
 package exe96.unique.binary.search.trees;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 96 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

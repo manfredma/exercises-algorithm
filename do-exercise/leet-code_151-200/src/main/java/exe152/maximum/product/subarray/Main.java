@@ -17,7 +17,7 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 package exe152.maximum.product.subarray;
 
 /**
- * @author Manfred since 2019/8/30
+ * LeetCode 第 152 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

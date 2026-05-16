@@ -37,7 +37,7 @@ Therefore, sum = 495 + 491 + 40 = 1026.
 package exe129.sum.root.to.leaf.numbers;
 
 /**
- * @author manfred on 2019/9/7.
+ * LeetCode 第 129 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

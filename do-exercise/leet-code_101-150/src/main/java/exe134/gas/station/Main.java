@@ -49,7 +49,7 @@ Therefore, you can't travel around the circuit once no matter where you start.
 package exe134.gas.station;
 
 /**
- * @author manfred on 2019/9/9.
+ * LeetCode 第 134 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

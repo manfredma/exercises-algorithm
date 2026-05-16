@@ -5,6 +5,9 @@ import java.util.Arrays;
 /*
 递归遍历版本
  */
+/**
+ * LeetCode 第322题 零钱兑换，递归枚举每种面额使用数量，从大面额向小面额回溯求最少硬币数。
+ */
 class Solution {
     public int coinChange(int[] coins, int amount) {
         if (amount == 0) {

@@ -46,7 +46,7 @@ Could you devise a constant space solution?
 package exe99.recover.binary.search.tree;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 99 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

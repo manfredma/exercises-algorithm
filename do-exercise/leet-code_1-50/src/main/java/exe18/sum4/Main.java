@@ -20,7 +20,7 @@ A solution set is:
 package exe18.sum4;
 
 /**
- * @author Manfred since 2019/5/20
+ * LeetCode 第 18 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

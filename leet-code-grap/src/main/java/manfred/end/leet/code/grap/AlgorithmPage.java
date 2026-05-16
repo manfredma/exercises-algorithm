@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author Manfred since 2019/8/28
+ * Algorithm Page 演示或实现。
  */
 public class AlgorithmPage {
     public static void main(String[] args) {

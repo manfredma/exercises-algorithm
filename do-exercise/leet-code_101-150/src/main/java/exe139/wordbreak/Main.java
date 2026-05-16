@@ -28,7 +28,7 @@ package exe139.wordbreak;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/11.
+ * LeetCode 第 139 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

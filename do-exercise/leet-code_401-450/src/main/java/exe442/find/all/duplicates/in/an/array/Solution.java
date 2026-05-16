@@ -3,6 +3,9 @@ package exe442.find.all.duplicates.in.an.array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第442题 数组中重复的数据，利用原地取反标记已访问元素，在 O(n) 时间 O(1) 空间内找出所有重复元素。
+ */
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> result = new ArrayList<>(nums.length);

@@ -23,7 +23,7 @@ Would this affect the run-time complexity? How and why?
 package exe81.search.in.rotated.sorted.array.ii;
 
 /**
- * @author Manfred since 2019/7/18
+ * LeetCode 第 81 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

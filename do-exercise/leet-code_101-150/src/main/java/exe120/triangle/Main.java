@@ -21,7 +21,7 @@ where n is the total number of rows in the triangle.
 package exe120.triangle;
 
 /**
- * @author Manfred since 2019/8/28
+ * LeetCode 第 120 题的测试入口。
  */
 public class Main {
 }

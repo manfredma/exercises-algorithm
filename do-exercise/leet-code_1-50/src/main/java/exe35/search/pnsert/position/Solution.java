@@ -10,8 +10,6 @@ class Solution {
             return result;
         }
 
-
-
         return search(nums, target, 0, nums.length - 1);
     }
 

@@ -20,7 +20,7 @@ return its minimum depth = 2.
 package exe111.minimum.depth.of.binary.tree;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 111 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -5,7 +5,6 @@ The left subtree of a node contains only nodes with keys less than the node's ke
 The right subtree of a node contains only nodes with keys greater than the node's key.
 Both the left and right subtrees must also be binary search trees.
 
-
 Example 1:
 
     2
@@ -30,7 +29,7 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 package exe98.validate.binary.search.tree;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 98 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

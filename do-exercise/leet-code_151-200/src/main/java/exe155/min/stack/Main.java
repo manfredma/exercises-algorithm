@@ -6,7 +6,6 @@ pop() -- Removes the element on top of the stack.
 top() -- Get the top element.
 getMin() -- Retrieve the minimum element in the stack.
 
-
 Example:
 
 MinStack minStack = new MinStack();
@@ -22,7 +21,7 @@ minStack.getMin();   --> Returns -2.
 package exe155.min.stack;
 
 /**
- * @author manfred on 2019/9/4.
+ * LeetCode 第 155 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -49,7 +48,6 @@ public class Main {
         System.out.println(minStack.top());
         System.out.println(minStack.getMin());
         minStack.push(-2147483648);
-
 
     }
 

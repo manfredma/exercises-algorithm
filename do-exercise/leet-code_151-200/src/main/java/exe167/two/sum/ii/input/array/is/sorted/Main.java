@@ -19,7 +19,7 @@ package exe167.two.sum.ii.input.array.is.sorted;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/4.
+ * LeetCode 第 167 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

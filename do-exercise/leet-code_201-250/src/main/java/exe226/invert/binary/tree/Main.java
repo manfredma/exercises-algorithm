@@ -27,7 +27,7 @@ but you can’t invert a binary tree on a whiteboard so f*** off.
 package exe226.invert.binary.tree;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 226 题的测试入口。
  */
 public class Main {
 }

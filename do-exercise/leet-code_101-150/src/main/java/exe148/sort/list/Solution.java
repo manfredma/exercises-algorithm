@@ -40,7 +40,6 @@ class Solution {
         first = doSortList(first);
         second = doSortList(second);
 
-
         ListNode result = new ListNode(-1);
         ListNode cur = result;
         while (first != null && second != null) {

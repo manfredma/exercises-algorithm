@@ -32,7 +32,7 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
 package exe149.max.points.on.a.line;
 
 /**
- * @author manfred on 2019/9/13.
+ * LeetCode 第 149 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

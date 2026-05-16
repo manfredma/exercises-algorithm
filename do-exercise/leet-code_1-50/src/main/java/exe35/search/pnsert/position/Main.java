@@ -25,7 +25,7 @@ Output: 0
 package exe35.search.pnsert.position;
 
 /**
- * @author Manfred since 2019/5/24
+ * LeetCode 第 35 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -16,7 +16,7 @@ Output:
 package exe442.find.all.duplicates.in.an.array;
 
 /**
- * @author manfred on 2019/8/28.
+ * LeetCode 第 442 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

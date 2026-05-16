@@ -19,7 +19,6 @@ class Solution {
         List<TreeNode> curNode = new ArrayList<>();
         curNode.add(root);
 
-
         do {
             List<TreeNode> nextNode = new ArrayList<>();
             List<Integer> next = new ArrayList<>();

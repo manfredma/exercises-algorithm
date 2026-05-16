@@ -16,7 +16,7 @@ Note: The result may be very large, so you need to return a string instead of an
 package exe179.largest.number;
 
 /**
- * @author manfred on 2019/9/16.
+ * LeetCode 第 179 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

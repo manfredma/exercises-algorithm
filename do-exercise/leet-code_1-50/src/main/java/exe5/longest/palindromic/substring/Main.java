@@ -14,7 +14,7 @@ Output: "bb"
 package exe5.longest.palindromic.substring;
 
 /**
- * @author Manfred since 2019/5/7
+ * LeetCode 第 5 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

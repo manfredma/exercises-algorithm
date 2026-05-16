@@ -2,8 +2,6 @@ package manfred.end.algorithm.string.match;
 
 /**
  * RK 算法的全称叫 Rabin-Karp 算法，是由它的两位发明者命名的
- *
- * @author Manfred since 2019/8/21
  */
 public class RK implements StringMatcher {
 

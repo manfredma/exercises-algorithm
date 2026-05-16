@@ -15,8 +15,7 @@ Note: You may assume the string contain only lowercase letters.
 package exe387.first.unique.character.in.a.string;
 
 /**
- *
- * @author maxin
+ * LeetCode 第 387 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -3,6 +3,9 @@ package exe460.lfu.cache;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * LeetCode 第460题 LFU 缓存，使用哈希表加按频次分组的双向链表实现 O(1) 的 get 和 put 操作。
+ */
 class LFUCache {
 
     private java.util.List<List> index;
@@ -94,7 +97,6 @@ class LFUCache {
             cache.put(key, listNode);
         }
     }
-
 
     class List {
         ListNode head = new ListNode(-1, -1, this);

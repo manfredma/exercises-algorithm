@@ -25,7 +25,7 @@ Explanation: There are three ways to climb to the top.
 package exe70.climbing.stairs;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 70 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -20,7 +20,7 @@ All inputs are guaranteed to be non-empty strings.
 package exe208.implement.trie.prefix.tree;
 
 /**
- * @author Manfred since 2019/9/23
+ * LeetCode 第 208 题的测试入口。
  */
 public class Main {
 }

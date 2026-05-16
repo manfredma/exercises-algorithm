@@ -21,7 +21,7 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 package exe55.jump.game;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 55 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

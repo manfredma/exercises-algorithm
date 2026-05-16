@@ -15,7 +15,7 @@ package exe128.longest.consecutive.sequence;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/7.
+ * LeetCode 第 128 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

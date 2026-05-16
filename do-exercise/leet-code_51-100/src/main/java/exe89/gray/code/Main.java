@@ -34,7 +34,7 @@ Explanation: We define the gray code sequence to begin with 0.
 package exe89.gray.code;
 
 /**
- * @author manfred on 2019/8/23.
+ * LeetCode 第 89 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

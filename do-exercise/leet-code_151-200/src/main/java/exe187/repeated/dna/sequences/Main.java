@@ -15,7 +15,7 @@ Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 package exe187.repeated.dna.sequences;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 187 题的测试入口。
  */
 public class Main {
 }

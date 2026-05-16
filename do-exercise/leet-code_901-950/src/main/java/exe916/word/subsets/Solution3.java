@@ -67,7 +67,6 @@ class Solution3 {
             }
         }
 
-
         List<String> result = new ArrayList<>(A.length);
         for (String s : A) {
             char[] splitA = new char[26];

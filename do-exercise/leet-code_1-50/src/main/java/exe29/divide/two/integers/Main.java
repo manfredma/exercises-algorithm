@@ -23,7 +23,7 @@ For the purpose of this problem, assume that your function returns 2^31 − 1 wh
 package exe29.divide.two.integers;
 
 /**
- * @author Manfred since 2019/5/22
+ * LeetCode 第 29 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

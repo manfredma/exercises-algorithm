@@ -10,7 +10,7 @@ Output: 1->1->2->3->4->4
 package exe21.merge.two.sorted.lists;
 
 /**
- * @author Manfred since 2019/5/21
+ * LeetCode 第 21 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

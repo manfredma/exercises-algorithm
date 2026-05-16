@@ -15,7 +15,7 @@ If there is such window, you are guaranteed that there will always be only one u
 package exe76.minimum.window.substring;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 76 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

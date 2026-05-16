@@ -28,7 +28,7 @@ Output: false
 package exe74.search.a.two.d.matrix;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 74 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

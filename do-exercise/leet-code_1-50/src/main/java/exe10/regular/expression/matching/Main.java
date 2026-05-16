@@ -47,7 +47,7 @@ Output: false
 package exe10.regular.expression.matching;
 
 /**
- * @author Manfred since 2019/5/9
+ * LeetCode 第 10 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

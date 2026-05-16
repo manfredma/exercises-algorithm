@@ -44,7 +44,6 @@ public class Graph {
         }
     }
 
-
     // 因为 Java 提供的优先级队列，没有暴露更新数据的接口，所以我们需要重新实现一个
     private class PriorityQueue { // 根据 vertex.dist 构建小顶堆
         private Vertex[] nodes;

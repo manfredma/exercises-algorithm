@@ -6,8 +6,6 @@ you must do this by modifying the input array in-place with O(1) extra memory.
 
 You may assume all the characters consist of printable ascii characters.
 
-
-
 Example 1:
 
 Input: ["h","e","l","l","o"]
@@ -23,7 +21,7 @@ package exe344.reverse.string;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 344 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

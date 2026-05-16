@@ -63,7 +63,7 @@ package exe68.text.justification;
 import java.util.List;
 
 /**
- * @author Manfred since 2019/7/16
+ * LeetCode 第 68 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

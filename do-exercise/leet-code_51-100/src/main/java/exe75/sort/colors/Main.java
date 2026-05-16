@@ -19,7 +19,7 @@ Could you come up with a one-pass algorithm using only constant space?
 package exe75.sort.colors;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 75 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

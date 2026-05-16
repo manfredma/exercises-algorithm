@@ -6,6 +6,9 @@ import java.util.List;
 /*
 动态规划版本
  */
+/**
+ * LeetCode 第93题 复原 IP 地址的动态规划解法，用二维缓存数组自底向上枚举所有合法 IP 段组合。
+ */
 class Solution2 {
     public List<String> restoreIpAddresses(String s) {
         if (s.length() < 4) {

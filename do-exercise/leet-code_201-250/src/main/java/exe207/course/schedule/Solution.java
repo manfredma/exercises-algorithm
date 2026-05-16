@@ -22,7 +22,6 @@ class Solution {
             depends.putIfAbsent(i, new HashSet<>());
         }
 
-
         while (!depends.isEmpty()) {
             int course = -1;
             for (Map.Entry<Integer, Set<Integer>> dependEntry : depends.entrySet()) {

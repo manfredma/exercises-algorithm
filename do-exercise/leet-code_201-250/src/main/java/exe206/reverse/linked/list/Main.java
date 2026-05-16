@@ -15,7 +15,7 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 package exe206.reverse.linked.list;
 
 /**
- * @author manfred on 2019/9/18.
+ * LeetCode 第 206 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -71,7 +71,6 @@ public class Knapsack {
         }
     }
 
-
     boolean[][] state = new boolean[6][10];
 
     /**
@@ -94,7 +93,6 @@ public class Knapsack {
             }
         }
     }
-
 
 }
 

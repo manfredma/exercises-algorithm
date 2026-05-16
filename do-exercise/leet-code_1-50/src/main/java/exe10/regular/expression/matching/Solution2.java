@@ -3,6 +3,9 @@ package exe10.regular.expression.matching;
 /*
  动态规划版本
  */
+/**
+ * LeetCode 第10题 正则表达式匹配的动态规划解法，用二维 dp 数组处理 '.' 和 '*' 通配符的匹配逻辑。
+ */
 class Solution2 {
     private static final char WILD_CARD_ASTERISK = '*';
     private static final char WILD_CARD_DOT = '.';

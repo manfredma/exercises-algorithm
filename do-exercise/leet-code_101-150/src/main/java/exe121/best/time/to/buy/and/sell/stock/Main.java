@@ -21,7 +21,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 package exe121.best.time.to.buy.and.sell.stock;
 
 /**
- * @author Manfred since 2019/8/28
+ * LeetCode 第 121 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -11,7 +11,6 @@ class Solution {
         int leftMin = Integer.MAX_VALUE;
         int rightMax = Integer.MIN_VALUE;
 
-
         int[] leftCMax = new int[prices.length];
         int[] rightCMax = new int[prices.length];
         for (int i = 1; i < prices.length; i++) {

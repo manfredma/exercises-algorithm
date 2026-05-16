@@ -21,7 +21,7 @@ Output: 4
 package exe136.single.number;
 
 /**
- * @author Manfred since 2019/8/29
+ * LeetCode 第 136 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

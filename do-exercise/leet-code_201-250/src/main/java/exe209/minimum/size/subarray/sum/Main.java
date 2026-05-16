@@ -15,7 +15,7 @@ If you have figured out the O(n) solution, try coding another solution of which 
 package exe209.minimum.size.subarray.sum;
 
 /**
- * @author Manfred since 2019/9/23
+ * LeetCode 第 209 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

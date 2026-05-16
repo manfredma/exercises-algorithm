@@ -19,17 +19,15 @@ You may assume that you have an infinite number of each kind of coin.
 package exe322.coin.change;
 
 /**
- * @author Manfred since 2019/8/30
+ * LeetCode 第 322 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
 
-
         System.out.println(solution.coinChange(new int[]{1, 2, 5}, 11));
         System.out.println(solution.coinChange(new int[]{186, 419, 83, 408}, 6249));
         System.out.println(solution.coinChange(new int[]{2}, 3));
-
 
     }
 }

@@ -42,7 +42,5 @@ public class Main {
         System.out.println(skiplistV2.erase(3));   // return true
         System.out.println("after erase 3: \n" + skiplistV2);
 
-
-
     }
 }

@@ -11,7 +11,6 @@ class Solution {
             return m;
         }
 
-
         for (int toZero = 0, x = m; toZero < 32; toZero++) {
 
             if ((m >>> toZero & 1) == 0) {

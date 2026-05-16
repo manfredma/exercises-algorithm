@@ -11,7 +11,6 @@ and there must be only a single slash / between two directory names.
 The last directory name (if it exists) must not end with a trailing /.
 Also, the canonical path must be the shortest string representing the absolute path.
 
-
 Example 1:
 
 Input: "/home/"
@@ -44,7 +43,7 @@ Output: "/a/b/c"
 package exe71.simplify.path;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 71 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

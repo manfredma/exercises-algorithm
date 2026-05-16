@@ -19,7 +19,7 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
 package exe57.insert.interval;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 57 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

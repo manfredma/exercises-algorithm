@@ -20,7 +20,7 @@ Return the following binary tree:
 package exe105.construct.binary.tree.from.preorder.and.inorder.traversal;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 105 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

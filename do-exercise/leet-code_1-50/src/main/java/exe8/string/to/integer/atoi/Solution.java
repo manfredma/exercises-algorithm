@@ -5,7 +5,6 @@ package exe8.string.to.integer.atoi;
  */
 class Solution {
 
-
     public int myAtoi(String str) {
         long result = 0;
         int sign = 1;

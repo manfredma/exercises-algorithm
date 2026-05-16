@@ -1,7 +1,6 @@
 /*
 Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
 
-
 In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
 Example:
@@ -20,7 +19,7 @@ Output:
 package exe118.pascals.triangle;
 
 /**
- * @author Manfred since 2019/8/28
+ * LeetCode 第 118 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

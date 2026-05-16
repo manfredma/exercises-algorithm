@@ -1,6 +1,5 @@
 package exe51.n.queens;
 
-
 import java.util.ArrayList;
 import java.util.List;
 

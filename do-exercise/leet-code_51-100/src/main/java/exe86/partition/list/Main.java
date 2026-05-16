@@ -13,7 +13,7 @@ Output: 1->2->2->4->3->5
 package exe86.partition.list;
 
 /**
- * @author Manfred since 2019/7/19
+ * LeetCode 第 86 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -24,7 +24,7 @@ Try to solve it in linear time/space.
 package exe164.maximum.gap;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 164 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

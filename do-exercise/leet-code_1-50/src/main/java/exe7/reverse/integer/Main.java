@@ -21,7 +21,7 @@ Assume we are dealing with an environment which could only store integers within
 package exe7.reverse.integer;
 
 /**
- * @author Manfred since 2019/5/8
+ * LeetCode 第 7 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

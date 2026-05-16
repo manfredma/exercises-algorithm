@@ -25,7 +25,7 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown be
 package exe52.n.queens.ii;
 
 /**
- * @author Manfred since 2019/7/15
+ * LeetCode 第 52 题的测试入口。
  */
 public class Main {
 }

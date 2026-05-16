@@ -6,8 +6,6 @@ import java.util.Stack;
 
 /**
  * 使用邻接表表示的图
- *
- * @author Manfred since 2019/8/21
  */
 public class Graph {
     /**
@@ -63,7 +61,6 @@ public class Graph {
         }
     }
 
-
     public void dfs2(int s, int t) {
         boolean[] visited = new boolean[count];
         int[] prev = new int[count];
@@ -91,7 +88,6 @@ public class Graph {
         }
         return found;
     }
-
 
     public void dfs(int s, int t) {
         if (s == t) {
@@ -123,7 +119,6 @@ public class Graph {
                     System.out.println();
                 }
 
-
                 if (target == curAdjNode) {
                     print(pre, source, target);
                     return true;
@@ -143,7 +138,6 @@ public class Graph {
         return false;
     }
 
-
     private void print(int[] prev, int s, int t) { // 递归打印 s->t 的路径
         if (prev[t] != -1 && t != s) {
             print(prev, s, prev[t]);
@@ -151,5 +145,4 @@ public class Graph {
         System.out.print(t + " ");
     }
 }
-
 

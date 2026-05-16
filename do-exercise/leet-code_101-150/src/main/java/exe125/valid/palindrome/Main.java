@@ -16,7 +16,7 @@ Output: false
 package exe125.valid.palindrome;
 
 /**
- * @author manfred on 2019/8/28.
+ * LeetCode 第 125 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

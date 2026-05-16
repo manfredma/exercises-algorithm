@@ -25,7 +25,7 @@ Output: 3
 package exe200.number.of.islands;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 200 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

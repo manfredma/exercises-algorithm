@@ -15,7 +15,6 @@ Target = 9
 
 Output: True
 
-
 Example 2:
 
 Input:
@@ -29,12 +28,11 @@ Target = 28
 
 Output: False
 
-
  */
 package exe653.two.sum.iv.input.is.a.bst;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 653 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

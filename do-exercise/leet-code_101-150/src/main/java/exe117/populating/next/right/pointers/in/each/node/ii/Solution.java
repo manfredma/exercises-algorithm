@@ -1,6 +1,5 @@
 package exe117.populating.next.right.pointers.in.each.node.ii;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +21,9 @@ class Node {
     }
 };
 */
+/**
+ * LeetCode 第117题 填充每个节点的下一个右侧节点指针 II，通过层序遍历收集每层节点后依次连接 next 指针。
+ */
 class Solution {
     public Node connect(Node root) {
         List<List<Node>> r = levelOrder(root);
@@ -46,7 +48,6 @@ class Solution {
 
         List<Node> curNode = new ArrayList<>();
         curNode.add(root);
-
 
         do {
             List<Node> nextNode = new ArrayList<>();

@@ -13,7 +13,7 @@ Output: 1->4->3->2->5->NULL
 package exe92.reverse.linked.list.ii;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 92 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

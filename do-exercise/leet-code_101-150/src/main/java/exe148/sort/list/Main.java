@@ -15,7 +15,7 @@ Output: -1->0->3->4->5
 package exe148.sort.list;
 
 /**
- * @author manfred on 2019/9/13.
+ * LeetCode 第 148 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -22,7 +22,7 @@ Could you solve it without converting the integer to a string?
 package exe9.palindrome.number;
 
 /**
- * @author Manfred since 2019/5/9
+ * LeetCode 第 9 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

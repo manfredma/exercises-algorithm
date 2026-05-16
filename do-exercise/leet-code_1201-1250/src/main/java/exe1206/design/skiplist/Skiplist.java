@@ -86,7 +86,6 @@ class Skiplist {
         return null;
     }
 
-
     public void add(int num) {
         // 1. 计算在第几层
         int level = randomLevel();
@@ -123,7 +122,6 @@ class Skiplist {
         }
         return added;
     }
-
 
     public boolean erase(int num) {
         boolean result = false;

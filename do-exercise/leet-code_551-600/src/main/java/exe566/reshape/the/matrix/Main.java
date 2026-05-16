@@ -39,7 +39,7 @@ package exe566.reshape.the.matrix;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/7.
+ * LeetCode 第 566 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

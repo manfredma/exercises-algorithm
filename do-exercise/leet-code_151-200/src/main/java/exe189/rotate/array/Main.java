@@ -28,7 +28,7 @@ package exe189.rotate.array;
 import java.util.Arrays;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 189 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

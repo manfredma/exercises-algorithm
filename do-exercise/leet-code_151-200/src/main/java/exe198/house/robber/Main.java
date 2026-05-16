@@ -24,7 +24,7 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 package exe198.house.robber;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 198 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

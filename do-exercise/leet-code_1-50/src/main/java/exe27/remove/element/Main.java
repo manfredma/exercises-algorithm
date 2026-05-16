@@ -41,7 +41,7 @@ for (int i = 0; i < len; i++) {
 package exe27.remove.element;
 
 /**
- * @author Manfred since 2019/5/22
+ * LeetCode 第 27 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

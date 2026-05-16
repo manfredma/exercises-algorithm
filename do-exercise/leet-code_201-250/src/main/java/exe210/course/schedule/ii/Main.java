@@ -31,7 +31,7 @@ package exe210.course.schedule.ii;
 import java.util.Arrays;
 
 /**
- * @author Manfred since 2019/9/23
+ * LeetCode 第 210 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -43,7 +43,6 @@ public class Main {
         System.out.println(Arrays.toString(solution2.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}})));
 
         System.out.println(Arrays.toString(solution.findOrder(2, new int[][]{{1, 0}})));
-
 
         System.out.println(Arrays.toString(solution2.findOrder(800, new int[][]{
                 {695, 229}, {199, 149}, {443, 397}, {258, 247}, {781, 667}, {350, 160}, {678, 629}, {467, 166}, {500, 450}, {477, 107},

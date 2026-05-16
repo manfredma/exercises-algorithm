@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/6.
+ * LeetCode 第 127 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

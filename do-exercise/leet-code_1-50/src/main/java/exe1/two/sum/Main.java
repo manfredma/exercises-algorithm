@@ -12,7 +12,6 @@
  */
 package exe1.two.sum;
 
-
 /**
  * LeetCode 第 1 题「两数之和」的测试入口。
  */

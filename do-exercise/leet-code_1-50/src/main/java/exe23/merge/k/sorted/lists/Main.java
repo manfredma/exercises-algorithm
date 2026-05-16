@@ -13,8 +13,6 @@ Output: 1->1->2->3->4->4->5->6
  */
 package exe23.merge.k.sorted.lists;
 
-
-
 /**
  * LeetCode 第 23 题「合并 K 个升序链表」的测试入口。
  */

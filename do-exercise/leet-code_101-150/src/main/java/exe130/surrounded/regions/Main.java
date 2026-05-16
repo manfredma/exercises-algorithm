@@ -25,13 +25,12 @@ Two cells are connected if they are adjacent cells connected horizontally or ver
 package exe130.surrounded.regions;
 
 /**
- * @author manfred on 2019/9/7.
+ * LeetCode 第 130 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
 //        test1();
         test2();
-
 
     }
 

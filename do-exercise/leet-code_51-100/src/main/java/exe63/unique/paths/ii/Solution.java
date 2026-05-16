@@ -5,7 +5,6 @@ package exe63.unique.paths.ii;
  */
 class Solution {
 
-
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;
         if (m == 0) {

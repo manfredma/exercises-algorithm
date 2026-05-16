@@ -87,7 +87,6 @@ class SkiplistV2 {
         return node;
     }
 
-
     /**
      * 随机一个层数
      */
@@ -98,7 +97,6 @@ class SkiplistV2 {
         }
         return level;
     }
-
 
     private static class Node {
         Integer value;

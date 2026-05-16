@@ -33,7 +33,7 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
 package exe110.balanced.binary.tree;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 110 题的测试入口。
  */
 public class Main {
 }

@@ -12,7 +12,7 @@ Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
 package exe204.count.primes;
 
 /**
- * @author Manfred since 2019/9/18
+ * LeetCode 第 204 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -13,7 +13,6 @@ getRear(): Gets the last item from Deque. If the deque is empty, return -1.
 isEmpty(): Checks whether Deque is empty or not.
 isFull(): Checks whether Deque is full or not.
 
-
 Example:
 
 MyCircularDeque circularDeque = new MycircularDeque(3); // set the size to be 3
@@ -27,7 +26,6 @@ circularDeque.deleteLast();			// return true
 circularDeque.insertFront(4);			// return true
 circularDeque.getFront();			// return 4
 
-
 Note:
 
 All values will be in the range of [0, 1000].
@@ -38,7 +36,7 @@ Please do not use the built-in Deque library.
 package exe641.design.circular.deque;
 
 /**
- * @author manfred on 2019/9/1.
+ * LeetCode 第 641 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

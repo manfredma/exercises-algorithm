@@ -19,7 +19,7 @@ return its level order traversal as:
 package exe102.binary.tree.level.order.traversal;
 
 /**
- * @author Manfred since 2019/8/26
+ * LeetCode 第 102 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

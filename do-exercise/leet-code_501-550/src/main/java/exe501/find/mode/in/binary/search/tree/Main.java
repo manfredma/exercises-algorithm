@@ -8,7 +8,6 @@ The left subtree of a node contains only nodes with keys less than or equal to t
 The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
 Both the left and right subtrees must also be binary search trees.
 
-
 For example:
 Given BST [1,null,2,2],
 
@@ -17,7 +16,6 @@ Given BST [1,null,2,2],
      2
     /
    2
-
 
 return [2].
 
@@ -31,7 +29,7 @@ package exe501.find.mode.in.binary.search.tree;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/10.
+ * LeetCode 第 501 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

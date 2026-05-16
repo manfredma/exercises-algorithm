@@ -20,7 +20,7 @@ Output: 99
 package exe137.single.number.ii;
 
 /**
- * @author Manfred since 2019/8/29
+ * LeetCode 第 137 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

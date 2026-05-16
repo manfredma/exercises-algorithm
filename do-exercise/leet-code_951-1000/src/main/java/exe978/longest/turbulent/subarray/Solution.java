@@ -45,7 +45,6 @@ class Solution {
             return 1;
         }
 
-
         int pre = Integer.compare(arr[0], arr[1]);
         int tmpMax = pre == 0 ? 1 : 2;
         int max = tmpMax;

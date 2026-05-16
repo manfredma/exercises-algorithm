@@ -1,6 +1,5 @@
 package exe5.longest.palindromic.substring;
 
-
 import java.util.Arrays;
 
 /**

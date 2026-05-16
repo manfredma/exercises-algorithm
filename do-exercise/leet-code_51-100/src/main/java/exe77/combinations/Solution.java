@@ -14,12 +14,10 @@ class Solution {
             return result;
         }
 
-
         int[] digits = new int[n];
         for (int i = 0; i < digits.length; i++) {
             digits[i] = i + 1;
         }
-
 
         return doCombine(digits, k, 0, digits.length - 1);
     }

@@ -44,7 +44,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @author manfred on 2019/9/12.
+ * LeetCode 第 140 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

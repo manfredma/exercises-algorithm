@@ -20,9 +20,8 @@ Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 
 package exe64.minimum.path.sum;
 
-
 /**
- * @author Manfred since 2019/7/16
+ * LeetCode 第 64 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

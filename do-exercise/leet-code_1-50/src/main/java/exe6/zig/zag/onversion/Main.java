@@ -28,7 +28,7 @@ P     I
 package exe6.zig.zag.onversion;
 
 /**
- * @author Manfred since 2019/5/8
+ * LeetCode 第 6 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

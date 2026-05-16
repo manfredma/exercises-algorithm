@@ -26,7 +26,7 @@ You may assume both s and t have the same length.
 package exe205.isomorphic.strings;
 
 /**
- * @author manfred on 2019/9/18.
+ * LeetCode 第 205 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

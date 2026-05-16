@@ -13,7 +13,7 @@ Explanation: 342 + 465 = 807.
 package exe2.add.two.numbers;
 
 /**
- * @author Manfred since 2019/5/6
+ * LeetCode 第 2 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ Explanation: The answer is "wke", with the length of 3.
 package exe3.longest.substring.without.repeating.characters;
 
 /**
- * @author Manfred since 2019/5/6
+ * LeetCode 第 3 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

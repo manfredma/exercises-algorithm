@@ -23,7 +23,6 @@ public class Main {
         ListNode l4 = new ListNode(3);
         ListNode l5 = new ListNode(3);
 
-
         l1.next = l2;
         l2.next = l3;
         l3.next = l4;

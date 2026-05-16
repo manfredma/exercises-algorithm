@@ -28,7 +28,7 @@ Output: "ZY"
 package exe168.excel.sheet.column.title;
 
 /**
- * @author manfred on 2019/9/4.
+ * LeetCode 第 168 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

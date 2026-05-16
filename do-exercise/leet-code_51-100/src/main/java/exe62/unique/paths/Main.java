@@ -5,7 +5,6 @@ The robot can only move either down or right at any point in time.
 The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 How many possible unique paths are there?
 
-
 Above is a 7 x 3 grid. How many possible unique paths are there?
 
 Note: m and n will be at most 100.
@@ -28,7 +27,7 @@ Output: 28
 package exe62.unique.paths;
 
 /**
- * @author Manfred since 2019/7/16
+ * LeetCode 第 62 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

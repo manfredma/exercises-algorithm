@@ -5,8 +5,6 @@ Each word must be constructed from letters of sequentially adjacent cell,
 where "adjacent" cells are those horizontally or vertically neighboring.
 The same letter cell may not be used more than once in a word.
 
-
-
 Example:
 
 Input:
@@ -20,7 +18,6 @@ words = ["oath","pea","eat","rain"]
 
 Output: ["eat","oath"]
 
-
 Note:
 
 All inputs are consist of lowercase letters a-z.
@@ -30,7 +27,7 @@ The values of words are distinct.
 package exe212.word.search.ii;
 
 /**
- *
+ * LeetCode 第 212 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

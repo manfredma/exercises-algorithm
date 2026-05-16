@@ -26,7 +26,7 @@ The flattened tree should look like:
 package exe114.flatten.binary.tree.to.linked.list;
 
 /**
- * @author manfred on 2019/8/27.
+ * LeetCode 第 114 题的测试入口。
  */
 public class Main {
 }

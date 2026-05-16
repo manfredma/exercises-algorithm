@@ -17,7 +17,7 @@ Follow up: Could you improve it to O(n log n) time complexity?
 package exe300.longest.increasing.subsequence;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 300 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

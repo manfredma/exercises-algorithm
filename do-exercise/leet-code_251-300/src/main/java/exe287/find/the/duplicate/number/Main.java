@@ -20,7 +20,7 @@ There is only one duplicate number in the array, but it could be repeated more t
 package exe287.find.the.duplicate.number;
 
 /**
- * @author manfred on 2019/8/28.
+ * LeetCode 第 287 题的测试入口。
  */
 public class Main {
 }

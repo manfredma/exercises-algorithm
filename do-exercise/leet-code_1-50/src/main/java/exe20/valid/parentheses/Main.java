@@ -31,7 +31,7 @@ Output: true
 package exe20.valid.parentheses;
 
 /**
- * @author Manfred since 2019/5/21
+ * LeetCode 第 20 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

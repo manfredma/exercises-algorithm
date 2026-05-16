@@ -25,7 +25,7 @@ Would allow duplicates affect the run-time complexity? How and why?
 package exe154.find.minimum.in.rotated.sorted.array.ii;
 
 /**
- * @author manfred on 2019/9/14.
+ * LeetCode 第 154 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

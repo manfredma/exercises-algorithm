@@ -22,7 +22,7 @@ Output: "0.(6)"
 package exe166.fraction.to.recurring.decimal;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 166 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

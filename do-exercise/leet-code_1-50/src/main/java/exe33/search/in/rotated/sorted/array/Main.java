@@ -22,7 +22,7 @@ Output: -1
 package exe33.search.in.rotated.sorted.array;
 
 /**
- * @author Manfred since 2019/5/24
+ * LeetCode 第 33 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

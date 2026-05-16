@@ -15,7 +15,7 @@ Explanation: transactions = [buy, sell, cooldown, buy, sell]
 package exe309.best.time.to.buy.and.sell.stock.with.cooldown;
 
 /**
- * @author Manfred since 2019/9/17
+ * LeetCode 第 309 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

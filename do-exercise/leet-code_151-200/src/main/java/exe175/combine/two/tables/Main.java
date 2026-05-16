@@ -21,7 +21,6 @@ Table: Address
 +-------------+---------+
 AddressId is the primary key column for this table.
 
-
 Write a SQL query for a report that provides the following information for each person in the Person table,
 regardless if there is an address for each of those people:
 
@@ -31,7 +30,7 @@ FirstName, LastName, City, State
 package exe175.combine.two.tables;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 175 题的测试入口。
  */
 public class Main {
     // 答案见 sql 文件

@@ -50,7 +50,7 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 package exe8.string.to.integer.atoi;
 
 /**
- * @author Manfred since 2019/5/9
+ * LeetCode 第 8 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

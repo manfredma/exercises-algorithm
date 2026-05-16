@@ -9,7 +9,6 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
  / \ / \
 3  4 4  3
 
-
 But the following [1,2,2,null,3,null,3] is not:
 
     1
@@ -18,7 +17,6 @@ But the following [1,2,2,null,3,null,3] is not:
    \   \
    3    3
 
-
 Note:
 Bonus points if you could solve it both recursively and iteratively.
 
@@ -26,7 +24,7 @@ Bonus points if you could solve it both recursively and iteratively.
 package exe101.symmetric.tree;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 101 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

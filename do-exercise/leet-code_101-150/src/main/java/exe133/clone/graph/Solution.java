@@ -22,6 +22,9 @@ class Node {
 };
 
 */
+/**
+ * LeetCode 第133题 克隆图，使用 BFS 广度优先遍历配合哈希表完成无向图的深拷贝。
+ */
 class Solution {
     public Node cloneGraph(Node node) {
         if (node == null) {

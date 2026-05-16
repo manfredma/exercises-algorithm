@@ -29,7 +29,7 @@ Output: 42
 package exe124.binary.tree.maximum.path.sum;
 
 /**
- * @author Manfred since 2019/8/28
+ * LeetCode 第 124 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -39,7 +39,6 @@ public class Main {
         /* [5,4,8,11,null,13,4,7,2,null,null,null,1] */
         TreeNode treeNode = createTreeNode("[5,4,8,11,null,13,4,7,2,null,null,null,1]");
         System.out.println(new Solution().maxPathSum(treeNode));
-
 
         /* [1,-2,-3,1,3,-2,null,-1] */
         TreeNode treeNode31 = new TreeNode(1);
@@ -62,7 +61,6 @@ public class Main {
 
         System.out.println(new Solution().maxPathSum(treeNode31));
 
-
         TreeNode treeNode1 = new TreeNode(-10);
         TreeNode treeNode2 = new TreeNode(9);
         TreeNode treeNode3 = new TreeNode(20);
@@ -83,7 +81,6 @@ public class Main {
         treeNode21.right = treeNode23;
 
         System.out.println(new Solution().maxPathSum(treeNode21));
-
 
     }
 

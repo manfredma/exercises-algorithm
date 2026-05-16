@@ -20,7 +20,7 @@ Output: 0
 package exe153.find.minimum.in.rotated.sorted.array;
 
 /**
- * @author manfred on 2019/9/14.
+ * LeetCode 第 153 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

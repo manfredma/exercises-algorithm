@@ -19,7 +19,7 @@ Output: true
 package exe217.contains.duplicate;
 
 /**
- * @author manfred on 2019/10/27.
+ * LeetCode 第 217 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

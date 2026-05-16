@@ -30,7 +30,7 @@ There are two ways to reach the bottom-right corner:
 package exe63.unique.paths.ii;
 
 /**
- * @author Manfred since 2019/7/16
+ * LeetCode 第 63 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

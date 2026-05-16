@@ -41,7 +41,7 @@ Could you devise a constant space solution?
 package exe73.set.matrix.zeroes;
 
 /**
- * @author Manfred since 2019/7/17
+ * LeetCode 第 73 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

@@ -31,7 +31,7 @@ package exe171.excel.sheet.column.number;
 import java.nio.channels.SocketChannel;
 
 /**
- * @author Manfred since 2019/9/16
+ * LeetCode 第 171 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

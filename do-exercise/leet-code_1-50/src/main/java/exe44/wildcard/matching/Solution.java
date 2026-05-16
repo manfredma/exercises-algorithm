@@ -1,6 +1,5 @@
 package exe44.wildcard.matching;
 
-
 import java.util.*;
 
 /**

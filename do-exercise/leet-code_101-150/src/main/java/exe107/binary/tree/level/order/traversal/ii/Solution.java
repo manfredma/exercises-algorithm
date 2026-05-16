@@ -1,6 +1,5 @@
 package exe107.binary.tree.level.order.traversal.ii;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +24,6 @@ class Solution {
 
         List<TreeNode> curNode = new ArrayList<>();
         curNode.add(root);
-
 
         do {
             List<TreeNode> nextNode = new ArrayList<>();

@@ -1,11 +1,9 @@
 /*
 Sort a linked list using insertion sort.
 
-
 A graphical example of insertion sort.
 The partial sorted list (black) initially contains only the first element in the list.
 With each iteration one element (red) is removed from the input data and inserted in-place into the sorted list
-
 
 Algorithm of Insertion Sort:
 
@@ -27,7 +25,7 @@ Output: -1->0->3->4->5
 package exe147.insertion.sort.list;
 
 /**
- * @author manfred on 2019/9/13.
+ * LeetCode 第 147 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

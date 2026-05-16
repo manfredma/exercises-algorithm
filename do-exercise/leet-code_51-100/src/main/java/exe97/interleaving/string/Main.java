@@ -13,7 +13,7 @@ Output: false
 package exe97.interleaving.string;
 
 /**
- * @author manfred on 2019/8/25.
+ * LeetCode 第 97 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
@@ -25,8 +25,6 @@ public class Main {
         Solution solution = new Solution();
         System.out.println(solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
         System.out.println(solution.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
-
-
 
     }
 }

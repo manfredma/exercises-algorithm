@@ -1,7 +1,7 @@
 package exe233.number.of.digit.one;
 
 /**
- * @author manfred on 2023/6/7.
+ * LeetCode 第 233 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

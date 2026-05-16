@@ -17,7 +17,7 @@ What if the number of rows is much larger than the number of columns?
 package exe363.max.sum.of.rectangle.no.larger.than.k;
 
 /**
- * @author Manfred since 2019/8/30
+ * LeetCode 第 363 题的测试入口。
  */
 public class Main {
 }

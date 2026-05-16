@@ -33,7 +33,7 @@ Can you solve it without using extra space?
 package exe142.linked.list.cycle.ii;
 
 /**
- * @author manfred on 2019/9/12.
+ * LeetCode 第 142 题的测试入口。
  */
 public class Main {
 }

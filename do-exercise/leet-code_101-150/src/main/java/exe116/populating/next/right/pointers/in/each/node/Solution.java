@@ -18,6 +18,9 @@ class Node {
     }
 };
 */
+/**
+ * LeetCode 第116题 填充每个节点的下一个右侧节点指针，利用完美二叉树性质递归连接同层相邻节点。
+ */
 class Solution {
     public Node connect(Node root) {
         if (root == null) {

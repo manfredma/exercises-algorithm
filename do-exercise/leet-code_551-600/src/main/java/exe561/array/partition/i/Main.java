@@ -15,7 +15,7 @@ All the integers in the array will be in the range of [-10000, 10000].
 package exe561.array.partition.i;
 
 /**
- * @author manfred on 2019/9/4.
+ * LeetCode 第 561 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {

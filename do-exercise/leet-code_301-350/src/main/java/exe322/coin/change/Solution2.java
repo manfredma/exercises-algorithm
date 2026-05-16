@@ -5,6 +5,9 @@ import java.util.Arrays;
 /*
 动态规划版本
  */
+/**
+ * LeetCode 第322题 零钱兑换的动态规划解法，构建 dp 数组逐步推导凑成每个金额所需的最少硬币数。
+ */
 class Solution2 {
     public int coinChange(int[] coins, int amount) {
         int[] result = new int[amount + 1];
