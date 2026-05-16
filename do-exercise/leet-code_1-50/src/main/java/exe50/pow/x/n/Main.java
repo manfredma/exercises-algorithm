@@ -1,7 +1,0 @@
-package exe50.pow.x.n;
-
-/**
- * LeetCode 第 50 题「Pow(x, n)」的测试入口。
- */
-public class Main {
-}
