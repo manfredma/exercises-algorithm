@@ -16,7 +16,7 @@
 ## Module Map
 
 ### LeetCode 练习
-`leet-code_1-50` · `leet-code_51-100` · `leet-code_101-150` · `leet-code_151-200` · `leet-code_201-250` · `leet-code_251-300` · `leet-code_301-350` · `leet-code_351-400` · `leet-code_401-450` · `leet-code_451-500` · `leet-code_501-550` · `leet-code_551-600` · `leet-code_601-650` · `leet-code_651-700` · `leet-code_801-850` · `leet-code_901-950` · `leet-code_951-1000` · `leet-code_1101-1150` · `leet-code_1201-1250` · `leet-code_1351-1400`
+`leet-code`（560+ 题，包含第 1-1400 题）
 
 ### CTCI 面试题
 `CTCI-01`
