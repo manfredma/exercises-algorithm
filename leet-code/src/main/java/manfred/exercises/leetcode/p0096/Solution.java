@@ -1,0 +1,33 @@
+package manfred.exercises.leetcode.p0096;
+
+import manfred.exercises.leetcode.p0095.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * LeetCode 第 96 题「不同的二叉搜索树」：动态规划，卡特兰数 dp[n] = sum(dp[i]*dp[n-1-i])。
+ */
+class Solution {
+    public int numTrees(int n) {
+        if (n == 0) {
+            return 0;
+        }
+
+        return doGenerateTrees(1, n);
+    }
+
+    private int doGenerateTrees(int i, int n) {
+        int result = 0;
+        List<TreeNode> treeNodes = new ArrayList<>();
+        if (i >= n) {
+            result = 1;
+        } else {
+            for (int j = i; j <= n; j++) {
+                int left = doGenerateTrees(i, j - 1);
+                int right = doGenerateTrees(j + 1, n);
+                result += left * right;
+            }
+        }
+        return result;
+    }
+}

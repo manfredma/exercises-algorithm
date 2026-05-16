@@ -1,0 +1,20 @@
+package manfred.exercises.leetcode.p0227;
+
+/**
+ * LeetCode 第 227 题「基本计算器 II」的测试入口。
+ */
+public class Main {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.calculate("42"));
+        System.out.println(solution.calculate("3+2*2"));
+        System.out.println(solution.calculate("3/2"));
+        System.out.println(solution.calculate(" 3+5 / 2 "));
+
+        Solution2 solution2 = new Solution2();
+        System.out.println(solution2.calculate("42"));
+        System.out.println(solution2.calculate("3+2*2"));
+        System.out.println(solution2.calculate("3/2"));
+        System.out.println(solution2.calculate(" 3+5 / 2 "));
+    }
+}
