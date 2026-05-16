@@ -1,5 +1,8 @@
 package exe109.convert.sorted.list.to.binary.search.tree;
 
+/**
+ * 二叉树节点定义。
+ */
 public class TreeNode {
     int val;
     TreeNode left;

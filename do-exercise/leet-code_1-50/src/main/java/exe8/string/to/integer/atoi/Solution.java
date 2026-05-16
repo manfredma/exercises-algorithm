@@ -1,5 +1,8 @@
 package exe8.string.to.integer.atoi;
 
+/**
+ * LeetCode 第 8 题「字符串转换整数 (atoi)」：状态机或逐字符解析，处理前导空格、符号和溢出。
+ */
 class Solution {
 
 

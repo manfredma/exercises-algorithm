@@ -1,5 +1,8 @@
 package exe121.best.time.to.buy.and.sell.stock;
 
+/**
+ * LeetCode 第 121 题「买卖股票的最佳时机」：一次遍历维护最低价和最大利润。
+ */
 class Solution {
     public int maxProfit(int[] prices) {
         if (null == prices || prices.length < 2) {

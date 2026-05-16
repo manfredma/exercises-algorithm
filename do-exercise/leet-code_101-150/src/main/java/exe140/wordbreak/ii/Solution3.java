@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * LeetCode 第 140 题「单词拆分 II」（方案3）：记忆化回溯，从当前位置枚举字典单词向后延伸。
+ */
 class Solution3 {
 
     public List<String> wordBreak(String s, List<String> wordDict) {

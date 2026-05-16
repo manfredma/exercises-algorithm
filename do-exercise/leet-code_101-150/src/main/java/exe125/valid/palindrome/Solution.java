@@ -1,5 +1,8 @@
 package exe125.valid.palindrome;
 
+/**
+ * LeetCode 第 125 题「验证回文串」：双指针跳过非字母数字字符，忽略大小写比较。
+ */
 class Solution {
     public boolean isPalindrome(String s) {
         if (null == s || "".equals(s)) {

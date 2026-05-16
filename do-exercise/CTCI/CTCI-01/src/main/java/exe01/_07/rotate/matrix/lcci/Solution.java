@@ -1,5 +1,8 @@
 package exe01._07.rotate.matrix.lcci;
 
+/**
+ * CTCI 面试题 01.07「旋转矩阵」：先转置再水平翻转实现原地 90 度旋转。
+ */
 class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;

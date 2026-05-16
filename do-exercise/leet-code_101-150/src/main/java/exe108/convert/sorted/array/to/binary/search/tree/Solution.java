@@ -1,5 +1,8 @@
 package exe108.convert.sorted.array.to.binary.search.tree;
 
+/**
+ * LeetCode 第 108 题「将有序数组转换为二叉搜索树」：递归取中间元素为根，左右区间分别构建子树。
+ */
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) {

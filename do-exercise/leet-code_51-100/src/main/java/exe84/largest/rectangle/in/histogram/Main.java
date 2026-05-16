@@ -15,6 +15,9 @@ Output: 10
  */
 package exe84.largest.rectangle.in.histogram;
 
+/**
+ * LeetCode 第 84 题「柱状图中最大的矩形」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

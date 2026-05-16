@@ -1,5 +1,8 @@
 package exe27.remove.element;
 
+/**
+ * LeetCode 第 27 题「移除元素」：双指针原地覆盖，将非目标值前移。
+ */
 class Solution {
     public int removeElement(int[] nums, int val) {
         int result = 0;

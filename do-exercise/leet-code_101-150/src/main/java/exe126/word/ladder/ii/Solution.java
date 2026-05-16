@@ -2,6 +2,9 @@ package exe126.word.ladder.ii;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 126 题「单词接龙 II」：BFS 建层次图 + 回溯 DFS 从终点回溯所有最短路径。
+ */
 class Solution {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         if (!wordList.contains(endWord)) {

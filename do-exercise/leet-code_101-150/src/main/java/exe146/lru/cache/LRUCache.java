@@ -3,6 +3,9 @@ package exe146.lru.cache;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LeetCode 第 146 题「LRU 缓存」的核心数据结构实现。
+ */
 class LRUCache {
 
     private final ListNode head = new ListNode(-1, -1);

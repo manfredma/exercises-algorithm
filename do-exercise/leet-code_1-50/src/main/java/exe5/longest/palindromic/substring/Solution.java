@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * LeetCode 第 5 题「最长回文子串」：中心扩展法或动态规划，枚举每个可能的中心向两侧扩展。
+ */
 class Solution {
     public String longestPalindrome(String s) {
         if (null == s || "".equals(s)) {

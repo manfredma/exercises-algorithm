@@ -1,5 +1,8 @@
 package exe221.maximal.square;
 
+/**
+ * LeetCode 第 221 题「最大正方形」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         /*

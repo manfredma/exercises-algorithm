@@ -21,6 +21,9 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
 package exe25.reverse.nodes.in.k.group;
 
 
+/**
+ * LeetCode 第 25 题「K 个一组翻转链表」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         ListNode n1 = new ListNode(1);

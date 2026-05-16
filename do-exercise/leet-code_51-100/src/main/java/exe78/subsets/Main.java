@@ -21,6 +21,9 @@ Output:
  */
 package exe78.subsets;
 
+/**
+ * LeetCode 第 78 题「子集」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

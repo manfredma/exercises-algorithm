@@ -5,6 +5,9 @@ import exe95.unique.binary.search.trees.ii.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 96 题「不同的二叉搜索树」：动态规划，卡特兰数 dp[n] = sum(dp[i]*dp[n-1-i])。
+ */
 class Solution {
     public int numTrees(int n) {
         if (n == 0) {

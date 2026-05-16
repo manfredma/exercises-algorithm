@@ -1,5 +1,8 @@
 package exe69.sqrt.x;
 
+/**
+ * LeetCode 第 69 题「x 的平方根」：二分搜索或牛顿迭代法求整数平方根。
+ */
 class Solution {
     public int mySqrt(int x) {
         if (x < 2) {

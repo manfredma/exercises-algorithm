@@ -1,5 +1,8 @@
 package exe64.minimum.path.sum;
 
+/**
+ * LeetCode 第 64 题「最小路径和」：动态规划，原地更新格子为左上角到该格的最小路径和。
+ */
 class Solution {
     public int minPathSum(int[][] grid) {
         int m = grid.length;

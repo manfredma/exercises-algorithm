@@ -1,5 +1,8 @@
 package exe222.count.complete.tree.nodes;
 
+/**
+ * LeetCode 第 222 题「完全二叉树的节点个数」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         TreeNode treeNode = new TreeNode();

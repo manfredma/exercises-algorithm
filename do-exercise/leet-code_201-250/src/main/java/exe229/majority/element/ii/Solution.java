@@ -3,6 +3,9 @@ package exe229.majority.element.ii;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 229 题「多数元素 II」：Boyer-Moore 扩展投票，维护两个候选数。
+ */
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
 

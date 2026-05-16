@@ -1,5 +1,8 @@
 package exe97.interleaving.string;
 
+/**
+ * LeetCode 第 97 题「交错字符串」：二维动态规划，dp[i][j] 表示能否交错组成前缀。
+ */
 class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
         if (s1.length() + s2.length() != s3.length()) {

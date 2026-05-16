@@ -1,5 +1,8 @@
 package exe204.count.primes;
 
+/**
+ * LeetCode 第 204 题「计数质数」：埃拉托斯特尼筛法，标记合数。
+ */
 class Solution {
     public int countPrimes(int n) {
         if (n < 3) {

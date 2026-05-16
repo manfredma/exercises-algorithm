@@ -2,6 +2,9 @@ package exe128.longest.consecutive.sequence;
 
 import java.util.HashMap;
 
+/**
+ * LeetCode 第 128 题「最长连续序列」：哈希集合，从每段的起点开始向后延伸计数。
+ */
 class Solution {
     public int longestConsecutive(int[] nums) {
         HashMap<Integer, Integer> n = new HashMap<>(nums.length);

@@ -1,5 +1,8 @@
 package manfred.end.data.structure.tree.red.black.tree;
 
+/**
+ * 红黑树可视化工具：将红黑树按层次结构以字符形式打印到控制台，每个节点显示键值与颜色（R/B）。
+ */
 public class RBTreeShow {
     private static <T> void writeArray(RBTreeNode<T> currNode, int rowIndex, int columnIndex, String[][] res, int treeDepth) {
         // 保证输入的树不为空

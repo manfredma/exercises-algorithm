@@ -3,6 +3,9 @@ package exe79.word.search;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 79 题「单词搜索」：回溯法 DFS 在网格中搜索单词路径。
+ */
 class Solution {
     public boolean exist(char[][] board, String word) {
         if (null == word || word.length() == 0) {

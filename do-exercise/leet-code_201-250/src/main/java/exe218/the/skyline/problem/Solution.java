@@ -58,6 +58,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * LeetCode 第 218 题「天际线问题」：扫描线 + 优先队列，处理建筑物左右端点事件。
+ */
 class Solution {
     public List<List<Integer>> getSkyline(int[][] buildings) {
 

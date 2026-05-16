@@ -2,6 +2,9 @@ package exe49.group.anagrams;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 49 题「字母异位词分组」：排序后的字符串作 key 进行哈希分组。
+ */
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();

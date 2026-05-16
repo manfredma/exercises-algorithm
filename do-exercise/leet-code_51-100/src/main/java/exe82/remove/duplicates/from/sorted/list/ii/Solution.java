@@ -1,5 +1,8 @@
 package exe82.remove.duplicates.from.sorted.list.ii;
 
+/**
+ * LeetCode 第 82 题「删除排序链表中的重复元素 II」：哑节点 + 双指针，将所有出现多于一次的节点删除。
+ */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if (null == head || head.next == null) {

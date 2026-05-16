@@ -3,6 +3,9 @@ package exe71.simplify.path;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 71 题「简化路径」：栈处理路径分量，忽略 . 并弹栈处理 ..。
+ */
 class Solution {
     public String simplifyPath(String path) {
         if (path == null || "".equals(path)) {

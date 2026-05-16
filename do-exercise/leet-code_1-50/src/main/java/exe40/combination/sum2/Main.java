@@ -31,6 +31,9 @@ A solution set is:
 
 package exe40.combination.sum2;
 
+/**
+ * LeetCode 第 40 题「组合总和 II」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

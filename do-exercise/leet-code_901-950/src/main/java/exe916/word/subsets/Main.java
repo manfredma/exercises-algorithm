@@ -1,5 +1,8 @@
 package exe916.word.subsets;
 
+/**
+ * LeetCode 第 916 题（单词子集）的测试入口，验证三种解法的正确性。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

@@ -1,5 +1,8 @@
 package exe99.recover.binary.search.tree;
 
+/**
+ * LeetCode 第 99 题「恢复二叉搜索树」：中序遍历找两个位置异常的节点，交换其值。
+ */
 class Solution {
     public void recoverTree(TreeNode root) {
         doRecoverTree(root);

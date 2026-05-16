@@ -1,5 +1,8 @@
 package exe230.kth.smallest.element.in.a.bst;
 
+/**
+ * 二叉树节点定义。
+ */
 class TreeNode {
     int val;
     TreeNode left;

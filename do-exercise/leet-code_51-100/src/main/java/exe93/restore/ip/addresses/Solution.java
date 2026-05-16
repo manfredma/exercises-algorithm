@@ -3,6 +3,9 @@ package exe93.restore.ip.addresses;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 93 题「复原 IP 地址」：回溯法，按段枚举 0-255 范围内的数字。
+ */
 class Solution {
     public List<String> restoreIpAddresses(String s) {
         if (s.length() < 4) {

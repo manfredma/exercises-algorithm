@@ -1,5 +1,8 @@
 package exe01._06.compress.string.lcci;
 
+/**
+ * CTCI 面试题 01.06「字符串压缩」：统计连续相同字符长度，拼接压缩串，若不更短返回原串。
+ */
 class Solution {
     public String compressString(String s) {
         if (s.length() == 0) {

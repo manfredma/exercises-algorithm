@@ -2,6 +2,9 @@ package exe205.isomorphic.strings;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 205 题「同构字符串」：双向哈希映射，同时验证两字符串的双射关系。
+ */
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         if (Objects.equals(s, t)) {

@@ -3,6 +3,9 @@ package exe76.minimum.window.substring;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 76 题「最小覆盖子串」：滑动窗口 + 哈希表统计字符频次，收缩左端找最小窗口。
+ */
 class Solution {
     public String minWindow(String s, String t) {
         List<Integer>[] charLastIndex = new List[t.length()];

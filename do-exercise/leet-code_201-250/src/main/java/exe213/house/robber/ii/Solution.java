@@ -2,6 +2,9 @@ package exe213.house.robber.ii;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 213 题「打家劫舍 II」：环形数组，分两次线性 DP：不偷首 or 不偷尾。
+ */
 class Solution {
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {

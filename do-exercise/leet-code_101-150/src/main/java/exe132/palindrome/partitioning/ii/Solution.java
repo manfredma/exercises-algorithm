@@ -1,5 +1,8 @@
 package exe132.palindrome.partitioning.ii;
 
+/**
+ * LeetCode 第 132 题「分割回文串 II」：动态规划，dp[i] 为 s[0..i] 的最少分割次数。
+ */
 class Solution {
     public int minCut(String s) {
         boolean[][] flag = new boolean[s.length()][s.length()];

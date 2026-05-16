@@ -4,6 +4,10 @@ import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 演示递归遍历目录树的文件列举技巧，使用 {@link java.io.File} API
+ * 通过深度优先递归将指定目录下所有文件收集到集合中。
+ */
 public class FileListing {
     public static void main(String[] args) {
         // System.out.println("Hello, World!");

@@ -1,5 +1,8 @@
 package exe28.implement.strstr;
 
+/**
+ * LeetCode 第 28 题「找出字符串中第一个匹配项的下标」：KMP 算法或 Java 内置 indexOf。
+ */
 class Solution {
     public int strStr(String haystack, String needle) {
         if (null == needle || "".equals(needle)) {

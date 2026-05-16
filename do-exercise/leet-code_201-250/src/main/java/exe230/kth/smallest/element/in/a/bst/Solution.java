@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * LeetCode 第 230 题「二叉搜索树中第 K 小的元素」：中序遍历第 k 个节点，或迭代栈。
+ */
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         List<Integer> sortedValue = new ArrayList<>(k);

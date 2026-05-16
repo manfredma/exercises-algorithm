@@ -1,5 +1,8 @@
 package exe162.find.peak.element;
 
+/**
+ * LeetCode 第 162 题「寻找峰值」：二分搜索，总往上坡方向收缩边界。
+ */
 class Solution {
     public int findPeakElement(int[] nums) {
         if (nums == null || nums.length == 0) {

@@ -2,7 +2,10 @@ package manfred.end.algorithm.sort.merge;
 
 import java.util.Arrays;
 
-public class Boot {
+/**
+ * 归并排序演示：对多组整数数组执行归并排序并输出排序前后结果。
+ */
+public class MergeSortDemo {
 
     public static void main(String[] args) {
         int[] x = new int[]{5, 4, 3, 2, 1};

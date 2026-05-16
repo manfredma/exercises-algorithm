@@ -1,5 +1,8 @@
 package exe309.best.time.to.buy.and.sell.stock.with.cooldown;
 
+/**
+ * LeetCode 第 309 题「买卖股票的最佳时机含冷冻期」：状态机动态规划，维护持股、卖出冷冻、空仓三种状态。
+ */
 class Solution {
     public int maxProfit(int[] prices) {
         if (prices == null || prices.length < 2) {

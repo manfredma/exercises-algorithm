@@ -1,5 +1,8 @@
 package exe134.gas.station;
 
+/**
+ * LeetCode 第 134 题「加油站」：贪心法，当总油量>=总耗油量时必有解，从总油量首次非负处出发。
+ */
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         if (gas.length != cost.length) {

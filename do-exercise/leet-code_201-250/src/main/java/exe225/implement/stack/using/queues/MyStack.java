@@ -3,6 +3,9 @@ package exe225.implement.stack.using.queues;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+/**
+ * LeetCode 第 225 题「用队列实现栈」的核心数据结构实现。
+ */
 class MyStack {
 
     Queue<Integer> data = new ArrayDeque<>();

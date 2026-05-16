@@ -1,5 +1,8 @@
 package exe45.jump.game.ii;
 
+/**
+ * LeetCode 第 45 题「跳跃游戏 II」：贪心法，每步尽量跳到能到达最远位置。
+ */
 class Solution {
     public int jump(int[] nums) {
         if (null == nums || nums.length <= 1) {

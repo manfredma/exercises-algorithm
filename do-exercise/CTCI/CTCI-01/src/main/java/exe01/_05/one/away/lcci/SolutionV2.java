@@ -1,5 +1,8 @@
 package exe01._05.one.away.lcci;
 
+/**
+ * CTCI 面试题 01.05「一次编辑」（方案二）：分情况判断替换、插入、删除一次能否转换。
+ */
 class SolutionV2 {
     public boolean oneEditAway(String first, String second) {
         if (first.length() - second.length() > 1 || second.length() - first.length() > 1) {

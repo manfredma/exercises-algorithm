@@ -1,5 +1,8 @@
 package exe101.symmetric.tree;
 
+/**
+ * LeetCode 第 101 题「对称二叉树」：递归比较左子树与右子树的镜像关系。
+ */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
         return doIsSymmetric(root, root);

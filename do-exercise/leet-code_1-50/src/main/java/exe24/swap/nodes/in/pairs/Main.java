@@ -12,6 +12,9 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 package exe24.swap.nodes.in.pairs;
 
+/**
+ * LeetCode 第 24 题「两两交换链表中的节点」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         ListNode n1 = new ListNode(1);

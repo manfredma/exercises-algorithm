@@ -28,6 +28,9 @@ A solution set is:
  */
 package exe39.combination.sum;
 
+/**
+ * LeetCode 第 39 题「组合总和」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

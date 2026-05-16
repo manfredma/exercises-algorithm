@@ -1,5 +1,8 @@
 package exe109.convert.sorted.list.to.binary.search.tree;
 
+/**
+ * LeetCode 第 109 题「有序链表转换二叉搜索树」：快慢指针找链表中点作为根，递归构建左右子树。
+ */
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
         int x = 0;

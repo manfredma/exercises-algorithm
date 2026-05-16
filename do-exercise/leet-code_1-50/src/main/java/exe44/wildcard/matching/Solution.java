@@ -3,6 +3,9 @@ package exe44.wildcard.matching;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 44 题「通配符匹配」：动态规划，dp[i][j] 表示 s[0..i) 与 p[0..j) 是否匹配。
+ */
 class Solution {
     private static final char WILD_CARD_ASTERISK = '*';
 

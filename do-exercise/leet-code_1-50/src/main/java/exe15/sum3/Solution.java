@@ -2,6 +2,9 @@ package exe15.sum3;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 15 题「三数之和」：排序 + 双指针，固定一个数后用双指针找另两个数。
+ */
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();

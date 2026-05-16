@@ -1,5 +1,8 @@
 package exe218.the.skyline.problem;
 
+/**
+ * LeetCode 第 218 题「天际线问题」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         int[][] input = {

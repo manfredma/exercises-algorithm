@@ -4,6 +4,9 @@ package exe51.n.queens;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 51 题「N 皇后」：回溯法，逐行放置皇后，用集合记录列和对角线冲突。
+ */
 class Solution {
     public List<List<String>> solveNQueens(int n) {
         return doSolveNQueens(n, 0, new ArrayList<>(), new ArrayList<>());

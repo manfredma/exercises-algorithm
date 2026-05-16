@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * LeetCode 第 150 题「逆波兰表达式求值」：栈，遇数字入栈，遇运算符弹出两个操作数计算后入栈。
+ */
 class Solution {
     private List<String> operatorStr = new ArrayList<>();
 

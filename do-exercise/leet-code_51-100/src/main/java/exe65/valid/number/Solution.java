@@ -1,5 +1,8 @@
 package exe65.valid.number;
 
+/**
+ * LeetCode 第 65 题「有效数字」：状态机或正则判断，处理整数、小数、指数格式。
+ */
 class Solution {
 
     private char charOfZero = '0';

@@ -1,5 +1,8 @@
 package exe95.unique.binary.search.trees.ii;
 
+/**
+ * 二叉树节点定义。
+ */
 public class TreeNode {
     int val;
     TreeNode left;

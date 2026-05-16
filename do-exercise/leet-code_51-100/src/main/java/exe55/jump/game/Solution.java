@@ -1,5 +1,8 @@
 package exe55.jump.game;
 
+/**
+ * LeetCode 第 55 题「跳跃游戏」：贪心法维护最远可达位置，判断是否能到达末尾。
+ */
 class Solution {
     public boolean canJump(int[] nums) {
         if (nums.length < 2) {

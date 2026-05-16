@@ -1,5 +1,8 @@
 package exe23.merge.k.sorted.lists;
 
+/**
+ * LeetCode 第 23 题「合并 K 个升序链表」：优先队列（小根堆）每次取最小节点，或分治归并。
+ */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if (null == lists || 0 == lists.length) {

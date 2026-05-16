@@ -3,6 +3,9 @@ package exe119.pascals.triangle.ii;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 119 题「杨辉三角 II」：滚动数组，从后向前更新一维数组。
+ */
 class Solution {
     public List<Integer> getRow(int rowIndex) {
         rowIndex++;

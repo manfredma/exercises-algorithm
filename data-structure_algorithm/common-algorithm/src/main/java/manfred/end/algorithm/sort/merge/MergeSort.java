@@ -1,5 +1,8 @@
 package manfred.end.algorithm.sort.merge;
 
+/**
+ * 归并排序：基于分治思想，将数组递归二分后再有序合并，时间复杂度 O(n log n)，是稳定排序算法。
+ */
 public class MergeSort {
     public static void sort(int[] x) {
         System.out.println("merge sort~");

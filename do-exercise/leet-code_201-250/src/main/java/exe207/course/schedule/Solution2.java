@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * LeetCode 第 207 题「课程表」（方案2）：拓扑排序（BFS Kahn 算法或 DFS 检测环），判断有向图是否有环。
+ */
 class Solution2 {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         if (numCourses < 2 || prerequisites == null || prerequisites.length < 2) {

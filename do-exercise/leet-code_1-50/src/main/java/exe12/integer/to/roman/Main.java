@@ -48,6 +48,9 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 package exe12.integer.to.roman;
 
+/**
+ * LeetCode 第 12 题「整数转罗马数字」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

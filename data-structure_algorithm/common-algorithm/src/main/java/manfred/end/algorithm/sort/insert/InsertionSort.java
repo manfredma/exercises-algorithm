@@ -1,5 +1,8 @@
 package manfred.end.algorithm.sort.insert;
 
+/**
+ * 插入排序：将未排序元素逐一插入到已排序序列的正确位置，时间复杂度 O(n²)，适合小规模或近乎有序的数组。
+ */
 public class InsertionSort {
     public static void sort(int[] x) {
         System.out.println("insert sort: ");

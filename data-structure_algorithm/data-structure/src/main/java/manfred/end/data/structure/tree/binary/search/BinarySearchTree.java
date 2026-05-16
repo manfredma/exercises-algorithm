@@ -1,7 +1,8 @@
 package manfred.end.data.structure.tree.binary.search;
 
 /**
- * @author Manfred since 2019/8/20
+ * 二叉查找树（BST）：实现节点的查找、插入和删除操作。
+ * 删除时采用"右子树最小节点替换"策略处理有两个子节点的情况。
  */
 public class BinarySearchTree {
     private Node tree;

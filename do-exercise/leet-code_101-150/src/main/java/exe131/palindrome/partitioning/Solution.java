@@ -3,6 +3,9 @@ package exe131.palindrome.partitioning;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 131 题「分割回文串」：回溯法，配合动态规划预处理回文判断加速。
+ */
 class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> result = new ArrayList<>();

@@ -3,6 +3,9 @@ package exe179.largest.number;
 import java.util.Arrays;
         import java.util.Comparator;
 
+/**
+ * LeetCode 第 179 题「最大数」：自定义比较器，将数字拼接后按字典序排序。
+ */
 class Solution {
     public String largestNumber(int[] nums) {
         // String[] strNums = IntStream.of(nums).boxed().map(String::valueOf).toArray(String[]::new);

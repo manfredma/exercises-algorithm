@@ -1,5 +1,8 @@
 package exe58.length.of.last.word;
 
+/**
+ * LeetCode 第 58 题「最后一个单词的长度」：从末尾跳过空格后向前计数。
+ */
 class Solution {
     public int lengthOfLastWord(String s) {
         if (s.length() == 0) {

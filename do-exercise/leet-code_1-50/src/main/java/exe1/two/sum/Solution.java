@@ -3,6 +3,9 @@ package exe1.two.sum;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LeetCode 第 1 题「两数之和」：哈希表存储已遍历元素，一次遍历找到目标差值对应的索引。
+ */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[]{

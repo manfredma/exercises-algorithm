@@ -1,5 +1,8 @@
 package exe137.single.number.ii;
 
+/**
+ * LeetCode 第 137 题「只出现一次的数字 II」：位运算，统计每一位上 1 的个数对 3 取余。
+ */
 class Solution {
 
     // https://juejin.im/post/5cb962dbf265da03761e8601

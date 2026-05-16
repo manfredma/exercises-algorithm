@@ -19,6 +19,9 @@ You must not use any built-in BigInteger library or convert the inputs to intege
  */
 package exe43.multiply.strings;
 
+/**
+ * LeetCode 第 43 题「字符串相乘」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

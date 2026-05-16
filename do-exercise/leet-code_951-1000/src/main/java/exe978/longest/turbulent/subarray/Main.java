@@ -1,5 +1,8 @@
 package exe978.longest.turbulent.subarray;
 
+/**
+ * LeetCode 第 978 题（最长湍流子数组）的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

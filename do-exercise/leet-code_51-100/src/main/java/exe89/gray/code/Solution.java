@@ -3,6 +3,9 @@ package exe89.gray.code;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 89 题「格雷编码」：公式 i ^ (i >> 1) 直接生成，或反射构造法。
+ */
 class Solution {
     public List<Integer> grayCode(int n) {
         List<Integer> result = new ArrayList<>();

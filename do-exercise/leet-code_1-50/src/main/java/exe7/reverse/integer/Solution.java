@@ -1,5 +1,8 @@
 package exe7.reverse.integer;
 
+/**
+ * LeetCode 第 7 题「整数反转」：逐位取余重建整数，检查溢出边界。
+ */
 class Solution {
     public int reverse(int x) {
         if (x == Integer.MIN_VALUE) {

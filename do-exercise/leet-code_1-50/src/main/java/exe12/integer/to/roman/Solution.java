@@ -1,5 +1,8 @@
 package exe12.integer.to.roman;
 
+/**
+ * LeetCode 第 12 题「整数转罗马数字」：贪心法按从大到小的罗马数值依次减去。
+ */
 class Solution {
     public String intToRoman(int num) {
         String result = "";

@@ -1,5 +1,8 @@
 package exe41.first.missing.positive;
 
+/**
+ * LeetCode 第 41 题「缺失的第一个正数」：原地哈希，将正数放到对应下标位置，再扫描找缺失。
+ */
 class Solution {
     public int firstMissingPositive(int[] nums) {
         if (null == nums || nums.length == 0) {

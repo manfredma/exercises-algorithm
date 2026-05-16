@@ -1,5 +1,8 @@
 package exe202.happy.number;
 
+/**
+ * LeetCode 第 202 题「快乐数」：快慢指针检测循环，或判断是否进入 {4} 的循环。
+ */
 class Solution {
     public boolean isHappy(int n) {
         int slow = n;

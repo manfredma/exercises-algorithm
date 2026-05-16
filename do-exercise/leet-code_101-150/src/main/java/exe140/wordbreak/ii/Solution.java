@@ -3,6 +3,9 @@ package exe140.wordbreak.ii;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 140 题「单词拆分 II」：记忆化回溯，从当前位置枚举字典单词向后延伸。
+ */
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         List<String> result = new ArrayList<>();

@@ -26,6 +26,9 @@ After running your update statement, the above salary table should have the foll
 | 4  | D    | m   | 500    |
 
  */
+/**
+ * LeetCode 第 627 题（变更性别）的测试入口，SQL 解法通过 CASE WHEN 一条语句互换 m/f 值。
+ */
 public class Main {
     // # Write your MySQL query statement below
     //UPDATE `salary` SET `sex` = CASE

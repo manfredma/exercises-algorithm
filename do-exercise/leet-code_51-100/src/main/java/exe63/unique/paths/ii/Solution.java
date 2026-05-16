@@ -1,5 +1,8 @@
 package exe63.unique.paths.ii;
 
+/**
+ * LeetCode 第 63 题「不同路径 II」：动态规划，障碍格路径数置 0。
+ */
 class Solution {
 
 

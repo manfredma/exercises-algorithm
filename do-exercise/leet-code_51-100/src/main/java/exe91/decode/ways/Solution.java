@@ -1,5 +1,8 @@
 package exe91.decode.ways;
 
+/**
+ * LeetCode 第 91 题「解码方法」：动态规划，dp[i] 为前 i 位的解码方案数。
+ */
 class Solution {
     public int numDecodings(String s) {
         if (s.charAt(0) == '0') {

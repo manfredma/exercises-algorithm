@@ -1,5 +1,8 @@
 package exe151.reverse.words.in.a.string;
 
+/**
+ * LeetCode 第 151 题「反转字符串中的单词」：先去除多余空格，再整体反转后逐单词反转。
+ */
 class Solution {
     public String reverseWords(String s) {
         String result = "";

@@ -1,5 +1,8 @@
 package exe10.regular.expression.matching;
 
+/**
+ * LeetCode 第 10 题「正则表达式匹配」：动态规划，dp[i][j] 表示 s[0..i) 与 p[0..j) 是否匹配。
+ */
 class Solution {
     private static final char WILD_CARD_ASTERISK = '*';
     private static final char WILD_CARD_DOT = '.';

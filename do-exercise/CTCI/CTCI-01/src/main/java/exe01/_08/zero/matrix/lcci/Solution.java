@@ -1,5 +1,8 @@
 package exe01._08.zero.matrix.lcci;
 
+/**
+ * CTCI 面试题 01.08「零矩阵」：首行首列作标记，两遍扫描置零。
+ */
 class Solution {
     public void setZeroes(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {

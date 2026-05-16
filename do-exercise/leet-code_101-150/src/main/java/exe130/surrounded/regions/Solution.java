@@ -2,6 +2,9 @@ package exe130.surrounded.regions;
 
 import java.util.Stack;
 
+/**
+ * LeetCode 第 130 题「被围绕的区域」：从边界 O 开始 DFS/BFS 标记联通区域，最后翻转未标记的 O。
+ */
 class Solution {
     public void solve(char[][] board) {
         if (board.length == 0 || board[0].length == 0) {

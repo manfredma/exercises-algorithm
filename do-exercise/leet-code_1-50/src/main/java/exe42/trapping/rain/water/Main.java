@@ -14,6 +14,9 @@ Output: 6
  */
 package exe42.trapping.rain.water;
 
+/**
+ * LeetCode 第 42 题「接雨水」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

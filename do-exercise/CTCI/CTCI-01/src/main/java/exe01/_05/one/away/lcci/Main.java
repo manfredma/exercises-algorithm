@@ -1,5 +1,8 @@
 package exe01._05.one.away.lcci;
 
+/**
+ * CTCI 面试题 01.05「一次编辑」的测试入口。
+ */
 public class Main {
 
     public static void main(String[] args) {

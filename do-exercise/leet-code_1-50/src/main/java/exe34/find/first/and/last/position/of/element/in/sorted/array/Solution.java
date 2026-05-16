@@ -1,5 +1,8 @@
 package exe34.find.first.and.last.position.of.element.in.sorted.array;
 
+/**
+ * LeetCode 第 34 题「在排序数组中查找元素的第一个和最后一个位置」：两次二分分别找左右边界。
+ */
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         if (null == nums || nums.length == 0) {

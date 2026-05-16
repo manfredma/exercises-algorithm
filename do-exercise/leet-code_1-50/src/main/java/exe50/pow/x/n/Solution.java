@@ -21,6 +21,9 @@ n is a 32-bit signed integer, within the range [−231, 231 − 1]
  */
 package exe50.pow.x.n;
 
+/**
+ * LeetCode 第 50 题「Pow(x, n)」：快速幂，递归将指数折半，O(log n)。
+ */
 class Solution {
     public double myPow(double x, int n) {
         return Math.pow(x, n);

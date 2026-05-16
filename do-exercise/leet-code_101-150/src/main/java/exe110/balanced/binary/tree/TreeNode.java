@@ -1,5 +1,8 @@
 package exe110.balanced.binary.tree;
 
+/**
+ * 二叉树节点定义。
+ */
 public class TreeNode {
     int val;
     TreeNode left;

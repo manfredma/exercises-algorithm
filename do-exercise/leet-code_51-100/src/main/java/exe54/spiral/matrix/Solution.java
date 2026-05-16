@@ -3,6 +3,9 @@ package exe54.spiral.matrix;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 54 题「螺旋矩阵」：模拟四个方向依次遍历，收缩边界。
+ */
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();

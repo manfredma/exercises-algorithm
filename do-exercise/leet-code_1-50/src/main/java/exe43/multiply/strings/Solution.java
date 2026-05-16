@@ -3,6 +3,9 @@ package exe43.multiply.strings;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 43 题「字符串相乘」：模拟竖式乘法，结果存在数组中逐位累加。
+ */
 class Solution {
     public String multiply(String num1, String num2) {
         if ("0".equals(num1) || null == num1 || null == num2 || "0".equals(num2)) {

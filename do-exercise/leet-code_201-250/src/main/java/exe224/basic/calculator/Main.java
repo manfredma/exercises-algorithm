@@ -3,6 +3,9 @@ package exe224.basic.calculator;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * LeetCode 第 224 题「基本计算器」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         List<TestEntry> expression = Arrays.asList(

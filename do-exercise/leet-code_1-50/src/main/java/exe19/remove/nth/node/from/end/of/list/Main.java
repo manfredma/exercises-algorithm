@@ -17,6 +17,9 @@ Could you do this in one pass?
 
 package exe19.remove.nth.node.from.end.of.list;
 
+/**
+ * LeetCode 第 19 题「删除链表的倒数第 N 个节点」的测试入口。
+ */
 public class Main {
 
     public static void main(String[] args) {

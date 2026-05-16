@@ -1,5 +1,8 @@
 package exe72.edit.distance;
 
+/**
+ * LeetCode 第 72 题「编辑距离」：动态规划，dp[i][j] 为将 s1[0..i) 转为 s2[0..j) 的最少操作数。
+ */
 class Solution {
     public int minDistance(String word1, String word2) {
         if (word1.length() == 0) {

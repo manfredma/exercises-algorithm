@@ -1,5 +1,8 @@
 package exe216.combination.sum.iii;
 
+/**
+ * LeetCode 第 216 题「组合总和 III」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         /*

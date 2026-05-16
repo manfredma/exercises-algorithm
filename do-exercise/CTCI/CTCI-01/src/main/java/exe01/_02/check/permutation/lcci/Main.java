@@ -1,5 +1,8 @@
 package exe01._02.check.permutation.lcci;
 
+/**
+ * CTCI 面试题 01.02「判定是否互为字符重排」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

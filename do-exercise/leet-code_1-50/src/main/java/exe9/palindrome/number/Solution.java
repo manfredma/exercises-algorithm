@@ -1,5 +1,8 @@
 package exe9.palindrome.number;
 
+/**
+ * LeetCode 第 9 题「回文数」：反转后半段数字与前半段比较，无需转字符串。
+ */
 class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) {

@@ -1,5 +1,8 @@
 package exe6.zig.zag.onversion;
 
+/**
+ * LeetCode 第 6 题「Z 字形变换」：按行模拟 Z 字形排列，用 StringBuilder 数组收集各行字符。
+ */
 class Solution {
     public String convert(String s, int numRows) {
         if (numRows == 1) {

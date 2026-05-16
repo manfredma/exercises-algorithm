@@ -18,6 +18,9 @@ The order of your output does not matter.
 
 package exe49.group.anagrams;
 
+/**
+ * LeetCode 第 49 题「字母异位词分组」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

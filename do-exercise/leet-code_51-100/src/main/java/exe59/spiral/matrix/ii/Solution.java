@@ -1,5 +1,8 @@
 package exe59.spiral.matrix.ii;
 
+/**
+ * LeetCode 第 59 题「螺旋矩阵 II」：模拟四方向填数，逐层收缩边界。
+ */
 class Solution {
     public int[][] generateMatrix(int n) {
         int[][] r = new int[n][n];

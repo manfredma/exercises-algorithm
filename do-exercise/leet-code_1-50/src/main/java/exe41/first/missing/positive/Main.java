@@ -19,6 +19,9 @@ Your algorithm should run in O(n) time and uses constant extra space.
  */
 package exe41.first.missing.positive;
 
+/**
+ * LeetCode 第 41 题「缺失的第一个正数」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution s = new Solution();

@@ -2,6 +2,9 @@ package exe153.find.minimum.in.rotated.sorted.array;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 153 题「寻找旋转排序数组中的最小值」：二分搜索，比较 mid 与 right 判断最小值在哪半段。
+ */
 class Solution {
     public int findMin(int[] nums) {
         if (nums == null || nums.length == 0) {

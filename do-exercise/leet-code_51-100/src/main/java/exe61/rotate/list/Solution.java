@@ -1,5 +1,8 @@
 package exe61.rotate.list;
 
+/**
+ * LeetCode 第 61 题「旋转链表」：找到链表尾部成环，从对应位置断开。
+ */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if (null == head) {

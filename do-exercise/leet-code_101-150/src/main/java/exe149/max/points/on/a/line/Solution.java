@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * LeetCode 第 149 题「直线上最多的点数」：枚举每个点为基准，用斜率哈希统计共线点数。
+ */
 class Solution {
     public int maxPoints(int[][] points) {
         if (points.length == 0) {

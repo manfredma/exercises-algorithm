@@ -1,5 +1,8 @@
 package exe227.basic.calculator.ii;
 
+/**
+ * LeetCode 第 227 题「基本计算器 II」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

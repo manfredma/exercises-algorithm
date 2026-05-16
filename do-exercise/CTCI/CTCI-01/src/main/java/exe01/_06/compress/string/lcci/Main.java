@@ -1,5 +1,8 @@
 package exe01._06.compress.string.lcci;
 
+/**
+ * CTCI 面试题 01.06「字符串压缩」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

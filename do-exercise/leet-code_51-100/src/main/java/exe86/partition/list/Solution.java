@@ -1,5 +1,8 @@
 package exe86.partition.list;
 
+/**
+ * LeetCode 第 86 题「分隔链表」：创建两个虚拟头节点分别收集小于和大于等于 x 的节点。
+ */
 class Solution {
     public ListNode partition(ListNode head, int x) {
         ListNode less = new ListNode(x - 1);

@@ -3,6 +3,9 @@ package exe57.insert.interval;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 57 题「插入区间」：找到插入位置，合并所有重叠区间。
+ */
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         if (intervals.length == 0) {

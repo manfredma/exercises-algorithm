@@ -3,6 +3,9 @@ package exe78.subsets;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 78 题「子集」：位掩码枚举或回溯法生成所有子集。
+ */
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<Integer> l = new ArrayList<>();

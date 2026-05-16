@@ -1,5 +1,8 @@
 package exe96.unique.binary.search.trees;
 
+/**
+ * LeetCode 第 96 题「不同的二叉搜索树」（方案2）：动态规划，卡特兰数 dp[n] = sum(dp[i]*dp[n-1-i])。
+ */
 class Solution2 {
     public int numTrees(int n) {
         if (n == 0) {

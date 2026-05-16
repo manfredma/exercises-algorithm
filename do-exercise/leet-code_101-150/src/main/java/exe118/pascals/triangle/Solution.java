@@ -3,6 +3,9 @@ package exe118.pascals.triangle;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 118 题「杨辉三角」：逐行计算，每个元素为上一行相邻两元素之和。
+ */
 class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();

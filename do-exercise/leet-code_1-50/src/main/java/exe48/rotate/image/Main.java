@@ -43,6 +43,9 @@ rotate the input matrix in-place such that it becomes:
 
 package exe48.rotate.image;
 
+/**
+ * LeetCode 第 48 题「旋转图像」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         int[][] x = new int[][]{

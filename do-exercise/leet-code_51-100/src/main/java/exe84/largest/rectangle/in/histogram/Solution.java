@@ -1,5 +1,8 @@
 package exe84.largest.rectangle.in.histogram;
 
+/**
+ * LeetCode 第 84 题「柱状图中最大的矩形」：单调递增栈，遇到更矮柱子时弹出并计算面积。
+ */
 class Solution {
     public int largestRectangleArea(int[] heights) {
         int result = 0;

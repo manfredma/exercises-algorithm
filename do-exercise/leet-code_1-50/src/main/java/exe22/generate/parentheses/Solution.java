@@ -3,6 +3,9 @@ package exe22.generate.parentheses;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 22 题「括号生成」：回溯法，记录已用左右括号数，合法时递归添加。
+ */
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();

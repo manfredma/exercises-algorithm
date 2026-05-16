@@ -1,5 +1,8 @@
 package exe142.linked.list.cycle.ii;
 
+/**
+ * LeetCode 第 142 题「环形链表 II」：快慢指针找相遇点后，一指针从头出发找环入口。
+ */
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;

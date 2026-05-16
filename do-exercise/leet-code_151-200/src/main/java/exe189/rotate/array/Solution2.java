@@ -1,5 +1,8 @@
 package exe189.rotate.array;
 
+/**
+ * LeetCode 第 189 题「轮转数组」（方案2）：三次翻转：全部反转，前 k 反转，后 n-k 反转。
+ */
 class Solution2 {
 
     public void rotate(int[] nums, int k) {

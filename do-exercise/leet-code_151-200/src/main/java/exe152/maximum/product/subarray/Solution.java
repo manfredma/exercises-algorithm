@@ -1,5 +1,8 @@
 package exe152.maximum.product.subarray;
 
+/**
+ * LeetCode 第 152 题「乘积最大子数组」：动态规划，同时维护当前最大值和最小值（负负得正）。
+ */
 class Solution {
     public int maxProduct(int[] nums) {
         if (nums.length == 1) {

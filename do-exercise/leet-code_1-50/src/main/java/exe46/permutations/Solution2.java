@@ -3,6 +3,9 @@ package exe46.permutations;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 46 题「全排列」（方案2）：回溯法，用 visited 数组记录已使用元素。
+ */
 class Solution2 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();

@@ -1,5 +1,8 @@
 package exe200.number.of.islands;
 
+/**
+ * LeetCode 第 200 题「岛屿数量」：DFS/BFS 将访问过的陆地标记，统计连通分量数。
+ */
 class Solution {
     public int numIslands(char[][] grid) {
         int result = 0;

@@ -1,5 +1,8 @@
 package exe123.best.time.to.buy.and.sell.stock.iii;
 
+/**
+ * LeetCode 第 123 题「买卖股票的最佳时机 III」：状态机动态规划，维护最多两次交易的四种状态。
+ */
 class Solution {
     public int maxProfit(int[] prices) {
         if (prices.length < 2) {

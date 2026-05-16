@@ -2,6 +2,9 @@ package exe239.sliding.window.maximum;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 239 题「滑动窗口最大值」：单调递减双端队列，维护窗口内最大值下标。
+ */
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums.length == 0) {

@@ -4,6 +4,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 图节点定义，包含邻居列表。
+ */
 class Node {
     public int val;
     public List<Node> neighbors;

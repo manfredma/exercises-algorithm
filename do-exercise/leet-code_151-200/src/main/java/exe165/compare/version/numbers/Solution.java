@@ -2,6 +2,9 @@ package exe165.compare.version.numbers;
 
 import java.util.Objects;
 
+/**
+ * LeetCode 第 165 题「比较版本号」：按 . 分割后逐段比较数值。
+ */
 class Solution {
     public int compareVersion(String version1, String version2) {
         if (Objects.equals(version1, version2)) {

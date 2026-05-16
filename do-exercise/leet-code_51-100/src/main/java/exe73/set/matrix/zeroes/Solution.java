@@ -1,5 +1,8 @@
 package exe73.set.matrix.zeroes;
 
+/**
+ * LeetCode 第 73 题「矩阵置零」：用首行首列作标记位，两遍扫描原地置零。
+ */
 class Solution {
     public void setZeroes(int[][] matrix) {
 

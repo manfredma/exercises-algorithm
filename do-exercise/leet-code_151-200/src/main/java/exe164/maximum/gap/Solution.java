@@ -1,5 +1,8 @@
 package exe164.maximum.gap;
 
+/**
+ * LeetCode 第 164 题「最大间距」：桶排序，将 n 个数分入 n-1 个桶，最大间距必在相邻非空桶间。
+ */
 class Solution {
     public int maximumGap(int[] nums) {
         if (nums == null || nums.length < 2) {

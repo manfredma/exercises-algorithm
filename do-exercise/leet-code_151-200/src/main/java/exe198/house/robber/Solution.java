@@ -1,5 +1,8 @@
 package exe198.house.robber;
 
+/**
+ * LeetCode 第 198 题「打家劫舍」：动态规划，dp[i] = max(dp[i-1], dp[i-2] + nums[i])。
+ */
 class Solution {
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {

@@ -2,6 +2,9 @@ package exe207.course.schedule;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 207 题「课程表」：拓扑排序（BFS Kahn 算法或 DFS 检测环），判断有向图是否有环。
+ */
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         if (numCourses < 2 || prerequisites == null || prerequisites.length < 2) {

@@ -3,6 +3,9 @@ package exe01._04.palindrome.permutation.lcci;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * CTCI 面试题 01.04「回文排列」：统计奇数频次字符数，至多一个奇数频次。
+ */
 class Solution {
     public boolean canPermutePalindrome(String s) {
         Map<Character, Integer> index = new HashMap<>();

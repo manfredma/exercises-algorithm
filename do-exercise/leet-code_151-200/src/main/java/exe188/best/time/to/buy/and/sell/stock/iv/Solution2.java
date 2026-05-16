@@ -1,5 +1,8 @@
 package exe188.best.time.to.buy.and.sell.stock.iv;
 
+/**
+ * LeetCode 第 188 题「买卖股票的最佳时机 IV」（方案2）：状态机动态规划，最多 k 次交易。
+ */
 class Solution2 {
     public int maxProfit(int k, int[] prices) {
         if (prices == null || prices.length < 2) {

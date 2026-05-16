@@ -1,5 +1,8 @@
 package exe26.remove.duplicates.from.sorted.array;
 
+/**
+ * LeetCode 第 26 题「删除有序数组中的重复项」：双指针，慢指针维护无重复区间末尾。
+ */
 class Solution {
     public int removeDuplicates(int[] nums) {
         int result = 0;

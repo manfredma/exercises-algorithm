@@ -1,5 +1,8 @@
 package exe234.palindrome.linked.list;
 
+/**
+ * LeetCode 第 234 题「回文链表」：快慢指针找中点，反转后半段后逐一比较。
+ */
 class Solution {
     public boolean isPalindrome(ListNode head) {
         if (head.next == null) {

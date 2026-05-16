@@ -1,5 +1,8 @@
 package exe01._03.string.to.url.lcci;
 
+/**
+ * CTCI 面试题 01.03「URL 化」（方案二）：统计非空字符后从后向前填充空格替换为 %20。
+ */
 class SolutionV2 {
     public String replaceSpaces(String S, int length) {
         int sp = length - 1;

@@ -38,6 +38,9 @@ for (int i = 0; i < len; i++) {
 
 package exe80.remove.duplicates.from.sorted.array.ii;
 
+/**
+ * LeetCode 第 80 题「删除有序数组中的重复项 II」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution so = new Solution();

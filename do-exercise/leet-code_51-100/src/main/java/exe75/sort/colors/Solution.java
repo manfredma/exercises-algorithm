@@ -1,5 +1,8 @@
 package exe75.sort.colors;
 
+/**
+ * LeetCode 第 75 题「颜色分类」：三路快排（荷兰国旗问题），双指针一次扫描。
+ */
 class Solution {
     public void sortColors(int[] nums) {
         int zeroLastIndex = 0;

@@ -1,7 +1,8 @@
 package manfred.end.algorithm.dynamic.programming;
 
 /**
- * @author Manfred since 2019/8/21
+ * 0-1 背包问题的三种求解方式：暴力递归、带备忘录的递归剪枝、动态规划状态转移。
+ * 通过二维状态数组 state[i][j] 记录装前 i 件物品且当前重量为 j 的可达状态。
  */
 public class Knapsack {
 

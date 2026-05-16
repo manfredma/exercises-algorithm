@@ -1,5 +1,8 @@
 package exe70.climbing.stairs;
 
+/**
+ * LeetCode 第 70 题「爬楼梯」：动态规划，斐波那契递推 f(n) = f(n-1) + f(n-2)。
+ */
 class Solution {
     public int climbStairs(int n) {
         if (n == 1) {

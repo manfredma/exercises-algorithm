@@ -1,5 +1,8 @@
 package exe138.copy.list.with.random.pointer;
 
+/**
+ * 含随机指针的链表节点定义。
+ */
 class Node {
     public int val;
     public Node next;

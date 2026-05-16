@@ -1,5 +1,8 @@
 package exe117.populating.next.right.pointers.in.each.node.ii;
 
+/**
+ * LeetCode 第 117 题「填充每个节点的下一个右侧节点指针 II」的核心数据结构实现。
+ */
 class Node {
     public int val;
     public Node left;

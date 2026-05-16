@@ -2,6 +2,9 @@ package exe30.substring.with.concatenation.of.all.words;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 30 题「串联所有单词的子串」：滑动窗口 + 哈希表统计单词频次。
+ */
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> results = new ArrayList<>();

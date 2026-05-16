@@ -1,5 +1,8 @@
 package exe174.dungeon.game;
 
+/**
+ * LeetCode 第 174 题「地下城游戏」：动态规划从右下到左上逆推，维护最低生命值。
+ */
 class Solution {
     public int calculateMinimumHP(int[][] dungeon) {
         if (dungeon.length == 0) {

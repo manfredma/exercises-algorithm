@@ -1,5 +1,8 @@
 package exe215.kth.largest.element.in.an.array;
 
+/**
+ * LeetCode 第 215 题「数组中的第 K 个最大元素」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         /*

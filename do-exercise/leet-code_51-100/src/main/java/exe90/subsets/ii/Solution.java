@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * LeetCode 第 90 题「子集 II」：回溯法排序后跳过同层重复元素。
+ */
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<Integer> l = new ArrayList<>();

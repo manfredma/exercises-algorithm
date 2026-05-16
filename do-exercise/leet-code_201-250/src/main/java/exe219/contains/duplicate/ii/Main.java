@@ -1,5 +1,8 @@
 package exe219.contains.duplicate.ii;
 
+/**
+ * LeetCode 第 219 题「存在重复元素 II」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         /*

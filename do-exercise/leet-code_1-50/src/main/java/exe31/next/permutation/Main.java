@@ -13,6 +13,9 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
  */
 package exe31.next.permutation;
 
+/**
+ * LeetCode 第 31 题「下一个排列」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3};

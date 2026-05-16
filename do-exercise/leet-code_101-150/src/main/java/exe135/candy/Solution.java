@@ -2,6 +2,9 @@ package exe135.candy;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 135 题「分发糖果」：两次扫描，先从左保证右邻更高得更多，再从右修正。
+ */
 class Solution {
     public int candy(int[] ratings) {
         if (ratings == null || ratings.length == 0) {

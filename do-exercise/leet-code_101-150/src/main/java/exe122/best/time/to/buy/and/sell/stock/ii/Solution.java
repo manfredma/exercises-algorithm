@@ -1,5 +1,8 @@
 package exe122.best.time.to.buy.and.sell.stock.ii;
 
+/**
+ * LeetCode 第 122 题「买卖股票的最佳时机 II」：贪心，累加所有相邻上涨的差值。
+ */
 class Solution {
     public int maxProfit(int[] prices) {
         if (null == prices || prices.length < 2) {

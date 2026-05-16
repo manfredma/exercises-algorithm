@@ -1,5 +1,8 @@
 package exe48.rotate.image;
 
+/**
+ * LeetCode 第 48 题「旋转图像」：先沿主对角线转置，再水平翻转实现 90 度旋转。
+ */
 class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;

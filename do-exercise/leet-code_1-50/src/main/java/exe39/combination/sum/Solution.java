@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * LeetCode 第 39 题「组合总和」：回溯法，允许重复使用元素，剪枝减少搜索。
+ */
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         if (candidates == null || candidates.length == 0) {

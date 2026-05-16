@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * LeetCode 第 56 题「合并区间」：排序后按起点合并重叠区间。
+ */
 class Solution {
     public int[][] merge(int[][] intervals) {
         if (intervals.length < 2) {

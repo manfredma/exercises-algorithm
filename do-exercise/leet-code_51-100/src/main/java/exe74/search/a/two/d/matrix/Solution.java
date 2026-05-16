@@ -1,5 +1,8 @@
 package exe74.search.a.two.d.matrix;
 
+/**
+ * LeetCode 第 74 题「搜索二维矩阵」：将矩阵视为一维有序数组进行二分搜索。
+ */
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
 

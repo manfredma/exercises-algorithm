@@ -2,6 +2,9 @@ package manfred.end.data.structure.tree.red.black.tree;
 
 import java.util.Optional;
 
+/**
+ * 红黑树：自平衡二叉查找树，通过节点染色和左旋、右旋操作维持五条红黑性质，保证最坏情况下 O(log n) 的查找、插入和删除。
+ */
 public class RBTree<T extends Comparable> {
 
     private RBTreeNode<T> root;

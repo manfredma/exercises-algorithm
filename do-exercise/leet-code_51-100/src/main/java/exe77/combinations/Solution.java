@@ -3,6 +3,9 @@ package exe77.combinations;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 77 题「组合」：回溯法枚举 C(n,k) 的所有组合。
+ */
 class Solution {
     public List<List<Integer>> combine(int n, int k) {
 

@@ -1,5 +1,8 @@
 package exe60.permutation.sequence;
 
+/**
+ * LeetCode 第 60 题「排列序列」：逐位确定数字，用阶乘计算每位应选第几个剩余数字。
+ */
 class Solution {
     public String getPermutation(int n, int k) {
         int[] nFactorial = new int[n + 1];

@@ -1,5 +1,8 @@
 package exe171.excel.sheet.column.number;
 
+/**
+ * LeetCode 第 171 题「Excel 表列序号」：26 进制转 10 进制。
+ */
 class Solution {
     public int titleToNumber(String s) {
         int result = 0;

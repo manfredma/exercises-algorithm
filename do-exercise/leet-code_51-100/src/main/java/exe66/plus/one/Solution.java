@@ -2,6 +2,9 @@ package exe66.plus.one;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 66 题「加一」：从末位加一，若进位则继续向前传递。
+ */
 class Solution {
     public int[] plusOne(int[] digits) {
         for (int i = 0; i < digits.length; i++) {

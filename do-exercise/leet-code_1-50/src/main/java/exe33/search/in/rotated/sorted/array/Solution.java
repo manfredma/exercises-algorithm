@@ -1,5 +1,8 @@
 package exe33.search.in.rotated.sorted.array;
 
+/**
+ * LeetCode 第 33 题「搜索旋转排序数组」：二分搜索，判断哪半段有序再决定搜索方向。
+ */
 class Solution {
     public int search(int[] nums, int target) {
         if (null == nums || nums.length == 0) {

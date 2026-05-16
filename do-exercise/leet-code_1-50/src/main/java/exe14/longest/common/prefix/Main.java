@@ -19,6 +19,9 @@ All given inputs are in lowercase letters a-z.
  */
 package exe14.longest.common.prefix;
 
+/**
+ * LeetCode 第 14 题「最长公共前缀」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

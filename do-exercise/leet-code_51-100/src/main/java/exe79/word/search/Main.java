@@ -20,6 +20,9 @@ Given word = "ABCB", return false.
 
 package exe79.word.search;
 
+/**
+ * LeetCode 第 79 题「单词搜索」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         char[][] x = new char[][] {

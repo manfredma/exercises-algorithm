@@ -1,5 +1,8 @@
 package exe141.linked.list.cycle;
 
+/**
+ * 链表节点定义。
+ */
 public class ListNode {
     private int val;
     ListNode next;

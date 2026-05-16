@@ -1,5 +1,8 @@
 package exe16.sum3.closest;
 
+/**
+ * LeetCode 第 16 题「最接近的三数之和」：排序 + 双指针，记录与目标最接近的和。
+ */
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
         int result = 0;

@@ -26,6 +26,9 @@ LRUCache cache = new LRUCache(2);
 
 package exe146.lru.cache;
 
+/**
+ * LeetCode 第 146 题「LRU 缓存」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2);

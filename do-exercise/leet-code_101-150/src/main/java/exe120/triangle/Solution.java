@@ -2,6 +2,9 @@ package exe120.triangle;
 
 import java.util.List;
 
+/**
+ * LeetCode 第 120 题「三角形最小路径和」：动态规划，自底向上逐行更新最小路径和。
+ */
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         for (int i = 1; i < triangle.size(); i++) {

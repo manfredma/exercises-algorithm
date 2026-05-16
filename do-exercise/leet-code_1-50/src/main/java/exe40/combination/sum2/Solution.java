@@ -2,6 +2,9 @@ package exe40.combination.sum2;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 40 题「组合总和 II」：回溯法，排序后跳过重复元素避免重复组合。
+ */
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         if (candidates == null || candidates.length == 0) {

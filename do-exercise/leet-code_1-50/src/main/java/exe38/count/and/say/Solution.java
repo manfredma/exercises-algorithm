@@ -1,5 +1,8 @@
 package exe38.count.and.say;
 
+/**
+ * LeetCode 第 38 题「外观数列」：迭代模拟，统计连续相同字符的个数生成下一项。
+ */
 class Solution {
     public String countAndSay(int n) {
         String result = "";

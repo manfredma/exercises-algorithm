@@ -2,6 +2,9 @@ package exe167.two.sum.ii.input.array.is.sorted;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 167 题「两数之和 II - 输入有序数组」：双指针从两端向中间收缩。
+ */
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int[] result = new int[2];

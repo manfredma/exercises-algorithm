@@ -3,6 +3,9 @@ package exe68.text.justification;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 68 题「文本左右对齐」：按行贪心分配单词，均匀或左对齐填充空格。
+ */
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> result = new ArrayList<>();

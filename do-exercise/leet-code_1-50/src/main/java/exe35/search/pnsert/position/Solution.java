@@ -1,5 +1,8 @@
 package exe35.search.pnsert.position;
 
+/**
+ * LeetCode 第 35 题「搜索插入位置」：二分搜索找第一个大于等于目标的位置。
+ */
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int result = 0;

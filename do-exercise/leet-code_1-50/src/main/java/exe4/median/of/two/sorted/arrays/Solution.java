@@ -1,5 +1,8 @@
 package exe4.median.of.two.sorted.arrays;
 
+/**
+ * LeetCode 第 4 题「寻找两个正序数组的中位数」：二分搜索在较短数组上确定分割点，O(log(min(m,n)))。
+ */
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (((nums1.length + nums2.length) & 1) == 1) {

@@ -1,5 +1,8 @@
 package exe1206.design.skiplist;
 
+/**
+ * LeetCode 第 1206 题（设计跳表）的测试入口，对比 Skiplist 与 SkiplistV2 两种实现。
+ */
 public class Main {
     public static void main(String[] args) {
         Skiplist skiplist = new Skiplist();

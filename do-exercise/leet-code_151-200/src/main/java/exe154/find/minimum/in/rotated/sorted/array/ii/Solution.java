@@ -1,5 +1,8 @@
 package exe154.find.minimum.in.rotated.sorted.array.ii;
 
+/**
+ * LeetCode 第 154 题「寻找旋转排序数组中的最小值 II」：二分搜索，相等时收缩右边界。
+ */
 class Solution {
     public int findMin(int[] nums) {
         if (nums == null || nums.length == 0) {

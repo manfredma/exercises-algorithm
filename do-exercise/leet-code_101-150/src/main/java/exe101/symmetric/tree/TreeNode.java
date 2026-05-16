@@ -1,5 +1,8 @@
 package exe101.symmetric.tree;
 
+/**
+ * 二叉树节点定义。
+ */
 public class TreeNode {
     int val;
     TreeNode left;

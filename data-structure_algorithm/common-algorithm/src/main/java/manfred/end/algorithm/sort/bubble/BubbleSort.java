@@ -1,5 +1,8 @@
 package manfred.end.algorithm.sort.bubble;
 
+/**
+ * 冒泡排序：通过相邻元素两两比较并交换，每轮将最大元素"冒泡"到末尾，时间复杂度 O(n²)。
+ */
 public class BubbleSort {
     public static int[] sort(int[] x) {
         if (x == null || x.length == 0 || x.length == 1) {

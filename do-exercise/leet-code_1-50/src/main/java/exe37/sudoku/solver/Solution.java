@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * LeetCode 第 37 题「解数独」：回溯法逐格尝试填数，用位掩码加速合法性检查。
+ */
 class Solution {
     public void solveSudoku(char[][] board) {
         for (int i = 0; i < 9; i++) {

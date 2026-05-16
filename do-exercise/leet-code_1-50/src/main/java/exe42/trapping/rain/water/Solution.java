@@ -1,5 +1,8 @@
 package exe42.trapping.rain.water;
 
+/**
+ * LeetCode 第 42 题「接雨水」：双指针或单调栈，计算每列能接的水量。
+ */
 class Solution {
     public int trap(int[] height) {
         if (null == height || height.length <= 2) {

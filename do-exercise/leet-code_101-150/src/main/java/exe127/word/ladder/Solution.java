@@ -2,6 +2,9 @@ package exe127.word.ladder;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 127 题「单词接龙」：BFS 单向或双向搜索，每次替换一个字母寻找最短路径。
+ */
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (!wordList.contains(endWord)) {

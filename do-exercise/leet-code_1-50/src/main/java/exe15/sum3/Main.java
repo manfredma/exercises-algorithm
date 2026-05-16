@@ -20,6 +20,9 @@ A solution set is:
 
 package exe15.sum3;
 
+/**
+ * LeetCode 第 15 题「三数之和」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

@@ -21,6 +21,9 @@ Given a roman numeral, convert it to an integer. Input is guaranteed to be withi
 
 package exe13.roman.to.integer;
 
+/**
+ * LeetCode 第 13 题「罗马数字转整数」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * LeetCode 第 45 题「跳跃游戏 II」的测试入口。
+ */
 public class MainClass {
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();

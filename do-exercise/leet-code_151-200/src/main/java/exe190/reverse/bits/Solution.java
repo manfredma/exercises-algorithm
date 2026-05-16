@@ -1,5 +1,8 @@
 package exe190.reverse.bits;
 
+/**
+ * LeetCode 第 190 题「颠倒二进制位」：逐位取末位移入结果的对应位置。
+ */
 class Solution {
     public int reverseBits(int n) {
         int result = 0;

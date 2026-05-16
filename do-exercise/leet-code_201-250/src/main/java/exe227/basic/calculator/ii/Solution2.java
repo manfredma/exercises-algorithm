@@ -3,6 +3,9 @@ package exe227.basic.calculator.ii;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * LeetCode 第 227 题「基本计算器 II」（方案2）：栈处理乘除优先级，加减入栈，乘除与栈顶直接计算。
+ */
 class Solution2 {
     public int calculate(String s) {
         Deque<Integer> stack = new ArrayDeque<>();

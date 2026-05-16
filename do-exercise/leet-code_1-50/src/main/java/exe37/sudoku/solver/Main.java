@@ -24,6 +24,9 @@ The given board size is always 9x9.
  */
 package exe37.sudoku.solver;
 
+/**
+ * LeetCode 第 37 题「解数独」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

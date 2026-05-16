@@ -3,6 +3,9 @@ package exe47.permutations.ii;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 47 题「全排列 II」（方案4）：回溯法排序后剪枝，跳过同层相同元素避免重复。
+ */
 class Solution4 {
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();

@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * LeetCode 第 187 题「重复的 DNA 序列」：滑动窗口哈希，统计所有长度为 10 的子串。
+ */
 class Solution {
     public List<String> findRepeatedDnaSequences(String s) {
         /*

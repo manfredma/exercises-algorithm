@@ -1,5 +1,8 @@
 package exe300.longest.increasing.subsequence;
 
+/**
+ * LeetCode 第 300 题「最长递增子序列」：动态规划 O(n²) 或二分搜索 + 耐心排序 O(n log n)。
+ */
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int result = 0;

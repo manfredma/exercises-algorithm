@@ -1,5 +1,8 @@
 package exe29.divide.two.integers;
 
+/**
+ * LeetCode 第 29 题「两数相除」：位运算模拟除法，用移位加速商的计算。
+ */
 class Solution {
     public int divide(int dividend, int divisor) {
         if (dividend == Integer.MIN_VALUE && divisor == -1) {

@@ -1,5 +1,8 @@
 package exe80.remove.duplicates.from.sorted.array.ii;
 
+/**
+ * LeetCode 第 80 题「删除有序数组中的重复项 II」：双指针，每个元素最多保留两次。
+ */
 class Solution {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) {

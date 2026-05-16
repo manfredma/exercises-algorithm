@@ -2,6 +2,9 @@ package exe25.reverse.nodes.in.k.group;
 
 import java.util.Stack;
 
+/**
+ * LeetCode 第 25 题「K 个一组翻转链表」：按 K 个一组截取子链表逐段反转，递归或迭代。
+ */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         if (null == head || null == head.next) {

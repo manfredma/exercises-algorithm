@@ -1,5 +1,8 @@
 package exe109.convert.sorted.list.to.binary.search.tree;
 
+/**
+ * 链表节点定义。
+ */
 public class ListNode {
     int val;
     ListNode next;

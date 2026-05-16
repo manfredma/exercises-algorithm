@@ -3,6 +3,9 @@ package exe102.binary.tree.level.order.traversal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 102 题「二叉树的层序遍历」：BFS 队列，每层出队后记录结果并将子节点入队。
+ */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();

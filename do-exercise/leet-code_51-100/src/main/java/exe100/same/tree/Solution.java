@@ -1,5 +1,8 @@
 package exe100.same.tree;
 
+/**
+ * LeetCode 第 100 题「相同的树」：递归同步遍历两棵树，逐节点比较。
+ */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null) {

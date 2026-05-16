@@ -1,5 +1,8 @@
 package exe220.contains.duplicate.iii;
 
+/**
+ * LeetCode 第 220 题「存在重复元素 III」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         /*

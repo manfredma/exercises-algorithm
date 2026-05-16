@@ -1,5 +1,8 @@
 package exe222.count.complete.tree.nodes;
 
+/**
+ * 二叉树节点定义。
+ */
 class TreeNode {
     int val;
     TreeNode left;

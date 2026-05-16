@@ -1,5 +1,8 @@
 package exe223.rectangle.area;
 
+/**
+ * LeetCode 第 223 题「矩形面积」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

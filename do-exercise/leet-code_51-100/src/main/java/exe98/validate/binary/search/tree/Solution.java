@@ -1,5 +1,8 @@
 package exe98.validate.binary.search.tree;
 
+/**
+ * LeetCode 第 98 题「验证二叉搜索树」：递归传递上下界约束，或中序遍历验证严格递增。
+ */
 class Solution {
     public boolean isValidBST(TreeNode root) {
         if (null == root) {

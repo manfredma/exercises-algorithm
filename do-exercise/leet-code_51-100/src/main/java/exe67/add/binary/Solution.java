@@ -1,5 +1,8 @@
 package exe67.add.binary;
 
+/**
+ * LeetCode 第 67 题「二进制求和」：从右向左逐位加并处理进位。
+ */
 class Solution {
 
     char charOfZero = '0';

@@ -1,5 +1,8 @@
 package exe208.implement.trie.prefix.tree;
 
+/**
+ * LeetCode 第 208 题「实现 Trie（前缀树）」的核心数据结构实现。
+ */
 class Trie {
 
     TrieNode root = new TrieNode();

@@ -2,6 +2,9 @@ package exe139.wordbreak;
 
 import java.util.List;
 
+/**
+ * LeetCode 第 139 题「单词拆分」：动态规划，dp[i] 表示 s[0..i) 能否由字典单词拼成。
+ */
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         if (s == null || s.length() == 0) {

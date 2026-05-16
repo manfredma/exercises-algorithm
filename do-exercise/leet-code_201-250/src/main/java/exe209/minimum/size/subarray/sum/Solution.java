@@ -1,5 +1,8 @@
 package exe209.minimum.size.subarray.sum;
 
+/**
+ * LeetCode 第 209 题「长度最小的子数组」：滑动窗口，窗口内和>=target 时收缩左端求最小长度。
+ */
 class Solution {
     public int minSubArrayLen(int s, int[] nums) {
         int len = nums.length;

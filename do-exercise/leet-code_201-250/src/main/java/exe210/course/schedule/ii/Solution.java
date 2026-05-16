@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
+/**
+ * LeetCode 第 210 题「课程表 II」：拓扑排序输出学习顺序，BFS Kahn 算法或 DFS 逆序。
+ */
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         // 1. 构造两个对象：

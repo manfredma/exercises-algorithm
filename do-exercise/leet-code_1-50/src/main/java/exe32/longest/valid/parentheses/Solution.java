@@ -2,6 +2,9 @@ package exe32.longest.valid.parentheses;
 
 import java.util.Stack;
 
+/**
+ * LeetCode 第 32 题「最长有效括号」：动态规划或栈，记录有效括号子串长度。
+ */
 class Solution {
     public int longestValidParentheses(String s) {
         int result = 0;

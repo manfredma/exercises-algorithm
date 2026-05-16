@@ -3,6 +3,9 @@ package exe85.maximal.rectangle;
 import java.util.Arrays;
 import java.util.Stack;
 
+/**
+ * LeetCode 第 85 题「最大矩形」：逐行转化为柱状图，复用第 84 题的单调栈方法。
+ */
 class Solution {
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {

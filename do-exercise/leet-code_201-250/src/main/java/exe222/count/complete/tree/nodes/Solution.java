@@ -1,5 +1,8 @@
 package exe222.count.complete.tree.nodes;
 
+/**
+ * LeetCode 第 222 题「完全二叉树的节点个数」：二分搜索，利用完全二叉树性质减少遍历。
+ */
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null) {

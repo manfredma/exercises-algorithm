@@ -1,6 +1,10 @@
 package manfred.end.data.structure.tree.red.black.tree;
 
-public class Boot {
+/**
+ * 红黑树演示：演示红黑树的节点插入和删除操作，并可视化展示树结构变化。
+ */
+public class RBTreeDemo {
+
     public static void main(String[] args) {
         RBTree<String> bst = new RBTree<String>();
         bst.addNode("d");

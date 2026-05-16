@@ -2,6 +2,9 @@ package exe17.letter.combinations.of.a.phone.number;
 
 import java.util.*;
 
+/**
+ * LeetCode 第 17 题「电话号码的字母组合」：回溯法/DFS 枚举数字对应字母的所有组合。
+ */
 class Solution {
     private Map<Character, List<Character>> mapping = new HashMap<>();
 

@@ -1,5 +1,8 @@
 package exe14.longest.common.prefix;
 
+/**
+ * LeetCode 第 14 题「最长公共前缀」：纵向扫描或以第一个字符串为基准逐字符对比。
+ */
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         String result = "";

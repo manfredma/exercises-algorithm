@@ -2,6 +2,9 @@ package exe155.min.stack;
 
 import java.util.Stack;
 
+/**
+ * LeetCode 第 155 题「最小栈」的核心数据结构实现。
+ */
 class MinStack {
 
     private Stack<ListNode> stack = new Stack<>();

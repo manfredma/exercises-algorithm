@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * LeetCode 第 36 题「有效的数独」：用哈希集合/位掩码分别验证行、列、3x3 宫格。
+ */
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         Set<Character> charactersRow = new HashSet<>();

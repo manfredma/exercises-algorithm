@@ -3,6 +3,9 @@ package exe01._02.check.permutation.lcci;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * CTCI 面试题 01.02「判定是否互为字符重排」：字符频次统计，两字符串对应频次相等。
+ */
 class Solution {
     public boolean CheckPermutation(String s1, String s2) {
         //

@@ -2,6 +2,9 @@ package exe166.fraction.to.recurring.decimal;
 
 import java.util.HashMap;
 
+/**
+ * LeetCode 第 166 题「分数到小数」：模拟长除法，哈希表记录余数出现位置找循环节。
+ */
 class Solution {
     public String fractionToDecimal(int numerator1, int denominator1) {
         long numerator = numerator1;

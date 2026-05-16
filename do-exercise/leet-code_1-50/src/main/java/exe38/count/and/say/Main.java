@@ -29,6 +29,9 @@ Output: "1211"
 
 package exe38.count.and.say;
 
+/**
+ * LeetCode 第 38 题「外观数列」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

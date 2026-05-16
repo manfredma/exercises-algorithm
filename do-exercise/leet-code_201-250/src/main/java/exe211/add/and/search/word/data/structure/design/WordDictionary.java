@@ -1,5 +1,8 @@
 package exe211.add.and.search.word.data.structure.design;
 
+/**
+ * LeetCode 第 211 题「添加与搜索单词 - 数据结构设计」的核心数据结构实现。
+ */
 class WordDictionary {
 
     private TrieNode root = new TrieNode();

@@ -1,5 +1,8 @@
 package exe25.reverse.nodes.in.k.group;
 
+/**
+ * LeetCode 第 25 题「K 个一组翻转链表」（方案2）：按 K 个一组截取子链表逐段反转，递归或迭代。
+ */
 class Solution2 {
     ListNode pre = null;
     ListNode first = null;

@@ -1,5 +1,8 @@
 package exe228.summary.ranges;
 
+/**
+ * LeetCode 第 228 题「汇总区间」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

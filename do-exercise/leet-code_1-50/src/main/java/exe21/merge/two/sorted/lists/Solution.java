@@ -1,5 +1,8 @@
 package exe21.merge.two.sorted.lists;
 
+/**
+ * LeetCode 第 21 题「合并两个有序链表」：双指针逐一比较两链表节点，递归或迭代合并。
+ */
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (null == l1) {

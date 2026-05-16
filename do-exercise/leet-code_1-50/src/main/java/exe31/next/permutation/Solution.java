@@ -1,5 +1,8 @@
 package exe31.next.permutation;
 
+/**
+ * LeetCode 第 31 题「下一个排列」：从右向左找第一个下降点，交换后反转后缀。
+ */
 class Solution {
     public void nextPermutation(int[] nums) {
         if (null == nums || nums.length <= 1) {

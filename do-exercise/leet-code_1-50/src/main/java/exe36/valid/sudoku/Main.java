@@ -50,6 +50,9 @@ The given board size is always 9x9.
  */
 package exe36.valid.sudoku;
 
+/**
+ * LeetCode 第 36 题「有效的数独」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         char[][] chars = new char[9][];

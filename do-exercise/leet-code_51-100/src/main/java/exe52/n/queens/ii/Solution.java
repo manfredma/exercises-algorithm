@@ -3,6 +3,9 @@ package exe52.n.queens.ii;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 52 题「N 皇后 II」：回溯法计数，与 N 皇后相同思路只记录方案数。
+ */
 class Solution {
     public int totalNQueens(int n) {
         return doSolveNQueens(n, 0, new ArrayList<>(), new ArrayList<>()).size();

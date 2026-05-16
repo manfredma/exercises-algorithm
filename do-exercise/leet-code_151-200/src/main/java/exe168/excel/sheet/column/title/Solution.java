@@ -1,5 +1,8 @@
 package exe168.excel.sheet.column.title;
 
+/**
+ * LeetCode 第 168 题「Excel 表列名称」：26 进制转换，注意无 0 需要先减一。
+ */
 class Solution {
 
     public String convertToTitle(int n) {

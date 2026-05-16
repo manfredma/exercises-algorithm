@@ -1,5 +1,8 @@
 package exe5.longest.palindromic.substring;
 
+/**
+ * LeetCode 第 5 题「最长回文子串」（方案3）：中心扩展法或动态规划，枚举每个可能的中心向两侧扩展。
+ */
 class Solution3 {
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) {

@@ -1,5 +1,8 @@
 package exe214.shortest.palindrome;
 
+/**
+ * LeetCode 第 214 题「最短回文串」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

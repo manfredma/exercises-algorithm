@@ -1,5 +1,8 @@
 package exe87.scramble.string;
 
+/**
+ * LeetCode 第 87 题「扰乱字符串」：区间动态规划或带记忆化的递归，枚举所有分割点。
+ */
 class Solution {
     public boolean isScramble(String s1, String s2) {
         if (s1.equals(s2)) {

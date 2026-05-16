@@ -19,6 +19,9 @@ Output: 49
  */
 package exe11.container.with.most.water;
 
+/**
+ * LeetCode 第 11 题「盛最多水的容器」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

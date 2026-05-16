@@ -2,6 +2,9 @@ package exe20.valid.parentheses;
 
 import java.util.Stack;
 
+/**
+ * LeetCode 第 20 题「有效的括号」：栈匹配，遇到左括号入栈，遇到右括号与栈顶匹配。
+ */
 class Solution {
 
     public boolean isValid(String s) {

@@ -1,5 +1,8 @@
 package exe62.unique.paths;
 
+/**
+ * LeetCode 第 62 题「不同路径」：动态规划，dp[i][j] = dp[i-1][j] + dp[i][j-1]。
+ */
 class Solution {
 
     private int[] x = new int[10201];

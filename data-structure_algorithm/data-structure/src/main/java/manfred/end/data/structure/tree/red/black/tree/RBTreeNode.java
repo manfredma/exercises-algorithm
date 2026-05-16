@@ -1,5 +1,8 @@
 package manfred.end.data.structure.tree.red.black.tree;
 
+/**
+ * 红黑树节点：存储键值、颜色（红/黑）及父节点、左右子节点引用，使用哨兵 NIL_NODE 代替 null 简化边界处理。
+ */
 public class RBTreeNode<T> {
 
 

@@ -1,5 +1,8 @@
 package exe81.search.in.rotated.sorted.array.ii;
 
+/**
+ * LeetCode 第 81 题「搜索旋转排序数组 II」：二分搜索处理含重复元素情形，相等时收缩边界。
+ */
 class Solution {
     public boolean search(int[] nums, int target) {
         int m = nums.length;

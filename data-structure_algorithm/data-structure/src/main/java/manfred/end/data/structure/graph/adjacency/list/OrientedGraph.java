@@ -3,7 +3,7 @@ package manfred.end.data.structure.graph.adjacency.list;
 import java.util.LinkedList;
 
 /**
- * @author Manfred since 2019/9/23
+ * 有向图的邻接表表示：只在出发顶点的邻接链表中添加边，区别于无向图的双向添加。
  */
 public class OrientedGraph {
     /**

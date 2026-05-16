@@ -1,6 +1,8 @@
 package exe811.subdomain.visit.count;
 
-
+/**
+ * LeetCode 第 811 题（子域名访问计数）的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();

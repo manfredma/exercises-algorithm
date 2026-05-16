@@ -1,5 +1,9 @@
 package manfred.end.algorithm.sort.quick;
 
+/**
+ * 快速排序：以末尾元素为基准（pivot），通过双指针分区将小于基准的元素移至左侧，递归排序两侧子数组。
+ * 平均时间复杂度 O(n log n)，原地排序但不稳定。
+ */
 public class QuickSort {
 
     public static int[] sort(int[] x) {

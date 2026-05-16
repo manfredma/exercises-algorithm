@@ -3,6 +3,9 @@ package exe3.longest.substring.without.repeating.characters;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LeetCode 第 3 题「无重复字符的最长子串」：滑动窗口 + 哈希集合，维护不含重复字符的窗口。
+ */
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (null == s || "".equals(s)) {

@@ -3,6 +3,9 @@ package exe13.roman.to.integer;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LeetCode 第 13 题「罗马数字转整数」：从右向左扫描，若当前值小于右侧值则减去，否则加上。
+ */
 class Solution {
     Map<Character, Integer> symbols = new HashMap<>();
     {

@@ -12,6 +12,9 @@ Output: 1->2->3
  */
 package exe83.remove.duplicates.from.sorted.list;
 
+/**
+ * LeetCode 第 83 题「删除排序链表中的重复元素」的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
