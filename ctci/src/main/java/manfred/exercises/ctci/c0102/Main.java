@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c02;
+package manfred.exercises.ctci.c0102;
 
 /**
  * CTCI 面试题 01.02「判定是否互为字符重排」的测试入口。

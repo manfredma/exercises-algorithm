@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c06;
+package manfred.exercises.ctci.c0106;
 
 /**
  * CTCI 面试题 01.06「字符串压缩」：统计连续相同字符长度，拼接压缩串，若不更短返回原串。

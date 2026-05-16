@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c04;
+package manfred.exercises.ctci.c0104;
 
 import java.util.HashMap;
 import java.util.Map;

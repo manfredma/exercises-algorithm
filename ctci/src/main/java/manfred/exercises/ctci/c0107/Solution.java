@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c07;
+package manfred.exercises.ctci.c0107;
 
 /**
  * CTCI 面试题 01.07「旋转矩阵」：先转置再水平翻转实现原地 90 度旋转。

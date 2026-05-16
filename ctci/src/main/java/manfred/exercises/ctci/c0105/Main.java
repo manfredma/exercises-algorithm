@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c05;
+package manfred.exercises.ctci.c0105;
 
 /**
  * CTCI 面试题 01.05「一次编辑」的测试入口。

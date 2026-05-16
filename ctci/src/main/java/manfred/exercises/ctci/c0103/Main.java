@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c03;
+package manfred.exercises.ctci.c0103;
 
 /**
  * <a href="https://leetcode.cn/problems/string-to-url-lcci/?envType=study-plan-v2&envId=cracking-the-coding-interview">leetcode 题目</a>

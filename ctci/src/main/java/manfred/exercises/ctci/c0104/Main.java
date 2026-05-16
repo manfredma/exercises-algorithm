@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c04;
+package manfred.exercises.ctci.c0104;
 
 /**
  * CTCI 面试题 01.04「回文排列」的测试入口。

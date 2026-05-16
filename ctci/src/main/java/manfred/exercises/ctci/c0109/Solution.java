@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c09;
+package manfred.exercises.ctci.c0109;
 
 /**
  * CTCI 面试题 01.09「字符串轮转」：判断 s2 是否为 s1+s1 的子串。

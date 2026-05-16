@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c01;
+package manfred.exercises.ctci.c0101;
 
 /**
  * CTCI 面试题 01.01「判断字符是否唯一」的测试入口。

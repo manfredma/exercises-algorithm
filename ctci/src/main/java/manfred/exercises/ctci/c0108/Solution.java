@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c08;
+package manfred.exercises.ctci.c0108;
 
 /**
  * CTCI 面试题 01.08「零矩阵」：首行首列作标记，两遍扫描置零。

@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c08;
+package manfred.exercises.ctci.c0108;
 
 import java.util.Arrays;
 

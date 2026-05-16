@@ -1,4 +1,4 @@
-package manfred.exercises.ctci.c03;
+package manfred.exercises.ctci.c0103;
 
 /**
  * CTCI 面试题 01.03「URL 化」（方案二）：统计非空字符后从后向前填充空格替换为 %20。
