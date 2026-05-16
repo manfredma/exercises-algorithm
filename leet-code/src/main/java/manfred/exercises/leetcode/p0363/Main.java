@@ -20,4 +20,8 @@ package manfred.exercises.leetcode.p0363;
  * LeetCode 第 363 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

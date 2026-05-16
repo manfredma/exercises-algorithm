@@ -23,4 +23,7 @@ package manfred.exercises.leetcode.p0109;
  */
 public class Main {
 
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

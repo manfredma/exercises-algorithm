@@ -30,4 +30,8 @@ package manfred.exercises.leetcode.p0226;
  * LeetCode 第 226 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

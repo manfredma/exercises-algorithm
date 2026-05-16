@@ -36,4 +36,8 @@ package manfred.exercises.leetcode.p0110;
  * LeetCode 第 110 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

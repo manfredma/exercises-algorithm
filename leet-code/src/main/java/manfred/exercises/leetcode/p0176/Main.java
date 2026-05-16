@@ -27,4 +27,8 @@ package manfred.exercises.leetcode.p0176;
  * LeetCode 第 176 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("SQL 题，答案见 p0176/Solution.sql");
+    }
 }

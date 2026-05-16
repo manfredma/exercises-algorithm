@@ -29,4 +29,8 @@ package manfred.exercises.leetcode.p0114;
  * LeetCode 第 114 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

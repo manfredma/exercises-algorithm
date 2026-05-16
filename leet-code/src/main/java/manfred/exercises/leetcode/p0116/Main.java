@@ -31,4 +31,8 @@ package manfred.exercises.leetcode.p0116;
  * LeetCode 第 116 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

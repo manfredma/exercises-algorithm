@@ -23,4 +23,8 @@ package manfred.exercises.leetcode.p0287;
  * LeetCode 第 287 题的测试入口。
  */
 public class Main {
+
+    public static void main(String[] args) {
+        new Solution();
+    }
 }

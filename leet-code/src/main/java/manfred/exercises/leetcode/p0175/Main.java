@@ -33,5 +33,8 @@ package manfred.exercises.leetcode.p0175;
  * LeetCode 第 175 题的测试入口。
  */
 public class Main {
-    // 答案见 sql 文件
+
+    public static void main(String[] args) {
+        System.out.println("SQL 题，答案见 p0175/Solution.sql");
+    }
 }
