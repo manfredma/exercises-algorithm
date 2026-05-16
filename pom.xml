@@ -15,13 +15,10 @@
         <!-- LeetCode 练习 -->
         <module>leet-code</module>
         <!-- CTCI 面试题 -->
-        <module>CTCI-01</module>
+        <module>ctci</module>
         <!-- 数据结构与算法 -->
         <module>common-algorithm</module>
         <module>data-structure</module>
-        <!-- 其他 -->
-        <module>data</module>
-        <module>leet-code-grap</module>
     </modules>
 
     <properties>
