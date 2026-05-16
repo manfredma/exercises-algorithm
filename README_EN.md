@@ -13,7 +13,6 @@ exercises-algorithm/
 ├── ctci/                ← Cracking the Coding Interview, Chapter 1
 ├── common-algorithm/    ← Common algorithms (sorting, string matching, DP, graphs)
 ├── data-structure/      ← Data structures (heap, BST, red-black tree, graph)
-├── leet-code-grap/      ← LeetCode graph algorithm problems
 └── data/                ← File I/O utility practice
 ```
 

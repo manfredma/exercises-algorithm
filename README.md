@@ -13,7 +13,6 @@ exercises-algorithm/
 ├── ctci/                ← 《Cracking the Coding Interview》第1章面试题
 ├── common-algorithm/    ← 常用算法（排序、字符串匹配、动态规划、图）
 ├── data-structure/      ← 数据结构（堆、BST、红黑树、图）
-├── leet-code-grap/      ← LeetCode 图算法专题
 └── data/                ← 文件读写工具类练习
 ```
 
