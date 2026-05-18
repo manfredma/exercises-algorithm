@@ -34,12 +34,12 @@ mvn clean test -Dsort.skip=true
 
 ## Package Naming Convention
 
-| Type | Package Pattern | Example |
-|------|----------------|---------|
-| LeetCode solution | `manfred.exercises.leetcode.pXXXX` | `manfred.exercises.leetcode.p0001` |
-| CTCI problem | `manfred.exercises.ctci.cXXXX` | `manfred.exercises.ctci.c0101` |
-| Algorithm impl | `manfred.exercises.algorithm.*` | `manfred.exercises.algorithm.sort.quick` |
-| Data structure | `manfred.exercises.datastructure.*` | `manfred.exercises.datastructure.tree.heap` |
+| Type              | Package Pattern                     | Example                                     |
+|-------------------|-------------------------------------|---------------------------------------------|
+| LeetCode solution | `manfred.exercises.leetcode.pXXXX`  | `manfred.exercises.leetcode.p0001`          |
+| CTCI problem      | `manfred.exercises.ctci.cXXXX`      | `manfred.exercises.ctci.c0101`              |
+| Algorithm impl    | `manfred.exercises.algorithm.*`     | `manfred.exercises.algorithm.sort.quick`    |
+| Data structure    | `manfred.exercises.datastructure.*` | `manfred.exercises.datastructure.tree.heap` |
 
 > Problem number format: LeetCode zero-padded to 4 digits (`p0001`); CTCI first two digits = chapter, last two = problem number (`c0101`).
 
