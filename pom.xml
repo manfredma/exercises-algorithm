@@ -19,6 +19,7 @@
         <!-- 数据结构与算法 -->
         <module>common-algorithm</module>
         <module>data-structure</module>
+        <module>prob-data-structure</module>
     </modules>
 
     <properties>
