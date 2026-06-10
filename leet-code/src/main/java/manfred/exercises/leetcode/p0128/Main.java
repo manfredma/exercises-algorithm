@@ -19,7 +19,7 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
         System.out.println(solution.longestConsecutive(new int[]{
                 4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3}));
         System.out.println(solution.longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
