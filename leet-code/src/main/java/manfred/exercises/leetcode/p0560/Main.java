@@ -21,6 +21,9 @@
 */
 package manfred.exercises.leetcode.p0560;
 
+/**
+ * LeetCode 第 560 题的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();

@@ -27,6 +27,9 @@ package manfred.exercises.leetcode.p0238;
 
 import java.util.Arrays;
 
+/**
+ * LeetCode 第 238 题的测试入口。
+ */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
