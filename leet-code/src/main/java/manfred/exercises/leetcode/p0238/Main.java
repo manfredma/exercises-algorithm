@@ -1,3 +1,7 @@
+package manfred.exercises.leetcode.p0238;
+
+import java.util.Arrays;
+
 /*
 给你一个整数数组 nums，返回 数组 answer ，其中 answer[i] 等于 nums 中除了 nums[i] 之外其余各元素的乘积 。
 
@@ -23,10 +27,6 @@
 
 进阶：你可以在 O(1) 的额外空间复杂度内完成这个题目吗？（出于对空间复杂度分析的目的，输出数组不被视为额外空间。）
 */
-package manfred.exercises.leetcode.p0238;
-
-import java.util.Arrays;
-
 /**
  * LeetCode 第 238 题的测试入口。
  */
