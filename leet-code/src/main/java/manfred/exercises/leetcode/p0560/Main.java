@@ -23,8 +23,9 @@ package manfred.exercises.leetcode.p0560;
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
 
+        System.out.println(solution.subarraySum(new int[]{1, 2, 1, 2, 1}, 3)); // 期望: 4
         System.out.println(solution.subarraySum(new int[]{1, 1, 1}, 2)); // 期望: 2
         System.out.println(solution.subarraySum(new int[]{1, 2, 3}, 3)); // 期望: 2
     }
