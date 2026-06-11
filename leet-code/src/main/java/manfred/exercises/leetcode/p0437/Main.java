@@ -50,12 +50,12 @@ public class Main {
         // 整数溢出陷阱用例:
         // root=[1000000000,1000000000,null,294967296,null,1000000000,null,1000000000,null,1000000000]
         // targetSum=0 → 期望: 0（用 int 做前缀和会因溢出错误返回 1）
-        TreeNode leaf3  = new TreeNode(1000000000);
-        TreeNode node3d = new TreeNode(1000000000, leaf3, null);
-        TreeNode node3c = new TreeNode(1000000000, node3d, null);
-        TreeNode node3b = new TreeNode(294967296,  node3c, null);
-        TreeNode node3a = new TreeNode(1000000000, node3b, null);
-        TreeNode root3  = new TreeNode(1000000000, node3a, null);
+        TreeNode root3 = new TreeNode(1000000000,
+                new TreeNode(1000000000,
+                        new TreeNode(294967296,
+                                new TreeNode(1000000000,
+                                        new TreeNode(1000000000,
+                                                new TreeNode(1000000000), null), null), null), null), null);
         System.out.println(solution.pathSum(root3, 0)); // 期望: 0
     }
 }
