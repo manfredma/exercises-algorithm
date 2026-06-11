@@ -44,6 +44,7 @@
 | 状态 | 题号 | 题目 | 难度 | 备注 |
 |------|------|------|------|------|
 | ⬜ | [p0238](leet-code/src/main/java/manfred/exercises/leetcode/p0238/) | 除了自身以外数组的乘积 | Medium | 不能用除法，O(n)；进阶 O(1) 额外空间 |
+| ⬜ | [p0363](leet-code/src/main/java/manfred/exercises/leetcode/p0363/) | 矩形区域不超过 K 的最大数值和 | Hard | DP 扫描线题；枚举上下边界→一维前缀和→TreeSet.ceiling() |
 | ⬜ | [p0560](leet-code/src/main/java/manfred/exercises/leetcode/p0560/) | 和为 K 的子数组 | Medium | 统计和为 k 的连续子数组个数 |
 
 ---
