@@ -28,14 +28,14 @@ package manfred.exercises.leetcode.p0543;
  */
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
 
         // 示例 1: root = [1,2,3,4,5] → 期望: 3
         TreeNode root1 = new TreeNode(1,
                 new TreeNode(2, new TreeNode(4), new TreeNode(5)),
                 new TreeNode(3));
         System.out.println(solution.diameterOfBinaryTree(root1));
-
+        solution = new Solution2();
         // 示例 2: root = [1,2] → 期望: 1
         TreeNode root2 = new TreeNode(1, new TreeNode(2), null);
         System.out.println(solution.diameterOfBinaryTree(root2));
