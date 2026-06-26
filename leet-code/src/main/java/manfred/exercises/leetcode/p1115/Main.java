@@ -33,6 +33,9 @@ public class Main {
         // 示例 2: n = 2 → 期望输出 "foobarfoobar"
         test(2);
         System.out.println();
+        // 示例 2: n = 3 → 期望输出 "foobarfoobarfoobar"
+        test(3);
+        System.out.println();
     }
 
     private static void test(int n) throws InterruptedException {
