@@ -1,4 +1,4 @@
-package manfred.exercises.datastructure.tree.heap.practice;
+package manfred.exercises.datastructure.tree.heap;
 
 import org.junit.Test;
 
@@ -8,11 +8,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class BinaryMaxHeapTest {
+public class HeapTest {
 
     @Test
     public void shouldStartEmpty() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
 
         assertTrue(heap.isEmpty());
         assertEquals(0, heap.size());
@@ -20,7 +20,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldOfferPeekAndPollOneElement() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
 
         heap.offer(42);
 
@@ -35,7 +35,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldPollElementsInDescendingOrder() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
         int[] values = {3, 1, 9, 7, 2, 8, 4, 6, 5};
 
         for (int value : values) {
@@ -50,7 +50,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldSupportDuplicateValues() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
         heap.offer(4);
         heap.offer(7);
         heap.offer(7);
@@ -66,7 +66,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldSupportNegativeAndExtremeValues() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
         heap.offer(Integer.MIN_VALUE);
         heap.offer(-1);
         heap.offer(0);
@@ -80,7 +80,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldKeepHeapValidAfterInterleavedOperations() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(20);
         heap.offer(5);
         heap.offer(2);
         heap.offer(8);
@@ -96,7 +96,7 @@ public class BinaryMaxHeapTest {
 
     @Test
     public void shouldHandleManyElements() {
-        MaxHeap heap = new BinaryMaxHeap();
+        MaxHeap heap = new MaxHeapImpl(1_024);
         for (int value = 1; value <= 1_024; value++) {
             heap.offer(value);
         }
@@ -109,11 +109,25 @@ public class BinaryMaxHeapTest {
 
     @Test(expected = NoSuchElementException.class)
     public void shouldRejectPeekOnEmptyHeap() {
-        new BinaryMaxHeap().peek();
+        new MaxHeapImpl(20).peek();
     }
 
     @Test(expected = NoSuchElementException.class)
     public void shouldRejectPollOnEmptyHeap() {
-        new BinaryMaxHeap().poll();
+        new MaxHeapImpl(20).poll();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldRejectNonPositiveCapacity() {
+        new MaxHeapImpl(0);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void shouldRejectOfferWhenHeapIsFull() {
+        MaxHeap heap = new MaxHeapImpl(2);
+        heap.offer(2);
+        heap.offer(1);
+
+        heap.offer(3);
     }
 }

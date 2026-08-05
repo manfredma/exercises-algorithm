@@ -1,4 +1,4 @@
-package manfred.exercises.datastructure.tree.heap.practice;
+package manfred.exercises.datastructure.tree.heap;
 
 import java.util.NoSuchElementException;
 
