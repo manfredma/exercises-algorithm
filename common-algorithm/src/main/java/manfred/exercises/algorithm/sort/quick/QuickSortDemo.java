@@ -13,10 +13,10 @@ public class QuickSortDemo {
         int[] x3 = {1, 2, 3, 4, 5};
         int[] x4 = {1, 32, 23, 14, 25};
 
-        QuickSort.sort(x);
-        QuickSort.sort(x2);
-        QuickSort.sort(x3);
-        QuickSort.sort(x4);
+        QuickSortV2.sort(x);
+        QuickSortV2.sort(x2);
+        QuickSortV2.sort(x3);
+        QuickSortV2.sort(x4);
 
         System.out.println(Arrays.toString(x));
         System.out.println(Arrays.toString(x2));
