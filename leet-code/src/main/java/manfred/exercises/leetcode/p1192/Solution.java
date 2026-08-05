@@ -4,6 +4,6 @@ import java.util.List;
 
 class Solution {
     public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
-        return null; // TODO: 待实现
+        return null;
     }
 }
