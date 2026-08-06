@@ -6,15 +6,15 @@ package manfred.exercises.datastructure.tree.heap;
 public class HeapSort {
 
     public int[] sort(int[] source) {
-        Heap heap = new Heap(source.length);
 
+        MaxHeap heap = new MaxHeapImpl(source.length);
         for (int i : source) {
-            heap.insert(i);
+            heap.offer(i);
         }
 
         int[] result = new int[source.length];
         for (int i = 0; i < source.length; i++) {
-            result[source.length - 1 - i] = heap.removeMax();
+            result[source.length - 1 - i] = heap.poll();
         }
         return result;
     }
