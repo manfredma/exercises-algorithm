@@ -63,3 +63,9 @@ mvn clean test -Dsort.skip=true
 - 辅助数据结构（TreeNode、ListNode）定义在各自题目包下，跨题引用时直接 import
 
 <!-- MANUAL: -->
+
+## Git 工作流
+
+- 默认直接在 `main` 分支开发、提交和推送。
+- 除非用户明确要求，否则不要创建或切换功能分支，也不要创建 Pull Request。
+- 提交时按最小可独立验证的逻辑单元拆分；不要将无关变更合并为一个提交。
