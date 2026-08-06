@@ -23,7 +23,7 @@ public class QuickSortV2 {
                 swap(x, i, j);
             }
         }
-        // 把均分元素
+        // 把均分元素放到该位置上面
         swap(x, i + 1, end);
         quick(x, begin, i);
         quick(x, i + 2, end);
