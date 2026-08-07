@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0735;
+package manfred.exercises.leetcode.solved.p0701to0800.p0735;
 
 import java.util.Arrays;
 
