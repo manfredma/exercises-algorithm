@@ -1,0 +1,34 @@
+/*
+
+SQL Schema
+Write a SQL query to get the second highest salary from the Employee table.
+
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+For example, given the above Employee table, the query should return 200 as the second highest salary.
+If there is no second highest salary, then the query should return null.
+
++---------------------+
+| SecondHighestSalary |
++---------------------+
+| 200                 |
++---------------------+
+
+ */
+
+package manfred.exercises.leetcode.solved.p0101to0200.p0176;
+
+/**
+ * LeetCode 第 176 题的测试入口。
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("SQL 题，答案见 p0176/Solution.sql");
+    }
+}

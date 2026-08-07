@@ -31,7 +31,8 @@
 
 | 模块 | 包前缀 |
 |------|--------|
-| `leet-code` | `manfred.exercises.leetcode.pXXXX`（题号4位补零，如 `p0001`） |
+| `leet-code` 已完成题目 | `manfred.exercises.leetcode.solved.pXXXXtoYYYY.pZZZZ`（题号4位补零，如 `p0328`） |
+| `leet-code` 进行中题目 | `manfred.exercises.leetcode.wip.pXXXX`（题号4位补零，如 `p0735`） |
 | `ctci` | `manfred.exercises.ctci.cXXXX`（前两位章节+后两位题号，如 `c0101`） |
 | `common-algorithm` | `manfred.exercises.algorithm.*` |
 | `data-structure` | `manfred.exercises.datastructure.*` |
@@ -44,10 +45,12 @@
 
 - 所有 `mvn` 命令必须附加 `-Dsort.skip=true`
 - 编译命令：`mvn clean compile -DskipTests -Dsort.skip=true`
-- 新增 LeetCode 题目：在 `leet-code/src/main/java/manfred/exercises/leetcode/pXXXX/` 下创建文件，不需要修改 pom.xml
+- 新增 LeetCode 题目：在 `leet-code/src/main/java/manfred/exercises/leetcode/wip/pXXXX/` 下创建文件，包名为 `manfred.exercises.leetcode.wip.pXXXX`，不需要修改 pom.xml
+- LeetCode 题目完成并通过验证后，必须迁移到 `leet-code/src/main/java/manfred/exercises/leetcode/solved/pXXXXtoYYYY/pZZZZ/`；`XXXX` 至 `YYYY` 是题号所在的连续百题段（例如第 328 题归入 `p0301to0400/p0328`），并同步更新该题所有 Java 文件的 package 声明及跨题 import。
 - 新增 CTCI 题目：在 `ctci/src/main/java/manfred/exercises/ctci/cXXXX/` 下创建文件
 - 父 POM 集中管理依赖版本，子模块 pom.xml 按需引用不写 `<version>`
 - 每道题的 `Main.java` 必须有 `public static void main(String[] args)` 入口
+- LeetCode 题目的所有测试都必须写在对应题目的 `Main.main` 中；不得在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类。
 - 不允许在 `src/main/java` 下使用 `@Test` 注解
 
 ### Testing Requirements
@@ -72,8 +75,10 @@ mvn clean test -Dsort.skip=true
 
 ## LeetCode 题目初始化一致性
 
+- 新题一律初始化在 `wip`；只有完成实现并验证后才归档到 `solved`。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
 - 题面、题目骨架必须以 LeetCode 中文站成功抓取的远程数据为唯一来源；抓取失败时不得凭记忆、摘要或其他来源生成。
 - `readme.md` 与 `Main.java` 中的题面注释必须完整保留远程题面的描述、全部示例、解释和提示；禁止压缩、简写、概括、遗漏或自行改写题面规则。
 - `Solution.java` 的方法签名、参数和返回类型，以及设计题的类、构造器和操作方法，必须与远程题面保持一致；初始化阶段只保留空骨架，不添加解法。
 - 远程题面图片必须下载到题目目录并以本地相对路径引用，不得省略或直接使用远程图片链接。
+- `readme.md` 中的题面图片必须按 LeetCode 中文站原始题面的位置嵌入相应内容；不得为方便处理而统一追加到文末或调整到无关位置。
 - 初始化 `Main.java` 时，必须为远程题面的全部示例建立可执行断言；并补充覆盖单元素、空/极值、边界、并列结果及典型特殊结构等关键场景的测试用例（仅适用的场景），不能只保留少量示例。

@@ -36,7 +36,8 @@ mvn clean test -Dsort.skip=true
 
 | Type              | Package Pattern                     | Example                                     |
 |-------------------|-------------------------------------|---------------------------------------------|
-| LeetCode solution | `manfred.exercises.leetcode.pXXXX`  | `manfred.exercises.leetcode.p0001`          |
+| Completed LeetCode solution | `manfred.exercises.leetcode.solved.pXXXXtoYYYY.pZZZZ` | `manfred.exercises.leetcode.solved.p0301to0400.p0328` |
+| Work-in-progress LeetCode solution | `manfred.exercises.leetcode.wip.pXXXX` | `manfred.exercises.leetcode.wip.p0735` |
 | CTCI problem      | `manfred.exercises.ctci.cXXXX`      | `manfred.exercises.ctci.c0101`              |
 | Algorithm impl    | `manfred.exercises.algorithm.*`     | `manfred.exercises.algorithm.sort.quick`    |
 | Data structure    | `manfred.exercises.datastructure.*` | `manfred.exercises.datastructure.tree.heap` |
@@ -45,7 +46,7 @@ mvn clean test -Dsort.skip=true
 
 ## Per-Problem Directory Convention
 
-Each LeetCode problem lives in its package:
+LeetCode problems are organized by status and number range: completed problems live in `solved/pXXXXtoYYYY/pZZZZ/`, while work-in-progress problems live in `wip/pZZZZ/`. Each problem directory contains:
 - `Solution.java` — primary solution
 - `Solution2.java` / `SolutionV2.java` — alternative solutions (optional)
 - `Main.java` — entry point with `main` method
@@ -53,5 +54,8 @@ Each LeetCode problem lives in its package:
 
 ## Adding a New Problem
 
-1. Create files under `leet-code/src/main/java/manfred/exercises/leetcode/p0055/`
-2. No changes to `pom.xml` required (module already registered)
+1. Create files under `leet-code/src/main/java/manfred/exercises/leetcode/wip/p0055/` with package `manfred.exercises.leetcode.wip.p0055`
+2. After implementation and verification, move them to `solved/p0001to0100/p0055/` and update the package declarations and cross-problem imports
+3. No changes to `pom.xml` required (module already registered)
+
+> Keep all LeetCode test cases in each problem's `Main.main`, using assertion helpers. Do not maintain JUnit or TestNG test classes in `src/test/java`.

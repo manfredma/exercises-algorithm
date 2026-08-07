@@ -35,7 +35,8 @@ mvn clean test -Dsort.skip=true
 
 | 类型 | 包名格式 | 示例 |
 |------|---------|------|
-| LeetCode 题解 | `manfred.exercises.leetcode.pXXXX` | `manfred.exercises.leetcode.p0001` |
+| LeetCode 已完成题解 | `manfred.exercises.leetcode.solved.pXXXXtoYYYY.pZZZZ` | `manfred.exercises.leetcode.solved.p0301to0400.p0328` |
+| LeetCode 进行中题解 | `manfred.exercises.leetcode.wip.pXXXX` | `manfred.exercises.leetcode.wip.p0735` |
 | CTCI 面试题 | `manfred.exercises.ctci.cXXXX` | `manfred.exercises.ctci.c0101` |
 | 算法实现 | `manfred.exercises.algorithm.*` | `manfred.exercises.algorithm.sort.quick` |
 | 数据结构 | `manfred.exercises.datastructure.*` | `manfred.exercises.datastructure.tree.heap` |
@@ -44,7 +45,7 @@ mvn clean test -Dsort.skip=true
 
 ## 每题目录约定
 
-每道 LeetCode 题目在对应模块的包下：
+LeetCode 题目按状态与题号段归档：已完成题目位于 `solved/pXXXXtoYYYY/pZZZZ/`，进行中题目位于 `wip/pZZZZ/`。每道题目目录包含：
 - `Solution.java` — 主要解法
 - `Solution2.java` / `SolutionV2.java` — 备选解法（按需）
 - `Main.java` — 测试入口（有 `main` 方法）
@@ -52,5 +53,8 @@ mvn clean test -Dsort.skip=true
 
 ## 添加新题目
 
-1. 在 `leet-code/src/main/java/manfred/exercises/leetcode/p0055/` 下创建文件
-2. 不需要修改 `pom.xml`（模块已注册）
+1. 在 `leet-code/src/main/java/manfred/exercises/leetcode/wip/p0055/` 下创建文件，并使用包名 `manfred.exercises.leetcode.wip.p0055`
+2. 完成实现并验证后，迁移到 `solved/p0001to0100/p0055/`，并同步更新该题所有 Java 文件的 package 声明与跨题 import
+3. 不需要修改 `pom.xml`（模块已注册）
+
+> LeetCode 题目的测试用例统一写在对应的 `Main.main` 中，使用断言辅助方法验证；不在 `src/test/java` 维护 JUnit 或 TestNG 测试类。
