@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p2390;
+package manfred.exercises.leetcode.solved.p2301to2400.p2390;
 
 /*
 给你一个包含若干星号 * 的字符串 s 。
