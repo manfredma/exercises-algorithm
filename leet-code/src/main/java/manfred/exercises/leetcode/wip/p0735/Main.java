@@ -52,13 +52,13 @@ asteroids[i] != 0
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        assertArrayEquals(new int[] {-2}, solution.asteroidCollision(new int[] {1, -2, 3, -3}));
         assertArrayEquals(new int[] {5, 10}, solution.asteroidCollision(new int[] {5, 10, -5}));
         assertArrayEquals(new int[] {}, solution.asteroidCollision(new int[] {8, -8}));
         assertArrayEquals(new int[] {10}, solution.asteroidCollision(new int[] {10, 2, -5}));
         assertArrayEquals(
                 new int[] {-6, 2, 4}, solution.asteroidCollision(new int[] {3, 5, -6, 2, -1, 4}));
         assertArrayEquals(new int[] {-2, -1, 1, 2}, solution.asteroidCollision(new int[] {-2, -1, 1, 2}));
-        assertArrayEquals(new int[] {1}, solution.asteroidCollision(new int[] {1, -2, 3, -3}));
     }
 
     private static void assertArrayEquals(int[] expected, int[] actual) {
