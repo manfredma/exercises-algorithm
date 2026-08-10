@@ -12,6 +12,8 @@
 |------|-------------|
 | `pom.xml` | 父 POM，`<modules>` 列出所有模块，统一依赖版本 |
 | `CLAUDE.md` | 构建命令、包名约定、模块结构说明 |
+| `docs/leetcode-problem-workflow.md` | LeetCode 题目初始化、重新抓取与归档流程 |
+| `scripts/fetch-leetcode-problem.py` | 从 LeetCode 中文站抓取题目元数据的本地脚本 |
 
 ## Module Map
 
@@ -76,6 +78,12 @@ mvn clean test -Dsort.skip=true
 
 ## LeetCode 题目初始化一致性
 
+初始化或重新抓取时，必须先阅读 `docs/leetcode-problem-workflow.md`，并使用本项目脚本：
+
+```bash
+python3 scripts/fetch-leetcode-problem.py <题号>
+```
+
 - 新题一律初始化在 `wip`；只有完成实现并验证后才归档到 `solved`。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
 - 题面、题目骨架必须以 LeetCode 中文站成功抓取的远程数据为唯一来源；抓取失败时不得凭记忆、摘要或其他来源生成。
 - `readme.md` 与 `Main.java` 中的题面注释必须完整保留远程题面的描述、全部示例、解释和提示；禁止压缩、简写、概括、遗漏或自行改写题面规则。
@@ -84,5 +92,6 @@ mvn clean test -Dsort.skip=true
 - `readme.md` 必须将题面中的下标按 Unicode 下标保留（如 `Rᵢ`、`Cⱼ`）；不得压缩为普通字符，也不得使用 IntelliJ Markdown 预览会原样显示的 HTML `<sub>` 标签。
 - `Solution.java` 的方法签名、参数和返回类型，以及设计题的类、构造器和操作方法，必须与远程题面保持一致；初始化阶段只保留空骨架，不添加解法。
 - 远程题面图片必须下载到题目目录并以本地相对路径引用，不得省略或直接使用远程图片链接。
-- `readme.md` 中的题面图片必须按 LeetCode 中文站原始题面的位置嵌入相应内容；不得为方便处理而统一追加到文末或调整到无关位置。
+- `readme.md` 中的题面图片必须按 LeetCode 中文站原始题面的位置嵌入相应内容；例如原题图片位于示例标题与输入之间时，本地图片也必须位于该处。图片不得置于 `text` 等代码块内，也不得为方便处理而统一追加到文末或调整到无关位置。
+- 每次初始化或重新抓取后，逐项核对：README 与 Main 的中文站链接均使用本次抓取的同一 `slug`；每张远程图片都已下载并在 README 原位置以本地相对路径引用；Markdown 特殊字符和下标在 IntelliJ Markdown 预览中可见。
 - 初始化 `Main.java` 时，必须为远程题面的全部示例建立可执行断言；并补充覆盖单元素、空/极值、边界、并列结果及典型特殊结构等关键场景的测试用例（仅适用的场景），不能只保留少量示例。
