@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p2352;
+package manfred.exercises.leetcode.solved.p2301to2400.p2352;
 
 /** 题目链接：https://leetcode.cn/problems/equal-row-and-column-pairs/ */
 
@@ -42,13 +42,22 @@ n == grid.length == grid[i].length
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        Solution2 solution2 = new Solution2();
+
         assertEquals(1, solution.equalPairs(new int[][] {{3, 2, 1}, {1, 7, 6}, {2, 7, 7}}));
+        assertEquals(1, solution2.equalPairs(new int[][] {{3, 2, 1}, {1, 7, 6}, {2, 7, 7}}));
         assertEquals(
                 3,
                 solution.equalPairs(
                         new int[][] {{3, 1, 2, 2}, {1, 4, 4, 5}, {2, 4, 2, 2}, {2, 4, 2, 2}}));
+        assertEquals(
+                3,
+                solution2.equalPairs(
+                        new int[][] {{3, 1, 2, 2}, {1, 4, 4, 5}, {2, 4, 2, 2}, {2, 4, 2, 2}}));
         assertEquals(1, solution.equalPairs(new int[][] {{1}}));
+        assertEquals(1, solution2.equalPairs(new int[][] {{1}}));
         assertEquals(0, solution.equalPairs(new int[][] {{1, 2}, {3, 4}}));
+        assertEquals(0, solution2.equalPairs(new int[][] {{1, 2}, {3, 4}}));
     }
 
     private static void assertEquals(int expected, int actual) {
