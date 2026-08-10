@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p2095;
+package manfred.exercises.leetcode.solved.p2001to2100.p2095;
 
 /** 题目链接：https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/ */
 
