@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p1448;
+package manfred.exercises.leetcode.solved.p1401to1500.p1448;
 
 /** 题目链接：https://leetcode.cn/problems/count-good-nodes-in-binary-tree/ */
 
@@ -44,7 +44,7 @@ package manfred.exercises.leetcode.wip.p1448;
 /** LeetCode 第 1448 题的测试入口。 */
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
         assertEquals(4, solution.goodNodes(tree(3, 1, 4, 3, null, 1, 5)));
         assertEquals(3, solution.goodNodes(tree(3, 3, null, 4, 2)));
         assertEquals(1, solution.goodNodes(tree(1)));

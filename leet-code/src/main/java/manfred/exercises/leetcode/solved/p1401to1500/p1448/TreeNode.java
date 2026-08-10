@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p1448;
+package manfred.exercises.leetcode.solved.p1401to1500.p1448;
 
 public class TreeNode {
     public int val;
