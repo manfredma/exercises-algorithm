@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1422;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-score-after-splitting-a-string/ */
+
 /*
 给你一个由若干 0 和 1 组成的字符串 s，将其分割成两个非空子字符串(左、右)。
 得分 = 左子字符串中 0 的数量 + 右子字符串中 1 的数量。返回最大得分。

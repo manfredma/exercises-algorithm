@@ -1,5 +1,8 @@
 # 判断能否形成等差数列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/can-make-arithmetic-progression-from-sequence/)
+
+
 给你一个数字数组 `arr`。
 
 如果一个数列中，任意相邻两项的差总等于同一个常数，那么这个数列就称为**等差数列**。

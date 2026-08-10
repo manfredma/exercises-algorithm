@@ -1,5 +1,8 @@
 # 2542. 最大子序列的分数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/maximum-subsequence-score/)
+
+
 给你两个下标从 `0` 开始的整数数组 `nums1` 和 `nums2`，两者长度都是 `n`，再给你一个正整数 `k`。你必须从 `nums1` 中选一个长度为 `k` 的子序列。
 
 对于选择的下标 `i0`、`i1`、…、`ik - 1`，你的分数定义如下：

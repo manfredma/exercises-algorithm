@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1539;
 
+/** 题目链接：https://leetcode.cn/problems/kth-missing-positive-number/ */
+
 /*
 给你一个严格递增的正整数数组 arr 和一个整数 k。
 请你找出并返回第 k 个缺失的正整数。

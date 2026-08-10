@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1207;
 
+/** 题目链接：https://leetcode.cn/problems/unique-number-of-occurrences/ */
+
 /*
 给你一个整数数组 arr，如果每个数的出现次数都是独一无二的，就返回 true；否则返回 false。
 

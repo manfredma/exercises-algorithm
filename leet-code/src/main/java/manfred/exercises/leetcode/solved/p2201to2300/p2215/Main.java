@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2215;
 
+/** 题目链接：https://leetcode.cn/problems/find-the-difference-of-two-arrays/ */
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;

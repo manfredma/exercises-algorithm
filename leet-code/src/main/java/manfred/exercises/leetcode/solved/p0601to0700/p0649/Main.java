@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0649;
 
+/** 题目链接：https://leetcode.cn/problems/dota2-senate/ */
+
 /*
 Dota2 的世界里有两个阵营：Radiant（天辉）和 Dire（夜魇）
 

@@ -1,5 +1,8 @@
 # 同构字符串
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/isomorphic-strings/)
+
+
 给定两个字符串 s 和 t ，判断它们是否是同构的。
 
 如果 s 中的字符可以按某种映射关系替换得到 t ，那么这两个字符串是同构的。

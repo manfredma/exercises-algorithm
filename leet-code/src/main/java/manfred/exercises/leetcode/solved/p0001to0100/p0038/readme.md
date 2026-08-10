@@ -1,5 +1,8 @@
 # 外观数列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/count-and-say/)
+
+
 「外观数列」是一个数位字符串序列，由递归公式定义：
 
 	

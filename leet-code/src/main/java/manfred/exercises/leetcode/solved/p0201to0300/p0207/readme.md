@@ -1,5 +1,8 @@
 # 课程表问题
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/course-schedule/)
+
+
 实际上这是要判断有向图中是否有环的问题，如果存在环的话，会出现循环依赖，也就是有死锁的情况出现：
 A -> ... -> B -> ... -> A
 

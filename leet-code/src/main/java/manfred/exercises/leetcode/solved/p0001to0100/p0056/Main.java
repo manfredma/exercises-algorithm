@@ -16,6 +16,8 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0056;
 
+/** 题目链接：https://leetcode.cn/problems/merge-intervals/ */
+
 /**
  * LeetCode 第 56 题的测试入口。
  */

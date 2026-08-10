@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1115;
 
+/** 题目链接：https://leetcode.cn/problems/print-foobar-alternately/ */
+
 /*
 给你一个类：
 

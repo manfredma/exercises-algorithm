@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2101to2200.p2140;
 
+/** 题目链接：https://leetcode.cn/problems/solving-questions-with-brainpower/ */
+
 /*
 给你一个下标从 0 开始的二维整数数组 questions，其中 questions[i] = [pointsi, brainpoweri]。
 按顺序处理每个问题，选择解决或跳过。解决问题 i 获得 pointsi 分，但无法解决接下来 brainpoweri 个问题；跳过则可处理下一个。

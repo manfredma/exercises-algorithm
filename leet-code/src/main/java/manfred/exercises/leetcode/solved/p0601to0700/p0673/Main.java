@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0673;
 
+/** 题目链接：https://leetcode.cn/problems/number-of-longest-increasing-subsequence/ */
+
 /*
 给定一个未排序的整数数组 nums，返回最长递增子序列的个数。
 

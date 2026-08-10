@@ -16,6 +16,8 @@ Follow up: Could you improve it to O(n log n) time complexity?
 
 package manfred.exercises.leetcode.solved.p0201to0300.p0300;
 
+/** 题目链接：https://leetcode.cn/problems/longest-increasing-subsequence/ */
+
 /**
  * LeetCode 第 300 题的测试入口。
  */

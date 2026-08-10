@@ -1,5 +1,8 @@
 # 通知所有员工所需的时间
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/time-needed-to-inform-all-employees/)
+
+
 公司里有 `n` 名员工，每个员工的 ID 都是独一无二的，编号从 `0` 到 `n - 1`。
 公司的总负责人通过 `headID` 进行标识。
 

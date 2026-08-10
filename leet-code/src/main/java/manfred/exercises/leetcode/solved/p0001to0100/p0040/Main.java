@@ -30,6 +30,8 @@ A solution set is:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0040;
 
+/** 题目链接：https://leetcode.cn/problems/combination-sum-ii/ */
+
 /**
  * LeetCode 第 40 题「组合总和 II」的测试入口。
  */

@@ -20,6 +20,8 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0025;
 
+/** 题目链接：https://leetcode.cn/problems/reverse-nodes-in-k-group/ */
+
 /**
  * LeetCode 第 25 题「K 个一组翻转链表」的测试入口。
  */

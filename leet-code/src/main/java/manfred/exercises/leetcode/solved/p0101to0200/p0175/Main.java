@@ -29,6 +29,8 @@ FirstName, LastName, City, State
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0175;
 
+/** 题目链接：https://leetcode.cn/problems/combine-two-tables/ */
+
 /**
  * LeetCode 第 175 题的测试入口。
  */

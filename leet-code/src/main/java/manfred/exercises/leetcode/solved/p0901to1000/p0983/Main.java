@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0983;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-cost-for-tickets/ */
+
 /*
 在一个火车旅行很受欢迎的国度，你提前一年计划了一些火车旅行。
 你要旅行的日子以 days 数组给出，火车票有 1 天、7 天、30 天三种通行证，售价分别为 costs[0]、costs[1]、costs[2]。

@@ -22,6 +22,8 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0091;
 
+/** 题目链接：https://leetcode.cn/problems/decode-ways/ */
+
 /**
  * LeetCode 第 91 题的测试入口。
  */

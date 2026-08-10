@@ -14,6 +14,8 @@ All the integers in the array will be in the range of [-10000, 10000].
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0561;
 
+/** 题目链接：https://leetcode.cn/problems/array-partition/ */
+
 /**
  * LeetCode 第 561 题的测试入口。
  */

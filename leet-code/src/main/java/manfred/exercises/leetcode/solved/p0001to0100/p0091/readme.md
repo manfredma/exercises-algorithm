@@ -1,5 +1,8 @@
 # 解码方法
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/decode-ways/)
+
+
 一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：
 
 "1" -> 'A'

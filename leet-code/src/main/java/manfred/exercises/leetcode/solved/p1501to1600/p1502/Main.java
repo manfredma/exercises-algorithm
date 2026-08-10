@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1502;
 
+/** 题目链接：https://leetcode.cn/problems/can-make-arithmetic-progression-from-sequence/ */
+
 /*
 给你一个数字数组 arr，如果可以重新排列数组形成等差数列，返回 true，否则返回 false。
 

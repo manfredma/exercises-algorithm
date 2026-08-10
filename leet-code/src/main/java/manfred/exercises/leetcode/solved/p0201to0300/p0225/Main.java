@@ -26,6 +26,8 @@ You may assume that all operations are valid (for example, no pop or top operati
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0225;
 
+/** 题目链接：https://leetcode.cn/problems/implement-stack-using-queues/ */
+
 /**
  * LeetCode 第 225 题的测试入口。
  */

@@ -1,5 +1,8 @@
 # 寻找右区间
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-right-interval/)
+
+
 给你一个区间数组 `intervals` ，其中 `intervals[i] = [starti, endi]` ，且每个 `starti` 都 不同 。
 
 区间 `i` 的 右侧区间 是满足 `startj >= endi`，且 `startj` 最小 的区间 `j`。注意 `i` 可能等于 `j` 。

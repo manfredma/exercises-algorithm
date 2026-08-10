@@ -19,6 +19,8 @@ For the purpose of this problem, we will return 0 when needle is an empty string
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0028;
 
+/** 题目链接：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/ */
+
 /**
  * LeetCode 第 28 题的测试入口。
  */

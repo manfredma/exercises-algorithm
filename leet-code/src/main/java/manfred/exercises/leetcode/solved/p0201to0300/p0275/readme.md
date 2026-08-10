@@ -1,5 +1,8 @@
 # H 指数 II
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/h-index-ii/)
+
+
 给你一个整数数组 `citations`，其中 `citations[i]` 表示研究者的第 `i` 篇论文被引用的次数，
 `citations` 已经按照非降序排列。计算并返回该研究者的 H 指数。
 

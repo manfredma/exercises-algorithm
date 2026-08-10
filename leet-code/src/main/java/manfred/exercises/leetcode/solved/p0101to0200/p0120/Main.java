@@ -20,6 +20,8 @@ where n is the total number of rows in the triangle.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0120;
 
+/** 题目链接：https://leetcode.cn/problems/triangle/ */
+
 /**
  * LeetCode 第 120 题的测试入口。
  */

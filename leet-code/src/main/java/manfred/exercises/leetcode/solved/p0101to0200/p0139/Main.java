@@ -25,6 +25,8 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0139;
 
+/** 题目链接：https://leetcode.cn/problems/word-break/ */
+
 import java.util.Arrays;
 
 /**

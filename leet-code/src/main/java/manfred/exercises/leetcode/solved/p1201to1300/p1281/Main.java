@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1281;
 
+/** 题目链接：https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-integer/ */
+
 /*
 给你一个整数 n，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
 */

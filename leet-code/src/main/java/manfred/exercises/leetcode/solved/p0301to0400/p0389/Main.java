@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0389;
 
+/** 题目链接：https://leetcode.cn/problems/find-the-difference/ */
+
 /*
 给定两个字符串 s 和 t，t 由 s 随机重排后在随机位置添加一个字母。
 请找出在 t 中被添加的字母。

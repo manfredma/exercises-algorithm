@@ -14,6 +14,8 @@ For example, given n = 3, a solution set is:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0022;
 
+/** 题目链接：https://leetcode.cn/problems/generate-parentheses/ */
+
 /**
  * LeetCode 第 22 题的测试入口。
  */

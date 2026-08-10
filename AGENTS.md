@@ -79,6 +79,7 @@ mvn clean test -Dsort.skip=true
 - 新题一律初始化在 `wip`；只有完成实现并验证后才归档到 `solved`。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
 - 题面、题目骨架必须以 LeetCode 中文站成功抓取的远程数据为唯一来源；抓取失败时不得凭记忆、摘要或其他来源生成。
 - `readme.md` 与 `Main.java` 中的题面注释必须完整保留远程题面的描述、全部示例、解释和提示；禁止压缩、简写、概括、遗漏或自行改写题面规则。
+- 每道 LeetCode 题目的 `readme.md` 与 `Main.java` 都必须保留对应的 LeetCode 中文站链接，格式分别为 `> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/{slug}/)` 和 `/** 题目链接：https://leetcode.cn/problems/{slug}/ */`。
 - `readme.md` 必须将题面中的 Markdown 特殊字符按字面量展示；正文中的运算符等字符应优先置于行内代码（如 `*`），普通文本中的特殊字符才使用 Markdown 转义；示例中的特殊字符应置于代码块，禁止因渲染而隐藏、改变或额外显示转义符。
 - `readme.md` 必须将题面中的下标按 Unicode 下标保留（如 `Rᵢ`、`Cⱼ`）；不得压缩为普通字符，也不得使用 IntelliJ Markdown 预览会原样显示的 HTML `<sub>` 标签。
 - `Solution.java` 的方法签名、参数和返回类型，以及设计题的类、构造器和操作方法，必须与远程题面保持一致；初始化阶段只保留空骨架，不添加解法。

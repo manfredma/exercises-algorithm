@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1027;
 
+/** 题目链接：https://leetcode.cn/problems/longest-arithmetic-subsequence/ */
+
 /*
 给你一个整数数组 nums，返回 nums 中最长等差子序列的长度。
 

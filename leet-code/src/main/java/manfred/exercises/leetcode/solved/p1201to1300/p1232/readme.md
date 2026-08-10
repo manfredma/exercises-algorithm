@@ -1,5 +1,8 @@
 # 缀点成线
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/check-if-it-is-a-straight-line/)
+
+
 给定一个整数数组 `coordinates`，其中 `coordinates[i] = [x, y]`，
 `[x, y]` 表示横坐标为 `x`、纵坐标为 `y` 的点。请你来判断，这些点是否
 在该坐标系中属于同一条直线上。

@@ -16,6 +16,8 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0167;
 
+/** 题目链接：https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/ */
+
 import java.util.Arrays;
 
 /**

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0611;
 
+/** 题目链接：https://leetcode.cn/problems/valid-triangle-number/ */
+
 /*
 给定一个包含非负整数的数组 nums ，返回其中可以组成三角形三条边的三元组个数。
 

@@ -1,5 +1,8 @@
 # 2462. 雇佣 K 位工人的总代价
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/total-cost-to-hire-k-workers/)
+
+
 给你一个下标从 `0` 开始的整数数组 `costs`，其中 `costs[i]` 是雇佣第 `i` 位工人的代价。
 
 同时给你两个整数 `k` 和 `candidates`。我们想根据以下规则恰好雇佣 `k` 位工人：

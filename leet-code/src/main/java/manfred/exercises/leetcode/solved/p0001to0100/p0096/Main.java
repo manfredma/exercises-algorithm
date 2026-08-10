@@ -18,6 +18,8 @@ Given n = 3, there are a total of 5 unique BST's:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0096;
 
+/** 题目链接：https://leetcode.cn/problems/unique-binary-search-trees/ */
+
 /**
  * LeetCode 第 96 题的测试入口。
  */

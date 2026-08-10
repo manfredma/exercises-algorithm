@@ -50,6 +50,8 @@ The given board size is always 9x9.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0036;
 
+/** 题目链接：https://leetcode.cn/problems/valid-sudoku/ */
+
 /**
  * LeetCode 第 36 题「有效的数独」的测试入口。
  */

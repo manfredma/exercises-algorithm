@@ -18,6 +18,8 @@ You may assume that you have an infinite number of each kind of coin.
  */
 package manfred.exercises.leetcode.solved.p0301to0400.p0322;
 
+/** 题目链接：https://leetcode.cn/problems/coin-change/ */
+
 /**
  * LeetCode 第 322 题的测试入口。
  */

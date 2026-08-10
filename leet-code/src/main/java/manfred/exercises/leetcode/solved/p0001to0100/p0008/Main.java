@@ -49,6 +49,8 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0008;
 
+/** 题目链接：https://leetcode.cn/problems/string-to-integer-atoi/ */
+
 /**
  * LeetCode 第 8 题的测试入口。
  */

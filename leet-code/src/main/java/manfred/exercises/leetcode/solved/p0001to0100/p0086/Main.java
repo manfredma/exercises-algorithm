@@ -12,6 +12,8 @@ Output: 1->2->2->4->3->5
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0086;
 
+/** 题目链接：https://leetcode.cn/problems/partition-list/ */
+
 /**
  * LeetCode 第 86 题的测试入口。
  */

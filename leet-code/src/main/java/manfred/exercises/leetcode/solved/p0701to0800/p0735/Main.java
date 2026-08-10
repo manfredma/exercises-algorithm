@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0735;
 
+/** 题目链接：https://leetcode.cn/problems/asteroid-collision/ */
+
 import java.util.Arrays;
 
 /*

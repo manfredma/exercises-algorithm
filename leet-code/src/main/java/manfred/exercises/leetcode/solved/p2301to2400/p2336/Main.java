@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2301to2400.p2336;
 
+/** 题目链接：https://leetcode.cn/problems/smallest-number-in-infinite-set/ */
+
 /*
 现有一个包含所有正整数的集合 [1, 2, 3, 4, 5, ...]。
 实现 SmallestInfiniteSet：popSmallest() 移除并返回最小整数；addBack(num) 在 num 不存在时将其加入集合。

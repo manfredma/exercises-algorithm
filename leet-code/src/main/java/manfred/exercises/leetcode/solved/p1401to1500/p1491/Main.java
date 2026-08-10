@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1491;
 
+/** 题目链接：https://leetcode.cn/problems/average-salary-excluding-the-minimum-and-maximum-salary/ */
+
 import java.util.Arrays;
 
 /*

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0502;
 
+/** 题目链接：https://leetcode.cn/problems/ipo/ */
+
 /*
 给你 n 个项目，每个项目有纯利润 profits[i] 和最小启动资本 capital[i]。
 初始资本为 w，每完成一个项目利润加入资本，最多完成 k 个项目，求最大化最终资本。

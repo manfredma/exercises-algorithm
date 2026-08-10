@@ -38,6 +38,8 @@ for (int i = 0; i < len; i++) {
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0080;
 
+/** 题目链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/ */
+
 /**
  * LeetCode 第 80 题「删除有序数组中的重复项 II」的测试入口。
  */

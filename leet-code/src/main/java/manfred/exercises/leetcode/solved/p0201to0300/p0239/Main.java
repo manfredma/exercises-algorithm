@@ -26,6 +26,8 @@ Could you solve it in linear time?
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0239;
 
+/** 题目链接：https://leetcode.cn/problems/sliding-window-maximum/ */
+
 import java.util.Arrays;
 
 /**

@@ -1,5 +1,8 @@
 # Excel 表列名称
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/excel-sheet-column-title/)
+
+
 给你一个整数 columnNumber ，返回它在 Excel 表中相对应的列名称。
 
 例如：

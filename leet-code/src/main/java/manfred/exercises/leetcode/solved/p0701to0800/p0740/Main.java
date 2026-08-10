@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0740;
 
+/** 题目链接：https://leetcode.cn/problems/delete-and-earn/ */
+
 /*
 给你一个整数数组 nums，每次操作选 nums[i] 删除并获得 nums[i] 点数，
 同时必须删除所有等于 nums[i]-1 和 nums[i]+1 的元素。

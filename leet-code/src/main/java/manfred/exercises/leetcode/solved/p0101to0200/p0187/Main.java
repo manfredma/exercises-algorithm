@@ -14,6 +14,8 @@ Output: ["AAAAACCCCC", "CCCCCAAAAA"]
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0187;
 
+/** 题目链接：https://leetcode.cn/problems/repeated-dna-sequences/ */
+
 /**
  * LeetCode 第 187 题的测试入口。
  */

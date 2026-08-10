@@ -1,5 +1,8 @@
 # 环形子数组的最大和
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/maximum-sum-circular-subarray/)
+
+
 给定一个长度为 `n` 的**环形**整数数组 `nums`，返回 `nums` 的非空子数组的最大可能和。
 
 环形数组意味着数组的末端将会与开头相连呈环状。形式上：

@@ -1,5 +1,8 @@
 # 扰乱字符串
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/scramble-string/)
+
+
 使用下面描述的算法可以扰乱字符串 s 得到字符串 t ：
 
 	

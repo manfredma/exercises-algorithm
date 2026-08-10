@@ -1,5 +1,8 @@
 # 变更性别
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/swap-sex-of-employees/)
+
+
 Salary 表：
 
 +-------------+----------+

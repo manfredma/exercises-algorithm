@@ -1,35 +1,73 @@
 package manfred.exercises.leetcode.wip.p0282;
 
+/** 题目链接：https://leetcode.cn/problems/expression-add-operators/ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /*
-Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators
- (not unary) +, -, or * between the digits so they evaluate to the target value.
+给定一个仅包含数字 0-9 的字符串 num 和一个目标值整数 target ，在 num 的数字之间添加 二元 运算符（不是一元）+、- 或 * ，返回 所有 能够得到 target 的表达式。
 
-Example 1:
-Input: num = "123", target = 6
-Output: ["1+2+3", "1*2*3"]
+注意，返回表达式中的操作数 不应该 包含前导零。
 
-Example 2:
-Input: num = "232", target = 8
-Output: ["2*3+2", "2+3*2"]
+注意，一个数字可以包含多个数位。
 
-Example 3:
-Input: num = "105", target = 5
-Output: ["1*0+5","10-5"]
 
-Example 4:
-Input: num = "00", target = 0
-Output: ["0+0", "0-0", "0*0"]
-Example 5:
+示例 1:
 
-Input: num = "3456237490", target = 9191
-Output: []
+输入: num = "123", target = 6
+输出: ["1+2+3", "1*2*3"]
+解释: “1*2*3” 和 “1+2+3” 的值都是6。
+
+示例 2:
+
+输入: num = "232", target = 8
+输出: ["2*3+2", "2+3*2"]
+解释: “2*3+2” 和 “2+3*2” 的值都是8。
+
+示例 3:
+
+输入: num = "3456237490", target = 9191
+输出: []
+解释: 表达式 “3456237490” 无法得到 9191 。
+
+
+提示：
+
+
+1 <= num.length <= 10
+
+
+
+
+num 仅含数字
+
+
+-2^31 <= target <= 2^31 - 1
  */
 /**
- * LeetCode 第282题 给表达式添加运算符 的测试入口。
+ * LeetCode 第 282 题的测试入口。
  */
 public class Main {
 
     public static void main(String[] args) {
-        new Solution();
+        Solution solution = new Solution();
+        assertExpressionSetEquals(
+                Arrays.asList("1+2+3", "1*2*3"), solution.addOperators("123", 6));
+        assertExpressionSetEquals(
+                Arrays.asList("2*3+2", "2+3*2"), solution.addOperators("232", 8));
+        assertExpressionSetEquals(Collections.<String>emptyList(), solution.addOperators("3456237490", 9191));
+    }
+
+    private static void assertExpressionSetEquals(List<String> expected, List<String> actual) {
+        List<String> expectedCopy = new ArrayList<String>(expected);
+        List<String> actualCopy = new ArrayList<String>(actual);
+        Collections.sort(expectedCopy);
+        Collections.sort(actualCopy);
+        if (!expectedCopy.equals(actualCopy)) {
+            throw new AssertionError("expected: " + expectedCopy + ", actual: " + actualCopy);
+        }
     }
 }

@@ -1,5 +1,8 @@
 # 二叉搜索树中的搜索
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/search-in-a-binary-search-tree/)
+
+
 给定二叉搜索树（BST）的根节点 `root` 和整数值 `val`。找到节点值等于 `val` 的节点，返回以该节点为根的子树；节点不存在则返回 `null`。
 
 ![](images/tree1.jpg)

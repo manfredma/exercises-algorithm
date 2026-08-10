@@ -14,6 +14,8 @@ Note: You may assume the string contain only lowercase letters.
 
 package manfred.exercises.leetcode.solved.p0301to0400.p0387;
 
+/** 题目链接：https://leetcode.cn/problems/first-unique-character-in-a-string/ */
+
 /**
  * LeetCode 第 387 题的测试入口。
  */

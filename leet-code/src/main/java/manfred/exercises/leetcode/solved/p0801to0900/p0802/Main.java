@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0802;
 
+/** 题目链接：https://leetcode.cn/problems/find-eventual-safe-states/ */
+
 /*
 有一个有 n 个节点的有向图，节点按 0 到 n - 1 编号。
 图由一个索引从 0 开始的 2D 整数数组 graph 表示，

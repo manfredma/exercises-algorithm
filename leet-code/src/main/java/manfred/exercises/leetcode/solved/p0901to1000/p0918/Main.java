@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0918;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-sum-circular-subarray/ */
+
 /*
 给定一个长度为 n 的环形整数数组 nums，返回 nums 的非空子数组的最大可能和。
 

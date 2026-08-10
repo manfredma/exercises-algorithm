@@ -1,5 +1,8 @@
 # 两数相除
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/divide-two-integers/)
+
+
 给你两个整数，被除数 dividend 和除数 divisor。将两数相除，要求 不使用 乘法、除法和取余运算。
 
 整数除法应该向零截断，也就是截去（truncate）其小数部分。例如，8.345 将被截断为 8 ，-2.7335 将被截断至 -2 。

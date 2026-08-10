@@ -1,5 +1,8 @@
 # 统计范围内的元音字符串数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/count-the-number-of-vowel-strings-in-range/)
+
+
 给你一个下标从 `0` 开始的字符串数组 `words` 和两个整数:`left` 和 `right`。
 
 如果字符串以元音字母开头并以元音字母结尾,那么该字符串就是一个**元音字符串**,

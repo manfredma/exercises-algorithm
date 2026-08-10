@@ -1,5 +1,8 @@
 # 丑数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/ugly-number/)
+
+
 **丑数**就是只包含质因数 `2`、`3` 和 `5` 的正整数。
 
 给你一个整数 `n`,请你判断 `n` 是否为丑数。如果是,返回 `true`;

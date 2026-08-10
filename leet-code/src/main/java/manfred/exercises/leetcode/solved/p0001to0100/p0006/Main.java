@@ -27,6 +27,8 @@ P     I
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0006;
 
+/** 题目链接：https://leetcode.cn/problems/zigzag-conversion/ */
+
 /**
  * LeetCode 第 6 题的测试入口。
  */

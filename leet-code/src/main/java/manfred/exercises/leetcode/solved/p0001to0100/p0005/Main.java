@@ -13,6 +13,8 @@ Output: "bb"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0005;
 
+/** 题目链接：https://leetcode.cn/problems/longest-palindromic-substring/ */
+
 /**
  * LeetCode 第 5 题的测试入口。
  */

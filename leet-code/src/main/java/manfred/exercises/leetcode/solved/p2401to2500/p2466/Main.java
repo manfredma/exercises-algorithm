@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2401to2500.p2466;
 
+/** 题目链接：https://leetcode.cn/problems/count-ways-to-build-good-strings/ */
+
 /*
 给你整数 zero、one、low 和 high，从空字符串开始构造字符串：
 - 将 '0' 在末尾添加 zero 次

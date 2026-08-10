@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0392;
 
+/** 题目链接：https://leetcode.cn/problems/is-subsequence/ */
+
 /*
 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
 

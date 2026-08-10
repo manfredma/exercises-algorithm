@@ -20,6 +20,8 @@ A solution set is:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0015;
 
+/** 题目链接：https://leetcode.cn/problems/3sum/ */
+
 /**
  * LeetCode 第 15 题「三数之和」的测试入口。
  */

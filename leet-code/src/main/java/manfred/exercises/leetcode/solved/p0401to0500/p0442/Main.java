@@ -15,6 +15,8 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0401to0500.p0442;
 
+/** 题目链接：https://leetcode.cn/problems/find-all-duplicates-in-an-array/ */
+
 /**
  * LeetCode 第 442 题的测试入口。
  */

@@ -19,6 +19,8 @@ You must not use any built-in BigInteger library or convert the inputs to intege
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0043;
 
+/** 题目链接：https://leetcode.cn/problems/multiply-strings/ */
+
 /**
  * LeetCode 第 43 题「字符串相乘」的测试入口。
  */

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1218;
 
+/** 题目链接：https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/ */
+
 /*
 给你一个整数数组 arr 和一个整数 difference，请你找出并返回 arr 中最长等差子序列的长度，
 该子序列中相邻元素之间的差等于 difference。

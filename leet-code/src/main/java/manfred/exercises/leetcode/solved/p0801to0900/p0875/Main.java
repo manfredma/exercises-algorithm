@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0875;
 
+/** 题目链接：https://leetcode.cn/problems/koko-eating-bananas/ */
+
 /**
  * 珂珂喜欢吃香蕉。这里有 n 堆香蕉，第 i 堆中有 piles[i] 根香蕉。警卫已经离开了，将在 h 小时后回来。
  * 珂珂可以决定她吃香蕉的速度 k（单位：根/小时）。每个小时，她将会选择一堆香蕉，从中吃掉 k 根；

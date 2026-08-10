@@ -16,6 +16,8 @@ Output: [-1,-1]
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0034;
 
+/** 题目链接：https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/ */
+
 /**
  * LeetCode 第 34 题的测试入口。
  */

@@ -24,6 +24,8 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown be
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0052;
 
+/** 题目链接：https://leetcode.cn/problems/n-queens-ii/ */
+
 /**
  * LeetCode 第 52 题的测试入口。
  */

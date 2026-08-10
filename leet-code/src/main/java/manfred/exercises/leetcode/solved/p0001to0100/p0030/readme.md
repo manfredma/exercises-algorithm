@@ -1,5 +1,8 @@
 # 串联所有单词的子串
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+
+
 给定一个字符串 s 和一个字符串数组 words。 words 中所有字符串 长度相同。
 
  s 中的 串联子串 是指一个包含  words 中所有字符串以任意顺序排列连接起来的子串。

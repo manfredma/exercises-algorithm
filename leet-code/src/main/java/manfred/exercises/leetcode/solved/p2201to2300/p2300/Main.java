@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2300;
 
+/** 题目链接：https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/ */
+
 import java.util.Arrays;
 
 /*

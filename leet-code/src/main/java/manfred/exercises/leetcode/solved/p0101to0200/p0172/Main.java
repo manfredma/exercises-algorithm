@@ -17,6 +17,8 @@ Note: Your solution should be in logarithmic time complexity.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0172;
 
+/** 题目链接：https://leetcode.cn/problems/factorial-trailing-zeroes/ */
+
 /**
  * LeetCode 第 172 题的测试入口。
  */

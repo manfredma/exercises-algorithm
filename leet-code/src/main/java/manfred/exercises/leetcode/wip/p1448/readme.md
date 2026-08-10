@@ -1,5 +1,8 @@
 # 统计二叉树中好节点的数目
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/)
+
+
 ```text
 给你一棵根为 root 的二叉树，请你返回二叉树中好节点的数目。
 

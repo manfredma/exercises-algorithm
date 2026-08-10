@@ -1,5 +1,8 @@
 # 整数的各位积和之差
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
+
+
 给你一个整数 `n`,请你帮忙计算并返回该整数「各位数字之积」
 与「各位数字之和」的差。
 

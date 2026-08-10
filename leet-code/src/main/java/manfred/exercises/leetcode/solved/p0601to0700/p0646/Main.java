@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0646;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-length-of-pair-chain/ */
+
 /*
 给你一个由 n 个数对组成的数对数组 pairs，其中 pairs[i] = [lefti, righti] 且 lefti < righti。
 

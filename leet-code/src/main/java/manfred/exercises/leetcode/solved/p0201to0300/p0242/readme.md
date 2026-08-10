@@ -1,5 +1,8 @@
 # 有效的字母异位词
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/valid-anagram/)
+
+
 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
 
 ## 示例 1：

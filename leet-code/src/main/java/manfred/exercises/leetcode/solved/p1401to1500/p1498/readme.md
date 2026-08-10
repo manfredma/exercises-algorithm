@@ -1,5 +1,8 @@
 # 满足条件的子序列数目
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+
+
 给你一个整数数组 `nums` 和一个整数 `target`。
 
 请你统计并返回 `nums` 中能满足其最小元素与最大元素的和小于或等于 `target` 的非空子序列数目。

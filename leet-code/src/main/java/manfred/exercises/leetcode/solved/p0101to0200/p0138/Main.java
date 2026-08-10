@@ -20,6 +20,8 @@ You must return the copy of the given head as a reference to the cloned list.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0138;
 
+/** 题目链接：https://leetcode.cn/problems/copy-list-with-random-pointer/ */
+
 /**
  * LeetCode 第 138 题的测试入口。
  */

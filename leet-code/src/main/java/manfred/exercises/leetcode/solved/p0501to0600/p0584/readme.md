@@ -1,5 +1,8 @@
 # 寻找用户推荐人
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-customer-referee/)
+
+
 > 本题为 SQL 题,无 Java 方法签名。解法写在 `Solution.sql`。
 
 表:`Customer`

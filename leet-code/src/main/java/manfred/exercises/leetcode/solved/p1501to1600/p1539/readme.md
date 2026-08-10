@@ -1,5 +1,8 @@
 # 第 k 个缺失的正整数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/kth-missing-positive-number/)
+
+
 给你一个严格升序排列的正整数数组 `arr` 和一个整数 `k`。
 
 请你找到这个数组里第 `k` 个缺失的正整数。

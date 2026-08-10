@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2501to2600.p2586;
 
+/** 题目链接：https://leetcode.cn/problems/count-the-number-of-vowel-strings-in-range/ */
+
 /*
 给你字符串数组 words 和两个整数 left、right。
 元音字符串:以元音字母(a/e/i/o/u)开头且以元音字母结尾。

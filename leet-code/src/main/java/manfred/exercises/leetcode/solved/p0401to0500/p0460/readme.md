@@ -1,5 +1,8 @@
 # LFU 缓存
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/lfu-cache/)
+
+
 请你为 最不经常使用（LFU）缓存算法设计并实现数据结构。
 
 实现 LFUCache 类：

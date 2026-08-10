@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0530;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-absolute-difference-in-bst/ */
+
 /*
 给你一个二叉搜索树的根节点 root，返回树中任意两不同节点值之间的最小差值。
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0994;
 
+/** 题目链接：https://leetcode.cn/problems/rotting-oranges/ */
+
 import java.util.Arrays;
 
 /*

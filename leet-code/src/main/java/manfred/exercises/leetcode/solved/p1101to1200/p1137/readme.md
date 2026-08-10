@@ -1,5 +1,8 @@
 # 第 N 个泰波那契数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/n-th-tribonacci-number/)
+
+
 泰波那契序列 `Tn` 定义如下：
 
 ```

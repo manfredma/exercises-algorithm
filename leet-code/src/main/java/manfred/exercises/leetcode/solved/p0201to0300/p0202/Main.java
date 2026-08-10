@@ -20,6 +20,8 @@ Explanation:
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0202;
 
+/** 题目链接：https://leetcode.cn/problems/happy-number/ */
+
 /**
  * LeetCode 第 202 题的测试入口。
  */

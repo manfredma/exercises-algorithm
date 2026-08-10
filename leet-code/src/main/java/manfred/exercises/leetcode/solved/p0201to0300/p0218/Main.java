@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0218;
 
+/** 题目链接：https://leetcode.cn/problems/the-skyline-problem/ */
+
 /**
  * LeetCode 第 218 题「天际线问题」的测试入口。
  */

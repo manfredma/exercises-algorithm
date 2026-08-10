@@ -1,5 +1,8 @@
 # 计数质数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/count-primes/)
+
+
 给定整数 n ，返回 所有小于非负整数 n 的质数的数量 。
 
  

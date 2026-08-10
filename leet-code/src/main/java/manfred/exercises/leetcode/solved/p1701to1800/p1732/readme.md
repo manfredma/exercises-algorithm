@@ -1,5 +1,8 @@
 # 找到最高海拔
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-the-highest-altitude/)
+
+
 有一个自行车手打算进行一场公路骑行，这条路线总共由 `n + 1` 个不同海拔的点组成。
 自行车手从海拔为 `0` 的点 `0` 开始骑行。
 

@@ -22,6 +22,8 @@ You may assume that all words are consist of lowercase letters a-z.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0211;
 
+/** 题目链接：https://leetcode.cn/problems/design-add-and-search-words-data-structure/ */
+
 /**
  * LeetCode 第 211 题的测试入口。
  */

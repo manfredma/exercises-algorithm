@@ -60,6 +60,8 @@ Output:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0068;
 
+/** 题目链接：https://leetcode.cn/problems/text-justification/ */
+
 import java.util.List;
 
 /**

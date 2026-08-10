@@ -1,5 +1,8 @@
 # 好数对的数目
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/number-of-good-pairs/)
+
+
 给你一个整数数组 `nums`。
 
 如果一组数字 `(i,j)` 满足 `nums[i] == nums[j]` 且 `i < j`,就可以认为

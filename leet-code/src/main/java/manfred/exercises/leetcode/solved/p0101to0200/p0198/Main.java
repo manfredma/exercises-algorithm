@@ -23,6 +23,8 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0198;
 
+/** 题目链接：https://leetcode.cn/problems/house-robber/ */
+
 /**
  * LeetCode 第 198 题的测试入口。
  */

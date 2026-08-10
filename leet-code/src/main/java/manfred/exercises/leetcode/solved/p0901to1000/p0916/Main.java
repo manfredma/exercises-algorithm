@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0916;
 
+/** 题目链接：https://leetcode.cn/problems/word-subsets/ */
+
 /**
  * LeetCode 第 916 题（单词子集）的测试入口，验证三种解法的正确性。
  */

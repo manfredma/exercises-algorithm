@@ -15,6 +15,8 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0131;
 
+/** 题目链接：https://leetcode.cn/problems/palindrome-partitioning/ */
+
 /**
  * LeetCode 第 131 题的测试入口。
  */

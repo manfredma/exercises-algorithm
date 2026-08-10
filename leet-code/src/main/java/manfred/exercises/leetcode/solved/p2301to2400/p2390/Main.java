@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2301to2400.p2390;
 
+/** 题目链接：https://leetcode.cn/problems/removing-stars-from-a-string/ */
+
 /*
 给你一个包含若干星号 * 的字符串 s 。
 

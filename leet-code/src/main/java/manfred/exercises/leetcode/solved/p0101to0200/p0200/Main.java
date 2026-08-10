@@ -24,6 +24,8 @@ Output: 3
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0200;
 
+/** 题目链接：https://leetcode.cn/problems/number-of-islands/ */
+
 /**
  * LeetCode 第 200 题的测试入口。
  */

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1601to1700.p1679;
 
+/** 题目链接：https://leetcode.cn/problems/max-number-of-k-sum-pairs/ */
+
 /*
 给你一个整数数组 nums 和一个整数 k 。
 

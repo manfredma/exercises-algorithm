@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1801to1900.p1822;
 
+/** 题目链接：https://leetcode.cn/problems/sign-of-the-product-of-an-array/ */
+
 /*
 signFunc(x)：x>0 返回 1，x<0 返回 -1，x=0 返回 0。
 给你整数数组 nums，返回 signFunc(所有元素之积)。

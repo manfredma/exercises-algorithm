@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1701to1800.p1732;
 
+/** 题目链接：https://leetcode.cn/problems/find-the-highest-altitude/ */
+
 /*
 有一个自行车手打算进行一场公路骑行，这条路线总共由 n + 1 个不同海拔的点组成。自行车手从海拔为 0 的点 0 开始骑行。
 

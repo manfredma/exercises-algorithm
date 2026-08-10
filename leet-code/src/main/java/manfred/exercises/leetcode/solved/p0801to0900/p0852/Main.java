@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0852;
 
+/** 题目链接：https://leetcode.cn/problems/peak-index-in-a-mountain-array/ */
+
 /*
 给定一个长度为 n 的整数山脉数组 arr，其中的值递增到一个峰值元素然后递减。
 返回峰值元素的下标。要求 O(log n) 时间复杂度。

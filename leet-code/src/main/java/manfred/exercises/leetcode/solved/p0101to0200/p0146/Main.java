@@ -26,6 +26,8 @@ LRUCache cache = new LRUCache(2);
 
 package manfred.exercises.leetcode.solved.p0101to0200.p0146;
 
+/** 题目链接：https://leetcode.cn/problems/lru-cache/ */
+
 /**
  * LeetCode 第 146 题「LRU 缓存」的测试入口。
  */

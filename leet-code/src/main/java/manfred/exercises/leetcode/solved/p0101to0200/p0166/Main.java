@@ -21,6 +21,8 @@ Output: "0.(6)"
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0166;
 
+/** 题目链接：https://leetcode.cn/problems/fraction-to-recurring-decimal/ */
+
 /**
  * LeetCode 第 166 题的测试入口。
  */

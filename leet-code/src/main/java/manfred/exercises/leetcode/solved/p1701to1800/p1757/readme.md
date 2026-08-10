@@ -1,5 +1,8 @@
 # 可回收且低脂的产品
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/recyclable-and-low-fat-products/)
+
+
 > 本题为 SQL 题,无 Java 方法签名。解法写在 `Solution.sql`。
 
 表:`Products`

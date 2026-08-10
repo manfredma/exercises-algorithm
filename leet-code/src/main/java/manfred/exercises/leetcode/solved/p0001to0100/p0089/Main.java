@@ -33,6 +33,8 @@ Explanation: We define the gray code sequence to begin with 0.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0089;
 
+/** 题目链接：https://leetcode.cn/problems/gray-code/ */
+
 /**
  * LeetCode 第 89 题的测试入口。
  */

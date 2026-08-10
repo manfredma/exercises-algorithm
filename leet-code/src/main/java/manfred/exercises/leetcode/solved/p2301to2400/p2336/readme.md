@@ -1,5 +1,8 @@
 # 无限集中的最小数字
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/smallest-number-in-infinite-set/)
+
+
 现有一个包含所有正整数的集合 `[1, 2, 3, 4, 5, ...]`。实现 `SmallestInfiniteSet`：
 
 - `popSmallest()`：移除并返回集合中的最小整数。

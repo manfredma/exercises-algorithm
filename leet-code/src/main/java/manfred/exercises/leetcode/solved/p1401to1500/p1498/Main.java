@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1498;
 
+/** 题目链接：https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/ */
+
 /*
 给你一个整数数组 nums 和一个整数 target 。
 

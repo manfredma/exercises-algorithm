@@ -33,6 +33,8 @@ If this function is called many times, how would you optimize it?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0191;
 
+/** 题目链接：https://leetcode.cn/problems/number-of-1-bits/ */
+
 /**
  * LeetCode 第 191 题的测试入口。
  */

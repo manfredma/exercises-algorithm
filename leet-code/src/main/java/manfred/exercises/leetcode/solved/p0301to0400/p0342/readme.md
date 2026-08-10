@@ -1,5 +1,8 @@
 # 4 的幂
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/power-of-four/)
+
+
 给定一个整数，编写函数判断它是否是 `4` 的幂次方。是则返回 `true`，否则返回 `false`。
 
 整数 `n` 是 `4` 的幂次方需满足：存在整数 `x`，使得 `n == 4^x`。

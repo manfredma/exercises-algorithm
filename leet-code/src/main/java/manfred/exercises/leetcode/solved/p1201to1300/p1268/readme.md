@@ -1,5 +1,8 @@
 # 1268. 搜索推荐系统
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/search-suggestions-system/)
+
+
 给你一个产品数组 `products` 和一个字符串 `searchWord`。
 
 设计一个推荐系统：在依次输入 `searchWord` 的每一个字母后，推荐 `products` 数组中前缀与 `searchWord` 相同的最多三个产品。若有超过三个匹配项，请按字典序返回前三个。

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1486;
 
+/** 题目链接：https://leetcode.cn/problems/xor-operation-in-an-array/ */
+
 /*
 给你两个整数 n 和 start。
 数组 nums 定义为：nums[i] = start + 2*i（下标从 0 开始）且 n == nums.length。

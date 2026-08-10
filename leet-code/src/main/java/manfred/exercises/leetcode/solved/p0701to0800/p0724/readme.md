@@ -1,5 +1,8 @@
 # 寻找数组的中心下标
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-pivot-index/)
+
+
 给你一个整数数组 `nums`，请计算数组的中心下标。
 
 数组中心下标是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。

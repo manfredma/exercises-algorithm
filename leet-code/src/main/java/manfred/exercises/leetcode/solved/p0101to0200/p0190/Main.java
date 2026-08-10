@@ -29,6 +29,8 @@ If this function is called many times, how would you optimize it?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0190;
 
+/** 题目链接：https://leetcode.cn/problems/reverse-bits/ */
+
 /**
  * LeetCode 第 190 题的测试入口。
  */

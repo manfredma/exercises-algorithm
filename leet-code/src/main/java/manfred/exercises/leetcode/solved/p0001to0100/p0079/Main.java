@@ -20,6 +20,8 @@ Given word = "ABCB", return false.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0079;
 
+/** 题目链接：https://leetcode.cn/problems/word-search/ */
+
 /**
  * LeetCode 第 79 题「单词搜索」的测试入口。
  */

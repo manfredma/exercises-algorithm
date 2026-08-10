@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1318;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-flips-to-make-a-or-b-equal-to-c/ */
+
 /**
  * 给你三个正整数 a、b 和 c。可以任意次翻转 a 和 b 二进制表示中的任意一位。
  * 返回使 a OR b == c 成立所需的最小翻转次数。

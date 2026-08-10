@@ -1,5 +1,8 @@
 # 下一个排列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/next-permutation/)
+
+
 整数数组的一个 排列  就是将其所有成员以序列或线性顺序排列。
 
 	

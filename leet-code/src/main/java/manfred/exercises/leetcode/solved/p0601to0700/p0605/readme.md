@@ -1,5 +1,8 @@
 # 种花问题
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/can-place-flowers/)
+
+
 假设有一个很长的花坛，一部分地块种植了花，另一部分却没有。
 可是，花不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
 

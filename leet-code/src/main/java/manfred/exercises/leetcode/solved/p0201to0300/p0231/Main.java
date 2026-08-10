@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0231;
 
+/** 题目链接：https://leetcode.cn/problems/power-of-two/ */
+
 /**
  * 给你一个整数 n，请你判断该整数是否是 2 的幂次方。如果是，返回 true ；否则，返回 false 。
  * <p>

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0933;
 
+/** 题目链接：https://leetcode.cn/problems/number-of-recent-calls/ */
+
 /*
 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
 RecentCounter() 初始化计数器；ping(t) 添加时间 t 的请求，并返回 [t-3000, t] 内的请求数。

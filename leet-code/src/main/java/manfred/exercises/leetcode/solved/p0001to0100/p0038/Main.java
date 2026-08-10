@@ -27,6 +27,8 @@ Output: "1211"
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0038;
 
+/** 题目链接：https://leetcode.cn/problems/count-and-say/ */
+
 /**
  * LeetCode 第 38 题「外观数列」的测试入口。
  */

@@ -12,6 +12,8 @@ Output: 10
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0084;
 
+/** 题目链接：https://leetcode.cn/problems/largest-rectangle-in-histogram/ */
+
 /**
  * LeetCode 第 84 题「柱状图中最大的矩形」的测试入口。
  */

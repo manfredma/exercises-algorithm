@@ -1,5 +1,8 @@
 # 删除链表的中间节点
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/)
+
+
 ```text
 给你一个链表的头节点 head 。删除 链表的 中间节点 ，并返回修改后的链表的头节点 head 。
 

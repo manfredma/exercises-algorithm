@@ -1,5 +1,8 @@
 # 找出两数组的不同
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-the-difference-of-two-arrays/)
+
+
 给你两个下标从 `0` 开始的整数数组 `nums1` 和 `nums2`，返回长度为 `2` 的列表 `answer`。
 `answer[0]` 是 `nums1` 中不存在于 `nums2` 中的不同整数；`answer[1]` 反之。整数可以按任意顺序返回。
 

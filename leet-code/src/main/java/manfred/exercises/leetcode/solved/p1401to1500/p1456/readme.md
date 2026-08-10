@@ -1,5 +1,8 @@
 # 定长子串中元音的最大数目
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+
+
 给你字符串 `s` 和整数 `k`。
 
 请返回字符串 `s` 中长度为 `k` 的单个子字符串中可能包含的最大元音字母数。

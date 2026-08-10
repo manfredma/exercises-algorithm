@@ -1,5 +1,8 @@
 # 最小偶倍数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/smallest-even-multiple/)
+
+
 给你一个正整数 `n`，返回 `2` 和 `n` 的最小公倍数(正整数)。
 
 ## 示例 1：

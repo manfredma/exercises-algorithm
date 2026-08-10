@@ -32,6 +32,8 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
 
 package manfred.exercises.leetcode.solved.p0101to0200.p0110;
 
+/** 题目链接：https://leetcode.cn/problems/balanced-binary-tree/ */
+
 /**
  * LeetCode 第 110 题的测试入口。
  */

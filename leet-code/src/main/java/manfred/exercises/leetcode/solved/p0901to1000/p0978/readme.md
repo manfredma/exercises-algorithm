@@ -1,5 +1,8 @@
 # 最长湍流子数组
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/longest-turbulent-subarray/)
+
+
 给定一个整数数组 arr ，返回 arr 的 最大湍流子数组的长度 。
 
 如果比较符号在子数组中的每个相邻元素对之间翻转，则该子数组是 湍流子数组 。

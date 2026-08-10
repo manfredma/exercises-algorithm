@@ -1,5 +1,8 @@
 # Dota2 参议院
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/dota2-senate/)
+
+
 ```text
 Dota2 的世界里有两个阵营：Radiant（天辉）和 Dire（夜魇）
 

@@ -21,6 +21,8 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0078;
 
+/** 题目链接：https://leetcode.cn/problems/subsets/ */
+
 /**
  * LeetCode 第 78 题「子集」的测试入口。
  */

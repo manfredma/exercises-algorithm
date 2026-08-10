@@ -13,6 +13,8 @@ Output: 6
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0042;
 
+/** 题目链接：https://leetcode.cn/problems/trapping-rain-water/ */
+
 /**
  * LeetCode 第 42 题「接雨水」的测试入口。
  */

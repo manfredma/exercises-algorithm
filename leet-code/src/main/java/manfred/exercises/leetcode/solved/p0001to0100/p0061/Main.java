@@ -22,6 +22,8 @@ rotate 4 steps to the right: 2->0->1->NULL
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0061;
 
+/** 题目链接：https://leetcode.cn/problems/rotate-list/ */
+
 /**
  * LeetCode 第 61 题的测试入口。
  */

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.wip.p1657;
 
+/** 题目链接：https://leetcode.cn/problems/determine-if-two-strings-are-close/ */
+
 /*
 如果可以使用以下操作从一个字符串得到另一个字符串，则认为两个字符串 接近 ：
 

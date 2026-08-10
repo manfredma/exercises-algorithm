@@ -40,6 +40,8 @@ Could you devise a constant space solution?
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0073;
 
+/** 题目链接：https://leetcode.cn/problems/set-matrix-zeroes/ */
+
 /**
  * LeetCode 第 73 题的测试入口。
  */

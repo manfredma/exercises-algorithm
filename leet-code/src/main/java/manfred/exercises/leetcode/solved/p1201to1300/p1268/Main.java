@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1268;
 
+/** 题目链接：https://leetcode.cn/problems/search-suggestions-system/ */
+
 import java.util.List;
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,5 +1,8 @@
 # 重新规划路线
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+
+
 有 `n` 座城市，编号为 `0` 到 `n - 1`，其间共有 `n - 1` 条路线。因此，任意两座不同城市之间只有唯一一条路径，路线网形成一棵树。
 
 路线用 `connections` 表示，其中 `connections[i] = [a, b]` 表示一条从城市 `a` 到城市 `b` 的有向路线。

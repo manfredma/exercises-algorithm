@@ -21,6 +21,8 @@ Output: -1
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0033;
 
+/** 题目链接：https://leetcode.cn/problems/search-in-rotated-sorted-array/ */
+
 /**
  * LeetCode 第 33 题的测试入口。
  */

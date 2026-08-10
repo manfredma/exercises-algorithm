@@ -20,6 +20,8 @@ Explanation: The array represents the integer 4321.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0066;
 
+/** 题目链接：https://leetcode.cn/problems/plus-one/ */
+
 /**
  * LeetCode 第 66 题的测试入口。
  */

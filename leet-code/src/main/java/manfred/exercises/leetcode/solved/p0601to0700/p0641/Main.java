@@ -35,6 +35,8 @@ Please do not use the built-in Deque library.
  */
 package manfred.exercises.leetcode.solved.p0601to0700.p0641;
 
+/** 题目链接：https://leetcode.cn/problems/design-circular-deque/ */
+
 /**
  * LeetCode 第 641 题的测试入口。
  */

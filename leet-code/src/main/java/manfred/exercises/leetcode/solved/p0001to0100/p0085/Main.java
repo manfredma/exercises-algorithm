@@ -14,6 +14,8 @@ Output: 6
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0085;
 
+/** 题目链接：https://leetcode.cn/problems/maximal-rectangle/ */
+
 /**
  * LeetCode 第 85 题的测试入口。
  */

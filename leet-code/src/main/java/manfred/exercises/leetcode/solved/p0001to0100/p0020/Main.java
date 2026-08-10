@@ -30,6 +30,8 @@ Output: true
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0020;
 
+/** 题目链接：https://leetcode.cn/problems/valid-parentheses/ */
+
 /**
  * LeetCode 第 20 题的测试入口。
  */

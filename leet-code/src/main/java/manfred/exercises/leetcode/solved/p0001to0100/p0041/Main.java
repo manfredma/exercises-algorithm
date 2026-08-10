@@ -19,6 +19,8 @@ Your algorithm should run in O(n) time and uses constant extra space.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0041;
 
+/** 题目链接：https://leetcode.cn/problems/first-missing-positive/ */
+
 /**
  * LeetCode 第 41 题「缺失的第一个正数」的测试入口。
  */

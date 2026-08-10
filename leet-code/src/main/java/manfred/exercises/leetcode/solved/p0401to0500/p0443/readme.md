@@ -1,5 +1,8 @@
 # 压缩字符串
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/string-compression/)
+
+
 给你一个字符数组 `chars`，请使用下述算法压缩：
 
 从一个空字符串 `s` 开始。对于 `chars` 中的每组连续重复字符：

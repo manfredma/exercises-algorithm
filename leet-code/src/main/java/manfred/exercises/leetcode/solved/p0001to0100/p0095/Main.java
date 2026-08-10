@@ -26,6 +26,8 @@ The above output corresponds to the 5 unique BST's shown below:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0095;
 
+/** 题目链接：https://leetcode.cn/problems/unique-binary-search-trees-ii/ */
+
 /**
  * LeetCode 第 95 题的测试入口。
  */

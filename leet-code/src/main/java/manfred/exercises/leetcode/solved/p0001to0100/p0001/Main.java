@@ -12,6 +12,8 @@
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0001;
 
+/** 题目链接：https://leetcode.cn/problems/two-sum/ */
+
 /**
  * LeetCode 第 1 题「两数之和」的测试入口。
  */

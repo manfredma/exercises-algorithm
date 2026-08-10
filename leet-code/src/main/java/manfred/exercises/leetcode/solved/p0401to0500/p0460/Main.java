@@ -28,6 +28,8 @@ LFUCache cache = new LFUCache( 2 );
 
 package manfred.exercises.leetcode.solved.p0401to0500.p0460;
 
+/** 题目链接：https://leetcode.cn/problems/lfu-cache/ */
+
 /**
  * LeetCode 第 460 题的测试入口。
  */

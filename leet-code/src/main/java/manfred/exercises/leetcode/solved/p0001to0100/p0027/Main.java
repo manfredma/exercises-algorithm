@@ -40,6 +40,8 @@ for (int i = 0; i < len; i++) {
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0027;
 
+/** 题目链接：https://leetcode.cn/problems/remove-element/ */
+
 /**
  * LeetCode 第 27 题的测试入口。
  */

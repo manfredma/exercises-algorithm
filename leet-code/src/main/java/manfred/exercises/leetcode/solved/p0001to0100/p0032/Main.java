@@ -15,6 +15,8 @@ Explanation: The longest valid parentheses substring is "()()"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0032;
 
+/** 题目链接：https://leetcode.cn/problems/longest-valid-parentheses/ */
+
 /**
  * LeetCode 第 32 题的测试入口。
  */

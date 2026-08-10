@@ -1,5 +1,8 @@
 # 排列硬币
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/arranging-coins/)
+
+
 你总共有 `n` 枚硬币，并计划将它们按阶梯状排列。对于一个由 `k` 行组成的阶梯，
 其第 `i` 行必须正好有 `i` 枚硬币。阶梯的最后一行可能是不完整的。
 

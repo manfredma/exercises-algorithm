@@ -1,5 +1,8 @@
 # 统计好三元组
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/count-good-triplets/)
+
+
 给你一个整数数组 `arr`，以及 `a`、`b`、`c` 三个整数。
 请你统计其中好三元组的数量。
 

@@ -1,5 +1,8 @@
 # 删除二叉搜索树中的节点
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/delete-node-in-a-bst/)
+
+
 删除 BST 中值为 `key` 的节点，并保持 BST 性质，返回更新后的根节点。
 
 ![](images/del_node_1.jpg)

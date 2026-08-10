@@ -17,6 +17,8 @@ Output:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0046;
 
+/** 题目链接：https://leetcode.cn/problems/permutations/ */
+
 /**
  * LeetCode 第 46 题的测试入口。
  */

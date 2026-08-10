@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.wip.p1448;
 
+/** 题目链接：https://leetcode.cn/problems/count-good-nodes-in-binary-tree/ */
+
 /*
 给你一棵根为 root 的二叉树，请你返回二叉树中好节点的数目。
 

@@ -47,6 +47,8 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0044;
 
+/** 题目链接：https://leetcode.cn/problems/wildcard-matching/ */
+
 /**
  * LeetCode 第 44 题的测试入口。
  */

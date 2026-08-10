@@ -1,5 +1,8 @@
 # H2O 生成
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/building-h2o/)
+
+
 现在有两种线程：氧 `oxygen` 和氢 `hydrogen`。目标是组织这些线程来产生水分子。
 
 存在一个屏障，使得每个线程必须等候，直到一个完整水分子能够被产生。

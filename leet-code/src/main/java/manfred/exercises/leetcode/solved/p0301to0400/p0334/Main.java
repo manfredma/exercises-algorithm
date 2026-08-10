@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0334;
 
+/** 题目链接：https://leetcode.cn/problems/increasing-triplet-subsequence/ */
+
 /*
 给你一个整数数组 nums，判断这个数组中是否存在长度为 3 的递增子序列。
 

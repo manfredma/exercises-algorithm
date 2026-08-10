@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2401to2500.p2462;
 
+/** 题目链接：https://leetcode.cn/problems/total-cost-to-hire-k-workers/ */
+
 /**
  * 每轮从最前 candidates 位或最后 candidates 位可选工人中雇佣代价最小者；相同代价选较小下标。
  * 返回雇佣 k 人的总代价。示例输出分别为 11 和 4。

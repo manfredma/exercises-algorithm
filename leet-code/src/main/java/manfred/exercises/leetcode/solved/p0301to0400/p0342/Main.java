@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0342;
 
+/** 题目链接：https://leetcode.cn/problems/power-of-four/ */
+
 /*
 给定一个整数，写一个函数来判断它是否是 4 的幂次方。如果是，返回 true；否则，返回 false。
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0383;
 
+/** 题目链接：https://leetcode.cn/problems/ransom-note/ */
+
 /*
 给你两个字符串：ransomNote 和 magazine ，判断 ransomNote 能不能由 magazine 里面的字符构成。
 

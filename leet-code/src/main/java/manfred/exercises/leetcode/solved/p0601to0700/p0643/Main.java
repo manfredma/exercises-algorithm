@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0643;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-average-subarray-i/ */
+
 /*
 给你一个由 n 个元素组成的整数数组 nums 和一个整数 k 。
 

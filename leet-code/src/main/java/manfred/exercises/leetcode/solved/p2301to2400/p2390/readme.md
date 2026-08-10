@@ -1,5 +1,8 @@
 # 从字符串中移除星号
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/removing-stars-from-a-string/)
+
+
 ```text
 给你一个包含若干星号 * 的字符串 s 。
 

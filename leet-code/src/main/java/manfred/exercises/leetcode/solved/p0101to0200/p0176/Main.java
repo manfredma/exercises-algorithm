@@ -23,6 +23,8 @@ If there is no second highest salary, then the query should return null.
 
 package manfred.exercises.leetcode.solved.p0101to0200.p0176;
 
+/** 题目链接：https://leetcode.cn/problems/second-highest-salary/ */
+
 /**
  * LeetCode 第 176 题的测试入口。
  */

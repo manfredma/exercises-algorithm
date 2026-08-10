@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1372;
 
+/** 题目链接：https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/ */
+
 /**
  * 交错路径每走一步都要改变方向。路径长度是访问节点数减一，单节点路径为 0。
  * 返回树中最长交错路径的长度。

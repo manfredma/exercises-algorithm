@@ -28,6 +28,8 @@ Output: 701
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0171;
 
+/** 题目链接：https://leetcode.cn/problems/excel-sheet-column-number/ */
+
 import java.nio.channels.SocketChannel;
 
 /**

@@ -1,4 +1,6 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0435;
+
+/** 题目链接：https://leetcode.cn/problems/non-overlapping-intervals/ */
 /* 返回移除的最少区间数，使剩余区间不重叠；端点相接不算重叠。
 示例输出依次为：1、2、0。 */
 

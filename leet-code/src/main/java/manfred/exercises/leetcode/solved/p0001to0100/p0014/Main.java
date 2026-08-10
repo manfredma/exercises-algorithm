@@ -19,6 +19,8 @@ All given inputs are in lowercase letters a-z.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0014;
 
+/** 题目链接：https://leetcode.cn/problems/longest-common-prefix/ */
+
 /**
  * LeetCode 第 14 题「最长公共前缀」的测试入口。
  */

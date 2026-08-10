@@ -1,5 +1,8 @@
 # 被围绕的区域
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/surrounded-regions/)
+
+
 给你一个 m x n 的矩阵 board ，由若干字符 'X' 和 'O' 组成，捕获 所有 被围绕的区域：
 
 	

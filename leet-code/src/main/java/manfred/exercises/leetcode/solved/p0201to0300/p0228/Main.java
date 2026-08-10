@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0228;
 
+/** 题目链接：https://leetcode.cn/problems/summary-ranges/ */
+
 /**
  * LeetCode 第 228 题「汇总区间」的测试入口。
  */

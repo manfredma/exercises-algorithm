@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1071;
 
+/** 题目链接：https://leetcode.cn/problems/greatest-common-divisor-of-strings/ */
+
 /*
 对于字符串 s 和 t，只有在 s = t + t + ... + t 时，才认定"t 能除尽 s"。
 给定两个字符串 str1 和 str2，返回最长字符串 x，要求 x 能除尽 str1 且能除尽 str2。

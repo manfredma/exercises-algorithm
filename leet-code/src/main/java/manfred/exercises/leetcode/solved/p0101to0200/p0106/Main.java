@@ -19,6 +19,8 @@ Return the following binary tree:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0106;
 
+/** 题目链接：https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/ */
+
 /**
  * LeetCode 第 106 题的测试入口。
  */

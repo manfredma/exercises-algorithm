@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0287;
 
+/** 题目链接：https://leetcode.cn/problems/find-the-duplicate-number/ */
+
 /*
 给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。
 

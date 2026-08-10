@@ -1,5 +1,8 @@
 # 判断根结点是否等于子结点之和
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/root-equals-sum-of-children/)
+
+
 给你一个**二叉树**的根结点 `root`，该二叉树由恰好 3 个结点组成：
 根结点、左子结点和右子结点。
 

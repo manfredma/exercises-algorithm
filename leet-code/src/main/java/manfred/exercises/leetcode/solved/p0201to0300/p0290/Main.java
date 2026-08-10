@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0290;
 
+/** 题目链接：https://leetcode.cn/problems/word-pattern/ */
+
 /*
 给定一种规律 pattern 和一个字符串 s ，判断 s 是否遵循相同的规律。
 

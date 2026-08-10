@@ -1,5 +1,8 @@
 # 最长数对链
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/maximum-length-of-pair-chain/)
+
+
 给你一个由 `n` 个数对组成的数对数组 `pairs`，其中 `pairs[i] = [lefti, righti]`
 且 `lefti < righti`。
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0470;
 
+/** 题目链接：https://leetcode.cn/problems/implement-rand10-using-rand7/ */
+
 /*
 给定方法 rand7 可生成 [1,7] 范围内的均匀随机整数，试写 rand10 生成 [1,10] 范围内的均匀随机整数。
 只能调用 rand7()，不能调用 Math.random()。每个测试用例有一个内部参数 n，表示 rand10() 被调用的次数。

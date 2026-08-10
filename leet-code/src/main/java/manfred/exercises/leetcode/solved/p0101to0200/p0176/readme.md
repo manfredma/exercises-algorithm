@@ -1,5 +1,8 @@
 # 第二高的薪水
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/second-highest-salary/)
+
+
 Employee 表：
 
 +-------------+------+

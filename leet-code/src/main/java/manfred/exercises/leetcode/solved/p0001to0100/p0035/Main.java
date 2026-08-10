@@ -24,6 +24,8 @@ Output: 0
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0035;
 
+/** 题目链接：https://leetcode.cn/problems/search-insert-position/ */
+
 /**
  * LeetCode 第 35 题的测试入口。
  */

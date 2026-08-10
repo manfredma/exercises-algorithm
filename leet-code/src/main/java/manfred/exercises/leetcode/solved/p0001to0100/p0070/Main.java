@@ -24,6 +24,8 @@ Explanation: There are three ways to climb to the top.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0070;
 
+/** 题目链接：https://leetcode.cn/problems/climbing-stairs/ */
+
 /**
  * LeetCode 第 70 题的测试入口。
  */

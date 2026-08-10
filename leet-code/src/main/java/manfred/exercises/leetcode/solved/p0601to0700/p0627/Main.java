@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0627;
 
+/** 题目链接：https://leetcode.cn/problems/swap-sex-of-employees/ */
+
 /*
 
 Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e.,

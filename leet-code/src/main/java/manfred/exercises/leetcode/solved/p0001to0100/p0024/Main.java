@@ -10,6 +10,8 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0024;
 
+/** 题目链接：https://leetcode.cn/problems/swap-nodes-in-pairs/ */
+
 /**
  * LeetCode 第 24 题「两两交换链表中的节点」的测试入口。
  */

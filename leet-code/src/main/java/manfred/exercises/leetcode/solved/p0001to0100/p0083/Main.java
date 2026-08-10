@@ -12,6 +12,8 @@ Output: 1->2->3
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0083;
 
+/** 题目链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-list/ */
+
 /**
  * LeetCode 第 83 题「删除排序链表中的重复元素」的测试入口。
  */

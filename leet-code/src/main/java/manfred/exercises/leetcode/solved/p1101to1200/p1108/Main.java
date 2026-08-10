@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1108;
 
+/** 题目链接：https://leetcode.cn/problems/defanging-an-ip-address/ */
+
 /**
  * LeetCode 第 1108 题的测试入口。
  */

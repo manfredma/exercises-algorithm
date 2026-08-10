@@ -1,5 +1,8 @@
 # 二叉树展开为链表
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/)
+
+
 给你二叉树的根结点 root ，请你将它展开为一个单链表：
 
 	

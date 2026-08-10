@@ -19,6 +19,8 @@ Output: []
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0030;
 
+/** 题目链接：https://leetcode.cn/problems/substring-with-concatenation-of-all-words/ */
+
 /**
  * LeetCode 第 30 题的测试入口。
  */

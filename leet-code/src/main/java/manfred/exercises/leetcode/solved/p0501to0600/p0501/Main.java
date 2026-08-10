@@ -26,6 +26,8 @@ Follow up: Could you do that without using any extra space?
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0501;
 
+/** 题目链接：https://leetcode.cn/problems/find-mode-in-binary-search-tree/ */
+
 import java.util.Arrays;
 
 /**

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1431;
 
+/** 题目链接：https://leetcode.cn/problems/kids-with-the-greatest-number-of-candies/ */
+
 /*
 有 n 个孩子，candies[i] 是第 i 个孩子的糖果数，extraCandies 是额外糖果数。
 若把所有额外糖果给第 i 个孩子后，他拥有最多糖果，则 result[i]=true。

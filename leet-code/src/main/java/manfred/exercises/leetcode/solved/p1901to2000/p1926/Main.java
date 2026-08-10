@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1901to2000.p1926;
 
+/** 题目链接：https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/ */
+
 /**
  * 在迷宫中上下左右移动，寻找离入口最近的边界空格；入口自身不算出口。
  * 不存在出口时返回 -1。示例输出依次为 1、2、-1。

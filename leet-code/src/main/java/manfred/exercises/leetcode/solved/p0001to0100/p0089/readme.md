@@ -1,5 +1,8 @@
 # 格雷编码
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/gray-code/)
+
+
 n 位格雷码序列 是一个由 2^n 个整数组成的序列，其中：
 
 	

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0278;
 
+/** 题目链接：https://leetcode.cn/problems/first-bad-version/ */
+
 /*
 你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，产品的最新版本没有通过质量检测。
 由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。

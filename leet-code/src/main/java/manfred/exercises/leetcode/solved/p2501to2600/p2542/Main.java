@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2501to2600.p2542;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-subsequence-score/ */
+
 /**
  * 选取 nums1 长度为 k 的子序列，分数为选中 nums1 的和乘以对应 nums2 的最小值。
  * 返回最大分数。示例输出分别为 12 和 30。

@@ -1,5 +1,8 @@
 # 1372. 二叉树中的最长交错路径
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)
+
+
 给你一棵以 `root` 为根的二叉树，二叉树中的交错路径定义如下：
 
 - 选择二叉树中任意节点和一个方向（左或者右）。

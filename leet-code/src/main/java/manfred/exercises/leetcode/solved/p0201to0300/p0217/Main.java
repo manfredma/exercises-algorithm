@@ -18,6 +18,8 @@ Output: true
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0217;
 
+/** 题目链接：https://leetcode.cn/problems/contains-duplicate/ */
+
 /**
  * LeetCode 第 217 题的测试入口。
  */

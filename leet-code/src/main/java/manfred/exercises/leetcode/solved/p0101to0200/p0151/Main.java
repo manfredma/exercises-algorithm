@@ -25,6 +25,8 @@ You need to reduce multiple spaces between two words to a single space in the re
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0151;
 
+/** 题目链接：https://leetcode.cn/problems/reverse-words-in-a-string/ */
+
 /**
  * LeetCode 第 151 题的测试入口。
  */

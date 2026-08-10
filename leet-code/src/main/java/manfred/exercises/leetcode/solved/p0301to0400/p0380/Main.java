@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0380;
 
+/** 题目链接：https://leetcode.cn/problems/insert-delete-getrandom-o1/ */
+
 /*
 实现 RandomizedSet 类：
 

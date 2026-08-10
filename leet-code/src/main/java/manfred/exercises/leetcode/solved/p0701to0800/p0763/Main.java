@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0763;
 
+/** 题目链接：https://leetcode.cn/problems/partition-labels/ */
+
 import java.util.Arrays;
 
 /*

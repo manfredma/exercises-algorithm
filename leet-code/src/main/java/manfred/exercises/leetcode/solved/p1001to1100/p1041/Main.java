@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1041;
 
+/** 题目链接：https://leetcode.cn/problems/robot-bounded-in-circle/ */
+
 /*
 在无限的平面上，机器人最初位于 (0, 0) 处，面朝北方。注意:
 

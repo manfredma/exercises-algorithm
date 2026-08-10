@@ -1,5 +1,8 @@
 # 数组元素积的符号
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/sign-of-the-product-of-an-array/)
+
+
 已知函数 `signFunc(x)` 将会根据 `x` 的正负返回特定值：
 
 - 如果 `x` 是正数，返回 `1`

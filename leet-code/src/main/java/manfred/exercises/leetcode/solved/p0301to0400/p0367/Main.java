@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0367;
 
+/** 题目链接：https://leetcode.cn/problems/valid-perfect-square/ */
+
 /*
 给你一个正整数 num 。如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
 

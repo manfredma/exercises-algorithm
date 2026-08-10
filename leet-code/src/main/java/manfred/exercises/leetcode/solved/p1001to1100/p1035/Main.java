@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1035;
 
+/** 题目链接：https://leetcode.cn/problems/uncrossed-lines/ */
+
 /*
 在两条独立的水平线上按给定的顺序写下 nums1 和 nums2 中的整数。
 

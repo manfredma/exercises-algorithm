@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0263;
 
+/** 题目链接：https://leetcode.cn/problems/ugly-number/ */
+
 /*
 丑数就是只包含质因数 2、3 和 5 的正整数。
 给你一个整数 n，请你判断 n 是否为丑数。如果是，返回 true；否则，返回 false。

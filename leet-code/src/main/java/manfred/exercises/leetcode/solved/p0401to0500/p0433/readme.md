@@ -1,5 +1,8 @@
 # 最小基因变化
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/minimum-genetic-mutation/)
+
+
 基因序列可以表示为一条由 8 个字符组成的字符串，其中每个字符都是 `'A'`、`'C'`、`'G'` 和 `'T'` 之一。
 
 假设我们需要调查从基因序列 `start` 变为 `end` 所发生的基因变化。

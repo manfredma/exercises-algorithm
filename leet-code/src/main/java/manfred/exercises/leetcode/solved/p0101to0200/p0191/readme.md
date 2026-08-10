@@ -1,5 +1,8 @@
 # 位1的个数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/number-of-1-bits/)
+
+
 给定一个正整数 n，编写一个函数，获取一个正整数的二进制形式并返回其二进制表达式中 设置位 的个数（也被称为汉明重量）。
 
  

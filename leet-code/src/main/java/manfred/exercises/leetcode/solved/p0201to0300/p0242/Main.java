@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0242;
 
+/** 题目链接：https://leetcode.cn/problems/valid-anagram/ */
+
 /*
 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
 

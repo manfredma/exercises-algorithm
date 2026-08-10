@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0223;
 
+/** 题目链接：https://leetcode.cn/problems/rectangle-area/ */
+
 /**
  * LeetCode 第 223 题「矩形面积」的测试入口。
  */

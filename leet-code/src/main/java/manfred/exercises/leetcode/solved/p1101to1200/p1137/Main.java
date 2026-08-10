@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1137;
 
+/** 题目链接：https://leetcode.cn/problems/n-th-tribonacci-number/ */
+
 /*
 泰波那契序列：T0=0, T1=1, T2=1, Tn+3 = Tn + Tn+1 + Tn+2（n >= 0）
 给你整数 n，请返回第 n 个泰波那契数 Tn 的值。

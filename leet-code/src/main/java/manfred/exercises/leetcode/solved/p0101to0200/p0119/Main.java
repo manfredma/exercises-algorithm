@@ -16,6 +16,8 @@ Could you optimize your algorithm to use only O(k) extra space?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0119;
 
+/** 题目链接：https://leetcode.cn/problems/pascals-triangle-ii/ */
+
 /**
  * LeetCode 第 119 题的测试入口。
  */

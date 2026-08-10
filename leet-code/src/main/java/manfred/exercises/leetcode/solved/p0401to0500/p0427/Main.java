@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0427;
 
+/** 题目链接：https://leetcode.cn/problems/construct-quad-tree/ */
+
 /*
 给你一个 n * n 矩阵 grid，矩阵由若干 0 和 1 组成。请你用四叉树表示该矩阵，并返回四叉树的根节点。
 

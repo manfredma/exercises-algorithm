@@ -1,5 +1,8 @@
 # 蛇梯棋
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/snakes-and-ladders/)
+
+
 给你一个大小为 `n x n` 的整数矩阵 `board`，方格按从 `1` 到 `n²` 编号，
 编号遵循**转行交替方式**，从左下角开始（即从 `board[n-1][0]` 开始）的每一行改变方向。
 

@@ -1,5 +1,8 @@
 # 找到 K 个最接近的元素
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-k-closest-elements/)
+
+
 给定一个排序好的数组 `arr`，以及两个整数 `k` 和 `x`，从数组中找到最靠近 `x`
 （两数之差最小）的 `k` 个数。返回的结果必须按升序排列。
 

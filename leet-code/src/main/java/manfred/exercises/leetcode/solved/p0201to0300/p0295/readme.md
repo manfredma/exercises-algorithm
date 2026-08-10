@@ -1,5 +1,8 @@
 # 数据流的中位数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-median-from-data-stream/)
+
+
 中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。
 
 - 例如 arr = [2,3,4] 的中位数是 3 。

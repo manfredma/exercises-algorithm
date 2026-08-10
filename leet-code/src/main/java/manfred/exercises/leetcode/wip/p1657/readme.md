@@ -1,5 +1,8 @@
 # 确定两个字符串是否接近
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/determine-if-two-strings-are-close/)
+
+
 ```text
 如果可以使用以下操作从一个字符串得到另一个字符串，则认为两个字符串 接近 ：
 

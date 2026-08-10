@@ -1,5 +1,8 @@
 # 猜数字大小
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/guess-number-higher-or-lower/)
+
+
 我们正在玩猜数字游戏。猜数字游戏的规则如下：
 
 我会从 `1` 到 `n` 随机选择一个数字。请你猜选出的是哪个数字。

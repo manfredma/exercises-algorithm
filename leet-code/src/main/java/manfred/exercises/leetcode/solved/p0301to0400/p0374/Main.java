@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0374;
 
+/** 题目链接：https://leetcode.cn/problems/guess-number-higher-or-lower/ */
+
 /*
 我们正在玩猜数字游戏。我会从 1 到 n 随机选择一个数字，请你猜出是哪个数字。
 猜错时会通过预定义接口 guess(int num) 提示：-1 表示猜大了，1 表示猜小了，0 表示猜中。

@@ -40,6 +40,8 @@ Your code should preferably run in O(n) time and use only O(1) memory.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0160;
 
+/** 题目链接：https://leetcode.cn/problems/intersection-of-two-linked-lists/ */
+
 import java.nio.channels.SocketChannel;
 
 /**

@@ -28,6 +28,8 @@ Explanation: The root node's value is 5 but its right child's value is 4.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0098;
 
+/** 题目链接：https://leetcode.cn/problems/validate-binary-search-tree/ */
+
 /**
  * LeetCode 第 98 题的测试入口。
  */

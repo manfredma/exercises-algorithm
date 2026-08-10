@@ -1,5 +1,8 @@
 # 颜色交替的最短路径
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/shortest-path-with-alternating-colors/)
+
+
 给定一个整数 `n`，即有向图中的节点数，其中节点标记为 `0` 到 `n - 1`。图中的每条边为红色或者蓝色，并且可能存在自环或平行边。
 
 给定两个数组 `redEdges` 和 `blueEdges`，其中：

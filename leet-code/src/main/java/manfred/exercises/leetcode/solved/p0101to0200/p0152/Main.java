@@ -16,6 +16,8 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0152;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-product-subarray/ */
+
 /**
  * LeetCode 第 152 题的测试入口。
  */

@@ -1,5 +1,8 @@
 # 最富有客户的资产总量
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/richest-customer-wealth/)
+
+
 给你一个 `m x n` 的整数网格 `accounts`，其中 `accounts[i][j]` 是第 `i`
 位客户在第 `j` 家银行托管的资产数量。返回最富有客户所拥有的**资产总量**。
 

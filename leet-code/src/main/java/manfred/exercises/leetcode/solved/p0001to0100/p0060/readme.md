@@ -1,5 +1,8 @@
 # 排列序列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/permutation-sequence/)
+
+
 给出集合 [1,2,3,...,n]，其所有元素共有 n! 种排列。
 
 按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：

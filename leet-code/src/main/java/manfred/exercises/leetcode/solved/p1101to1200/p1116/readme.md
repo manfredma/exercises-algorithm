@@ -1,5 +1,8 @@
 # 打印零与奇偶数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/print-zero-even-odd/)
+
+
 现有函数 `printNumber` 可以用一个整数参数调用，并输出该整数到控制台。
 例如，调用 `printNumber(7)` 将会输出 `7` 到控制台。
 

@@ -17,6 +17,8 @@ Output: [1,2,2,3,5,6]
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0088;
 
+/** 题目链接：https://leetcode.cn/problems/merge-sorted-array/ */
+
 /**
  * LeetCode 第 88 题的测试入口。
  */

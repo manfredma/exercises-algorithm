@@ -1,5 +1,8 @@
 # 3 的幂
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/power-of-three/)
+
+
 给定一个整数,写一个函数来判断它是否是 3 的幂次方。
 如果是,返回 `true`;否则,返回 `false`。
 

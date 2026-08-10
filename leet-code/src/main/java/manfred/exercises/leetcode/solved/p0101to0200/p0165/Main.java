@@ -46,6 +46,8 @@ Version strings do not start or end with dots, and they will not be two consecut
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0165;
 
+/** 题目链接：https://leetcode.cn/problems/compare-version-numbers/ */
+
 /**
  * LeetCode 第 165 题的测试入口。
  */

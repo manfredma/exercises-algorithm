@@ -1,5 +1,8 @@
 # 天际线问题
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/the-skyline-problem/)
+
+
 城市的 天际线 是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。给你所有建筑物的位置和高度，请返回 由这些建筑物形成的 天际线 。
 
 每个建筑物的几何信息由数组 buildings 表示，其中三元组 buildings[i] = [lefti, righti, heighti] 表示：

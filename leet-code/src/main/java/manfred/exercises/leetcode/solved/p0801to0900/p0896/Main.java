@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0896;
 
+/** 题目链接：https://leetcode.cn/problems/monotonic-array/ */
+
 import java.util.Arrays;
 
 /*

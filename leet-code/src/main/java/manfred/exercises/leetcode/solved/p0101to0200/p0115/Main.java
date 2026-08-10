@@ -41,6 +41,8 @@ babgbag
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0115;
 
+/** 题目链接：https://leetcode.cn/problems/distinct-subsequences/ */
+
 /**
  * LeetCode 第 115 题的测试入口。
  */

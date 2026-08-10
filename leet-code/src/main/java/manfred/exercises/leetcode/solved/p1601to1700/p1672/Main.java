@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1601to1700.p1672;
 
+/** 题目链接：https://leetcode.cn/problems/richest-customer-wealth/ */
+
 /*
 给你一个 m x n 的整数网格 accounts，其中 accounts[i][j] 是第 i 位客户在第 j 家银行
 托管的资产数量。返回最富有客户所拥有的资产总量。

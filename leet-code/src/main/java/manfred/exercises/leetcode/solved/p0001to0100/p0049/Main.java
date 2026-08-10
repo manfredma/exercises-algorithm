@@ -18,6 +18,8 @@ The order of your output does not matter.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0049;
 
+/** 题目链接：https://leetcode.cn/problems/group-anagrams/ */
+
 /**
  * LeetCode 第 49 题「字母异位词分组」的测试入口。
  */

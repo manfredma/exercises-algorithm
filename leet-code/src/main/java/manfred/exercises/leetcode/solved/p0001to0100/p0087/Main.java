@@ -49,6 +49,8 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0087;
 
+/** 题目链接：https://leetcode.cn/problems/scramble-string/ */
+
 /**
  * LeetCode 第 87 题的测试入口。
  */

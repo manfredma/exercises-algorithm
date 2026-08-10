@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0295;
 
+/** 题目链接：https://leetcode.cn/problems/find-median-from-data-stream/ */
+
 /*
 中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。
 

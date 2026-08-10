@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2236;
 
+/** 题目链接：https://leetcode.cn/problems/root-equals-sum-of-children/ */
+
 /*
 给你一个二叉树的根结点 root，该二叉树由恰好 3 个结点组成：根结点、左子结点和右子结点。
 如果根结点值等于两个子结点值之和，返回 true，否则返回 false。

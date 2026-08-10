@@ -1,5 +1,8 @@
 # 存在重复元素 III
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/contains-duplicate-iii/)
+
+
 给你一个整数数组 nums 和两个整数 indexDiff 和 valueDiff 。
 
 找出满足下述条件的下标对 (i, j)：

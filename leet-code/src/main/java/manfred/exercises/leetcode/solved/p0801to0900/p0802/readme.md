@@ -1,5 +1,8 @@
 # 找到最终的安全状态
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/find-eventual-safe-states/)
+
+
 有一个有 `n` 个节点的有向图，节点按 `0` 到 `n - 1` 编号。
 图由一个**索引从 0 开始**的 2D 整数数组 `graph` 表示，
 `graph[i]` 是与节点 `i` 相邻的节点的整数数组，

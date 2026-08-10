@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0459;
 
+/** 题目链接：https://leetcode.cn/problems/repeated-substring-pattern/ */
+
 /*
 给定一个非空的字符串 s，检查是否可以通过由它的一个子串重复多次构成。
 

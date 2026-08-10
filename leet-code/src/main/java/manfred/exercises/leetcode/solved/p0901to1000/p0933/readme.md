@@ -1,5 +1,8 @@
 # 最近的请求次数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/number-of-recent-calls/)
+
+
 实现 `RecentCounter`：`ping(t)` 在时间 `t` 添加一个新请求，并返回过去 `3000` 毫秒内，即 `[t-3000, t]` 内发生的所有请求数。每次调用的 `t` 严格递增。
 
 ## 示例：

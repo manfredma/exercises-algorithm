@@ -15,6 +15,8 @@ try coding another solution using the divide and conquer approach, which is more
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0053;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-subarray/ */
+
 /**
  * LeetCode 第 53 题的测试入口。
  */

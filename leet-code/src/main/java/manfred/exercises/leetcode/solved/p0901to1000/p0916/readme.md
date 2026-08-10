@@ -1,5 +1,8 @@
 # 单词子集
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/word-subsets/)
+
+
 给你两个字符串数组 words1 和 words2。
 
 现在，如果 b 中的每个字母都出现在 a 中，包括重复出现的字母，那么称字符串 b 是字符串 a 的 子集 。

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1701to1800.p1768;
 
+/** 题目链接：https://leetcode.cn/problems/merge-strings-alternately/ */
+
 /*
 给你两个字符串 word1 和 word2，从 word1 开始交替添加字母合并字符串。
 如果一个字符串比另一个长，多出的字母追加到末尾。

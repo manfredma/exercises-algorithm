@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1493;
 
+/** 题目链接：https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/ */
+
 /*
 给你一个二进制数组 nums ，你需要从中删掉一个元素。
 

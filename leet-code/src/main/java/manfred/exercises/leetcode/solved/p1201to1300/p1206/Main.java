@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1206;
 
+/** 题目链接：https://leetcode.cn/problems/design-skiplist/ */
+
 /**
  * LeetCode 第 1206 题（设计跳表）的测试入口，对比 Skiplist 与 SkiplistV2 两种实现。
  */

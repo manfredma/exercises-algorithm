@@ -12,6 +12,8 @@ Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cu
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0132;
 
+/** 题目链接：https://leetcode.cn/problems/palindrome-partitioning-ii/ */
+
 /**
  * LeetCode 第 132 题的测试入口。
  */

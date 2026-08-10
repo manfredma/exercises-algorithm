@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0872;
 
+/** 题目链接：https://leetcode.cn/problems/leaf-similar-trees/ */
+
 /*
 请考虑一棵二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个叶值序列。
 如果有两棵二叉树的叶值序列相同，那么我们就认为它们是叶相似的。

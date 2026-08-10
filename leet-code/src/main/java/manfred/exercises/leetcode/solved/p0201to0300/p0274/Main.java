@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0274;
 
+/** 题目链接：https://leetcode.cn/problems/h-index/ */
+
 /*
 给你一个整数数组 citations ，其中 citations[i] 表示研究者的第 i 篇论文被引用的次数。计算并返回该研究者的 h 指数。
 

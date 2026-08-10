@@ -1,5 +1,8 @@
 # 最长等差数列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/longest-arithmetic-subsequence/)
+
+
 给你一个整数数组 `nums`，返回 `nums` 中最长等差子序列的长度。
 
 回想一下，`nums` 的子序列是一个列表

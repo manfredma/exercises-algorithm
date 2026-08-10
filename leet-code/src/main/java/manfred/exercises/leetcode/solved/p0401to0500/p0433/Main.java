@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0433;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-genetic-mutation/ */
+
 /*
 基因序列可以表示为一条由 8 个字符组成的字符串，其中每个字符都是 'A'、'C'、'G' 和 'T' 之一。
 一次基因变化就意味着这个基因序列中的一个字符发生了变化，且变化后的基因必须位于基因库中。

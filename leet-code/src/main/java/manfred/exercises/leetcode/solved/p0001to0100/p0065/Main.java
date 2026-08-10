@@ -37,6 +37,8 @@ please click the reload button to reset your code definition.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0065;
 
+/** 题目链接：https://leetcode.cn/problems/valid-number/ */
+
 /**
  * LeetCode 第 65 题的测试入口。
  */

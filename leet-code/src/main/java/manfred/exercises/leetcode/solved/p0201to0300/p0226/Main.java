@@ -26,6 +26,8 @@ but you can’t invert a binary tree on a whiteboard so f*** off.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0226;
 
+/** 题目链接：https://leetcode.cn/problems/invert-binary-tree/ */
+
 /**
  * LeetCode 第 226 题的测试入口。
  */

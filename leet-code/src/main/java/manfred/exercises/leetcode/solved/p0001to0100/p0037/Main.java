@@ -22,6 +22,8 @@ The given board size is always 9x9.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0037;
 
+/** 题目链接：https://leetcode.cn/problems/sudoku-solver/ */
+
 /**
  * LeetCode 第 37 题「解数独」的测试入口。
  */

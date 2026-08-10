@@ -18,6 +18,8 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0118;
 
+/** 题目链接：https://leetcode.cn/problems/pascals-triangle/ */
+
 /**
  * LeetCode 第 118 题的测试入口。
  */

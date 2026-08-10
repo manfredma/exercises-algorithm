@@ -13,6 +13,8 @@ Output: 5
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0058;
 
+/** 题目链接：https://leetcode.cn/problems/length-of-last-word/ */
+
 /**
  * LeetCode 第 58 题的测试入口。
  */

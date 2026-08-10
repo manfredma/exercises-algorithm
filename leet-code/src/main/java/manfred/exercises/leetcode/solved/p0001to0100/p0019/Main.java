@@ -17,6 +17,8 @@ Could you do this in one pass?
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0019;
 
+/** 题目链接：https://leetcode.cn/problems/remove-nth-node-from-end-of-list/ */
+
 /**
  * LeetCode 第 19 题「删除链表的倒数第 N 个节点」的测试入口。
  */

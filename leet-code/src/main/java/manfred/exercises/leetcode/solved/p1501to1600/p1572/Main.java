@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1572;
 
+/** 题目链接：https://leetcode.cn/problems/matrix-diagonal-sum/ */
+
 /*
 给你一个正方形矩阵 mat，请你返回矩阵对角线元素的和。
 

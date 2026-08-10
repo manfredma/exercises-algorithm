@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.wip.p2130;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/ */
+
 /*
 在一个大小为 n 且 n 为 偶数 的链表中，对于 0 <= i <= (n / 2) - 1 的 i ，第 i 个节点（下标从 0 开始）的孪生节点为第 (n-1-i) 个节点 。
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0978;
 
+/** 题目链接：https://leetcode.cn/problems/longest-turbulent-subarray/ */
+
 /**
  * LeetCode 第 978 题（最长湍流子数组）的测试入口。
  */

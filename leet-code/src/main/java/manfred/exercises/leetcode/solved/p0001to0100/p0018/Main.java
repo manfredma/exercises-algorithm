@@ -19,6 +19,8 @@ A solution set is:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0018;
 
+/** 题目链接：https://leetcode.cn/problems/4sum/ */
+
 /**
  * LeetCode 第 18 题的测试入口。
  */

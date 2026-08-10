@@ -1,5 +1,8 @@
 # 删掉一个元素以后全为 1 的最长子数组
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/)
+
+
 给你一个二进制数组 `nums`，你需要从中删掉一个元素。
 
 请你在删掉元素的结果数组中，返回最长的且只包含 `1` 的非空子数组的长度。

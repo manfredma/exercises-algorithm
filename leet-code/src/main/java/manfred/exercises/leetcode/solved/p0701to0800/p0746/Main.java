@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0746;
 
+/** 题目链接：https://leetcode.cn/problems/min-cost-climbing-stairs/ */
+
 /*
 给你一个整数数组 cost，cost[i] 是从第 i 个台阶向上爬需要支付的费用。
 支付后可选择向上爬一个或两个台阶。可从下标 0 或 1 开始。

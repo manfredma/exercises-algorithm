@@ -27,6 +27,8 @@ Output: "2314"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0060;
 
+/** 题目链接：https://leetcode.cn/problems/permutation-sequence/ */
+
 /**
  * LeetCode 第 60 题的测试入口。
  */

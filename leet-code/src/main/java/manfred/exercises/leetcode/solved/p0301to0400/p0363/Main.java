@@ -16,6 +16,8 @@ What if the number of rows is much larger than the number of columns?
  */
 package manfred.exercises.leetcode.solved.p0301to0400.p0363;
 
+/** 题目链接：https://leetcode.cn/problems/max-sum-of-rectangle-no-larger-than-k/ */
+
 /**
  * LeetCode 第 363 题的测试入口。
  */

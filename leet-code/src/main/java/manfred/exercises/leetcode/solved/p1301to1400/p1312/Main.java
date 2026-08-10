@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1312;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/ */
+
 /*
 给你一个字符串 s ，每一次操作你都可以在字符串的任意位置插入任意字符。
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0901;
 
+/** 题目链接：https://leetcode.cn/problems/online-stock-span/ */
+
 /*
 设计一个算法收集某些股票的每日报价，并返回该股票当日价格的跨度。
 当日跨度 = 股票价格小于或等于今天价格的最大连续日数（从今天往回数，包括今天）。

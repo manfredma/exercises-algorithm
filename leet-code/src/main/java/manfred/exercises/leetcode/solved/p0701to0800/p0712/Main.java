@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0712;
 
+/** 题目链接：https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/ */
+
 /*
 给定两个字符串 s1 和 s2，返回使两个字符串相等所需删除字符的 ASCII 值的最小和。
 提示：1 <= s1.length, s2.length <= 1000，s1 和 s2 由小写英文字母组成。

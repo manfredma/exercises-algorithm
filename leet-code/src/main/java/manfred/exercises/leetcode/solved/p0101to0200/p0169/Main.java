@@ -16,6 +16,8 @@ Output: 2
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0169;
 
+/** 题目链接：https://leetcode.cn/problems/majority-element/ */
+
 /**
  * LeetCode 第 169 题的测试入口。
  */

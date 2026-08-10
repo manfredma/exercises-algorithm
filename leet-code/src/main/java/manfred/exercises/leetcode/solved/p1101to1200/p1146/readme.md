@@ -1,5 +1,8 @@
 # 快照数组
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/snapshot-array/)
+
+
 实现支持下列接口的「快照数组」`SnapshotArray`：
 
 - `SnapshotArray(int length)`：初始化一个与指定长度相等的类数组数据结构。初始时，每个元素都等于 `0`。

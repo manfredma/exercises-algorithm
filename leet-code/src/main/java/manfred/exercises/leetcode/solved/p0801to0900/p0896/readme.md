@@ -1,5 +1,8 @@
 # 单调数列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/monotonic-array/)
+
+
 如果数组是单调递增或单调递减的，那么它是**单调**的。
 
 如果对于所有 `i <= j`，`nums[i] <= nums[j]`，那么数组 `nums` 是单调递增的。

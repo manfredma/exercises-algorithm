@@ -1,5 +1,8 @@
 # 数组异或操作
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/xor-operation-in-an-array/)
+
+
 给你两个整数，`n` 和 `start`。
 
 数组 `nums` 定义为:`nums[i] = start + 2*i`(下标从 `0` 开始)且 `n == nums.length`。

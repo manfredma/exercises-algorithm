@@ -1,5 +1,8 @@
 # 添加与搜索单词 - 数据结构设计
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/design-add-and-search-words-data-structure/)
+
+
 请你设计一个数据结构，支持 添加新单词 和 查找字符串是否与任何先前添加的字符串匹配 。
 
 实现词典类 WordDictionary ：

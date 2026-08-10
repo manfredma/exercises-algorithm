@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.wip.p1192;
 
+/** 题目链接：https://leetcode.cn/problems/critical-connections-in-a-network/ */
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;

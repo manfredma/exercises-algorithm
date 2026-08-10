@@ -20,6 +20,8 @@ Explanation: The answer is "wke", with the length of 3.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0003;
 
+/** 题目链接：https://leetcode.cn/problems/longest-substring-without-repeating-characters/ */
+
 /**
  * LeetCode 第 3 题的测试入口。
  */

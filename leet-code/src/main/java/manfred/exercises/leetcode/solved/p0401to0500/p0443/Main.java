@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0443;
 
+/** 题目链接：https://leetcode.cn/problems/string-compression/ */
+
 import java.util.Arrays;
 
 /*

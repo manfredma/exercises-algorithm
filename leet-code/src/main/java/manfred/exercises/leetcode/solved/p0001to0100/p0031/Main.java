@@ -13,6 +13,8 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0031;
 
+/** 题目链接：https://leetcode.cn/problems/next-permutation/ */
+
 /**
  * LeetCode 第 31 题「下一个排列」的测试入口。
  */

@@ -1,5 +1,8 @@
 # 按权重随机选择
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/random-pick-with-weight/)
+
+
 给你一个下标从 `0` 开始的正整数数组 `w`，其中 `w[i]` 代表第 `i` 个下标的权重。
 
 请你实现函数 `pickIndex`，它可以从范围 `[0, w.length - 1]` 内随机选出并返回一个下标。

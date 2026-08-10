@@ -28,6 +28,8 @@ exection -> execution (insert 'u')
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0072;
 
+/** 题目链接：https://leetcode.cn/problems/edit-distance/ */
+
 /**
  * LeetCode 第 72 题的测试入口。
  */

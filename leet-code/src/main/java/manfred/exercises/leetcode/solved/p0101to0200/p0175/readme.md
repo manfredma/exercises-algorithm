@@ -1,5 +1,8 @@
 # 组合两个表
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/combine-two-tables/)
+
+
 表: Person
 
 +-------------+---------+

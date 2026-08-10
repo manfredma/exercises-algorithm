@@ -28,6 +28,8 @@ A solution set is:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0039;
 
+/** 题目链接：https://leetcode.cn/problems/combination-sum/ */
+
 /**
  * LeetCode 第 39 题「组合总和」的测试入口。
  */

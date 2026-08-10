@@ -36,6 +36,8 @@ The given r and c are all positive.
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0566;
 
+/** 题目链接：https://leetcode.cn/problems/reshape-the-matrix/ */
+
 import java.util.Arrays;
 
 /**

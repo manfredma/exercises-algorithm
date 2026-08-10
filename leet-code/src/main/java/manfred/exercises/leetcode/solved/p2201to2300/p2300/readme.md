@@ -1,5 +1,8 @@
 # 咒语和药水的成功对数
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/)
+
+
 给你两个正整数数组 `spells` 和 `potions`，长度分别为 `n` 和 `m`，其中 `spells[i]`
 表示第 `i` 个咒语的能量强度，`potions[j]` 表示第 `j` 瓶药水的能量强度。
 

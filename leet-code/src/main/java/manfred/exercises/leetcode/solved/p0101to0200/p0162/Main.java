@@ -25,6 +25,8 @@ Your solution should be in logarithmic complexity.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0162;
 
+/** 题目链接：https://leetcode.cn/problems/find-peak-element/ */
+
 /**
  * LeetCode 第 162 题的测试入口。
  */

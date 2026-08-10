@@ -19,6 +19,8 @@
 */
 package manfred.exercises.leetcode.solved.p0201to0300.p0283;
 
+/** 题目链接：https://leetcode.cn/problems/move-zeroes/ */
+
 import java.util.Arrays;
 
 /**

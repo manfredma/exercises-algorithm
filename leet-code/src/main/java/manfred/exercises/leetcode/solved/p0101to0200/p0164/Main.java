@@ -23,6 +23,8 @@ Try to solve it in linear time/space.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0164;
 
+/** 题目链接：https://leetcode.cn/problems/maximum-gap/ */
+
 /**
  * LeetCode 第 164 题的测试入口。
  */

@@ -1,5 +1,8 @@
 # 不相交的线
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/uncrossed-lines/)
+
+
 在两条独立的水平线上按给定的顺序写下 `nums1` 和 `nums2` 中的整数。
 
 现在，可以绘制一些连接两个数字 `nums1[i]` 和 `nums2[j]` 的直线，这些

@@ -19,6 +19,8 @@ Explanation: The square root of 8 is 2.82842..., and since
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0069;
 
+/** 题目链接：https://leetcode.cn/problems/sqrtx/ */
+
 /**
  * LeetCode 第 69 题的测试入口。
  */

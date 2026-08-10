@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0528;
 
+/** 题目链接：https://leetcode.cn/problems/random-pick-with-weight/ */
+
 /*
 给你一个 下标从 0 开始 的正整数数组 w ，其中 w[i] 代表第 i 个下标的权重。
 

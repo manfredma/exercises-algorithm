@@ -25,6 +25,8 @@ The flattened tree should look like:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0114;
 
+/** 题目链接：https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/ */
+
 /**
  * LeetCode 第 114 题的测试入口。
  */

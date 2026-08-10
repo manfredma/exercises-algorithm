@@ -1,5 +1,8 @@
 # 重复的DNA序列
 
+> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/repeated-dna-sequences/)
+
+
 DNA序列 由一系列核苷酸组成，缩写为 'A', 'C', 'G' 和 'T'.。
 
 	
