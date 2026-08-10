@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p2130;
+package manfred.exercises.leetcode.solved.p2101to2200.p2130;
 
 public class ListNode {
     public int val;

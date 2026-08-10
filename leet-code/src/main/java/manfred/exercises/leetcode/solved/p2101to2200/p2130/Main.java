@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p2130;
+package manfred.exercises.leetcode.solved.p2101to2200.p2130;
 
 /** 题目链接：https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/ */
 
