@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0282;
+package manfred.exercises.leetcode.solved.p0201to0300.p0282;
 
 /** 题目链接：https://leetcode.cn/problems/expression-add-operators/ */
 
@@ -54,11 +54,21 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
+        Solution2 solution2 = new Solution2();
         assertExpressionSetEquals(
                 Arrays.asList("1+2+3", "1*2*3"), solution.addOperators("123", 6));
         assertExpressionSetEquals(
+                Arrays.asList("1+2+3", "1*2*3"), solution2.addOperators("123", 6));
+        assertExpressionSetEquals(
                 Arrays.asList("2*3+2", "2+3*2"), solution.addOperators("232", 8));
+        assertExpressionSetEquals(
+                Arrays.asList("2*3+2", "2+3*2"), solution2.addOperators("232", 8));
         assertExpressionSetEquals(Collections.<String>emptyList(), solution.addOperators("3456237490", 9191));
+        assertExpressionSetEquals(Collections.<String>emptyList(), solution2.addOperators("3456237490", 9191));
+        assertExpressionSetEquals(
+                Arrays.asList("0+0", "0-0", "0*0"), solution.addOperators("00", 0));
+        assertExpressionSetEquals(
+                Arrays.asList("0+0", "0-0", "0*0"), solution2.addOperators("00", 0));
     }
 
     private static void assertExpressionSetEquals(List<String> expected, List<String> actual) {
