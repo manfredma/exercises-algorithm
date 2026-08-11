@@ -1,134 +1,140 @@
-/*
-Design and implement a data structure for Least Frequently Used (LFU) cache.
-It should support the following operations: get and put.
-
-get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
-put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity,
-it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem,
-when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key would be evicted.
-
-Follow up:
-Could you do both operations in O(1) time complexity?
-
-Example:
-
-LFUCache cache = new LFUCache( 2 );
-
-        cache.put(1, 1);
-        cache.put(2, 2);
-        cache.get(1);       // returns 1
-        cache.put(3, 3);    // evicts key 2
-        cache.get(2);       // returns -1 (not found)
-        cache.get(3);       // returns 3.
-        cache.put(4, 4);    // evicts key 1.
-        cache.get(1);       // returns -1 (not found)
-        cache.get(3);       // returns 3
-        cache.get(4);       // returns 4
- */
-
 package manfred.exercises.leetcode.solved.p0401to0500.p0460;
 
 /** 题目链接：https://leetcode.cn/problems/lfu-cache/ */
 
+/*
+请你为 最不经常使用（LFU）缓存算法设计并实现数据结构。
+
+实现 LFUCache 类：
+
+LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象
+
+int get(int key) - 如果键 key 存在于缓存中，则获取键的值，否则返回 -1 。
+
+void put(int key, int value) - 如果键 key 已存在，则变更其值；如果键不存在，请插入键值对。当缓存达到其容量 capacity 时，则应该在插入新项之前，移除最不经常使用的项。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，应该去除 最久未使用 的键。
+
+为了确定最不常使用的键，可以为缓存中的每个键维护一个 使用计数器 。使用计数最小的键是最久未使用的键。
+
+当一个键首次插入到缓存中时，它的使用计数器被设置为 1 (由于 put 操作)。对缓存中的键执行 get 或 put 操作，使用计数器的值将会递增。
+
+函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。
+
+示例：
+
+输入：
+["LFUCache", "put", "put", "get", "put", "get", "get", "put", "get", "get", "get"]
+[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]
+输出：
+[null, null, null, 1, null, -1, 3, null, -1, 3, 4]
+
+解释：
+// cnt(x) = 键 x 的使用计数
+// cache=[] 将显示最后一次使用的顺序（最左边的元素是最近的）
+LFUCache lfu = new LFUCache(2);
+lfu.put(1, 1);   // cache=[1,_], cnt(1)=1
+lfu.put(2, 2);   // cache=[2,1], cnt(2)=1, cnt(1)=1
+lfu.get(1);      // 返回 1
+                 // cache=[1,2], cnt(2)=1, cnt(1)=2
+lfu.put(3, 3);   // 去除键 2 ，因为 cnt(2)=1 ，使用计数最小
+                 // cache=[3,1], cnt(3)=1, cnt(1)=2
+lfu.get(2);      // 返回 -1（未找到）
+lfu.get(3);      // 返回 3
+                 // cache=[3,1], cnt(3)=2, cnt(1)=2
+lfu.put(4, 4);   // 去除键 1 ，1 和 3 的 cnt 相同，但 1 最久未使用
+                 // cache=[4,3], cnt(4)=1, cnt(3)=2
+lfu.get(1);      // 返回 -1（未找到）
+lfu.get(3);      // 返回 3
+                 // cache=[3,4], cnt(4)=1, cnt(3)=3
+lfu.get(4);      // 返回 4
+                 // cache=[3,4], cnt(4)=2, cnt(3)=3
+
+提示：
+
+1 <= capacity <= 10^4
+
+0 <= key <= 10^5
+
+0 <= value <= 10^9
+
+最多调用 2 * 10^5 次 get 和 put 方法
+ */
 /**
  * LeetCode 第 460 题的测试入口。
  */
 public class Main {
+
     public static void main(String[] args) {
-        test3();
+        testExample();
+        testUpdateExistingKey();
+        testCapacityOne();
+        testOptimizedCache();
     }
 
-    private static void test3() {
-        /*
-        ["LFUCache","put","put","put","put","put","get","put","get","get","put","get","put","put","put","get","put","get","get","get","get",
-        "put","put","get","get","get","put","put","get","put","get","put","get","get","get","put","put","put","get","put","get","get","put",
-        "put","get","put","put","put","put","get","put","put","get","put","put","get","put","put","put","put","put","get","put","put","get",
-        "put","get","get","get","put","get","get","put","put","put","put","get","put","put","put","put","get","get","get","put","put","put",
-        "get","put","put","put","get","put","put","put","get","get","get","put","put","put","put","get","put","put","put","put","put","put",
-        "put"]
-        [[10],[10,13],[3,17],[6,11],[10,5],[9,10],[13],[2,19],[2],[3],[5,25],[8],[9,22],[5,5],[1,30],[11],[9,12],[7],[5],[8],[9],[4,30],
-        [9,3],[9],[10],[10],[6,14],[3,1],[3],[10,11],[8],[2,14],[1],[5],[4],[11,4],[12,24],[5,18],[13],[7,23],[8],[12],[3,27],[2,12],[5],
-        [2,9],[13,4],[8,18],[1,7],[6],[9,29],[8,21],[5],[6,30],[1,12],[10],[4,15],[7,22],[11,26],[8,17],[9,29],[5],[3,4],[11,30],[12],
-        [4,29],[3],[9],[6],[3,4],[1],[10],[3,29],[10,28],[1,20],[11,13],[3],[3,12],[3,8],[10,9],[3,26],[8],[7],[5],[13,17],[2,27],[11,15],
-        [12],[9,19],[2,15],[3,16],[1],[12,17],[9,1],[6,19],[4],[5],[5],[8,1],[11,7],[5,2],[9,28],[1],[2,2],[7,4],[4,22],[7,24],[9,26],
-        [13,28],[11,26]]
-        [null,null,null,null,null,null,-1,null,19,17,null,-1,null,null,null,-1,null,-1,5,-1,12,null,null,3,5,5,null,null,1,null,-1,null,30,5,
-        30,null,null,null,-1,null,-1,24,null,null,18,null,null,null,null,14,null,null,18,null,null,11,null,null,null,null,null,18,null,null,
-        -1,null,4,29,30,null,12,11,null,null,null,null,29,null,null,null,null,17,-1,18,null,null,null,-1,null,null,null,20,null,null,null,29,
-        18,18,null,null,null,null,20,null,null,null,null,null,null,null]
-        */
-        /*
-        ["LFUCache","put","put","put","put","put","get","put","get","get","put","get","put","put","put","get","put","get","get","get","get","put","put","get","get","get","put","put","get","put","get","put","get","get","get","put","put","put","get","put","get","get","put","put","get","put","put","put","put","get","put","put","get","put","put","get","put","put","put","put","put","get","put","put","get","put","get","get","get","put","get","get","put","put","put","put","get","put","put","put","put","get","get","get","put","put","put","get","put","put","put","get","put","put","put","get","get","get","put","put","put","put","get","put","put","put","put","put","put","put"]
-[[10],[10,13],[3,17],[6,11],[10,5],[9,10],[13],[2,19],[2],[3],[5,25],[8],[9,22],[5,5],[1,30],[11],[9,12],[7],[5],[8],[9],[4,30],[9,3],[9],[10],[10],[6,14],[3,1],[3],[10,11],[8],[2,14],[1],[5],[4],[11,4],[12,24],[5,18],[13],[7,23],[8],[12],[3,27],[2,12],[5],[2,9],[13,4],[8,18],[1,7],[6],[9,29],[8,21],[5],[6,30],[1,12],[10],[4,15],[7,22],[11,26],[8,17],[9,29],[5],[3,4],[11,30],[12],[4,29],[3],[9],[6],[3,4],[1],[10],[3,29],[10,28],[1,20],[11,13],[3],[3,12],[3,8],[10,9],[3,26],[8],[7],[5],[13,17],[2,27],[11,15],[12],[9,19],[2,15],[3,16],[1],[12,17],[9,1],[6,19],[4],[5],[5],[8,1],[11,7],[5,2],[9,28],[1],[2,2],[7,4],[4,22],[7,24],[9,26],[13,28],[11,26]]
-        [null,null,null,null,null,null,-1,null,19,17,null,-1,null,null,null,-1,null,-1,5,-1,12,null,null,3,5,5,null,null,1,null,-1,null,30,5,30,null,null,null,-1,null,-1,24,null,null,18,null,null,null,null,14,null,null,18,null,null,11,null,null,null,null,null,18,null,null,-1,null,4,29,30,null,12,11,null,null,null,null,29,null,null,null,null,17,-1,18,null,null,null,-1,null,null,null,20,null,null,null,29,18,18,null,null,null,null,20,null,null,null,null,null,null,null]
-         */
-        String input = "[[10],[10,13],[3,17],[6,11],[10,5],[9,10],[13],[2,19],[2],[3],[5,25],[8],[9,22],[5,5],[1,30],[11],[9,12],[7],[5],[8],[9],[4,30],[9,3],[9],[10],[10],[6,14],[3,1],[3],[10,11],[8],[2,14],[1],[5],[4],[11,4],[12,24],[5,18],[13],[7,23],[8],[12],[3,27],[2,12],[5],[2,9],[13,4],[8,18],[1,7],[6],[9,29],[8,21],[5],[6,30],[1,12],[10],[4,15],[7,22],[11,26],[8,17],[9,29],[5],[3,4],[11,30],[12],[4,29],[3],[9],[6],[3,4],[1],[10],[3,29],[10,28],[1,20],[11,13],[3],[3,12],[3,8],[10,9],[3,26],[8],[7],[5],[13,17],[2,27],[11,15],[12],[9,19],[2,15],[3,16],[1],[12,17],[9,1],[6,19],[4],[5],[5],[8,1],[11,7],[5,2],[9,28],[1],[2,2],[7,4],[4,22],[7,24],[9,26],[13,28],[11,26";
-        String[] inputs = input.split("],");
-        String expect = "null,null,null,null,null,null,-1,null,19,17,null,-1,null,null,null,-1,null,-1,5,-1,12,null,null,3,5,5,null,null,1,null,-1,null,30,5,30,null,null,null,-1,null,-1,24,null,null,18,null,null,null,null,14,null,null,18,null,null,11,null,null,null,null,null,18,null,null,-1,null,4,29,30,null,12,11,null,null,null,null,29,null,null,null,null,17,-1,18,null,null,null,-1,null,null,null,20,null,null,null,29,18,18,null,null,null,null,20,null,null,null,null,null,null,null";
-        String[] expects = expect.split(",");
-        LFUCache lfuCache = new LFUCache(Integer.parseInt(inputs[0].replaceAll("\\[", "").trim()));
-
-        for (int i = 1; i < inputs.length; i++) {
-            inputs[i] = inputs[i].replaceAll("\\[", "").trim();
-            if (inputs[i].contains(",")) {
-                String[] putPara = inputs[i].split(",");
-                lfuCache.put(Integer.parseInt(putPara[0]), Integer.parseInt(putPara[1]));
-                System.out.println("after put " + Integer.parseInt(putPara[0]) + " " + Integer.parseInt(putPara[1]));
-                System.out.println(lfuCache);
-            } else {
-                int result = lfuCache.get(Integer.parseInt(inputs[i]));
-                System.out.println("after get " + Integer.parseInt(inputs[i]));
-                System.out.println(lfuCache);
-                if (Integer.parseInt(expects[i]) != result) {
-                    System.out.println("ERROR: key=" + Integer.parseInt(inputs[i]) + ", expect=" + expects[i] + ", real=" + result);
-                    System.out.println("++++++++++++++++++++++++++++++++");
-                }
-            }
-        }
-
-    }
-
-    private static void test2() {
-        LFUCache cache = new LFUCache(1);
-        /*
-        ["LFUCache","put","get","put","get","get"]
-        [[1],[2,1],[2],[3,2],[2],[3]]
-         */
-        cache.put(2, 1);
-        System.out.println(cache.get(2));
-        cache.put(3, 2);
-        System.out.println(cache.get(2));
-        System.out.println(cache.get(3));
-    }
-
-    private static void test1() {
+    private static void testExample() {
         LFUCache cache = new LFUCache(2);
-
         cache.put(1, 1);
         cache.put(2, 2);
-
-        // returns 1
-        System.out.println(cache.get(1));
-
-        // evicts key 2
+        assertEquals(1, cache.get(1));
         cache.put(3, 3);
-
-        // returns -1 (not found)
-        System.out.println(cache.get(2));
-
-        // returns 3.
-        System.out.println(cache.get(3));
-
-        // evicts key 1.
+        assertEquals(-1, cache.get(2));
+        assertEquals(3, cache.get(3));
         cache.put(4, 4);
+        assertEquals(-1, cache.get(1));
+        assertEquals(3, cache.get(3));
+        assertEquals(4, cache.get(4));
+    }
 
-        // returns -1 (not found)
-        System.out.println(cache.get(1));
+    private static void testUpdateExistingKey() {
+        LFUCache cache = new LFUCache(2);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.put(1, 10);
+        cache.put(3, 3);
+        assertEquals(10, cache.get(1));
+        assertEquals(-1, cache.get(2));
+        assertEquals(3, cache.get(3));
+    }
 
-        // returns 3
-        System.out.println(cache.get(3));
+    private static void testCapacityOne() {
+        LFUCache cache = new LFUCache(1);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        assertEquals(-1, cache.get(1));
+        assertEquals(2, cache.get(2));
+    }
 
-        // returns 4
-        System.out.println(cache.get(4));
+    private static void testOptimizedCache() {
+        LFUCache2 cache = new LFUCache2(2);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        assertEquals(1, cache.get(1));
+        cache.put(3, 3);
+        assertEquals(-1, cache.get(2));
+        assertEquals(3, cache.get(3));
+        cache.put(4, 4);
+        assertEquals(-1, cache.get(1));
+        assertEquals(3, cache.get(3));
+        assertEquals(4, cache.get(4));
+
+        LFUCache2 updateCache = new LFUCache2(2);
+        updateCache.put(1, 1);
+        updateCache.put(2, 2);
+        updateCache.put(1, 10);
+        updateCache.put(3, 3);
+        assertEquals(10, updateCache.get(1));
+        assertEquals(-1, updateCache.get(2));
+        assertEquals(3, updateCache.get(3));
+
+        LFUCache2 singleItemCache = new LFUCache2(1);
+        singleItemCache.put(1, 1);
+        singleItemCache.put(2, 2);
+        assertEquals(-1, singleItemCache.get(1));
+        assertEquals(2, singleItemCache.get(2));
+    }
+
+    private static void assertEquals(int expected, int actual) {
+        if (expected != actual) {
+            throw new AssertionError("expected: " + expected + ", actual: " + actual);
+        }
     }
 }
