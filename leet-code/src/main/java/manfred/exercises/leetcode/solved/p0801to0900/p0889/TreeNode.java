@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0889;
+package manfred.exercises.leetcode.solved.p0801to0900.p0889;
 
 /**
  * 二叉树节点定义。

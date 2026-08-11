@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0889;
+package manfred.exercises.leetcode.solved.p0801to0900.p0889;
 
 /** 题目链接：https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/ */
 
@@ -52,6 +52,7 @@ postorder 中所有值都 不同
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        Solution2 solution2 = new Solution2();
         assertTraversals(
                 new int[] {1, 2, 4, 5, 3, 6, 7},
                 new int[] {4, 5, 2, 6, 7, 3, 1},
@@ -59,9 +60,19 @@ public class Main {
                         new int[] {1, 2, 4, 5, 3, 6, 7},
                         new int[] {4, 5, 2, 6, 7, 3, 1}));
         assertTraversals(
+                new int[] {1, 2, 4, 5, 3, 6, 7},
+                new int[] {4, 5, 2, 6, 7, 3, 1},
+                solution2.constructFromPrePost(
+                        new int[] {1, 2, 4, 5, 3, 6, 7},
+                        new int[] {4, 5, 2, 6, 7, 3, 1}));
+        assertTraversals(
                 new int[] {1}, new int[] {1}, solution.constructFromPrePost(new int[] {1}, new int[] {1}));
         assertTraversals(
+                new int[] {1}, new int[] {1}, solution2.constructFromPrePost(new int[] {1}, new int[] {1}));
+        assertTraversals(
                 new int[] {1, 2}, new int[] {2, 1}, solution.constructFromPrePost(new int[] {1, 2}, new int[] {2, 1}));
+        assertTraversals(
+                new int[] {1, 2}, new int[] {2, 1}, solution2.constructFromPrePost(new int[] {1, 2}, new int[] {2, 1}));
     }
 
     private static void assertTraversals(int[] expectedPreorder, int[] expectedPostorder, TreeNode root) {
