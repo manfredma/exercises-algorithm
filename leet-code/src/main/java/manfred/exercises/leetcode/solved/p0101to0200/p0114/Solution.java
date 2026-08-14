@@ -25,4 +25,5 @@ class Solution {
         }
         cur.right = tmp;
     }
+
 }
