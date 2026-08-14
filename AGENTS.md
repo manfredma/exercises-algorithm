@@ -54,6 +54,7 @@
 - 每道题的 `Main.java` 必须有 `public static void main(String[] args)` 入口
 - LeetCode 题目的所有测试都必须写在对应题目的 `Main.main` 中；不得在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类。
 - 不允许在 `src/main/java` 下使用 `@Test` 注解
+- **题目完成后的收尾流程**：解法实现后、提交前，必须按 `docs/leetcode-problem-workflow.md` 顶部的「完成一题的收尾 SOP」清单逐项执行（补注释 → 补用例 → 编译 → 运行验证 → 归档 → 改 package → 归档后复验 → 更新 HOT100 进度 → 暂存提交推送）。未走完清单不得提交；未完成的题目不得归档。Claude Code 还可用 `/finish-leetcode <题号>` 命令执行其中机械步骤。
 
 ### Testing Requirements
 

@@ -2,6 +2,23 @@
 
 本文件定义本项目新增、重新抓取与归档 LeetCode 题目的流程；`AGENTS.md` 中的约束优先。
 
+## 完成一题的收尾 SOP（Claude Code 与 Codex 共同遵循）
+
+每道 LeetCode 题目解法实现后、提交前，**必须按顺序**走完以下清单，缺一不可：
+
+1. **补注释**：本题所有 `Solution*.java` 加类级 Javadoc，说明思路、关键点与复杂度；多解法间体现演进关系。
+2. **补用例**：`Main.java` 含官方全部示例 + 适用边界用例（单元素/空/极值/并列/特殊结构），assert 断言风格；用例须覆盖能暴露常见 bug 的场景（如多位数、负数、溢出、非法并列等，依题而定）。
+3. **编译验证**：`mvn -f pom.xml clean compile -pl leet-code -DskipTests -Dsort.skip=true` 通过。
+4. **运行验证**：`java -cp leet-code/target/classes manfred.exercises.leetcode.wip.pXXXX.Main` 无 AssertionError 退出（退出码 0）。多解法时全部测通。
+5. **归档**：`wip/pXXXX/` 整目录迁移到 `solved/pAAABBB/pXXXX/`（`AAABBB` 为题号所在连续百题段），同步更新所有 `.java` 的 package 声明。
+6. **归档后重新编译运行**：用归档后的包路径再跑一次 Main，确认 package 变更无误。
+7. **更新进度**（若该题在 `HOT100_REVIEW.md` 表中）：对应行改为 `✅ 日期 重刷完成（说明，已归档）`。
+8. **暂存、提交、推送**：只暂存本题 + 进度文件；commit 消息 `feat(leetcode): solve problem XXXX with <简述>`；推送到 `origin/main`。
+
+> Claude Code 可用 `/finish-leetcode <题号>` 命令执行步骤 3–8 的机械部分；步骤 1–2（注释、用例）需人工判断，不在命令内自动完成。Codex 读取本清单与 `AGENTS.md`，按步骤手动执行。
+
+**未完成（Solution 仍空骨架、Main 有失败用例）的题目不得归档**，留在 `wip` 并说明原因。
+
 ## 抓取题面
 
 在项目根目录执行：
@@ -22,7 +39,15 @@ leet-code/src/main/java/manfred/exercises/leetcode/wip/pXXXX/
 
 包名为 `manfred.exercises.leetcode.wip.pXXXX`。目录包含 `readme.md`、`Solution.java` 和 `Main.java`。
 
-`Solution.java` 只保留题面给出的类、构造器和方法签名，以及可编译的 TODO 占位返回值；不提前写解法。`Main.java` 必须有 `public static void main(String[] args)`，将全部官方示例写为可执行断言，并按题型补充边界、空/极值、并列结果和典型结构等必要用例。所有题目测试都放在 `Main.main`，不得新增 JUnit/TestNG 测试类。
+`Solution.java` 只保留题面给出的类、构造器和方法签名，以及可编译的 TODO 占位返回值；不提前写解法。占位返回值按返回类型选择：`int`/`long` → `0`，`boolean` → `false`，`String` → `""`，数组/对象 → `null`。`Main.java` 必须有 `public static void main(String[] args)`，将全部官方示例写为可执行断言，并按题型补充边界、空/极值、并列结果和典型结构等必要用例。所有题目测试都放在 `Main.main`，不得新增 JUnit/TestNG 测试类。
+
+## Java 8 约束
+
+项目使用 Java 8，`Solution.java` 与 `Main.java` 禁止使用 Java 9+ API：
+
+- ❌ `List.of()`、`Map.of()`、`Set.of()` → ✅ `Arrays.asList()`
+- ❌ `var` 关键字
+- ❌ `String.isBlank()`、`Optional.ifPresentOrElse()` 等 Java 9+ 方法
 
 ## README 与题面注释
 
