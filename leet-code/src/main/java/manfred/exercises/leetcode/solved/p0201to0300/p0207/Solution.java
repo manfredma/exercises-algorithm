@@ -1,16 +1,24 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0207;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
- * LeetCode 第 207 题「课程表」：拓扑排序（BFS Kahn 算法或 DFS 检测环），判断有向图是否有环。
+ * 课程表 —— 拓扑排序（Kahn 朴素删边法）。
+ *
+ * <p>思路：反复找出「无入度」的课程（无先修依赖），移除它及其出边；
+ * 若能移除全部课程则无环（可完成），否则存在环。用邻接表记录每个课程的「被依赖」关系。
+ *
+ * <p>注意：早期版本有 {@code prerequisites.length < 2} 时直接返回 true 的过早返回，
+ * 会漏判自环（如 [[0,0]] 只 1 条边却成环）。已移除该优化，统一走环检测。
+ *
+ * <p>复杂度：时间 O(V×E)（每轮全量扫描找入度为 0 的节点），空间 O(V+E)。
+ * 不如入度数组 + 队列的标准 Kahn（见 {@link Solution4}）高效。
  */
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        if (numCourses < 2 || prerequisites == null || prerequisites.length < 2) {
-            return true;
-        }
-
         HashMap<Integer, Set<Integer>> depends = new HashMap<>();
         for (int i = 0; i < prerequisites.length; i++) {
             int[] depend = prerequisites[i];

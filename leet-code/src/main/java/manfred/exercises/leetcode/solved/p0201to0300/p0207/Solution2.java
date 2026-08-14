@@ -6,14 +6,19 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * LeetCode 第 207 题「课程表」（方案2）：拓扑排序（BFS Kahn 算法或 DFS 检测环），判断有向图是否有环。
+ * 课程表 —— 三色标记 DFS 检测环。
+ *
+ * <p>思路：对每个未访问节点做 DFS。stack（灰）标记「当前递归栈中」的节点，遇灰则成环；
+ * marked（黑）标记「子树已完整探过」的节点，跳过避免重复。回溯时 stack[start]=false。
+ *
+ * <p>注意：早期版本有 {@code prerequisites.length < 2} 过早返回 true，漏判自环，已移除。
+ * 与 {@link Solution3} 同为 DFS 判环，此版用两个 boolean 数组（stack/marked），
+ * Solution3 用 Set + visited，写法不同本质相同。
+ *
+ * <p>复杂度：时间 O(V+E)，空间 O(V+E)。
  */
 class Solution2 {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        if (numCourses < 2 || prerequisites == null || prerequisites.length < 2) {
-            return true;
-        }
-
         boolean[] stack = new boolean[numCourses];
         boolean[] marked = new boolean[numCourses];
         Map<Integer, List<int[]>> edgeFromI = new HashMap<>();
