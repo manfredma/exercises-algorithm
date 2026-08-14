@@ -1,7 +1,11 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0208;
 
 /**
- * LeetCode 第 208 题「实现 Trie（前缀树）」的核心数据结构实现。
+ * 实现 Trie（前缀树）—— 初版实现。
+ *
+ * <p>节点用 children[26] 数组表示子节点（下标 idx = char - 'a'），isEnd 标记单词结尾。
+ * insert/search/startsWith 沿字符路径行走，O(L) 时间。与 {@link Trie2} 同结构，
+ * 此版方法注释为英文，{@code TrieNode} 为私有静态内部类。
  */
 class Trie {
 
