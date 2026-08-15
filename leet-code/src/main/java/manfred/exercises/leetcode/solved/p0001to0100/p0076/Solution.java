@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * LeetCode 第 76 题「最小覆盖子串」：滑动窗口 + 哈希表统计字符频次，收缩左端找最小窗口。
+ * LeetCode 第 76 题「最小覆盖子串」（方案 1）：为目标串中的每个字符维护其在源串中最近出现的下标。
+ * 该方案能得到正确结果，但会反复调用 {@link String#indexOf(int)}、扫描下标列表，状态复杂且最坏
+ * 时间复杂度为 O(mn)，仅保留作思路对照；方案 2 和方案 3 均为 O(m + n) 的滑动窗口解法。
  */
 class Solution {
     public String minWindow(String s, String t) {
