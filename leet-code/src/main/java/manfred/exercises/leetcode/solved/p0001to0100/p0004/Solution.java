@@ -1,7 +1,8 @@
 package manfred.exercises.leetcode.solved.p0001to0100.p0004;
 
 /**
- * LeetCode 第 4 题「寻找两个正序数组的中位数」：二分搜索在较短数组上确定分割点，O(log(min(m,n)))。
+ * LeetCode 第 4 题「寻找两个正序数组的中位数」：归并双指针线性扫描，O(m+n)。
+ * 暴力解法，不满足题目 O(log(m+n)) 复杂度要求，仅作对比；达标解见 {@link Solution2}。
  */
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
