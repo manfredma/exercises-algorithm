@@ -44,7 +44,7 @@ def get_slug(num):
         '''query problemList($filters: QuestionListFilterInput) {
             problemsetQuestionList(
                 categorySlug: "all-code-essentials",
-                limit: 10, skip: 0,
+                limit: 100, skip: 0,
                 filters: $filters
             ) {
                 questions { frontendQuestionId titleSlug }
