@@ -19,6 +19,8 @@ For the purpose of this problem, we will return 0 when needle is an empty string
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0028;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/ */
 
 /**
@@ -27,6 +29,17 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0028;
 public class Main {
 
     public static void main(String[] args) {
-        new Solution();
+        Solution solution = new Solution();
+        // 示例 1: "hello" 中找 "ll" → 2
+        assertEquals(2, solution.strStr("hello", "ll"));
+        // 示例 2: "aaaaa" 中找 "bba" → -1
+        assertEquals(-1, solution.strStr("aaaaa", "bba"));
+        // 空 needle → 0
+        assertEquals(0, solution.strStr("hello", ""));
+        // haystack 与 needle 相同 → 0
+        assertEquals(0, solution.strStr("abc", "abc"));
+        // needle 未出现 → -1
+        assertEquals(-1, solution.strStr("abc", "abcd"));
+        System.out.println("p0028 passed");
     }
 }
