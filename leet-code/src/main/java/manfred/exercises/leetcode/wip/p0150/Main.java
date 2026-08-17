@@ -1,52 +1,24 @@
-/*
-
-Evaluate the value of an arithmetic expression in Reverse Polish Notation.
-
-Valid operators are +, -, *, /. Each operand may be an integer or another expression.
-
-Note:
-Division between two integers should truncate toward zero.
-The given RPN expression is always valid.
-That means the expression would always evaluate to a result and there won't be any divide by zero operation.
-Example 1:
-
-Input: ["2", "1", "+", "3", "*"]
-Output: 9
-Explanation: ((2 + 1) * 3) = 9
-Example 2:
-
-Input: ["4", "13", "5", "/", "+"]
-Output: 6
-Explanation: (4 + (13 / 5)) = 6
-Example 3:
-
-Input: ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]
-Output: 22
-Explanation:
-  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
-= ((10 * (6 / (12 * -11))) + 17) + 5
-= ((10 * (6 / -132)) + 17) + 5
-= ((10 * 0) + 17) + 5
-= (0 + 17) + 5
-= 17 + 5
-= 22
-
- */
 package manfred.exercises.leetcode.wip.p0150;
 
 import static manfred.exercises.assertion.Assert.*;
 
 /** 题目链接：https://leetcode.cn/problems/evaluate-reverse-polish-notation/ */
-
-/**
- * LeetCode 第 150 题的测试入口。
- */
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        assertEquals(9, solution.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
-        assertEquals(6, solution.evalRPN(new String[]{"4", "13", "5", "/", "+"}));
-        assertEquals(22, solution.evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
-        System.out.println("p0150 all assertions passed");
+        // 旧解法 Solution：保留验证，确保不被破坏（应通过）
+        // 注意：旧 Solution 单元素输入 ["42"] 会空栈 peek 抛异常（EXPRESSION_REVIEW 记录的 bug），
+        // 故旧测试不含单元素用例；新解法 Solution2 应正确处理，新增该边界。
+        Solution s1 = new Solution();
+        assertEquals(9, s1.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
+        assertEquals(6, s1.evalRPN(new String[]{"4", "13", "5", "/", "+"}));
+        assertEquals(22, s1.evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+        // 新解法 Solution2：新增验证，骨架占位下 RED，待实现后通过
+        Solution2 s2 = new Solution2();
+        assertEquals(9, s2.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
+        assertEquals(6, s2.evalRPN(new String[]{"4", "13", "5", "/", "+"}));
+        assertEquals(22, s2.evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+        assertEquals(42, s2.evalRPN(new String[]{"42"})); // 单元素边界（旧解法 bug 点）
+        assertEquals(-3, s2.evalRPN(new String[]{"-3"})); // 单负数
+        System.out.println("leet#0150 passed");
     }
 }

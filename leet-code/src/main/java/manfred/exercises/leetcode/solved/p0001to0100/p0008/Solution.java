@@ -1,7 +1,11 @@
-package manfred.exercises.leetcode.wip.p0008;
+package manfred.exercises.leetcode.solved.p0001to0100.p0008;
 
 /**
- * LeetCode 第 8 题「字符串转换整数 (atoi)」：状态机或逐字符解析，处理前导空格、符号和溢出。
+ * LeetCode 第 8 题「字符串转换整数 (atoi)」：逐字符解析，处理前导空格、符号和溢出。
+ * <p>
+ * 思路：char[] + index 游标跳过前导空格，解析符号，逐位累加到 long；
+ * 溢出按符号分支判断（负数与 MIN_VALUE 绝对值、正数与 MAX_VALUE 比较）后截断。
+ * 复杂度：时间 O(n)，空间 O(n)（toCharArray 复制）。
  */
 class Solution {
 

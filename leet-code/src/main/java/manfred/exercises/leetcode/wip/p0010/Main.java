@@ -1,84 +1,39 @@
-/*
-Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
-
-'.' Matches any single character.
-'*' Matches zero or more of the preceding element.
-The matching should cover the entire input string (not partial).
-
-Note:
-
-s could be empty and contains only lowercase letters a-z.
-p could be empty and contains only lowercase letters a-z, and characters like . or *.
-Example 1:
-
-Input:
-s = "aa"
-p = "a"
-Output: false
-Explanation: "a" does not match the entire string "aa".
-Example 2:
-
-Input:
-s = "aa"
-p = "a*"
-Output: true
-Explanation: '*' means zero or more of the precedeng element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
-Example 3:
-
-Input:
-s = "ab"
-p = ".*"
-Output: true
-Explanation: ".*" means "zero or more (*) of any character (.)".
-Example 4:
-
-Input:
-s = "aab"
-p = "c*a*b"
-Output: true
-Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
-Example 5:
-
-Input:
-s = "mississippi"
-p = "mis*is*p*."
-Output: false
- */
 package manfred.exercises.leetcode.wip.p0010;
 
 import static manfred.exercises.assertion.Assert.*;
 
 /** 题目链接：https://leetcode.cn/problems/regular-expression-matching/ */
-
-/**
- * LeetCode 第 10 题的测试入口。
- */
 public class Main {
     public static void main(String[] args) {
-        test1();
-        test2();
-        System.out.println("p0010 all assertions passed");
-    }
-
-    private static void test1() {
-        Solution solution = new Solution();
-        assertFalse(solution.isMatch("a", ".*..a*"));
-        assertFalse(solution.isMatch("ab", ".*c"));
-        assertTrue(solution.isMatch("aab", "c*a*b*"));
-        assertFalse(solution.isMatch("aa", "a"));
-        assertTrue(solution.isMatch("aa", "a*"));
-        assertTrue(solution.isMatch("ab", ".*"));
-        assertFalse(solution.isMatch("mississippi", "mis*is*p*."));
-    }
-
-    private static void test2() {
-        Solution2 solution = new Solution2();
-        assertFalse(solution.isMatch("a", ".*..a*"));
-        assertFalse(solution.isMatch("ab", ".*c"));
-        assertTrue(solution.isMatch("aab", "c*a*b*"));
-        assertFalse(solution.isMatch("aa", "a"));
-        assertTrue(solution.isMatch("aa", "a*"));
-        assertTrue(solution.isMatch("ab", ".*"));
-        assertFalse(solution.isMatch("mississippi", "mis*is*p*."));
+        // 旧解法 Solution / Solution2：保留验证，确保不被破坏（应通过）
+        Solution s1 = new Solution();
+        assertFalse(s1.isMatch("a", ".*..a*"));
+        assertFalse(s1.isMatch("ab", ".*c"));
+        assertTrue(s1.isMatch("aab", "c*a*b*"));
+        assertFalse(s1.isMatch("aa", "a"));
+        assertTrue(s1.isMatch("aa", "a*"));
+        assertTrue(s1.isMatch("ab", ".*"));
+        assertFalse(s1.isMatch("mississippi", "mis*is*p*."));
+        Solution2 s2 = new Solution2();
+        assertFalse(s2.isMatch("a", ".*..a*"));
+        assertFalse(s2.isMatch("ab", ".*c"));
+        assertTrue(s2.isMatch("aab", "c*a*b*"));
+        assertFalse(s2.isMatch("aa", "a"));
+        assertTrue(s2.isMatch("aa", "a*"));
+        assertTrue(s2.isMatch("ab", ".*"));
+        assertFalse(s2.isMatch("mississippi", "mis*is*p*."));
+        // 新解法 Solution3：新增验证，骨架占位下 RED，待实现后通过
+        Solution3 s3 = new Solution3();
+        assertFalse(s3.isMatch("aa", "a"));
+        assertTrue(s3.isMatch("aa", "a*"));
+        assertTrue(s3.isMatch("ab", ".*"));
+        assertTrue(s3.isMatch("aab", "c*a*b"));
+        assertFalse(s3.isMatch("mississippi", "mis*is*p*."));
+        assertTrue(s3.isMatch("", ""));
+        assertTrue(s3.isMatch("", "a*"));
+        assertFalse(s3.isMatch("a", ""));
+        assertTrue(s3.isMatch("a", "."));
+        assertTrue(s3.isMatch("aaa", "a*a"));
+        System.out.println("leet#0010 passed");
     }
 }
