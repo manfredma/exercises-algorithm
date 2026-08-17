@@ -18,7 +18,7 @@
 
 ## 示例 2
 
-![通知所有员工示例2](images/graph.png)
+![无向星型图中心节点2连0,1,3,4,5](images/graph.png)
 
 ```text
 输入：n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]

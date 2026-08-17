@@ -12,7 +12,7 @@
 
 ## 示例 1
 
-![最长交错路径示例1](images/sample_1_1702.png)
+![二叉树节点值1，红色路径标记最长同值路径](images/sample_1_1702.png)
 
 ```text
 输入：root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]

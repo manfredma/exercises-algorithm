@@ -10,7 +10,7 @@
 
 ## 示例 1
 
-![最接近的因数示例1](images/sample_1_1709.png)
+![以节点3为根子树绿色高亮](images/sample_1_1709.png)
 
 ```text
 输入：root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6]
@@ -20,7 +20,7 @@
 
 ## 示例 2
 
-![最接近的因数示例2](images/sample_2_1709.png)
+![4节点树1,2,3,4，节点2高亮](images/sample_2_1709.png)
 
 ```text
 输入：root = [4,3,null,1,2]
