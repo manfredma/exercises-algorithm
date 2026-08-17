@@ -10,7 +10,7 @@ public class Main {
         assertEquals(4193, s1.myAtoi("4193 with words"));
         assertEquals(42, s1.myAtoi("42"));
         assertEquals(-2147483648, s1.myAtoi("-91283472332"));
-        // 新解法 Solution2：新增验证，骨架占位下 RED，待实现后通过
+        // 新解法 Solution2：再刷解法验证（已实现，trim+前导0过滤+统一溢出判断）
         Solution2 s2 = new Solution2();
         assertEquals(42, s2.myAtoi("42"));
         assertEquals(-42, s2.myAtoi(" -042"));
