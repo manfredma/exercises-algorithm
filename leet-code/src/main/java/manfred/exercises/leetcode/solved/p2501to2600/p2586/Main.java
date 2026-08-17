@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2501to2600.p2586;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-the-number-of-vowel-strings-in-range/ */
 
 /*
@@ -14,8 +16,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: words = ["are","amy","u"], left = 0, right = 2 → 期望 2
-        System.out.println(solution.vowelStrings(new String[]{"are", "amy", "u"}, 0, 2));
+        assertEquals(2, solution.vowelStrings(new String[]{"are", "amy", "u"}, 0, 2));
         // 示例 2: words = ["hey","aeo","mu","ooo","artro"], left = 1, right = 4 → 期望 3
-        System.out.println(solution.vowelStrings(new String[]{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4));
+        assertEquals(3, solution.vowelStrings(new String[]{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4));
+        System.out.println("passed");
     }
 }

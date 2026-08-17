@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0976;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/largest-perimeter-triangle/ */
 
 /*
@@ -34,8 +36,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums = [2,1,2] → 期望 5
-        System.out.println(solution.largestPerimeter(new int[]{2, 1, 2}));
+        assertEquals(5, solution.largestPerimeter(new int[]{2, 1, 2}));
         // 示例 2: nums = [1,2,1,10] → 期望 0
-        System.out.println(solution.largestPerimeter(new int[]{1, 2, 1, 10}));
+        assertEquals(0, solution.largestPerimeter(new int[]{1, 2, 1, 10}));
+
+        System.out.println("p0976 passed");
     }
 }

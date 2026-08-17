@@ -12,6 +12,9 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0097;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/interleaving-string/ */
 
 /**
@@ -21,12 +24,14 @@ public class Main {
     public static void main(String[] args) {
 
         Solution2 solution2 = new Solution2();
-        System.out.println(solution2.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
-        System.out.println(solution2.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
+        // 题面示例 1："aadbbcbcac" 是 "aabcc" 与 "dbbca" 的交错串
+        assertTrue(solution2.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
+        // 题面示例 2："aadbbbaccc" 不是交错串
+        assertFalse(solution2.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
 
         Solution solution = new Solution();
-        System.out.println(solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
-        System.out.println(solution.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
-
+        assertTrue(solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
+        assertFalse(solution.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
+        System.out.println("passed");
     }
 }

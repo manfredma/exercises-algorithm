@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0437;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/path-sum-iii/ */
 
 /*
@@ -60,9 +62,4 @@ public class Main {
         assertEquals(0, solution2.pathSum(root3, 0));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

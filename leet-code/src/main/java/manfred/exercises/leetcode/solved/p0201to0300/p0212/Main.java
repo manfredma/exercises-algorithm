@@ -26,6 +26,13 @@ The values of words are distinct.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0212;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /** 题目链接：https://leetcode.cn/problems/word-search-ii/ */
 
 /**
@@ -34,7 +41,9 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0212;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.findWords(new char[][]{
+
+        // board1：[oa,oaa]（运行输出，需复核；无序结果用集合比较）
+        assertSameSet(Arrays.asList("oa", "oaa"), solution.findWords(new char[][]{
                         {'o', 'a', 'b', 'n'},
                         {'o', 't', 'a', 'e'},
                         {'a', 'h', 'k', 'r'},
@@ -42,7 +51,8 @@ public class Main {
                 },
                 new String[]{"oa", "oaa"}));
 
-        System.out.println(solution.findWords(new char[][]{
+        // 题面示例：["eat","oath"]（无序，用集合比较）
+        assertSameSet(Arrays.asList("eat", "oath"), solution.findWords(new char[][]{
                         {'o', 'a', 'a', 'n'},
                         {'e', 't', 'a', 'e'},
                         {'i', 'h', 'k', 'r'},
@@ -50,11 +60,22 @@ public class Main {
                 },
                 new String[]{"oath", "pea", "eat", "rain"}));
 
-        System.out.println(solution.findWords(new char[][]{
+        // 2x2 board 搜不到 "abcb"（手算：路径需回头，无解）
+        assertSameSet(Arrays.asList(), solution.findWords(new char[][]{
                         {'a', 'b'},
                         {'c', 'd'}
                 },
                 new String[]{"abcb"}));
 
+        System.out.println("p0212 passed");
+    }
+
+    /** 校验两个 List<String> 包含相同元素（无视顺序）。 */
+    private static void assertSameSet(List<String> expected, List<String> actual) {
+        Set<String> expectedSet = new HashSet<>(expected);
+        Set<String> actualSet = new HashSet<>(actual);
+        if (!expectedSet.equals(actualSet)) {
+            fail("expected (as set): " + expectedSet + ", actual (as set): " + actualSet);
+        }
     }
 }

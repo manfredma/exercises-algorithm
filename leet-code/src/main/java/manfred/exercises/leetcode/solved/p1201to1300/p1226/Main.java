@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1226;
 
+import static manfred.exercises.assertion.Assert.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -125,9 +127,7 @@ public class Main {
     }
 
     private static void assertMealActions(List<String> actions, int meals) {
-        if (actions.size() != meals * 5) {
-            throw new AssertionError("expected " + (meals * 5) + " actions, actual: " + actions);
-        }
+        assertEquals(meals * 5, actions.size());
         for (int start = 0; start < actions.size(); start += 5) {
             String firstPick = actions.get(start);
             String secondPick = actions.get(start + 1);
@@ -136,7 +136,7 @@ public class Main {
             if (!isOneLeftAndOneRight(firstPick, secondPick, "pick")
                     || !"eat".equals(actions.get(start + 2))
                     || !isOneLeftAndOneRight(firstPut, secondPut, "put")) {
-                throw new AssertionError("invalid action order: " + actions);
+                fail("invalid action order: " + actions);
             }
         }
     }

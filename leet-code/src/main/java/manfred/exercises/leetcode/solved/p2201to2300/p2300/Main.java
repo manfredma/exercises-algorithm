@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2300;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/ */
 
 import java.util.Arrays;
@@ -54,10 +56,4 @@ public class Main {
                 new int[]{3, 1, 2}, new int[]{8, 5, 8}, 16));
     }
 
-    private static void assertArrayEquals(int[] expected, int[] actual) {
-        if (!Arrays.equals(expected, actual)) {
-            throw new AssertionError("expected: " + Arrays.toString(expected)
-                    + ", actual: " + Arrays.toString(actual));
-        }
-    }
 }

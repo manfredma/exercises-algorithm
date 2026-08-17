@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1534;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-good-triplets/ */
 
 /*
@@ -18,8 +20,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3 → 期望 4
-        System.out.println(solution.countGoodTriplets(new int[]{3, 0, 1, 1, 9, 7}, 7, 2, 3));
+        assertEquals(4, solution.countGoodTriplets(new int[]{3, 0, 1, 1, 9, 7}, 7, 2, 3));
         // 示例 2: arr = [1,1,2,2,3], a = 0, b = 0, c = 1 → 期望 0
-        System.out.println(solution.countGoodTriplets(new int[]{1, 1, 2, 2, 3}, 0, 0, 1));
+        assertEquals(0, solution.countGoodTriplets(new int[]{1, 1, 2, 2, 3}, 0, 0, 1));
+        System.out.println("passed");
     }
 }

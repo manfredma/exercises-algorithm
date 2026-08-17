@@ -3,7 +3,9 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0015;
 import java.util.*;
 
 /**
- * LeetCode 第 15 题「三数之和」：排序 + 双指针，固定一个数后用双指针找另两个数。
+ * LeetCode 第 15 题「三数之和」（方案 1）：记录每个值最后出现的位置，枚举前两个数并查找补数。
+ * 通过额外集合消除重复三元组。该方案保留作哈希查找和去重状态的对照，时间复杂度为 O(n²)，
+ * 空间复杂度为 O(n)；方案 2 和方案 3 均使用排序 + 双指针，其中方案 3 的去重流程更标准。
  */
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {

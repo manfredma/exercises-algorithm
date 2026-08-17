@@ -18,6 +18,10 @@ return its level order traversal as:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0102;
 
+import java.util.Arrays;
+
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/binary-tree-level-order-traversal/ */
 
 /**
@@ -37,7 +41,13 @@ public class Main {
         treeNode3.left = treeNode4;
         treeNode3.right = treeNode5;
 
-        System.out.println(new Solution().levelOrder(treeNode1));
+        assertEquals(Arrays.asList(
+                Arrays.asList(3),
+                Arrays.asList(9, 20),
+                Arrays.asList(15, 7)
+        ), new Solution().levelOrder(treeNode1));
+
+        System.out.println("p0102 passed");
 
     }
 }

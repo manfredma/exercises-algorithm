@@ -30,6 +30,11 @@ A solution set is:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0040;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.Arrays;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/combination-sum-ii/ */
 
 /**
@@ -38,7 +43,23 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0040;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.combinationSum2(new int[]{2, 5, 2, 1, 2}, 5));
-        System.out.println(solution.combinationSum2(new int[]{10, 1, 2, 7, 6, 1, 5}, 8));
+        // 题面示例 2：[2,5,2,1,2] target=5，组合顺序不限
+        List<List<Integer>> r1 = solution.combinationSum2(new int[]{2, 5, 2, 1, 2}, 5);
+        List<List<Integer>> e1 = Arrays.asList(
+                Arrays.asList(1, 2, 2),
+                Arrays.asList(5));
+        assertEquals(e1.size(), r1.size());
+        assertTrue(r1.containsAll(e1));
+
+        // 题面示例 1：[10,1,2,7,6,1,5] target=8
+        List<List<Integer>> r2 = solution.combinationSum2(new int[]{10, 1, 2, 7, 6, 1, 5}, 8);
+        List<List<Integer>> e2 = Arrays.asList(
+                Arrays.asList(1, 7),
+                Arrays.asList(1, 2, 5),
+                Arrays.asList(2, 6),
+                Arrays.asList(1, 1, 6));
+        assertEquals(e2.size(), r2.size());
+        assertTrue(r2.containsAll(e2));
+        System.out.println("p0040 passed");
     }
 }

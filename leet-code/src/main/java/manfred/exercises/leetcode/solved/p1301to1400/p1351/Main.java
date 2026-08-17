@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1351;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/ */
 
 /*
@@ -21,10 +23,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] → 期望 8
-        System.out.println(solution.countNegatives(
+        assertEquals(8, solution.countNegatives(
                 new int[][]{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}}));
         // 示例 2: 输入 grid = [[3,2],[1,0]] → 期望 0
-        System.out.println(solution.countNegatives(
+        assertEquals(0, solution.countNegatives(
                 new int[][]{{3, 2}, {1, 0}}));
+        System.out.println("passed");
     }
 }

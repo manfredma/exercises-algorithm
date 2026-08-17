@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0354;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/russian-doll-envelopes/ */
 
 /*
@@ -31,8 +33,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 [[5,4],[6,4],[6,7],[2,3]] → 期望 3
-        System.out.println(solution.maxEnvelopes(new int[][]{{5, 4}, {6, 4}, {6, 7}, {2, 3}}));
+        assertEquals(3, solution.maxEnvelopes(new int[][]{{5, 4}, {6, 4}, {6, 7}, {2, 3}}));
         // 示例 2: 输入 [[1,1],[1,1],[1,1]] → 期望 1
-        System.out.println(solution.maxEnvelopes(new int[][]{{1, 1}, {1, 1}, {1, 1}}));
+        assertEquals(1, solution.maxEnvelopes(new int[][]{{1, 1}, {1, 1}, {1, 1}}));
+        System.out.println("p0354 passed");
     }
 }

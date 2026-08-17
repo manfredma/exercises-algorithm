@@ -20,6 +20,8 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0121;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/ */
 
 /**
@@ -28,7 +30,9 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0121;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
-        System.out.println(solution.maxProfit(new int[]{7, 6, 4, 3, 1}));
+        assertEquals(5, solution.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        assertEquals(0, solution.maxProfit(new int[]{7, 6, 4, 3, 1}));
+
+        System.out.println("p0121 passed");
     }
 }

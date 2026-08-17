@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0918;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-sum-circular-subarray/ */
 
 /*
@@ -31,10 +33,12 @@ public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
         // 示例 1: nums = [1,-2,3,-2] → 期望 3
-        System.out.println(solution.maxSubarraySumCircular(new int[]{1, -2, 3, -2}));
+        assertEquals(3, solution.maxSubarraySumCircular(new int[]{1, -2, 3, -2}));
         // 示例 2: nums = [5,-3,5] → 期望 10
-        System.out.println(solution.maxSubarraySumCircular(new int[]{5, -3, 5}));
+        assertEquals(10, solution.maxSubarraySumCircular(new int[]{5, -3, 5}));
         // 示例 3: nums = [3,-2,2,-3] → 期望 3
-        System.out.println(solution.maxSubarraySumCircular(new int[]{3, -2, 2, -3}));
+        assertEquals(3, solution.maxSubarraySumCircular(new int[]{3, -2, 2, -3}));
+
+        System.out.println("p0918 passed");
     }
 }

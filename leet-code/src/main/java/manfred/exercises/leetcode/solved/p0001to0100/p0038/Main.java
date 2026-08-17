@@ -27,6 +27,8 @@ Output: "1211"
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0038;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/count-and-say/ */
 
 /**
@@ -35,7 +37,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0038;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.countAndSay(1));
-        System.out.println(solution.countAndSay(4));
+        assertEquals("1", solution.countAndSay(1));
+        assertEquals("1211", solution.countAndSay(4));
+        System.out.println("p0038 passed");
     }
 }

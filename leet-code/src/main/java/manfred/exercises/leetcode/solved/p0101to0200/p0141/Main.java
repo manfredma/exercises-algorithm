@@ -28,6 +28,8 @@ Can you solve it using O(1) (i.e. constant) memory?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0141;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/linked-list-cycle/ */
 
 /**
@@ -45,15 +47,18 @@ public class Main {
         listNode4.next = listNode2;
 
         Solution solution = new Solution();
-        System.out.println(solution.hasCycle(listNode1));
+        // 题面示例 1：[3,2,0,-4], pos=1 → true
+        assertTrue(solution.hasCycle(listNode1));
 
         ListNode listNode21 = new ListNode(2);
         ListNode listNode22 = new ListNode(1);
         listNode21.next = listNode22;
         listNode22.next = listNode21;
-        System.out.println(solution.hasCycle(listNode21));
+        // pos=0 的环 → true
+        assertTrue(solution.hasCycle(listNode21));
 
         ListNode listNode31 = new ListNode(3);
-        System.out.println(solution.hasCycle(listNode31));
+        // 单节点无环 → false
+        assertFalse(solution.hasCycle(listNode31));
     }
 }

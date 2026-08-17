@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0001to0100.p0076;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-window-substring/ */
 
 /*
@@ -62,9 +64,4 @@ public class Main {
         assertEquals(expected, solution3.minWindow(s, t));
     }
 
-    private static void assertEquals(String expected, String actual) {
-        if (!expected.equals(actual)) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

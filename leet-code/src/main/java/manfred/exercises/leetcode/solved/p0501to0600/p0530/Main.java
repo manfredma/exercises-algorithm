@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0530;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-absolute-difference-in-bst/ */
 
 /*
@@ -30,12 +32,14 @@ public class Main {
         TreeNode root1 = new TreeNode(4,
                 new TreeNode(2, new TreeNode(1), new TreeNode(3)),
                 new TreeNode(6));
-        System.out.println(solution.getMinimumDifference(root1));
+        assertEquals(1, solution.getMinimumDifference(root1));
 
         // 示例 2: root = [1,0,48,null,null,12,49] → 期望 1
         TreeNode root2 = new TreeNode(1,
                 new TreeNode(0),
                 new TreeNode(48, new TreeNode(12), new TreeNode(49)));
-        System.out.println(solution.getMinimumDifference(root2));
+        assertEquals(1, solution.getMinimumDifference(root2));
+
+        System.out.println("p0530 passed");
     }
 }

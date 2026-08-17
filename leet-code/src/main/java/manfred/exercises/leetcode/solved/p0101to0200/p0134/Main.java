@@ -48,6 +48,8 @@ Therefore, you can't travel around the circuit once no matter where you start.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0134;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/gas-station/ */
 
 /**
@@ -56,7 +58,9 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0134;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.canCompleteCircuit(new int[]{1, 2, 3, 4, 5}, new int[]{3, 4, 5, 1, 2}));
-        System.out.println(solution.canCompleteCircuit(new int[]{2, 3, 4}, new int[]{3, 4, 3}));
+        assertEquals(3, solution.canCompleteCircuit(new int[]{1, 2, 3, 4, 5}, new int[]{3, 4, 5, 1, 2}));
+        assertEquals(-1, solution.canCompleteCircuit(new int[]{2, 3, 4}, new int[]{3, 4, 3}));
+
+        System.out.println("p0134 passed");
     }
 }

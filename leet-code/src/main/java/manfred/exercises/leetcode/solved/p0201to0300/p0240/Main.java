@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0240;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/search-a-2d-matrix-ii/ */
 
 /*
@@ -57,9 +59,4 @@ public class Main {
         assertEquals(false, solution3.searchMatrix(new int[][]{{5}}, 6));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

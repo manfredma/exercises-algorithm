@@ -38,6 +38,9 @@ for (int i = 0; i < len; i++) {
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0080;
 
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/ */
 
 /**
@@ -46,17 +49,17 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0080;
 public class Main {
     public static void main(String[] args) {
         Solution so = new Solution();
+        // 题面示例 1：[1,1,1,2,2,3] -> 长度 5，前 5 个为 [1,1,2,2,3]
         int[] x = new int[]{1, 1, 1, 2, 2, 3};
-        System.out.println(so.removeDuplicates(x));
-        for (int i = 0; i < so.removeDuplicates(x); i++) {
-            System.out.print(x[i] + " ");
-        }
-        System.out.println();
-        x = new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3};
-        System.out.println(so.removeDuplicates(x));
-        for (int i = 0; i < so.removeDuplicates(x); i++) {
-            System.out.print(x[i]);
-        }
+        int len = so.removeDuplicates(x);
+        assertEquals(5, len);
+        assertArrayEquals(new int[]{1, 1, 2, 2, 3}, java.util.Arrays.copyOf(x, len));
 
+        // 题面示例 2：[0,0,1,1,1,1,2,3,3] -> 长度 7，前 7 个为 [0,0,1,1,2,3,3]
+        x = new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3};
+        len = so.removeDuplicates(x);
+        assertEquals(7, len);
+        assertArrayEquals(new int[]{0, 0, 1, 1, 2, 3, 3}, java.util.Arrays.copyOf(x, len));
+        System.out.println("passed");
     }
 }

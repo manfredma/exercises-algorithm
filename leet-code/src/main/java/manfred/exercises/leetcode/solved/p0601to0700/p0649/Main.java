@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0649;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/dota2-senate/ */
 
 /*
@@ -63,8 +65,4 @@ public class Main {
         assertEquals("Dire", solution.predictPartyVictory("D"));
     }
 
-    private static void assertEquals(String expected, String actual) {
-        if (!expected.equals(actual))
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

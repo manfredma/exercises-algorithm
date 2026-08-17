@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0704;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/binary-search/ */
 
 /*
@@ -34,8 +36,10 @@ public class Main {
         Solution solution = new Solution();
         int[] nums = {-1, 0, 3, 5, 9, 12};
         // 示例 1: target = 9 → 期望 4
-        System.out.println(solution.search(nums, 9));
+        assertEquals(4, solution.search(nums, 9));
         // 示例 2: target = 2 → 期望 -1
-        System.out.println(solution.search(nums, 2));
+        assertEquals(-1, solution.search(nums, 2));
+
+        System.out.println("p0704 passed");
     }
 }

@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0445;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+import static manfred.exercises.assertion.Assert.fail;
+
 /** 题目链接：https://leetcode.cn/problems/add-two-numbers-ii/ */
 
 /*
@@ -38,13 +41,15 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: l1 = [7,2,4,3], l2 = [5,6,4] → 期望 [7,8,0,7]
-        ListNode l1 = build(new int[]{7, 2, 4, 3});
-        ListNode l2 = build(new int[]{5, 6, 4});
-        print(solution.addTwoNumbers(l1, l2));
+        assertListEquals(solution.addTwoNumbers(build(new int[]{7, 2, 4, 3}), build(new int[]{5, 6, 4})),
+                new int[]{7, 8, 0, 7});
         // 示例 2: l1 = [2,4,3], l2 = [5,6,4] → 期望 [8,0,7]
-        print(solution.addTwoNumbers(build(new int[]{2, 4, 3}), build(new int[]{5, 6, 4})));
+        assertListEquals(solution.addTwoNumbers(build(new int[]{2, 4, 3}), build(new int[]{5, 6, 4})),
+                new int[]{8, 0, 7});
         // 示例 3: l1 = [0], l2 = [0] → 期望 [0]
-        print(solution.addTwoNumbers(build(new int[]{0}), build(new int[]{0})));
+        assertListEquals(solution.addTwoNumbers(build(new int[]{0}), build(new int[]{0})),
+                new int[]{0});
+        System.out.println("p0445 passed");
     }
 
     /** 按数组顺序构造链表（高位在前）。 */
@@ -58,16 +63,18 @@ public class Main {
         return dummy.next;
     }
 
-    /** 打印链表，如 [7,8,0,7]。 */
-    private static void print(ListNode head) {
-        StringBuilder sb = new StringBuilder("[");
-        for (ListNode cur = head; cur != null; cur = cur.next) {
-            if (sb.length() > 1) {
-                sb.append(",");
+    /** 断言链表值序列等于期望数组。 */
+    private static void assertListEquals(ListNode head, int[] expected) {
+        ListNode cur = head;
+        for (int v : expected) {
+            if (cur == null) {
+                fail("链表比期望短，期望 " + java.util.Arrays.toString(expected));
             }
-            sb.append(cur.val);
+            assertEquals(v, cur.val);
+            cur = cur.next;
         }
-        sb.append("]");
-        System.out.println(sb);
+        if (cur != null) {
+            fail("链表比期望长，期望 " + java.util.Arrays.toString(expected));
+        }
     }
 }

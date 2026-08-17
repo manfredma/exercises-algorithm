@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2301to2400.p2336;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/smallest-number-in-infinite-set/ */
 
 /*
@@ -27,7 +29,4 @@ public class Main {
         assertEquals(5, smallestInfiniteSet.popSmallest());
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

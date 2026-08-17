@@ -50,6 +50,8 @@ The given board size is always 9x9.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0036;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/valid-sudoku/ */
 
 /**
@@ -69,10 +71,12 @@ public class Main {
         chars[8] = new char[]{'.','.','.','.','8','.','.','7','9'};
 
         Solution solution = new Solution();
-        System.out.println(solution.isValidSudoku(chars));
+        // 示例 1: 题面有效数独 → 期望 true
+        assertTrue(solution.isValidSudoku(chars));
 
         chars[0] = new char[]{'8','3','.','.','7','.','.','.','.'};
-        System.out.println(solution.isValidSudoku(chars));
-
+        // 示例 2: 左上 3x3 出现两个 8 → 期望 false
+        assertFalse(solution.isValidSudoku(chars));
+        System.out.println("p0036 passed");
     }
 }

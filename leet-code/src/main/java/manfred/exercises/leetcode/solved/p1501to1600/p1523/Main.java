@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1523;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/ */
 
 /*
@@ -28,8 +30,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 low = 3, high = 7 → 期望 3
-        System.out.println(solution.countOdds(3, 7));
+        assertEquals(3, solution.countOdds(3, 7));
         // 示例 2: 输入 low = 8, high = 10 → 期望 1
-        System.out.println(solution.countOdds(8, 10));
+        assertEquals(1, solution.countOdds(8, 10));
+        System.out.println("passed");
     }
 }

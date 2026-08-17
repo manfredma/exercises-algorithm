@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0983;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-cost-for-tickets/ */
 
 /*
@@ -22,10 +24,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 days = [1,4,6,7,8,20], costs = [2,7,15] → 期望 11
-        System.out.println(solution.mincostTickets(
+        assertEquals(11, solution.mincostTickets(
                 new int[]{1, 4, 6, 7, 8, 20}, new int[]{2, 7, 15}));
         // 示例 2: 输入 days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15] → 期望 17
-        System.out.println(solution.mincostTickets(
+        assertEquals(17, solution.mincostTickets(
                 new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}, new int[]{2, 7, 15}));
+
+        System.out.println("p0983 passed");
     }
 }

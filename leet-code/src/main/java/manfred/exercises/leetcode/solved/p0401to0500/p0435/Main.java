@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0435;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/non-overlapping-intervals/ */
 /* 返回移除的最少区间数，使剩余区间不重叠；端点相接不算重叠。
 示例输出依次为：1、2、0。 */
@@ -15,7 +17,4 @@ public class Main {
         assertEquals(0, solution.eraseOverlapIntervals(new int[][]{{1, 2}, {2, 3}}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError();
-    }
 }

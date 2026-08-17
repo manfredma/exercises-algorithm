@@ -24,6 +24,8 @@ Would allow duplicates affect the run-time complexity? How and why?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0154;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/ */
 
 /**
@@ -32,7 +34,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0154;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.findMin(new int[]{1, 3, 5}));
-        System.out.println(solution.findMin(new int[]{2, 2, 2, 0, 1}));
+        // 题面示例 1
+        assertEquals(1, solution.findMin(new int[]{1, 3, 5}));
+        // 题面示例 2
+        assertEquals(0, solution.findMin(new int[]{2, 2, 2, 0, 1}));
+        System.out.println("p0154 passed");
     }
 }

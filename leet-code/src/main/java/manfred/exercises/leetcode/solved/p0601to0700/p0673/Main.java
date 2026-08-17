@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0673;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-longest-increasing-subsequence/ */
 
 /*
@@ -18,8 +20,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: [1,3,5,4,7] → 期望 2
-        System.out.println(solution.findNumberOfLIS(new int[]{1, 3, 5, 4, 7}));
+        assertEquals(2, solution.findNumberOfLIS(new int[]{1, 3, 5, 4, 7}));
         // 示例 2: [2,2,2,2,2] → 期望 5
-        System.out.println(solution.findNumberOfLIS(new int[]{2, 2, 2, 2, 2}));
+        assertEquals(5, solution.findNumberOfLIS(new int[]{2, 2, 2, 2, 2}));
+
+        System.out.println("p0673 passed");
     }
 }

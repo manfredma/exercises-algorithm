@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0901;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/online-stock-span/ */
 
 /*
@@ -21,12 +23,14 @@ package manfred.exercises.leetcode.solved.p0901to1000.p0901;
 public class Main {
     public static void main(String[] args) {
         StockSpanner stockSpanner = new StockSpanner();
-        System.out.println(stockSpanner.next(100)); // 期望 1
-        System.out.println(stockSpanner.next(80));  // 期望 1
-        System.out.println(stockSpanner.next(60));  // 期望 1
-        System.out.println(stockSpanner.next(70));  // 期望 2
-        System.out.println(stockSpanner.next(60));  // 期望 1
-        System.out.println(stockSpanner.next(75));  // 期望 4
-        System.out.println(stockSpanner.next(85));  // 期望 6
+        assertEquals(1, stockSpanner.next(100)); // 期望 1
+        assertEquals(1, stockSpanner.next(80));  // 期望 1
+        assertEquals(1, stockSpanner.next(60));  // 期望 1
+        assertEquals(2, stockSpanner.next(70));  // 期望 2
+        assertEquals(1, stockSpanner.next(60));  // 期望 1
+        assertEquals(4, stockSpanner.next(75));  // 期望 4
+        assertEquals(6, stockSpanner.next(85));  // 期望 6
+
+        System.out.println("p0901 passed");
     }
 }

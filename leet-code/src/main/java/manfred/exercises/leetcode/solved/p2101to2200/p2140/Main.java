@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2101to2200.p2140;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/solving-questions-with-brainpower/ */
 
 /*
@@ -22,10 +24,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 questions = [[3,2],[4,3],[4,4],[2,5]] → 期望 5
-        System.out.println(solution.mostPoints(
+        assertEquals(5L, solution.mostPoints(
                 new int[][]{{3, 2}, {4, 3}, {4, 4}, {2, 5}}));
         // 示例 2: 输入 questions = [[1,1],[2,2],[3,3],[4,4],[5,5]] → 期望 7
-        System.out.println(solution.mostPoints(
+        assertEquals(7L, solution.mostPoints(
                 new int[][]{{1, 1}, {2, 2}, {3, 3}, {4, 4}, {5, 5}}));
+        System.out.println("passed");
     }
 }

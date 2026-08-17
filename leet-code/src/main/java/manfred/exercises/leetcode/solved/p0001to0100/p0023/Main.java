@@ -13,6 +13,12 @@ Output: 1->1->2->3->4->4->5->6
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0023;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/merge-k-sorted-lists/ */
 
 /**
@@ -37,9 +43,17 @@ public class Main {
         p1.next = p2;
 
         ListNode l = new Solution().mergeKLists(new ListNode[]{n1, m1, p1});
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        // 题面示例: 合并后 1->1->2->3->4->4->5->6
+        assertEquals(Arrays.asList(1, 1, 2, 3, 4, 4, 5, 6), toList(l));
+        System.out.println("p0023 passed");
+    }
+
+    private static List<Integer> toList(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while (head != null) {
+            list.add(head.val);
+            head = head.next;
         }
+        return list;
     }
 }

@@ -20,6 +20,8 @@ You must return the copy of the given head as a reference to the cloned list.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0138;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/copy-list-with-random-pointer/ */
 
 /**
@@ -36,18 +38,17 @@ public class Main {
         node1.random = node2;
         node2.random = node2;
 
-        Solution solution = new Solution();
-        System.out.println(solution.copyRandomList(node1));
+        Node clone = new Solution().copyRandomList(node1);
 
-        Node node21 = new Node();
-        Node node22 = new Node();
+        assertNotNull(clone);
+        assertTrue(clone != node1, "clone should be a different object");
+        assertEquals(1, clone.val);
+        assertNotNull(clone.next);
+        assertEquals(2, clone.next.val);
+        assertSame(clone.next, clone.random);
+        assertSame(clone.next, clone.next.random);
+        assertNull(clone.next.next);
 
-        node21.val = 1;
-        node22.val = 2;
-
-        node21.next = node22;
-        node21.random = node22;
-        node22.random = node22;
-
+        System.out.println("p0138 passed");
     }
 }

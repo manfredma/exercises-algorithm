@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0101to0200.p0146;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/lru-cache/ */
 
 /*
@@ -99,9 +101,4 @@ public class Main {
         assertEquals(2, cache4c.get(2));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

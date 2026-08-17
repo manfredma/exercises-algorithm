@@ -20,6 +20,8 @@ Explanation: The answer is "wke", with the length of 3.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0003;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/longest-substring-without-repeating-characters/ */
 
 /**
@@ -28,9 +30,11 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0003;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
-        System.out.println(solution.lengthOfLongestSubstring("bbbbb"));
-        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
-        System.out.println(solution.lengthOfLongestSubstring("abba"));
+        assertEquals(3, solution.lengthOfLongestSubstring("abcabcbb"));
+        assertEquals(1, solution.lengthOfLongestSubstring("bbbbb"));
+        assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"));
+        // "abba" 最长无重复子串为 "ab"/"ba"，长度为 2
+        assertEquals(2, solution.lengthOfLongestSubstring("abba"));
+        System.out.println("p0003 passed");
     }
 }

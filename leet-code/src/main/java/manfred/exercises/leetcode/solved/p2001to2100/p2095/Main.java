@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2001to2100.p2095;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/ */
 
 import java.util.Arrays;
@@ -78,7 +80,4 @@ public class Main {
         return a;
     }
 
-    private static void assertArrayEquals(int[] e, int[] a) {
-        if (!Arrays.equals(e, a)) throw new AssertionError();
-    }
 }

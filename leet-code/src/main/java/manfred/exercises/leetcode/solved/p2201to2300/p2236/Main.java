@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2236;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/root-equals-sum-of-children/ */
 
 /*
@@ -14,9 +17,10 @@ public class Main {
         Solution solution = new Solution();
         // 示例 1: root = [10,4,6] → 期望 true
         TreeNode root1 = new TreeNode(10, new TreeNode(4), new TreeNode(6));
-        System.out.println(solution.checkTree(root1));
+        assertTrue(solution.checkTree(root1));
         // 示例 2: root = [5,3,1] → 期望 false
         TreeNode root2 = new TreeNode(5, new TreeNode(3), new TreeNode(1));
-        System.out.println(solution.checkTree(root2));
+        assertFalse(solution.checkTree(root2));
+        System.out.println("passed");
     }
 }

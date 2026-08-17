@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1498;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/ */
 
 /*
@@ -51,9 +53,4 @@ public class Main {
         assertEquals(61, solution.numSubseq(new int[]{2, 3, 3, 4, 6, 7}, 12));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

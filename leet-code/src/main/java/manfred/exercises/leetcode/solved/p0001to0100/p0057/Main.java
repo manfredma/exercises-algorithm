@@ -18,6 +18,8 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0057;
 
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
+
 /** 题目链接：https://leetcode.cn/problems/insert-interval/ */
 
 /**
@@ -26,26 +28,18 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0057;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[][] x = solution.insert(new int[][]{
+        // 题面示例 1：intervals=[[1,3],[6,9]], newInterval=[2,5] -> [[1,5],[6,9]]
+        assertArrayEquals(new int[][]{
+                {1, 5},
+                {6, 9}
+        }, solution.insert(new int[][]{
                         {1, 3},
                         {6, 9}
                 },
                 new int[]{
                         2, 5
                 }
-        );
-
-        print(x);
-
-    }
-
-    private static void print(int[][] r) {
-        System.out.println();
-        for (int i = 0; i < r.length; i++) {
-            for (int j = 0; j < r[i].length; j++) {
-                System.out.print(r[i][j] + " ");
-            }
-            System.out.println();
-        }
+        ));
+        System.out.println("passed");
     }
 }

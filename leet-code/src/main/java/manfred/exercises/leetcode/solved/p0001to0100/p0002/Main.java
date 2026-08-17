@@ -12,7 +12,13 @@ Explanation: 342 + 465 = 807.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0002;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/add-two-numbers/ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * LeetCode 第 2 题的测试入口。
@@ -29,10 +35,14 @@ public class Main {
         l2.next.next = new ListNode(4);
 
         ListNode result = solution.addTwoNumbers(l1, l2);
-        while (null != result) {
-            System.out.print("->" + result.val);
+        List<Integer> actual = new ArrayList<>();
+        while (result != null) {
+            actual.add(result.val);
             result = result.next;
         }
+        List<Integer> expected = Arrays.asList(7, 0, 8);
+        assertEquals(expected, actual);
+        System.out.println("p0002 passed");
     }
 
 }

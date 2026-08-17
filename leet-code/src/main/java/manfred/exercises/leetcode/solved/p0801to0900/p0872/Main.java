@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0872;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/leaf-similar-trees/ */
 
 /*
@@ -47,7 +49,4 @@ public class Main {
         return root;
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

@@ -10,6 +10,8 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0024;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/swap-nodes-in-pairs/ */
 
 /**
@@ -28,16 +30,25 @@ public class Main {
         n3.next = n4;
         n4.next = n5;
         n5.next = n6;
-        ListNode l = n1;
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        // 1->2->3->4->5->6 两两交换后为 2->1->4->3->6->5
+        ListNode l = new Solution().swapPairs(n1);
+        assertArrayEquals(new int[]{2, 1, 4, 3, 6, 5}, listValues(l));
+        System.out.println("p0024 passed");
+    }
+
+    private static int[] listValues(ListNode head) {
+        int count = 0;
+        ListNode cur = head;
+        while (cur != null) {
+            count++;
+            cur = cur.next;
         }
-        System.out.println();
-        l = new Solution().swapPairs(n1);
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        int[] values = new int[count];
+        cur = head;
+        for (int i = 0; i < count; i++) {
+            values[i] = cur.val;
+            cur = cur.next;
         }
+        return values;
     }
 }

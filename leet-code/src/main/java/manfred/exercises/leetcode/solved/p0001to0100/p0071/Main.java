@@ -42,6 +42,8 @@ Output: "/a/b/c"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0071;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/simplify-path/ */
 
 /**
@@ -50,11 +52,18 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0071;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.simplifyPath("/home/"));
-        System.out.println(solution.simplifyPath("/../"));
-        System.out.println(solution.simplifyPath("/home//foo/"));
-        System.out.println(solution.simplifyPath("/a/./b/../../c/"));
-        System.out.println(solution.simplifyPath("/a/../../b/../c//.//"));
-        System.out.println(solution.simplifyPath("/a//b////c/d//././/.."));
+        // 题面示例 1
+        assertEquals("/home", solution.simplifyPath("/home/"));
+        // 题面示例 2
+        assertEquals("/", solution.simplifyPath("/../"));
+        // 题面示例 3
+        assertEquals("/home/foo", solution.simplifyPath("/home//foo/"));
+        // 题面示例 4
+        assertEquals("/c", solution.simplifyPath("/a/./b/../../c/"));
+        // 题面示例 5
+        assertEquals("/c", solution.simplifyPath("/a/../../b/../c//.//"));
+        // 题面示例 6
+        assertEquals("/a/b/c", solution.simplifyPath("/a//b////c/d//././/.."));
+        System.out.println("passed");
     }
 }

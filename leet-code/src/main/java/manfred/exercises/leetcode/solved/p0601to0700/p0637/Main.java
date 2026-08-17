@@ -1,5 +1,9 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0637;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.Arrays;
+
 /** 题目链接：https://leetcode.cn/problems/average-of-levels-in-binary-tree/ */
 
 /*
@@ -29,12 +33,14 @@ public class Main {
         TreeNode root1 = new TreeNode(3,
                 new TreeNode(9),
                 new TreeNode(20, new TreeNode(15), new TreeNode(7)));
-        System.out.println(solution.averageOfLevels(root1));
+        assertEquals(Arrays.asList(3.0, 14.5, 11.0), solution.averageOfLevels(root1));
 
         // 示例 2: root = [3,9,20,15,7] → 期望 [3.0, 14.5, 11.0]
         TreeNode root2 = new TreeNode(3,
                 new TreeNode(9, new TreeNode(15), new TreeNode(7)),
                 new TreeNode(20));
-        System.out.println(solution.averageOfLevels(root2));
+        assertEquals(Arrays.asList(3.0, 14.5, 11.0), solution.averageOfLevels(root2));
+
+        System.out.println("p0637 passed");
     }
 }

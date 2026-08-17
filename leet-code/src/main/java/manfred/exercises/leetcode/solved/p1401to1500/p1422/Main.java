@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1422;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-score-after-splitting-a-string/ */
 
 /*
@@ -13,10 +15,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: s = "011101" → 期望 5
-        System.out.println(solution.maxScore("011101"));
+        assertEquals(5, solution.maxScore("011101"));
         // 示例 2: s = "00111" → 期望 5
-        System.out.println(solution.maxScore("00111"));
+        assertEquals(5, solution.maxScore("00111"));
         // 示例 3: s = "1111" → 期望 3
-        System.out.println(solution.maxScore("1111"));
+        assertEquals(3, solution.maxScore("1111"));
+        System.out.println("passed");
     }
 }

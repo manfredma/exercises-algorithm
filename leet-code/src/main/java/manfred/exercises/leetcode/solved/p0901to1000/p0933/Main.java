@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0933;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-recent-calls/ */
 
 /*
@@ -24,7 +26,4 @@ public class Main {
         assertEquals(3, recentCounter.ping(3002));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

@@ -25,11 +25,11 @@ Clarification:
 
 Confused why the returned value is an integer but your answer is an array?
 
-Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well.
+Note that the input array is passed in by reference, which means modification to the input array will be known by the caller as well.
 
 Internally you can think of this:
 
-// nums is passed in by reference. (i.e., without making a copy)
+// nums is passed in by reference. (i.e. without making a copy)
 int len = removeElement(nums, val);
 
 // any modification to nums in your function would be known by the caller.
@@ -40,6 +40,8 @@ for (int i = 0; i < len; i++) {
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0027;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/remove-element/ */
 
 /**
@@ -48,7 +50,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0027;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.removeElement(new int[]{3, 2, 2, 3}, 3));
-        System.out.println(solution.removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2));
+        assertEquals(2, solution.removeElement(new int[]{3, 2, 2, 3}, 3));
+        assertEquals(5, solution.removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2));
+        System.out.println("p0027 passed");
     }
 }

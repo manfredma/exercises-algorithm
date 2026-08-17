@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0300;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/longest-increasing-subsequence/ */
 
 /*
@@ -51,9 +53,4 @@ public class Main {
         assertEquals(1, solution4.lengthOfLIS(new int[]{5}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

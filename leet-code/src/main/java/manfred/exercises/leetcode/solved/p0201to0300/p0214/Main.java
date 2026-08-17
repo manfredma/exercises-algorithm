@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0214;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/shortest-palindrome/ */
 
 /**
@@ -8,11 +10,16 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0214;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.shortestPalindrome("aacecaaa").equals("aaacecaaa"));
-
-        System.out.println(solution.shortestPalindrome("aaaa").equals("aaaa"));
-        System.out.println(solution.shortestPalindrome("abcd").equals("dcbabcd"));
-        System.out.println(solution.shortestPalindrome("a").equals("a"));
-        System.out.println(solution.shortestPalindrome("").equals(""));
+        // aacecaaa -> aaacecaaa（手算：在前补 'a' 形成回文）
+        assertEquals("aaacecaaa", solution.shortestPalindrome("aacecaaa"));
+        // aaaa -> aaaa（已是回文）
+        assertEquals("aaaa", solution.shortestPalindrome("aaaa"));
+        // abcd -> dcbabcd（手算：在前补 dcb 形成回文）
+        assertEquals("dcbabcd", solution.shortestPalindrome("abcd"));
+        // a -> a
+        assertEquals("a", solution.shortestPalindrome("a"));
+        // "" -> ""
+        assertEquals("", solution.shortestPalindrome(""));
+        System.out.println("p0214 passed");
     }
 }

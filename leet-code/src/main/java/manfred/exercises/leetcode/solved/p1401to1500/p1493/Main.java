@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1493;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/ */
 
 /*
@@ -42,9 +44,4 @@ public class Main {
         assertEquals(2, solution.longestSubarray(new int[]{1, 1, 1}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

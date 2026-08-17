@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0230;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/kth-smallest-element-in-a-bst/ */
 
 /**
@@ -43,7 +45,8 @@ public class Main {
         treeNode1.right = treeNode2;
 
         Solution solution = new Solution();
-        System.out.println(solution.kthSmallest(treeNode3, 1));
+        // 示例 1: 题面 Output: 1
+        assertEquals(1, solution.kthSmallest(treeNode3, 1));
 
         treeNode3 = new TreeNode(3);
         treeNode1 = new TreeNode(1);
@@ -60,7 +63,9 @@ public class Main {
 
         treeNode2.left = treeNode1;
 
-        System.out.println(solution.kthSmallest(treeNode5, 3));
+        // 示例 2: 题面 Output: 3
+        assertEquals(3, solution.kthSmallest(treeNode5, 3));
+        System.out.println("p0230 passed");
     }
 
 }

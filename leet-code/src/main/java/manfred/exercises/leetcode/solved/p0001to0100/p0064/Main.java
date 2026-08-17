@@ -20,6 +20,8 @@ Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0064;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-path-sum/ */
 
 /**
@@ -34,6 +36,8 @@ public class Main {
         };
 
         Solution solution = new Solution();
-        System.out.println(solution.minPathSum(x));
+        // 题面示例：最小路径和为 7（路径 1→3→1→1→1）
+        assertEquals(7, solution.minPathSum(x));
+        System.out.println("passed");
     }
 }

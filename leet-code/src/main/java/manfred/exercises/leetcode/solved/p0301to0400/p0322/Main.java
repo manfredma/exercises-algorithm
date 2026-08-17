@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0322;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/coin-change/ */
 
 /*
@@ -78,9 +80,4 @@ public class Main {
         assertEquals(0, solution3.coinChange(new int[]{2}, 0));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

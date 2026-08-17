@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0867;
 
-/** 题目链接：https://leetcode.cn/problems/transpose-matrix/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/transpose-matrix/ */
 
 /*
 给你一个二维整数数组 matrix，返回 matrix 的转置矩阵。
@@ -15,8 +15,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: matrix = [[1,2,3],[4,5,6],[7,8,9]] → 期望 [[1,4,7],[2,5,8],[3,6,9]]
-        System.out.println(Arrays.deepToString(solution.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})));
+        assertArrayEquals(new int[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}},
+                solution.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
         // 示例 2: matrix = [[1,2,3],[4,5,6]] → 期望 [[1,4],[2,5],[3,6]]
-        System.out.println(Arrays.deepToString(solution.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}})));
+        assertArrayEquals(new int[][]{{1, 4}, {2, 5}, {3, 6}},
+                solution.transpose(new int[][]{{1, 2, 3}, {4, 5, 6}}));
+
+        System.out.println("p0867 passed");
     }
 }

@@ -15,7 +15,13 @@ Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0143;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/reorder-list/ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * LeetCode 第 143 题的测试入口。
@@ -37,10 +43,14 @@ public class Main {
         Solution solution = new Solution();
         solution.reorderList(node1);
 
+        // 题面示例 2：1->2->3->4->5 重排为 1->5->2->4->3
+        List<Integer> actual = new ArrayList<>();
         ListNode cur = node1;
         while (cur != null) {
-            System.out.print(" -> " + cur.val);
+            actual.add(cur.val);
             cur = cur.next;
         }
+        assertEquals(Arrays.asList(1, 5, 2, 4, 3), actual);
+        System.out.println("p0143 passed");
     }
 }

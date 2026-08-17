@@ -14,6 +14,8 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0059;
 
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
+
 /** 题目链接：https://leetcode.cn/problems/spiral-matrix-ii/ */
 
 /**
@@ -21,17 +23,12 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0059;
  */
 public class Main {
     public static void main(String[] args) {
-        int[][] r = new Solution().generateMatrix(3);
-        print(r);
-    }
-
-    private static void print(int[][] r) {
-        System.out.println();
-        for (int i = 0; i < r.length; i++) {
-            for (int j = 0; j < r[i].length; j++) {
-                System.out.print(r[i][j] + " ");
-            }
-            System.out.println();
-        }
+        // 题面示例：n=3 生成螺旋矩阵 [[1,2,3],[8,9,4],[7,6,5]]
+        assertArrayEquals(new int[][]{
+                {1, 2, 3},
+                {8, 9, 4},
+                {7, 6, 5}
+        }, new Solution().generateMatrix(3));
+        System.out.println("passed");
     }
 }

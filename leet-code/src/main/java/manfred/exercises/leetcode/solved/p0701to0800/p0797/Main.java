@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0797;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/all-paths-from-source-to-target/ */
 
 import java.util.Arrays;
@@ -45,9 +47,4 @@ public class Main {
                 solution.allPathsSourceTarget(new int[][]{{4, 3, 1}, {3, 2, 4}, {3}, {4}, {}}));
     }
 
-    private static void assertEquals(List<List<Integer>> expected, List<List<Integer>> actual) {
-        if (!expected.equals(actual)) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

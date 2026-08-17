@@ -19,6 +19,11 @@ Return the following binary tree:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0106;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/ */
 
 /**
@@ -27,7 +32,44 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0106;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        TreeNode root = solution.buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
-        System.out.println(root);
+        int[] inorder = {3, 9, 20, 15, 7};
+        int[] postorder = {9, 3, 15, 20, 7};
+        TreeNode root = solution.buildTree(inorder, postorder);
+
+        List<Integer> inorderResult = new ArrayList<>();
+        collectInorder(root, inorderResult);
+        List<Integer> postorderResult = new ArrayList<>();
+        collectPostorder(root, postorderResult);
+
+        assertEquals(toList(inorder), inorderResult);
+        assertEquals(toList(postorder), postorderResult);
+
+        System.out.println("p0106 passed");
+    }
+
+    private static List<Integer> toList(int[] a) {
+        List<Integer> list = new ArrayList<>();
+        for (int v : a) {
+            list.add(v);
+        }
+        return list;
+    }
+
+    private static void collectInorder(TreeNode node, List<Integer> out) {
+        if (node == null) {
+            return;
+        }
+        collectInorder(node.left, out);
+        out.add(node.val);
+        collectInorder(node.right, out);
+    }
+
+    private static void collectPostorder(TreeNode node, List<Integer> out) {
+        if (node == null) {
+            return;
+        }
+        collectPostorder(node.left, out);
+        collectPostorder(node.right, out);
+        out.add(node.val);
     }
 }

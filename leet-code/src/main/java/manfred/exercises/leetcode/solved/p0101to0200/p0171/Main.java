@@ -28,9 +28,9 @@ Output: 701
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0171;
 
-/** 题目链接：https://leetcode.cn/problems/excel-sheet-column-number/ */
+import static manfred.exercises.assertion.Assert.*;
 
-import java.nio.channels.SocketChannel;
+/** 题目链接：https://leetcode.cn/problems/excel-sheet-column-number/ */
 
 /**
  * LeetCode 第 171 题的测试入口。
@@ -38,8 +38,12 @@ import java.nio.channels.SocketChannel;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.titleToNumber("A"));
-        System.out.println(solution.titleToNumber("AB"));
-        System.out.println(solution.titleToNumber("ZY"));
+        // 题面示例 1
+        assertEquals(1, solution.titleToNumber("A"));
+        // 题面示例 2
+        assertEquals(28, solution.titleToNumber("AB"));
+        // 题面示例 3
+        assertEquals(701, solution.titleToNumber("ZY"));
+        System.out.println("p0171 passed");
     }
 }

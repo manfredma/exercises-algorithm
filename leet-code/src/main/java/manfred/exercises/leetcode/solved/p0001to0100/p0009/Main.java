@@ -21,6 +21,8 @@ Could you solve it without converting the integer to a string?
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0009;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/palindrome-number/ */
 
 /**
@@ -29,8 +31,9 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0009;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isPalindrome(121));
-        System.out.println(solution.isPalindrome(-121));
-        System.out.println(solution.isPalindrome(10));
+        assertTrue(solution.isPalindrome(121));
+        assertFalse(solution.isPalindrome(-121));
+        assertFalse(solution.isPalindrome(10));
+        System.out.println("p0009 passed");
     }
 }

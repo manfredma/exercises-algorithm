@@ -15,6 +15,8 @@ try coding another solution using the divide and conquer approach, which is more
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0053;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-subarray/ */
 
 /**
@@ -24,6 +26,8 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+        // 题面示例：最大子数组和为 6（子数组 [4,-1,2,1]）
+        assertEquals(6, solution.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+        System.out.println("passed");
     }
 }

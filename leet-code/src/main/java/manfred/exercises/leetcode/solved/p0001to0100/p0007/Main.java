@@ -20,6 +20,8 @@ Assume we are dealing with an environment which could only store integers within
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0007;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-integer/ */
 
 /**
@@ -28,9 +30,11 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0007;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reverse(1534236469));
-        System.out.println(solution.reverse(123));
-        System.out.println(solution.reverse(-123));
-        System.out.println(solution.reverse(120));
+        // 1534236469 反转后溢出 32 位有符号整数，按题意返回 0
+        assertEquals(0, solution.reverse(1534236469));
+        assertEquals(321, solution.reverse(123));
+        assertEquals(-321, solution.reverse(-123));
+        assertEquals(21, solution.reverse(120));
+        System.out.println("p0007 passed");
     }
 }

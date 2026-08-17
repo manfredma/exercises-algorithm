@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0279;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/perfect-squares/ */
 
 /*
@@ -33,9 +35,4 @@ public class Main {
         assertEquals(2, solution2.numSquares(13));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

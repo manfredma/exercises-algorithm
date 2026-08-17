@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0516;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/longest-palindromic-subsequence/ */
 
 /*
@@ -16,9 +18,11 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1：s = "bbbab" → 期望 4
-        System.out.println(solution.longestPalindromeSubseq("bbbab"));
+        assertEquals(4, solution.longestPalindromeSubseq("bbbab"));
 
         // 示例 2：s = "cbbd" → 期望 2
-        System.out.println(solution.longestPalindromeSubseq("cbbd"));
+        assertEquals(2, solution.longestPalindromeSubseq("cbbd"));
+
+        System.out.println("p0516 passed");
     }
 }

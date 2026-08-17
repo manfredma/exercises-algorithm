@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1512;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-good-pairs/ */
 
 /*
@@ -14,10 +16,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums = [1,2,3,1,1,3] → 期望 4
-        System.out.println(solution.numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
+        assertEquals(4, solution.numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
         // 示例 2: nums = [1,1,1,1] → 期望 6
-        System.out.println(solution.numIdenticalPairs(new int[]{1, 1, 1, 1}));
+        assertEquals(6, solution.numIdenticalPairs(new int[]{1, 1, 1, 1}));
         // 示例 3: nums = [1,2,3] → 期望 0
-        System.out.println(solution.numIdenticalPairs(new int[]{1, 2, 3}));
+        assertEquals(0, solution.numIdenticalPairs(new int[]{1, 2, 3}));
+        System.out.println("passed");
     }
 }

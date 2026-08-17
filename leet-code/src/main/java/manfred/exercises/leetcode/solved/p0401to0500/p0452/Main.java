@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0452;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/ */
 
 /*
@@ -35,10 +37,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: points = [[10,16],[2,8],[1,6],[7,12]] → 期望 2
-        System.out.println(solution.findMinArrowShots(new int[][]{{10,16},{2,8},{1,6},{7,12}}));
+        assertEquals(2, solution.findMinArrowShots(new int[][]{{10,16},{2,8},{1,6},{7,12}}));
         // 示例 2: points = [[1,2],[3,4],[5,6],[7,8]] → 期望 4
-        System.out.println(solution.findMinArrowShots(new int[][]{{1,2},{3,4},{5,6},{7,8}}));
+        assertEquals(4, solution.findMinArrowShots(new int[][]{{1,2},{3,4},{5,6},{7,8}}));
         // 示例 3: points = [[1,2],[2,3],[3,4],[4,5]] → 期望 2
-        System.out.println(solution.findMinArrowShots(new int[][]{{1,2},{2,3},{3,4},{4,5}}));
+        assertEquals(2, solution.findMinArrowShots(new int[][]{{1,2},{2,3},{3,4},{4,5}}));
+        System.out.println("p0452 passed");
     }
 }

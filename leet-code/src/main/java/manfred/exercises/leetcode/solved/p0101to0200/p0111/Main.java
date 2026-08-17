@@ -19,6 +19,8 @@ return its minimum depth = 2.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0111;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-depth-of-binary-tree/ */
 
 /**
@@ -38,6 +40,8 @@ public class Main {
         treeNode3.left = treeNode4;
         treeNode3.right = treeNode5;
 
-        System.out.println(new Solution().minDepth(treeNode1));
+        assertEquals(2, new Solution().minDepth(treeNode1));
+
+        System.out.println("p0111 passed");
     }
 }

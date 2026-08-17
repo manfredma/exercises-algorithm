@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0875;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/koko-eating-bananas/ */
 
 /**
@@ -24,9 +26,4 @@ public class Main {
         assertEquals(23, solution2.minEatingSpeed(new int[]{30, 11, 23, 4, 20}, 6));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

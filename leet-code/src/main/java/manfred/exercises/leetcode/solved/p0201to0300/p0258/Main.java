@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0258;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/add-digits/ */
 
 /*
@@ -11,9 +13,10 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0258;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // 示例 1: num = 38 → 期望 2
-        System.out.println(solution.addDigits(38));
-        // 示例 2: num = 0 → 期望 0
-        System.out.println(solution.addDigits(0));
+        // 示例 1: num = 38 → 题面 Output: 2
+        assertEquals(2, solution.addDigits(38));
+        // 示例 2: num = 0 → 题面 Output: 0
+        assertEquals(0, solution.addDigits(0));
+        System.out.println("p0258 passed");
     }
 }

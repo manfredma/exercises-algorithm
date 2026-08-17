@@ -13,6 +13,8 @@ Output: 6
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0042;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/trapping-rain-water/ */
 
 /**
@@ -21,6 +23,7 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0042;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+        assertEquals(6, solution.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+        System.out.println("p0042 passed");
     }
 }

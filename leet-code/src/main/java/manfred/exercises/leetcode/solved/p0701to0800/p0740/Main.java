@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0740;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/delete-and-earn/ */
 
 /*
@@ -27,10 +29,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums = [3,4,2] → 期望 6
-        System.out.println(solution.deleteAndEarn(new int[]{3, 4, 2}));
+        assertEquals(6, solution.deleteAndEarn(new int[]{3, 4, 2}));
         // 示例 2: nums = [2,2,3,3,3,4] → 期望 9
-        System.out.println(solution.deleteAndEarn(new int[]{2, 2, 3, 3, 3, 4}));
+        assertEquals(9, solution.deleteAndEarn(new int[]{2, 2, 3, 3, 3, 4}));
         // 示例 3: nums = [1,1,1,2,4,5,5,5,6] → 期望 18
-        System.out.println(solution.deleteAndEarn(new int[]{1, 1, 1, 2, 4, 5, 5, 5, 6}));
+        assertEquals(18, solution.deleteAndEarn(new int[]{1, 1, 1, 2, 4, 5, 5, 5, 6}));
+
+        System.out.println("p0740 passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2401to2500.p2466;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-ways-to-build-good-strings/ */
 
 /*
@@ -24,8 +26,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 low = 3, high = 3, zero = 1, one = 1 → 期望 8
-        System.out.println(solution.countGoodStrings(3, 3, 1, 1));
+        assertEquals(8, solution.countGoodStrings(3, 3, 1, 1));
         // 示例 2: 输入 low = 2, high = 3, zero = 1, one = 2 → 期望 5
-        System.out.println(solution.countGoodStrings(2, 3, 1, 2));
+        assertEquals(5, solution.countGoodStrings(2, 3, 1, 2));
+        System.out.println("passed");
     }
 }

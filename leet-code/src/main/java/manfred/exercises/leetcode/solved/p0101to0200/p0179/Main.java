@@ -15,6 +15,8 @@ Note: The result may be very large, so you need to return a string instead of an
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0179;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/largest-number/ */
 
 /**
@@ -23,8 +25,12 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0179;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.largestNumber(new int[]{3, 43, 48, 94, 85, 33, 64, 32, 63, 66}));
-        System.out.println(solution.largestNumber(new int[]{10, 2}));
-        System.out.println(solution.largestNumber(new int[]{3, 30, 34, 5, 9}));
+        // [3,43,48,94,85,33,64,32,63,66]（运行输出，需复核）
+        assertEquals("9485666463484333332", solution.largestNumber(new int[]{3, 43, 48, 94, 85, 33, 64, 32, 63, 66}));
+        // 题面示例 1
+        assertEquals("210", solution.largestNumber(new int[]{10, 2}));
+        // 题面示例 2
+        assertEquals("9534330", solution.largestNumber(new int[]{3, 30, 34, 5, 9}));
+        System.out.println("p0179 passed");
     }
 }

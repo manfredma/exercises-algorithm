@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0334;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/increasing-triplet-subsequence/ */
 
 /*
@@ -43,9 +45,7 @@ public class Main {
 
     private static void assertResult(Solution solution, int[] nums, boolean expected) {
         boolean actual = solution.increasingTriplet(nums);
-        if (actual != expected) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
+        assertEquals(expected, actual);
         System.out.println("通过：" + expected);
     }
 }

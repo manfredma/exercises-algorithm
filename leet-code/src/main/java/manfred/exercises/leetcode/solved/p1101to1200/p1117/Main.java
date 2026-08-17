@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1117;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/building-h2o/ */
 
 import java.util.ArrayList;
@@ -60,7 +62,7 @@ public class Main {
         for (Thread thread : threads) {
             thread.join(1000);
             if (thread.isAlive()) {
-                throw new AssertionError("线程未在预期时间内结束");
+                fail("线程未在预期时间内结束");
             }
         }
         assertWaterMolecules(output.toString());
@@ -69,7 +71,7 @@ public class Main {
 
     private static void assertWaterMolecules(String output) {
         if (output.length() == 0 || output.length() % 3 != 0) {
-            throw new AssertionError("输出长度错误：" + output);
+            fail("输出长度错误：" + output);
         }
         for (int i = 0; i < output.length(); i += 3) {
             String molecule = output.substring(i, i + 3);
@@ -83,7 +85,7 @@ public class Main {
                 }
             }
             if (hydrogenCount != 2 || oxygenCount != 1) {
-                throw new AssertionError("无效水分子：" + molecule);
+                fail("无效水分子：" + molecule);
             }
         }
     }

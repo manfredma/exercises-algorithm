@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0543;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/diameter-of-binary-tree/ */
 
 /*
@@ -36,10 +38,12 @@ public class Main {
         TreeNode root1 = new TreeNode(1,
                 new TreeNode(2, new TreeNode(4), new TreeNode(5)),
                 new TreeNode(3));
-        System.out.println(solution.diameterOfBinaryTree(root1));
+        assertEquals(3, solution.diameterOfBinaryTree(root1));
         solution = new Solution2();
         // 示例 2: root = [1,2] → 期望: 1
         TreeNode root2 = new TreeNode(1, new TreeNode(2), null);
-        System.out.println(solution.diameterOfBinaryTree(root2));
+        assertEquals(1, solution.diameterOfBinaryTree(root2));
+
+        System.out.println("p0543 passed");
     }
 }

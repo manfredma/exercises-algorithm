@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0709;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/to-lower-case/ */
 
 /*
@@ -15,12 +17,14 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1：s = "Hello" → 期望 "hello"
-        System.out.println(solution.toLowerCase("Hello"));
+        assertEquals("hello", solution.toLowerCase("Hello"));
 
         // 示例 2：s = "here" → 期望 "here"
-        System.out.println(solution.toLowerCase("here"));
+        assertEquals("here", solution.toLowerCase("here"));
 
         // 示例 3：s = "LOVELY" → 期望 "lovely"
-        System.out.println(solution.toLowerCase("LOVELY"));
+        assertEquals("lovely", solution.toLowerCase("LOVELY"));
+
+        System.out.println("p0709 passed");
     }
 }

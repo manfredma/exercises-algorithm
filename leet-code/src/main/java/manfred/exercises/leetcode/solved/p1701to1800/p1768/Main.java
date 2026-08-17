@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1701to1800.p1768;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/merge-strings-alternately/ */
 
 /*
@@ -29,10 +31,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: word1="abc", word2="pqr" → 期望 "apbqcr"
-        System.out.println(solution.mergeAlternately("abc", "pqr"));
+        assertEquals("apbqcr", solution.mergeAlternately("abc", "pqr"));
         // 示例 2: word1="ab", word2="pqrs" → 期望 "apbqrs"
-        System.out.println(solution.mergeAlternately("ab", "pqrs"));
+        assertEquals("apbqrs", solution.mergeAlternately("ab", "pqrs"));
         // 示例 3: word1="abcd", word2="pq" → 期望 "apbqcd"
-        System.out.println(solution.mergeAlternately("abcd", "pq"));
+        assertEquals("apbqcd", solution.mergeAlternately("abcd", "pq"));
+        System.out.println("passed");
     }
 }

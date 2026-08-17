@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0611;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/valid-triangle-number/ */
 
 /*
@@ -35,9 +37,4 @@ public class Main {
         assertEquals(0, solution.triangleNumber(new int[]{0, 0, 1, 1}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

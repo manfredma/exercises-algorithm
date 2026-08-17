@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1108;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/defanging-an-ip-address/ */
 
 /**
@@ -14,7 +16,8 @@ public class Main {
         // * Input: address = "255.100.50.0"
         // * Output: "255[.]100[.]50[.]0"
         Solution solution = new Solution();
-        System.out.println(solution.defangIPaddr("1.1.1.1"));
-        System.out.println(solution.defangIPaddr("255.100.50.0"));
+        assertEquals("1[.]1[.]1[.]1", solution.defangIPaddr("1.1.1.1"));
+        assertEquals("255[.]100[.]50[.]0", solution.defangIPaddr("255.100.50.0"));
+        System.out.println("passed");
     }
 }

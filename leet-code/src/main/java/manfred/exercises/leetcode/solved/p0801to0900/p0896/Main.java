@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0896;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/monotonic-array/ */
 
 import java.util.Arrays;
@@ -20,12 +23,14 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1：nums = [1,2,2,3] → 期望 true
-        System.out.println(solution.isMonotonic(new int[]{1, 2, 2, 3}));
+        assertTrue(solution.isMonotonic(new int[]{1, 2, 2, 3}));
 
         // 示例 2：nums = [6,5,4,4] → 期望 true
-        System.out.println(solution.isMonotonic(new int[]{6, 5, 4, 4}));
+        assertTrue(solution.isMonotonic(new int[]{6, 5, 4, 4}));
 
         // 示例 3：nums = [1,3,2] → 期望 false
-        System.out.println(solution.isMonotonic(new int[]{1, 3, 2}));
+        assertFalse(solution.isMonotonic(new int[]{1, 3, 2}));
+
+        System.out.println("p0896 passed");
     }
 }

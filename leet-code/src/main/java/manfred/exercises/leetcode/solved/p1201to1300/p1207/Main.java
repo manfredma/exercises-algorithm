@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1207;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/unique-number-of-occurrences/ */
 
 /*
@@ -20,7 +22,4 @@ public class Main {
         assertEquals(true, solution.uniqueOccurrences(new int[]{-3, 0, 1, -3, 1, 1, 1, -3, 10, 0}));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

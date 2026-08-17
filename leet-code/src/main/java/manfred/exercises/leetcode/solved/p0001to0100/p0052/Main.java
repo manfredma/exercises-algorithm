@@ -24,6 +24,8 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown be
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0052;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/n-queens-ii/ */
 
 /**
@@ -32,6 +34,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0052;
 public class Main {
 
     public static void main(String[] args) {
-        new Solution();
+        // 题面示例：n = 4 时共有 2 种不同摆法
+        assertEquals(2, new Solution().totalNQueens(4));
+        System.out.println("p0052 passed");
     }
 }

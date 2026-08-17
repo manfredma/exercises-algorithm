@@ -18,6 +18,10 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0118;
 
+import java.util.Arrays;
+
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/pascals-triangle/ */
 
 /**
@@ -26,6 +30,14 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0118;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.generate(5));
+        assertEquals(Arrays.asList(
+                Arrays.asList(1),
+                Arrays.asList(1, 1),
+                Arrays.asList(1, 2, 1),
+                Arrays.asList(1, 3, 3, 1),
+                Arrays.asList(1, 4, 6, 4, 1)
+        ), solution.generate(5));
+
+        System.out.println("p0118 passed");
     }
 }

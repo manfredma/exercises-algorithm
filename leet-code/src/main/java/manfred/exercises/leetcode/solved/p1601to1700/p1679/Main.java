@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1601to1700.p1679;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/max-number-of-k-sum-pairs/ */
 
 /*
@@ -43,9 +45,4 @@ public class Main {
         assertEquals(1, solution.maxOperations(new int[]{3, 1, 3, 4, 3}, 6));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1491;
 
-/** 题目链接：https://leetcode.cn/problems/average-salary-excluding-the-minimum-and-maximum-salary/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/average-salary-excluding-the-minimum-and-maximum-salary/ */
 
 /*
 给你一个整数数组 salary，数组里每个数都是唯一的，其中 salary[i] 是第 i 个员工的工资。
@@ -37,12 +37,13 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 [4000,3000,1000,2000] → 期望 2500.00000
-        System.out.println(solution.average(new int[]{4000, 3001, 1000, 2000}));
+        assertEquals(2500.0, solution.average(new int[]{4000, 3000, 1000, 2000}));
         // 示例 2: 输入 [1000,2000,3000] → 期望 2000.00000
-        System.out.println(solution.average(new int[]{1000, 2000, 3000}));
+        assertEquals(2000.0, solution.average(new int[]{1000, 2000, 3000}));
         // 示例 3: 输入 [6000,5000,4000,3000,2000,1000] → 期望 3500.00000
-        System.out.println(solution.average(new int[]{6000, 5000, 4000, 3000, 2000, 1000}));
+        assertEquals(3500.0, solution.average(new int[]{6000, 5000, 4000, 3000, 2000, 1000}));
         // 示例 4: 输入 [8000,9000,2000,3000,6000,1000] → 期望 4750.00000
-        System.out.println(solution.average(new int[]{8000, 9000, 2000, 3000, 6000, 1000}));
+        assertEquals(4750.0, solution.average(new int[]{8000, 9000, 2000, 3000, 6000, 1000}));
+        System.out.println("passed");
     }
 }

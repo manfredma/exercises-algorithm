@@ -26,6 +26,8 @@ Follow up: Could you do that without using any extra space?
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0501;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-mode-in-binary-search-tree/ */
 
 import java.util.Arrays;
@@ -37,6 +39,7 @@ public class Main {
     public static void main(String[] args) {
         test2();
         test1();
+        System.out.println("p0501 passed");
     }
 
     private static void test2() {
@@ -63,7 +66,11 @@ public class Main {
         treeNode5.left = treeNode8;
         treeNode5.right = treeNode9;
 
-        System.out.println(Arrays.toString(new Solution().findMode(treeNode1)));
+        // 中序 0,2,2,4,6,6,7,8,9，众数 2 与 6（顺序不限），排序后比较
+        int[] expected = new int[]{2, 6};
+        int[] actual = new Solution().findMode(treeNode1);
+        Arrays.sort(actual);
+        assertArrayEquals(expected, actual);
     }
 
     private static void test1() {
@@ -75,6 +82,7 @@ public class Main {
         treeNode1.right = treeNode2;
         treeNode2.left = treeNode3;
 
-        System.out.println(Arrays.toString(solution.findMode(treeNode1)));
+        // 中序 1,2,2，众数 [2]
+        assertArrayEquals(new int[]{2}, solution.findMode(treeNode1));
     }
 }

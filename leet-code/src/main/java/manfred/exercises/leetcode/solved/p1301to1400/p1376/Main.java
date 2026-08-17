@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1376;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/time-needed-to-inform-all-employees/ */
 
 /*
@@ -59,10 +61,4 @@ public class Main {
                 new int[]{0, 0, 1, 0, 0, 0}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
-        System.out.println("通过：" + expected);
-    }
 }

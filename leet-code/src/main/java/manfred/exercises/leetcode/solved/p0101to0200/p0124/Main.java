@@ -28,6 +28,8 @@ Output: 42
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0124;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/binary-tree-maximum-path-sum/ */
 
 /**
@@ -36,11 +38,11 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0124;
 public class Main {
     public static void main(String[] args) {
         TreeNode treeNode41 = new TreeNode(-3);
-        System.out.println(new Solution().maxPathSum(treeNode41));
+        assertEquals(-3, new Solution().maxPathSum(treeNode41));
 
         /* [5,4,8,11,null,13,4,7,2,null,null,null,1] */
         TreeNode treeNode = createTreeNode("[5,4,8,11,null,13,4,7,2,null,null,null,1]");
-        System.out.println(new Solution().maxPathSum(treeNode));
+        assertEquals(49, new Solution().maxPathSum(treeNode));
 
         /* [1,-2,-3,1,3,-2,null,-1] */
         TreeNode treeNode31 = new TreeNode(1);
@@ -61,7 +63,7 @@ public class Main {
 
         treeNode34.left = treeNode37;
 
-        System.out.println(new Solution().maxPathSum(treeNode31));
+        assertEquals(3, new Solution().maxPathSum(treeNode31));
 
         TreeNode treeNode1 = new TreeNode(-10);
         TreeNode treeNode2 = new TreeNode(9);
@@ -74,7 +76,7 @@ public class Main {
         treeNode3.left = treeNode4;
         treeNode3.right = treeNode5;
 
-        System.out.println(new Solution().maxPathSum(treeNode1));
+        assertEquals(42, new Solution().maxPathSum(treeNode1));
 
         TreeNode treeNode21 = new TreeNode(1);
         TreeNode treeNode22 = new TreeNode(2);
@@ -82,7 +84,9 @@ public class Main {
         treeNode21.left = treeNode22;
         treeNode21.right = treeNode23;
 
-        System.out.println(new Solution().maxPathSum(treeNode21));
+        assertEquals(6, new Solution().maxPathSum(treeNode21));
+
+        System.out.println("p0124 passed");
 
     }
 

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1312;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/ */
 
 /*
@@ -39,10 +41,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: s = "zzazz" → 期望 0
-        System.out.println(solution.minInsertions("zzazz"));
+        assertEquals(0, solution.minInsertions("zzazz"));
         // 示例 2: s = "mbadm" → 期望 2
-        System.out.println(solution.minInsertions("mbadm"));
+        assertEquals(2, solution.minInsertions("mbadm"));
         // 示例 3: s = "leetcode" → 期望 5
-        System.out.println(solution.minInsertions("leetcode"));
+        assertEquals(5, solution.minInsertions("leetcode"));
+        System.out.println("passed");
     }
 }

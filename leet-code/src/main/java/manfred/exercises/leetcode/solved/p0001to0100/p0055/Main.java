@@ -20,6 +20,9 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0055;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/jump-game/ */
 
 /**
@@ -28,7 +31,10 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0055;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.canJump(new int[]{2, 3, 1, 1, 4}));
-        System.out.println(solution.canJump(new int[]{3, 2, 1, 0, 4}));
+        // 题面示例 1：[2,3,1,1,4] 可达末尾
+        assertTrue(solution.canJump(new int[]{2, 3, 1, 1, 4}));
+        // 题面示例 2：[3,2,1,0,4] 卡在索引 3 无法到达末尾
+        assertFalse(solution.canJump(new int[]{3, 2, 1, 0, 4}));
+        System.out.println("passed");
     }
 }

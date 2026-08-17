@@ -14,6 +14,8 @@ All the integers in the array will be in the range of [-10000, 10000].
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0561;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/array-partition/ */
 
 /**
@@ -22,6 +24,9 @@ package manfred.exercises.leetcode.solved.p0501to0600.p0561;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.arrayPairSum(new int[] {1,4,3,2}));
+        // 示例 1: nums = [1,4,3,2] → 期望 4
+        assertEquals(4, solution.arrayPairSum(new int[]{1, 4, 3, 2}));
+
+        System.out.println("p0561 passed");
     }
 }

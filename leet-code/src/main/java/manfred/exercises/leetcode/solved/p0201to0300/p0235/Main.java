@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0235;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/ */
 
 import java.util.ArrayDeque;
@@ -22,15 +24,16 @@ public class Main {
 
         Solution solution = new Solution();
 
-        // 示例 1: p = 2, q = 8 → 期望 6
+        // 示例 1: p = 2, q = 8 → 题面 Output: 6
         TreeNode p1 = find(root, 2);
         TreeNode q1 = find(root, 8);
-        System.out.println(solution.lowestCommonAncestor(root, p1, q1).val);
+        assertEquals(6, solution.lowestCommonAncestor(root, p1, q1).val);
 
-        // 示例 2: p = 2, q = 4 → 期望 2
+        // 示例 2: p = 2, q = 4 → 题面 Output: 2
         TreeNode p2 = find(root, 2);
         TreeNode q2 = find(root, 4);
-        System.out.println(solution.lowestCommonAncestor(root, p2, q2).val);
+        assertEquals(2, solution.lowestCommonAncestor(root, p2, q2).val);
+        System.out.println("p0235 passed");
     }
 
     /** 按 LeetCode 层序数组构造二叉树，null 表示空节点。 */

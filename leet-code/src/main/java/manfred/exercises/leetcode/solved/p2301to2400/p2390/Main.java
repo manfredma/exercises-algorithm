@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2301to2400.p2390;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/removing-stars-from-a-string/ */
 
 /*
@@ -64,7 +66,4 @@ public class Main {
         assertEquals("", solution.removeStars("a*"));
     }
 
-    private static void assertEquals(String expected, String actual) {
-        if (!expected.equals(actual)) throw new AssertionError();
-    }
 }

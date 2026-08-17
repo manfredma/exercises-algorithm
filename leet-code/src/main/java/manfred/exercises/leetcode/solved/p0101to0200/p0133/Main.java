@@ -60,6 +60,8 @@ You must return the copy of the given node as a reference to the cloned graph.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0133;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/clone-graph/ */
 
 import java.util.ArrayList;
@@ -90,6 +92,14 @@ public class Main {
         node4.neighbors.add(node2);
 
         Node clone = new Solution().cloneGraph(node1);
-        System.out.println(clone.val);
+
+        assertNotNull(clone);
+        assertTrue(clone != node1, "clone should be a different object");
+        assertEquals(1, clone.val);
+        assertEquals(2, clone.neighbors.size());
+        assertEquals(2, clone.neighbors.get(0).val);
+        assertEquals(4, clone.neighbors.get(1).val);
+
+        System.out.println("p0133 passed");
     }
 }

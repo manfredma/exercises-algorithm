@@ -42,6 +42,11 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0126;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static manfred.exercises.assertion.Assert.*;
 
 /**
  * LeetCode 第 126 题的测试入口。
@@ -49,10 +54,13 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot"
+        assertSameSet(Arrays.asList(
+                Arrays.asList("hit", "hot", "dot", "dog", "cog"),
+                Arrays.asList("hit", "hot", "lot", "log", "cog")
+        ), solution.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot"
                 , "log", "cog"))));
-        System.out.println(solution.findLadders("hot", "dog", new ArrayList<>(Arrays.asList("hot", "dog"))));
-        System.out.println(solution.findLadders("nanny", "aloud", new ArrayList<>(Arrays.asList("ricky", "grind",
+        assertTrue(solution.findLadders("hot", "dog", new ArrayList<>(Arrays.asList("hot", "dog"))).isEmpty());
+        assertValidLadders("nanny", "aloud", solution.findLadders("nanny", "aloud", new ArrayList<>(Arrays.asList("ricky", "grind",
                 "cubic", "panic", "lover", "farce", "gofer", "sales", "flint", "omens", "lipid", "briny", "cloth",
                 "anted", "slime", "oaten", "harsh", "touts", "stoop", "cabal", "lazed", "elton", "skunk", "nicer",
                 "pesky", "kusch", "bused", "kinda", "tunis", "enjoy", "aches", "prowl", "babar", "rooms", "burst",
@@ -468,7 +476,47 @@ public class Main {
                 "anons", "pupae", "chiba", "hoops", "trash", "noted", "boris", "dough", "shirt", "cowls", "seine",
                 "spool", "miens", "yummy", "grade", "proxy", "hopes", "girth", "deter", "dowry", "aorta", "paean",
                 "corms", "giant", "shank", "where", "means", "years", "vegan", "derek", "tales"))));
-        System.out.println(solution.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot"
+        assertSameSet(Arrays.asList(
+                Arrays.asList("hit", "hot", "dot", "dog", "cog"),
+                Arrays.asList("hit", "hot", "lot", "log", "cog")
+        ), solution.findLadders("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot"
                 , "log", "cog"))));
+
+        System.out.println("p0126 passed");
+    }
+
+    private static void assertSameSet(List<List<String>> expected, List<List<String>> actual) {
+        Set<List<String>> expectedSet = new HashSet<>(expected);
+        Set<List<String>> actualSet = new HashSet<>(actual);
+        if (!expectedSet.equals(actualSet)) {
+            fail("expected set size=" + expectedSet.size() + ", actual set size=" + actualSet.size());
+        }
+    }
+
+    private static void assertValidLadders(String beginWord, String endWord, List<List<String>> result) {
+        if (result.isEmpty()) {
+            return;
+        }
+        int length = result.get(0).size();
+        for (List<String> path : result) {
+            assertEquals(beginWord, path.get(0));
+            assertEquals(endWord, path.get(path.size() - 1));
+            assertEquals(length, path.size());
+            for (int i = 1; i < path.size(); i++) {
+                if (diff(path.get(i - 1), path.get(i)) != 1) {
+                    fail("invalid ladder step: " + path.get(i - 1) + " -> " + path.get(i));
+                }
+            }
+        }
+    }
+
+    private static int diff(String a, String b) {
+        int d = 0;
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) != b.charAt(i)) {
+                d++;
+            }
+        }
+        return d;
     }
 }

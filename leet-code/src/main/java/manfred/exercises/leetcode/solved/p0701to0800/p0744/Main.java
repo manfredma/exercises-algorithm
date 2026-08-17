@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0744;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/find-smallest-letter-greater-than-target/ */
 
 /*
@@ -14,10 +16,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: letters = ['c', 'f', 'j'], target = 'a' → 期望 'c'
-        System.out.println(solution.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'a'));
+        assertEquals('c', solution.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'a'));
         // 示例 2: letters = ['c','f','j'], target = 'c' → 期望 'f'
-        System.out.println(solution.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'c'));
+        assertEquals('f', solution.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'c'));
         // 示例 3: letters = ['x','x','y','y'], target = 'z' → 期望 'x'
-        System.out.println(solution.nextGreatestLetter(new char[]{'x', 'x', 'y', 'y'}, 'z'));
+        assertEquals('x', solution.nextGreatestLetter(new char[]{'x', 'x', 'y', 'y'}, 'z'));
+
+        System.out.println("p0744 passed");
     }
 }

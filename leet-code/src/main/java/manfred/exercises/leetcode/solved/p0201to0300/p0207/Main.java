@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0207;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/course-schedule/ */
 
 /*
@@ -98,9 +100,4 @@ public class Main {
         assertEquals(true, solution5.canFinish(4, new int[][]{{0, 1}, {0, 2}, {1, 3}, {2, 3}}));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

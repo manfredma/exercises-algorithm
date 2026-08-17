@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0328;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/odd-even-linked-list/ */
 
 import java.util.Arrays;
@@ -66,9 +68,4 @@ public class Main {
         return a;
     }
 
-    private static void assertArrayEquals(int[] e, int[] a) {
-        if (!Arrays.equals(e, a))  {
-            throw new AssertionError("expect: " + Arrays.toString(e) + ", actual: " + Arrays.toString(a));
-        }
-    }
 }

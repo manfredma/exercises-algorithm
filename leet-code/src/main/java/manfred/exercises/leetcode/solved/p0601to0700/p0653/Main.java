@@ -31,6 +31,8 @@ Output: False
  */
 package manfred.exercises.leetcode.solved.p0601to0700.p0653;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/ */
 
 /**
@@ -52,7 +54,11 @@ public class Main {
         treeNode2.right = treeNode5;
         treeNode3.right = treeNode6;
 
-        System.out.println(new Solution().findTarget(treeNode1, 9));
-        System.out.println(new Solution().findTarget(treeNode1, 28));
+        // 示例 1: target = 9 → 期望 true
+        assertTrue(new Solution().findTarget(treeNode1, 9));
+        // 示例 2: target = 28 → 期望 false
+        assertFalse(new Solution().findTarget(treeNode1, 28));
+
+        System.out.println("p0653 passed");
     }
 }

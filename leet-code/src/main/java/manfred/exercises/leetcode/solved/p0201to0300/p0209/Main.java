@@ -14,6 +14,8 @@ If you have figured out the O(n) solution, try coding another solution of which 
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0209;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-size-subarray-sum/ */
 
 /**
@@ -22,6 +24,8 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0209;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
+        // 题面示例: s=7, nums=[2,3,1,2,4,3] → 2 (子数组 [4,3])
+        assertEquals(2, solution.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}));
+        System.out.println("p0209 passed");
     }
 }

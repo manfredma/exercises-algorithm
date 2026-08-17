@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0657;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/robot-return-to-origin/ */
 
 /*
@@ -22,8 +24,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: moves = "UD" → 期望 true
-        System.out.println(solution.judgeCircle("UD"));
+        assertTrue(solution.judgeCircle("UD"));
         // 示例 2: moves = "LL" → 期望 false
-        System.out.println(solution.judgeCircle("LL"));
+        assertFalse(solution.judgeCircle("LL"));
+
+        System.out.println("p0657 passed");
     }
 }

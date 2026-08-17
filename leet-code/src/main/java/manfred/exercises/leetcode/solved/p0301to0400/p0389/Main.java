@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0389;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/find-the-difference/ */
 
 /*
@@ -25,9 +27,10 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0389;
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
-        // 示例 1: s="abcd", t="abcde" → 期望 'e'
-        System.out.println(solution.findTheDifference("abcd", "abcde"));
-        // 示例 2: s="", t="y" → 期望 'y'
-        System.out.println(solution.findTheDifference("", "y"));
+        // 示例 1: s="abcd", t="abcde" → 题面 Output: 'e'
+        assertEquals('e', solution.findTheDifference("abcd", "abcde"));
+        // 示例 2: s="", t="y" → 题面 Output: 'y'
+        assertEquals('y', solution.findTheDifference("", "y"));
+        System.out.println("p0389 passed");
     }
 }

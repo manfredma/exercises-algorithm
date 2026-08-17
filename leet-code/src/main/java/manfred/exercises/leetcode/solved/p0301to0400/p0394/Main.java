@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0394;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/decode-string/ */
 
 /*
@@ -75,12 +77,6 @@ public class Main {
         assertEquals(adjacent, solution3.decodeString("10[a]11[b]"));
     }
 
-    private static void assertEquals(String expected, String actual) {
-        if (!expected.equals(actual)) {
-            throw new AssertionError("expected 长度=" + expected.length() + ", actual 长度=" + actual.length()
-                    + "\nexpected: " + expected + "\nactual:   " + actual);
-        }
-    }
 
     /** Java 8 无 String.repeat，手动拼接。 */
     private static String repeat(String s, int n) {

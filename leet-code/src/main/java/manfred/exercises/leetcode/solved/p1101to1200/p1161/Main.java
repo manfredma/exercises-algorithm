@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1161;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/ */
 
 /**
@@ -50,7 +52,4 @@ public class Main {
         return root;
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

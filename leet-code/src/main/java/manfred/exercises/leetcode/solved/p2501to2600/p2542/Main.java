@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2501to2600.p2542;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-subsequence-score/ */
 
 /**
@@ -29,7 +31,4 @@ public class Main {
         return numbers;
     }
 
-    private static void assertEquals(long expected, long actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

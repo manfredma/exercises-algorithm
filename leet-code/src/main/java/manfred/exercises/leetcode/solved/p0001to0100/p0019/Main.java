@@ -12,10 +12,12 @@ Given n will always be valid.
 
 Follow up:
 
-Could you do this in one pass?
+Could you do it in one pass?
  */
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0019;
+
+import static manfred.exercises.assertion.Assert.*;
 
 /** 题目链接：https://leetcode.cn/problems/remove-nth-node-from-end-of-list/ */
 
@@ -35,18 +37,30 @@ public class Main {
         ListNode n5 = new ListNode(1);
         n5.next = n4;
         Solution solution = new Solution();
+        // 1->2->3->4->5，删除倒数第 5 个（即头节点）后为 2->3->4->5
         ListNode r = solution.removeNthFromEnd(n5, 5);
-        while (null != r) {
-            System.out.print(r.val + "->");
-            r = r.next;
-        }
+        assertArrayEquals(new int[]{2, 3, 4, 5}, listValues(r));
 
-        System.out.println();
         ListNode n6 = new ListNode(5);
+        // 单节点删除倒数第 1 个后为 null
         ListNode n7 = solution.removeNthFromEnd(n6, 1);
-        while (null != n7) {
-            System.out.print(n7.val + "->");
-            n7 = n7.next;
+        assertNull(n7);
+        System.out.println("p0019 passed");
+    }
+
+    private static int[] listValues(ListNode head) {
+        int count = 0;
+        ListNode cur = head;
+        while (cur != null) {
+            count++;
+            cur = cur.next;
         }
+        int[] values = new int[count];
+        cur = head;
+        for (int i = 0; i < count; i++) {
+            values[i] = cur.val;
+            cur = cur.next;
+        }
+        return values;
     }
 }

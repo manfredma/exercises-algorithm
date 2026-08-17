@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0470;
 
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/implement-rand10-using-rand7/ */
 
 /*
@@ -47,6 +49,7 @@ public class Main {
                 break;
             }
         }
-        System.out.println(uniform ? "均匀性 OK ✅" : "均匀性 FAIL ❌");
+        assertTrue(uniform, "rand10 均匀性验证失败");
+        System.out.println("p0470 均匀性 OK");
     }
 }

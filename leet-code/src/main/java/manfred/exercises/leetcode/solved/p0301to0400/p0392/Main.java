@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0392;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/is-subsequence/ */
 
 /*
@@ -31,9 +34,10 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0392;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // 示例 1: s = "abc", t = "ahbgdc" → 期望 true
-        System.out.println(solution.isSubsequence("abc", "ahbgdc"));
-        // 示例 2: s = "axc", t = "ahbgdc" → 期望 false
-        System.out.println(solution.isSubsequence("axc", "ahbgdc"));
+        // 示例 1: s = "abc", t = "ahbgdc" → 题面 Output: true
+        assertTrue(solution.isSubsequence("abc", "ahbgdc"));
+        // 示例 2: s = "axc", t = "ahbgdc" → 题面 Output: false
+        assertFalse(solution.isSubsequence("axc", "ahbgdc"));
+        System.out.println("p0392 passed");
     }
 }

@@ -27,6 +27,8 @@ Output: "2314"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0060;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/permutation-sequence/ */
 
 /**
@@ -35,9 +37,14 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0060;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.getPermutation(3, 2));
-        System.out.println(solution.getPermutation(3, 1));
-        System.out.println(solution.getPermutation(3, 3));
-        System.out.println(solution.getPermutation(4, 9));
+        // 手算：n=3 全排列序列 123,132,213,231,312,321，第 2 个为 "132"
+        assertEquals("132", solution.getPermutation(3, 2));
+        // 手算：第 1 个为 "123"
+        assertEquals("123", solution.getPermutation(3, 1));
+        // 题面示例 1：n=3, k=3 -> "213"
+        assertEquals("213", solution.getPermutation(3, 3));
+        // 题面示例 2：n=4, k=9 -> "2314"
+        assertEquals("2314", solution.getPermutation(4, 9));
+        System.out.println("passed");
     }
 }

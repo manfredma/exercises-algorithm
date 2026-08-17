@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0712;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/ */
 
 /*
@@ -14,9 +16,11 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: s1 = "sea", s2 = "eat" → 期望 231
-        System.out.println(solution.minimumDeleteSum("sea", "eat"));
+        assertEquals(231, solution.minimumDeleteSum("sea", "eat"));
 
         // 示例 2: s1 = "delete", s2 = "leet" → 期望 403
-        System.out.println(solution.minimumDeleteSum("delete", "leet"));
+        assertEquals(403, solution.minimumDeleteSum("delete", "leet"));
+
+        System.out.println("p0712 passed");
     }
 }

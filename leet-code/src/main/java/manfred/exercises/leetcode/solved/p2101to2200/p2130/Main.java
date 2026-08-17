@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2101to2200.p2130;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/ */
 
 /*
@@ -70,9 +72,4 @@ public class Main {
         return dummy.next;
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

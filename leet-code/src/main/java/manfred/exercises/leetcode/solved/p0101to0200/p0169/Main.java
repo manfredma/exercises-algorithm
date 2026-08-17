@@ -16,6 +16,8 @@ Output: 2
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0169;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/majority-element/ */
 
 /**
@@ -24,7 +26,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0169;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.majorityElement(new int[]{3, 2, 3}));
-        System.out.println(solution.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        // 题面示例 1
+        assertEquals(3, solution.majorityElement(new int[]{3, 2, 3}));
+        // 题面示例 2
+        assertEquals(2, solution.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        System.out.println("p0169 passed");
     }
 }

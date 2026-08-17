@@ -1,9 +1,11 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0399;
 
-/** 题目链接：https://leetcode.cn/problems/evaluate-division/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.List;
+
+/** 题目链接：https://leetcode.cn/problems/evaluate-division/ */
 
 /*
 给你一个变量对数组 equations 和一个实数值数组 values，其中 equations[i] = [Ai, Bi] 和
@@ -33,28 +35,29 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        // 示例 1 → 期望 [6.0, 0.5, -1.0, 1.0, -1.0]
-        System.out.println(Arrays.toString(solution.calcEquation(
+        // 示例 1 → 题面 Output
+        assertEquals(new double[]{6.0, 0.5, -1.0, 1.0, -1.0}, solution.calcEquation(
                 Arrays.asList(Arrays.asList("a", "b"), Arrays.asList("b", "c")),
                 new double[]{2.0, 3.0},
                 Arrays.asList(Arrays.asList("a", "c"), Arrays.asList("b", "a"),
                         Arrays.asList("a", "e"), Arrays.asList("a", "a"), Arrays.asList("x", "x"))
-        )));
+        ));
 
-        // 示例 2 → 期望 [3.75, 0.4, 5.0, 0.2]
-        System.out.println(Arrays.toString(solution.calcEquation(
+        // 示例 2 → 题面 Output
+        assertEquals(new double[]{3.75, 0.4, 5.0, 0.2}, solution.calcEquation(
                 Arrays.asList(Arrays.asList("a", "b"), Arrays.asList("b", "c"), Arrays.asList("bc", "cd")),
                 new double[]{1.5, 2.5, 5.0},
                 Arrays.asList(Arrays.asList("a", "c"), Arrays.asList("c", "b"),
                         Arrays.asList("bc", "cd"), Arrays.asList("cd", "bc"))
-        )));
+        ));
 
-        // 示例 3 → 期望 [0.5, 2.0, -1.0, -1.0]
-        System.out.println(Arrays.toString(solution.calcEquation(
+        // 示例 3 → 题面 Output
+        assertEquals(new double[]{0.5, 2.0, -1.0, -1.0}, solution.calcEquation(
                 Arrays.asList(Arrays.asList("a", "b")),
                 new double[]{0.5},
                 Arrays.asList(Arrays.asList("a", "b"), Arrays.asList("b", "a"),
                         Arrays.asList("a", "c"), Arrays.asList("x", "y"))
-        )));
+        ));
+        System.out.println("p0399 passed");
     }
 }

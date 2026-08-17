@@ -2,6 +2,7 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0155;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * 最小栈 —— 辅助栈同步最小值（标准最优解）。
@@ -15,8 +16,8 @@ import java.util.Deque;
  */
 class MinStack3 {
 
-    private Deque<Integer> stack = new ArrayDeque<>();
-    private Deque<Integer> minStack = new ArrayDeque<>();
+    private Deque<Integer> stack = new LinkedList<>();
+    private Deque<Integer> minStack = new LinkedList<>();
 
     public MinStack3() {
     }

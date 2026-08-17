@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0459;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/repeated-substring-pattern/ */
 
 /*
@@ -28,10 +31,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: s = "abab" → 期望 true
-        System.out.println(solution.repeatedSubstringPattern("abab"));
+        assertTrue(solution.repeatedSubstringPattern("abab"));
         // 示例 2: s = "aba" → 期望 false
-        System.out.println(solution.repeatedSubstringPattern("aba"));
+        assertFalse(solution.repeatedSubstringPattern("aba"));
         // 示例 3: s = "abcabcabcabc" → 期望 true
-        System.out.println(solution.repeatedSubstringPattern("abcabcabcabc"));
+        assertTrue(solution.repeatedSubstringPattern("abcabcabcabc"));
+        System.out.println("p0459 passed");
     }
 }

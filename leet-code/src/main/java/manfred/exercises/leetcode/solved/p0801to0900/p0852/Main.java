@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0852;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/peak-index-in-a-mountain-array/ */
 
 /*
@@ -13,10 +15,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: arr = [0,1,0] → 期望 1
-        System.out.println(solution.peakIndexInMountainArray(new int[]{0, 1, 0}));
+        assertEquals(1, solution.peakIndexInMountainArray(new int[]{0, 1, 0}));
         // 示例 2: arr = [0,2,1,0] → 期望 1
-        System.out.println(solution.peakIndexInMountainArray(new int[]{0, 2, 1, 0}));
+        assertEquals(1, solution.peakIndexInMountainArray(new int[]{0, 2, 1, 0}));
         // 示例 3: arr = [0,10,5,2] → 期望 1
-        System.out.println(solution.peakIndexInMountainArray(new int[]{0, 10, 5, 2}));
+        assertEquals(1, solution.peakIndexInMountainArray(new int[]{0, 10, 5, 2}));
+
+        System.out.println("p0852 passed");
     }
 }

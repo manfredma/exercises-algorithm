@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0931;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-falling-path-sum/ */
 
 /*
@@ -27,8 +29,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: matrix = [[2,1,3],[6,5,4],[7,8,9]] → 期望 13
-        System.out.println(solution.minFallingPathSum(new int[][]{{2,1,3},{6,5,4},{7,8,9}}));
+        assertEquals(13, solution.minFallingPathSum(new int[][]{{2,1,3},{6,5,4},{7,8,9}}));
         // 示例 2: matrix = [[-19,57],[-40,-5]] → 期望 -59
-        System.out.println(solution.minFallingPathSum(new int[][]{{-19,57},{-40,-5}}));
+        assertEquals(-59, solution.minFallingPathSum(new int[][]{{-19,57},{-40,-5}}));
+
+        System.out.println("p0931 passed");
     }
 }

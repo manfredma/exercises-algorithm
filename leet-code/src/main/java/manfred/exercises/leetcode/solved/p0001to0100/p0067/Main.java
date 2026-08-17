@@ -15,6 +15,8 @@ Output: "10101"
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0067;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/add-binary/ */
 
 /**
@@ -23,7 +25,10 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0067;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.addBinary("11", "1"));
-        System.out.println(solution.addBinary("1010", "1011"));
+        // 题面示例 1：11 + 1 = 100
+        assertEquals("100", solution.addBinary("11", "1"));
+        // 题面示例 2：1010 + 1011 = 10101
+        assertEquals("10101", solution.addBinary("1010", "1011"));
+        System.out.println("passed");
     }
 }

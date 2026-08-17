@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0433;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/minimum-genetic-mutation/ */
 
 /*
@@ -34,15 +36,16 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1 → 期望 1
-        System.out.println(solution.minMutation("AACCGGTT", "AACCGGTA",
+        assertEquals(1, solution.minMutation("AACCGGTT", "AACCGGTA",
                 new String[]{"AACCGGTA"}));
 
         // 示例 2 → 期望 2
-        System.out.println(solution.minMutation("AACCGGTT", "AAACGGTA",
+        assertEquals(2, solution.minMutation("AACCGGTT", "AAACGGTA",
                 new String[]{"AACCGGTA", "AACCGCTA", "AAACGGTA"}));
 
         // 示例 3 → 期望 3
-        System.out.println(solution.minMutation("AAAAACCC", "AACCCCCC",
+        assertEquals(3, solution.minMutation("AAAAACCC", "AACCCCCC",
                 new String[]{"AAAACCCC", "AAACCCCC", "AACCCCCC"}));
+        System.out.println("p0433 passed");
     }
 }

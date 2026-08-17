@@ -25,25 +25,26 @@ Could you do it in-place with O(1) extra space?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0189;
 
-/** 题目链接：https://leetcode.cn/problems/rotate-array/ */
+import static manfred.exercises.assertion.Assert.*;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/rotate-array/ */
 
 /**
  * LeetCode 第 189 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
+        // 题面示例 1
         int[] input = new int[]{1, 2, 3, 4, 5, 6, 7};
         Solution2 solution = new Solution2();
         solution.rotate(input, 3);
-        System.out.println(Arrays.toString(input));
+        assertArrayEquals(new int[]{5, 6, 7, 1, 2, 3, 4}, input);
 
-        // [1,2,3,4,5,6]
-        //2
+        // [1,2,3,4,5,6] k=2：右旋两步为 [5,6,1,2,3,4]（手算确认）
         input = new int[]{1, 2, 3, 4, 5, 6};
         solution.rotate(input, 2);
-        System.out.println(Arrays.toString(input));
+        assertArrayEquals(new int[]{5, 6, 1, 2, 3, 4}, input);
 
+        System.out.println("p0189 passed");
     }
 }

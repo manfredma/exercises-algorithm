@@ -19,9 +19,9 @@
 */
 package manfred.exercises.leetcode.solved.p0201to0300.p0283;
 
-/** 题目链接：https://leetcode.cn/problems/move-zeroes/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/move-zeroes/ */
 
 /**
  * LeetCode 第 283 题的测试入口。
@@ -32,10 +32,13 @@ public class Main {
 
         int[] nums1 = {0, 1, 0, 3, 12};
         solution.moveZeroes(nums1);
-        System.out.println(Arrays.toString(nums1)); // 期望: [1, 3, 12, 0, 0]
+        // 示例 1: 题面 Output
+        assertEquals(new int[]{1, 3, 12, 0, 0}, nums1);
 
         int[] nums2 = {0};
         solution.moveZeroes(nums2);
-        System.out.println(Arrays.toString(nums2)); // 期望: [0]
+        // 示例 2: 题面 Output
+        assertEquals(new int[]{0}, nums2);
+        System.out.println("p0283 passed");
     }
 }

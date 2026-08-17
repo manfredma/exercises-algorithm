@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0236;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/ */
 
 /*
@@ -47,15 +49,17 @@ public class Main {
         TreeNode p1 = new TreeNode(5, n6, n2);
         TreeNode q1 = new TreeNode(1, new TreeNode(0), new TreeNode(8));
         TreeNode root1 = new TreeNode(3, p1, q1);
-        System.out.println(solution.lowestCommonAncestor(root1, p1, q1).val); // 期望: 3
+        // 示例 1: 题面 Output: 3
+        assertEquals(3, solution.lowestCommonAncestor(root1, p1, q1).val);
 
-        // 示例 2: 同一棵树，p=5, q=4 → 期望: 5
-        System.out.println(solution.lowestCommonAncestor(root1, p1, n4).val); // 期望: 5
+        // 示例 2: 同一棵树，p=5, q=4 → 题面 Output: 5
+        assertEquals(5, solution.lowestCommonAncestor(root1, p1, n4).val);
 
-        // 示例 3: root=[1,2], p=1, q=2 → 期望: 1
+        // 示例 3: root=[1,2], p=1, q=2 → 题面 Output: 1
         TreeNode root3 = new TreeNode(1);
         TreeNode q3 = new TreeNode(2);
         root3.left = q3;
-        System.out.println(solution.lowestCommonAncestor(root3, root3, q3).val); // 期望: 1
+        assertEquals(1, solution.lowestCommonAncestor(root3, root3, q3).val);
+        System.out.println("p0236 passed");
     }
 }

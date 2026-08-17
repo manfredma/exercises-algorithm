@@ -19,6 +19,8 @@ Output: 99
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0137;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/single-number-ii/ */
 
 /**
@@ -27,7 +29,9 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0137;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.singleNumber(new int[]{2, 2, 3, 2}));
-        System.out.println(solution.singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99}));
+        assertEquals(3, solution.singleNumber(new int[]{2, 2, 3, 2}));
+        assertEquals(99, solution.singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99}));
+
+        System.out.println("p0137 passed");
     }
 }

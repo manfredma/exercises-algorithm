@@ -20,6 +20,9 @@ Given word = "ABCB", return false.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0079;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/word-search/ */
 
 /**
@@ -33,9 +36,14 @@ public class Main {
                 {'A','D','E','E'}
         };
         Solution solution = new Solution();
-        System.out.println(solution.exist(x, "AB"));
-        System.out.println(solution.exist(x, "ABCCED"));
-        System.out.println(solution.exist(x, "SEE"));
-        System.out.println(solution.exist(x, "ABCB"));
+        // 手算："AB" 在左上角相邻
+        assertTrue(solution.exist(x, "AB"));
+        // 题面示例："ABCCED" 存在
+        assertTrue(solution.exist(x, "ABCCED"));
+        // 题面示例："SEE" 存在
+        assertTrue(solution.exist(x, "SEE"));
+        // 题面示例："ABCB" 不存在（B 无法重复访问）
+        assertFalse(solution.exist(x, "ABCB"));
+        System.out.println("passed");
     }
 }

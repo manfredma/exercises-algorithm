@@ -24,6 +24,8 @@ Explanation: There are three ways to climb to the top.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0070;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/climbing-stairs/ */
 
 /**
@@ -32,8 +34,12 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0070;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.climbStairs(2));
-        System.out.println(solution.climbStairs(3));
-        System.out.println(solution.climbStairs(4));
+        // 题面示例 1：n=2 有 2 种爬法
+        assertEquals(2, solution.climbStairs(2));
+        // 题面示例 2：n=3 有 3 种爬法
+        assertEquals(3, solution.climbStairs(3));
+        // 手算：n=4 有 5 种爬法（斐波那契数列 1,2,3,5）
+        assertEquals(5, solution.climbStairs(4));
+        System.out.println("passed");
     }
 }

@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0238;
 
-/** 题目链接：https://leetcode.cn/problems/product-of-array-except-self/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/product-of-array-except-self/ */
 
 /*
 给你一个整数数组 nums，返回 数组 answer ，其中 answer[i] 等于 nums 中除了 nums[i] 之外其余各元素的乘积 。
@@ -36,7 +36,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(Arrays.toString(solution.productExceptSelf(new int[]{1, 2, 3, 4})));       // 期望: [24, 12, 8, 6]
-        System.out.println(Arrays.toString(solution.productExceptSelf(new int[]{-1, 1, 0, -3, 3}))); // 期望: [0, 0, 9, 0, 0]
+        // 示例 1: 题面 Output
+        assertEquals(new int[]{24, 12, 8, 6}, solution.productExceptSelf(new int[]{1, 2, 3, 4}));
+        // 示例 2: 题面 Output
+        assertEquals(new int[]{0, 0, 9, 0, 0}, solution.productExceptSelf(new int[]{-1, 1, 0, -3, 3}));
+        System.out.println("p0238 passed");
     }
 }

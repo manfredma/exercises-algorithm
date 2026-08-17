@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1539;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/kth-missing-positive-number/ */
 
 /*
@@ -15,9 +17,4 @@ public class Main {
         assertEquals(6, solution.findKthPositive(new int[]{1, 2, 3, 4}, 2));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

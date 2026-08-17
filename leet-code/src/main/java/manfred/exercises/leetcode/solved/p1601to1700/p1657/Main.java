@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1601to1700.p1657;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/determine-if-two-strings-are-close/ */
 
 /*
@@ -59,7 +61,4 @@ public class Main {
         assertEquals(false, solution.closeStrings("aaabbc", "aaaabc"));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) throw new AssertionError();
-    }
 }

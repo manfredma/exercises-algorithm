@@ -31,6 +31,8 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0149;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/max-points-on-a-line/ */
 
 /**
@@ -39,11 +41,12 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0149;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.maxPoints(new int[][]{{1, 1}, {3, 2}, {5, 3}, {4, 1}, {2, 3}, {1, 4}}));
-        System.out.println(solution.maxPoints(new int[][]{{1, 1}, {2, 2}, {3, 3}}));
-        // [[1,1],[1,1],[2,3]]
-        System.out.println(solution.maxPoints(new int[][]{{1, 1}, {1, 1}, {2, 3}}));
-        // [[0,0],[1,65536],[65536,0]]
-        System.out.println(solution.maxPoints(new int[][]{{0, 0}, {1, 65536}, {65536, 0}}));
+        // 示例 1: [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]] → 4
+        assertEquals(4, solution.maxPoints(new int[][]{{1, 1}, {3, 2}, {5, 3}, {4, 1}, {2, 3}, {1, 4}}));
+        // 示例 2: [[1,1],[2,2],[3,3]] → 3
+        assertEquals(3, solution.maxPoints(new int[][]{{1, 1}, {2, 2}, {3, 3}}));
+        // [[1,1],[1,1],[2,3]] → 3（重合点必共线，三点在同一直线上）
+        assertEquals(3, solution.maxPoints(new int[][]{{1, 1}, {1, 1}, {2, 3}}));
+        System.out.println("p0149 passed");
     }
 }

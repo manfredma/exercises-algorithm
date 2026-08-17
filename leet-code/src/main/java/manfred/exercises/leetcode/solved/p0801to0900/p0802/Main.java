@@ -1,5 +1,9 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0802;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
+import java.util.Arrays;
+
 /** 题目链接：https://leetcode.cn/problems/find-eventual-safe-states/ */
 
 /*
@@ -17,10 +21,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: graph = [[1,2],[2,3],[5],[0],[5],[],[]] → 期望 [2,4,5,6]
-        System.out.println(solution.eventualSafeNodes(
+        assertEquals(Arrays.asList(2, 4, 5, 6), solution.eventualSafeNodes(
                 new int[][]{{1, 2}, {2, 3}, {5}, {0}, {5}, {}, {}}));
         // 示例 2: graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]] → 期望 [4]
-        System.out.println(solution.eventualSafeNodes(
+        assertEquals(Arrays.asList(4), solution.eventualSafeNodes(
                 new int[][]{{1, 2, 3, 4}, {1, 2}, {3, 4}, {0, 4}, {}}));
+
+        System.out.println("p0802 passed");
     }
 }

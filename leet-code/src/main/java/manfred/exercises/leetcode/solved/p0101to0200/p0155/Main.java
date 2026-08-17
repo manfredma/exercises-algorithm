@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0101to0200.p0155;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/min-stack/ */
 
 /*
@@ -100,9 +102,4 @@ public class Main {
         assertEquals(5, s3d.getMin());
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

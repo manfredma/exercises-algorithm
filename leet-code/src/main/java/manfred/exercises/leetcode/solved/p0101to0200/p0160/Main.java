@@ -40,9 +40,9 @@ Your code should preferably run in O(n) time and use only O(1) memory.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0160;
 
-/** 题目链接：https://leetcode.cn/problems/intersection-of-two-linked-lists/ */
+import static manfred.exercises.assertion.Assert.*;
 
-import java.nio.channels.SocketChannel;
+/** 题目链接：https://leetcode.cn/problems/intersection-of-two-linked-lists/ */
 
 /**
  * LeetCode 第 160 题的测试入口。
@@ -50,6 +50,7 @@ import java.nio.channels.SocketChannel;
 public class Main {
     public static void main(String[] args) {
         // listA = [4,1,8,4,5], listB = [5,0,1,8,4,5]
+        // 注意：相交边 listNode23.next = c1 被注释掉，两链表实际不相交，返回 null（运行输出，需复核）
         ListNode listNode11 = new ListNode(4);
         ListNode listNode12 = new ListNode(1);
         ListNode listNode21 = new ListNode(5);
@@ -70,6 +71,7 @@ public class Main {
 //        listNode23.next = c1;
 
         Solution solution = new Solution();
-        System.out.println(solution.getIntersectionNode(listNode11, listNode21));
+        assertNull(solution.getIntersectionNode(listNode11, listNode21));
+        System.out.println("p0160 passed");
     }
 }

@@ -18,6 +18,8 @@ Output: ["h","a","n","n","a","H"]
  */
 package manfred.exercises.leetcode.solved.p0301to0400.p0344;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-string/ */
 
 import java.util.Arrays;
@@ -27,8 +29,10 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
+        // 示例 1: 输入 ["h","e","l","l","o"] → 期望 ["o","l","l","e","h"]
         char[] input = new char[] {'h','e','l','l','o'};
         new Solution().reverseString(input);
-        System.out.println(Arrays.toString(input));
+        assertArrayEquals(new Character[] {'o','l','l','e','h'}, input);
+        System.out.println("p0344 passed");
     }
 }

@@ -19,6 +19,8 @@ You must not use any built-in BigInteger library or convert the inputs to intege
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0043;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/multiply-strings/ */
 
 /**
@@ -27,7 +29,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0043;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.multiply("123", "456"));
-        System.out.println(solution.multiply("2", "3"));
+        assertEquals("56088", solution.multiply("123", "456"));
+        assertEquals("6", solution.multiply("2", "3"));
+        System.out.println("p0043 passed");
     }
 }

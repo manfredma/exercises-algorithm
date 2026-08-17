@@ -36,6 +36,8 @@ Therefore, sum = 495 + 491 + 40 = 1026.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0129;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/sum-root-to-leaf-numbers/ */
 
 /**
@@ -51,7 +53,7 @@ public class Main {
         treeNode11.right = treeNode13;
 
         Solution solution = new Solution();
-        System.out.println(solution.sumNumbers(treeNode11));
+        assertEquals(25, solution.sumNumbers(treeNode11));
 
         TreeNode treeNode21 = new TreeNode(4);
         TreeNode treeNode22 = new TreeNode(9);
@@ -64,6 +66,8 @@ public class Main {
         treeNode22.left = treeNode24;
         treeNode22.right = treeNode25;
 
-        System.out.println(solution.sumNumbers(treeNode21));
+        assertEquals(1026, solution.sumNumbers(treeNode21));
+
+        System.out.println("p0129 passed");
     }
 }

@@ -29,6 +29,8 @@ If this function is called many times, how would you optimize it?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0190;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-bits/ */
 
 /**
@@ -37,7 +39,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0190;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(Integer.toBinaryString(-3) + " : " + Integer.toBinaryString(solution.reverseBits(-3)));
-//        System.out.println(Integer.toBinaryString(1) + " : " + Integer.toBinaryString(solution.reverseBits(1)));
+        // 题面示例 1：43261596 -> 964176192
+        assertEquals(964176192, solution.reverseBits(43261596));
+        // 题面示例 2：输入 -3（signed），输出 -1073741825（signed）
+        assertEquals(-1073741825, solution.reverseBits(-3));
+        System.out.println("p0190 passed");
     }
 }

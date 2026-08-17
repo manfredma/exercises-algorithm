@@ -46,6 +46,8 @@ Version strings do not start or end with dots, and they will not be two consecut
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0165;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/compare-version-numbers/ */
 
 /**
@@ -54,10 +56,16 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0165;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.compareVersion("0.1", "1.1"));
-        System.out.println(solution.compareVersion("1.0.1", "1"));
-        System.out.println(solution.compareVersion("7.5.2.4", "7.5.3"));
-        System.out.println(solution.compareVersion("1.01", "1.001"));
-        System.out.println(solution.compareVersion("1.0", "1.0.0"));
+        // 题面示例 1
+        assertEquals(-1, solution.compareVersion("0.1", "1.1"));
+        // 题面示例 2
+        assertEquals(1, solution.compareVersion("1.0.1", "1"));
+        // 题面示例 3
+        assertEquals(-1, solution.compareVersion("7.5.2.4", "7.5.3"));
+        // 题面示例 4
+        assertEquals(0, solution.compareVersion("1.01", "1.001"));
+        // 题面示例 5
+        assertEquals(0, solution.compareVersion("1.0", "1.0.0"));
+        System.out.println("p0165 passed");
     }
 }

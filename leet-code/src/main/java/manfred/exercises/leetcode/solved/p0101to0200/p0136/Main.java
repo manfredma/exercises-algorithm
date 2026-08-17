@@ -20,6 +20,8 @@ Output: 4
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0136;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/single-number/ */
 
 /**
@@ -28,7 +30,9 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0136;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.singleNumber(new int[]{2, 2, 1}));
-        System.out.println(solution.singleNumber(new int[]{4, 1, 2, 1, 2}));
+        assertEquals(1, solution.singleNumber(new int[]{2, 2, 1}));
+        assertEquals(4, solution.singleNumber(new int[]{4, 1, 2, 1, 2}));
+
+        System.out.println("p0136 passed");
     }
 }

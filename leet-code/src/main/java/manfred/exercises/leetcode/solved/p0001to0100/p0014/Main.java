@@ -19,6 +19,8 @@ All given inputs are in lowercase letters a-z.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0014;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/longest-common-prefix/ */
 
 /**
@@ -27,7 +29,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0014;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.longestCommonPrefix(new String[]{"flower","flow","flight"}));
-        System.out.println(solution.longestCommonPrefix(new String[]{"dog","racecar","car"}));
+        assertEquals("fl", solution.longestCommonPrefix(new String[]{"flower","flow","flight"}));
+        assertEquals("", solution.longestCommonPrefix(new String[]{"dog","racecar","car"}));
+        System.out.println("p0014 passed");
     }
 }

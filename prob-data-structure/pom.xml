@@ -11,6 +11,11 @@
     <artifactId>prob-data-structure</artifactId>
     <dependencies>
         <dependency>
+            <groupId>manfred.end</groupId>
+            <artifactId>exercise-assert</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.clearspring.analytics</groupId>
             <artifactId>stream</artifactId>
             <version>2.9.8</version>

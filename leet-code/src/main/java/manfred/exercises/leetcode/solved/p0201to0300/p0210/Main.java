@@ -28,9 +28,9 @@ You may assume that there are no duplicate edges in the input prerequisites.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0210;
 
-/** 题目链接：https://leetcode.cn/problems/course-schedule-ii/ */
+import static manfred.exercises.assertion.Assert.*;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/course-schedule-ii/ */
 
 /**
  * LeetCode 第 210 题的测试入口。
@@ -39,14 +39,19 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         Solution2 solution2 = new Solution2();
-        System.out.println(Arrays.toString(solution2.findOrder(2, new int[][]{{1, 0}})));
 
-        System.out.println(Arrays.toString(solution.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}})));
-        System.out.println(Arrays.toString(solution2.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}})));
+        // 题面示例 1：(2, [[1,0]]) 唯一合法序 [0,1]
+        assertArrayEquals(new int[]{0, 1}, solution2.findOrder(2, new int[][]{{1, 0}}));
 
-        System.out.println(Arrays.toString(solution.findOrder(2, new int[][]{{1, 0}})));
+        // 题面示例 2：(4, [[1,0],[2,0],[3,1],[3,2]]) 多解，校验是合法拓扑序
+        assertTrue(isValidOrder(solution.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}), 4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}));
+        assertTrue(isValidOrder(solution2.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}), 4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}));
 
-        System.out.println(Arrays.toString(solution2.findOrder(800, new int[][]{
+        // 题面示例 1（重复）
+        assertArrayEquals(new int[]{0, 1}, solution.findOrder(2, new int[][]{{1, 0}}));
+
+        // stress test：800 个节点的复杂依赖，运行输出校验为合法拓扑序（运行输出，需复核）
+        int[][] prereqs800 = new int[][]{
                 {695, 229}, {199, 149}, {443, 397}, {258, 247}, {781, 667}, {350, 160}, {678, 629}, {467, 166}, {500, 450}, {477, 107},
                 {483, 151}, {792, 785}, {752, 368}, {659, 623}, {316, 224}, {487, 268}, {743, 206}, {552, 211}, {314, 20}, {720, 196},
                 {421, 103}, {493, 288}, {762, 24}, {528, 318}, {472, 32}, {684, 502}, {641, 354}, {586, 480}, {629, 54}, {611, 412},
@@ -146,9 +151,37 @@ public class Main {
                 {728, 60}, {431, 202}, {268, 47}, {763, 123}, {347, 339}, {470, 117}, {466, 298}, {344, 142}, {584, 55}, {417, 175},
                 {439, 392}, {548, 55}, {714, 701}, {643, 71}, {357, 69}, {649, 459}, {789, 541}, {626, 5}, {752, 619}, {711, 267},
                 {639, 12}, {750, 364}, {620, 249}, {769, 721}, {636, 97}, {233, 15}, {171, 72}, {488, 421}, {251, 139}, {750, 98},
-                {199, 64}, {768, 344}, {759, 537}, {435, 154}, {425, 185}, {336, 221}, {418, 395}, {390, 136}, {618, 603}})));
-        System.out.println(Arrays.toString(solution2.findOrder(3, new int[][]{{0, 2}, {1, 2}, {2, 0}})));
-        System.out.println(Arrays.toString(solution2.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}})));
-        System.out.println(Arrays.toString(solution2.findOrder(2, new int[][]{{1, 0}})));
+                {199, 64}, {768, 344}, {759, 537}, {435, 154}, {425, 185}, {336, 221}, {418, 395}, {390, 136}, {618, 603}};
+        int[] order800 = solution2.findOrder(800, prereqs800);
+        assertEquals(800, order800.length);
+        assertTrue(isValidOrder(order800, 800, prereqs800));
+
+        // (3, [[0,2],[1,2],[2,0]])：含环 0->2->0，返回空数组
+        assertEquals(0, solution2.findOrder(3, new int[][]{{0, 2}, {1, 2}, {2, 0}}).length);
+
+        // 题面示例 2（重复，多解，校验合法拓扑序）
+        assertTrue(isValidOrder(solution2.findOrder(4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}), 4, new int[][]{{1, 0}, {2, 0}, {3, 1}, {3, 2}}));
+
+        // 题面示例 1（重复）
+        assertArrayEquals(new int[]{0, 1}, solution2.findOrder(2, new int[][]{{1, 0}}));
+
+        System.out.println("p0210 passed");
+    }
+
+    /** 校验 order 是否为 numCourses 门课的合法拓扑序：覆盖全部课程且满足所有 prerequisites（pre[0] 依赖 pre[1]，即 pre[1] 在前）。 */
+    private static boolean isValidOrder(int[] order, int numCourses, int[][] prerequisites) {
+        if (order == null || order.length != numCourses) {
+            return false;
+        }
+        int[] pos = new int[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            pos[order[i]] = i;
+        }
+        for (int[] pre : prerequisites) {
+            if (pos[pre[1]] >= pos[pre[0]]) {
+                return false;
+            }
+        }
+        return true;
     }
 }

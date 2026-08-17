@@ -16,6 +16,8 @@ Output: [-1,-1]
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0034;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/ */
 
 /**
@@ -24,21 +26,19 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0034;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        findOnce(solution, 3);
-        findOnce(solution, 5);
-        findOnce(solution, 6);
-        findOnce(solution, 7);
-        findOnce(solution, 8);
-        findOnce(solution, 10);
-        findOnce(solution, 12);
+        findOnce(solution, 3, new int[]{-1, -1});
+        findOnce(solution, 5, new int[]{0, 0});
+        findOnce(solution, 6, new int[]{-1, -1});
+        findOnce(solution, 7, new int[]{1, 2});
+        findOnce(solution, 8, new int[]{3, 4});
+        findOnce(solution, 10, new int[]{5, 5});
+        findOnce(solution, 12, new int[]{-1, -1});
+        System.out.println("p0034 passed");
     }
 
-    private static void findOnce(Solution solution, int i2) {
-        int[] r = solution.searchRange(new int[]{5, 7, 7, 8, 8, 10}, i2);
-        for (int i = 0; i < r.length; i++) {
-            System.out.print(r[i] + "->");
-        }
-        System.out.println();
+    private static void findOnce(Solution solution, int target, int[] expected) {
+        int[] r = solution.searchRange(new int[]{5, 7, 7, 8, 8, 10}, target);
+        assertArrayEquals(expected, r);
     }
 
 }

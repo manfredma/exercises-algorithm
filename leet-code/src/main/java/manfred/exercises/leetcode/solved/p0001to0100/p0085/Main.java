@@ -14,6 +14,8 @@ Output: 6
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0085;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/maximal-rectangle/ */
 
 /**
@@ -29,6 +31,8 @@ public class Main {
         };
 
         Solution solution = new Solution();
-        System.out.println(solution.maximalRectangle(x));
+        // 题面示例：最大全 1 矩形面积为 6
+        assertEquals(6, solution.maximalRectangle(x));
+        System.out.println("passed");
     }
 }

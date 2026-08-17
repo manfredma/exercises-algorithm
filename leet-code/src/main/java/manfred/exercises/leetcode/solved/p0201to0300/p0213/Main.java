@@ -23,6 +23,8 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0213;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/house-robber-ii/ */
 
 /**
@@ -31,7 +33,10 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0213;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.rob(new int[]{2, 3, 2}));
-        System.out.println(solution.rob(new int[]{1, 2, 3, 1}));
+        // 题面示例 1
+        assertEquals(3, solution.rob(new int[]{2, 3, 2}));
+        // 题面示例 2
+        assertEquals(4, solution.rob(new int[]{1, 2, 3, 1}));
+        System.out.println("p0213 passed");
     }
 }

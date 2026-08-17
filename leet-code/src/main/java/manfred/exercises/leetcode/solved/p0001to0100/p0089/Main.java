@@ -33,6 +33,10 @@ Explanation: We define the gray code sequence to begin with 0.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0089;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/gray-code/ */
 
 /**
@@ -41,7 +45,25 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0089;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.grayCode(2));
-        System.out.println(solution.grayCode(0));
+        // 示例 1: n=2 → 长度 4，起始为 0，相邻两数仅差一位（格雷码性质），顺序不唯一
+        List<Integer> r2 = solution.grayCode(2);
+        assertEquals(4, r2.size());
+        assertEquals(0, (int) r2.get(0));
+        assertTrue(isValidGrayCode(r2));
+        // 示例 2: n=0 → [0]
+        List<Integer> r0 = solution.grayCode(0);
+        assertEquals(1, r0.size());
+        assertEquals(0, (int) r0.get(0));
+        System.out.println("p0089 passed");
+    }
+
+    /** 校验格雷码序列：首项为 0，长度为 2^n，任意相邻两项仅有一位二进制位不同。 */
+    private static boolean isValidGrayCode(List<Integer> code) {
+        for (int i = 1; i < code.size(); i++) {
+            if (Integer.bitCount(code.get(i) ^ code.get(i - 1)) != 1) {
+                return false;
+            }
+        }
+        return true;
     }
 }

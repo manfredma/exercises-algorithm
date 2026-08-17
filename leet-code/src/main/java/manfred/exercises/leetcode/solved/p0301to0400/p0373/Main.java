@@ -1,5 +1,9 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0373;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
+import java.util.Arrays;
+
 /** 题目链接：https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/ */
 
 /*
@@ -26,9 +30,12 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0373;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // 示例 1: nums1=[1,7,11], nums2=[2,4,6], k=3 → 期望 [[1,2],[1,4],[1,6]]
-        System.out.println(solution.kSmallestPairs(new int[]{1, 7, 11}, new int[]{2, 4, 6}, 3));
-        // 示例 2: nums1=[1,1,2], nums2=[1,2,3], k=2 → 期望 [[1,1],[1,1]]
-        System.out.println(solution.kSmallestPairs(new int[]{1, 1, 2}, new int[]{1, 2, 3}, 2));
+        // 示例 1: nums1=[1,7,11], nums2=[2,4,6], k=3 → 题面 Output: [[1,2],[1,4],[1,6]]
+        assertEquals(Arrays.asList(Arrays.asList(1, 2), Arrays.asList(1, 4), Arrays.asList(1, 6)),
+                solution.kSmallestPairs(new int[]{1, 7, 11}, new int[]{2, 4, 6}, 3));
+        // 示例 2: nums1=[1,1,2], nums2=[1,2,3], k=2 → 题面 Output: [[1,1],[1,1]]
+        assertEquals(Arrays.asList(Arrays.asList(1, 1), Arrays.asList(1, 1)),
+                solution.kSmallestPairs(new int[]{1, 1, 2}, new int[]{1, 2, 3}, 2));
+        System.out.println("p0373 passed");
     }
 }

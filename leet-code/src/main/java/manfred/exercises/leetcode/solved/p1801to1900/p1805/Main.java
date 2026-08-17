@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1801to1900.p1805;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-different-integers-in-a-string/ */
 
 /*
@@ -49,9 +51,4 @@ public class Main {
         assertEquals(1, solution.numDifferentIntegers("0000"));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

@@ -28,6 +28,8 @@ exection -> execution (insert 'u')
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0072;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/edit-distance/ */
 
 /**
@@ -36,7 +38,10 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0072;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.minDistance("horse", "ros"));
-        System.out.println(solution.minDistance("intention", "execution"));
+        // 题面示例 1："horse" -> "ros" 最少 3 步
+        assertEquals(3, solution.minDistance("horse", "ros"));
+        // 题面示例 2："intention" -> "execution" 最少 5 步
+        assertEquals(5, solution.minDistance("intention", "execution"));
+        System.out.println("passed");
     }
 }

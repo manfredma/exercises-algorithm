@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2001to2100.p2006;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/count-number-of-pairs-with-absolute-difference-k/ */
 
 /*
@@ -69,9 +71,4 @@ public class Main {
         assertEquals(expected, solution2.countKDifference(nums, k));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

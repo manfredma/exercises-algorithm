@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1901to2000.p1926;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/ */
 
 /**
@@ -32,7 +34,4 @@ public class Main {
         }, new int[]{2, 2}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

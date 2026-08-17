@@ -19,6 +19,8 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0112;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/path-sum/ */
 
 /**
@@ -45,6 +47,8 @@ public class Main {
         t4.right = t8;
         t6.right = t9;
 
-        System.out.println(new Solution().hasPathSum(t1, 22));
+        assertTrue(new Solution().hasPathSum(t1, 22));
+
+        System.out.println("p0112 passed");
     }
 }

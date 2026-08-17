@@ -14,6 +14,8 @@ Output: -1->0->3->4->5
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0148;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/sort-list/ */
 
 /**
@@ -21,71 +23,42 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0148;
  */
 public class Main {
     public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
+        // 示例 1: 4->2->1->3 → 1->2->3->4
+        assertSorted(new int[]{4, 2, 1, 3}, new int[]{1, 2, 3, 4});
+        // 示例 2: -1->5->3->4->0 → -1->0->3->4->5
+        assertSorted(new int[]{-1, 5, 3, 4, 0}, new int[]{-1, 0, 3, 4, 5});
+        // 边界: 3->2->4 → 2->3->4
+        assertSorted(new int[]{3, 2, 4}, new int[]{2, 3, 4});
+        System.out.println("p0148 passed");
     }
 
-    private static void test1() {
-        ListNode node1 = new ListNode(3);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(4);
-
-        node1.next = node2;
-        node2.next = node3;
-
-        Solution solution = new Solution();
-        ListNode head = solution.sortList(node1);
-
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(" -> " + cur.val);
-            cur = cur.next;
-        }
-        System.out.println();
+    /** 构造链表、排序后收集为 int[]，与期望数组深度比较。 */
+    private static void assertSorted(int[] input, int[] expected) {
+        ListNode head = buildList(input);
+        ListNode sorted = new Solution().sortList(head);
+        assertArrayEquals(expected, toArray(sorted));
     }
 
-    private static void test3() {
-        ListNode node1 = new ListNode(4);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(1);
-        ListNode node4 = new ListNode(3);
-
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-
-        Solution solution = new Solution();
-        ListNode head = solution.sortList(node1);
-
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(" -> " + cur.val);
+    private static ListNode buildList(int[] values) {
+        ListNode dummy = new ListNode(0);
+        ListNode cur = dummy;
+        for (int v : values) {
+            cur.next = new ListNode(v);
             cur = cur.next;
         }
-        System.out.println();
+        return dummy.next;
     }
 
-    private static void test2() {
-        ListNode node1 = new ListNode(-1);
-        ListNode node2 = new ListNode(5);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        ListNode node5 = new ListNode(0);
-
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
-
-        Solution solution = new Solution();
-        ListNode head = solution.sortList(node1);
-
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(" -> " + cur.val);
-            cur = cur.next;
+    private static int[] toArray(ListNode head) {
+        int size = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            size++;
         }
-        System.out.println();
+        int[] arr = new int[size];
+        int i = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            arr[i++] = cur.val;
+        }
+        return arr;
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0268;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/missing-number/ */
 
 /*
@@ -37,10 +39,4 @@ public class Main {
         assertEquals(8, solution.missingNumber(new int[]{9, 6, 4, 2, 3, 5, 7, 0, 1}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
-        System.out.println("通过：" + expected);
-    }
 }

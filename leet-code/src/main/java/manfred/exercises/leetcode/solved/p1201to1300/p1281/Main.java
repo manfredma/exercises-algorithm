@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1281;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-integer/ */
 
 /*
@@ -12,8 +14,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n = 234 → 期望 15
-        System.out.println(solution.subtractProductAndSum(234));
+        assertEquals(15, solution.subtractProductAndSum(234));
         // 示例 2: n = 4421 → 期望 21
-        System.out.println(solution.subtractProductAndSum(4421));
+        assertEquals(21, solution.subtractProductAndSum(4421));
+        System.out.println("passed");
     }
 }

@@ -24,6 +24,8 @@ Output: 3
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0200;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-islands/ */
 
 /**
@@ -37,13 +39,16 @@ public class Main {
         c[1] = "11010".toCharArray();
         c[2] = "11000".toCharArray();
         c[3] = "00000".toCharArray();
-        System.out.println(solution.numIslands(c));
+        // 题面示例 1
+        assertEquals(1, solution.numIslands(c));
 
         c[0] = "11000".toCharArray();
         c[1] = "11000".toCharArray();
         c[2] = "00100".toCharArray();
         c[3] = "00011".toCharArray();
-        System.out.println(solution.numIslands(c));
+        // 题面示例 2
+        assertEquals(3, solution.numIslands(c));
+        System.out.println("p0200 passed");
     }
 
 }

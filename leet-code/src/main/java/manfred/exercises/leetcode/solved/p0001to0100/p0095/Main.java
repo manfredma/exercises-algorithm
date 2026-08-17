@@ -26,6 +26,8 @@ The above output corresponds to the 5 unique BST's shown below:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0095;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/unique-binary-search-trees-ii/ */
 
 /**
@@ -34,6 +36,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0095;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.generateTrees(3).size());
+        // 题面示例：n=3 时共有 5 棵结构不同的 BST
+        assertEquals(5, solution.generateTrees(3).size());
+        System.out.println("passed");
     }
 }

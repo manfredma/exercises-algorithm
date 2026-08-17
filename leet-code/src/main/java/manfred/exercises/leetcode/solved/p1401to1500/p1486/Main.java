@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1486;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/xor-operation-in-an-array/ */
 
 /*
@@ -14,12 +16,13 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n = 5, start = 0 → 期望 8
-        System.out.println(solution.xorOperation(5, 0));
+        assertEquals(8, solution.xorOperation(5, 0));
         // 示例 2: n = 4, start = 3 → 期望 8
-        System.out.println(solution.xorOperation(4, 3));
+        assertEquals(8, solution.xorOperation(4, 3));
         // 示例 3: n = 1, start = 7 → 期望 7
-        System.out.println(solution.xorOperation(1, 7));
+        assertEquals(7, solution.xorOperation(1, 7));
         // 示例 4: n = 10, start = 5 → 期望 2
-        System.out.println(solution.xorOperation(10, 5));
+        assertEquals(2, solution.xorOperation(10, 5));
+        System.out.println("passed");
     }
 }

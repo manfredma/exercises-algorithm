@@ -24,6 +24,11 @@ Explanation: There exist two distinct solutions to the 4-queens puzzle as shown 
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0051;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/n-queens/ */
 
 /**
@@ -32,6 +37,12 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0051;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solveNQueens(4));
+        // 题面示例：n=4 共 2 个解
+        List<List<String>> expected = Arrays.asList(
+                Arrays.asList(".Q..", "...Q", "Q...", "..Q."),
+                Arrays.asList("..Q.", "Q...", "...Q", ".Q..")
+        );
+        assertEquals(expected, solution.solveNQueens(4));
+        System.out.println("passed");
     }
 }

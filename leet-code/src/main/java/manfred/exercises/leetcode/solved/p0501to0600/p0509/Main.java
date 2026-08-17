@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0509;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/fibonacci-number/ */
 
 /*
@@ -29,10 +31,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n = 2 → 期望 1
-        System.out.println(solution.fib(2));
+        assertEquals(1, solution.fib(2));
         // 示例 2: n = 3 → 期望 2
-        System.out.println(solution.fib(3));
+        assertEquals(2, solution.fib(3));
         // 示例 3: n = 4 → 期望 3
-        System.out.println(solution.fib(4));
+        assertEquals(3, solution.fib(4));
+        System.out.println("p0509 passed");
     }
 }

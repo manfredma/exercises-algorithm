@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1114;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/print-in-order/ */
 
 /*
@@ -54,7 +56,7 @@ public class Main {
         // 按 [1,2,3] 顺序启动
         t1.start(); t2.start(); t3.start();
         t1.join();  t2.join();  t3.join();
-        System.out.println(sb.toString()); // 期望：firstsecondthird
+        assertEquals("firstsecondthird", sb.toString());
 
         // 示例 2：nums = [1,3,2] — 先启动 t3，再启动 t2
         Solution foo2 = new Solution();
@@ -85,6 +87,7 @@ public class Main {
         // 按 [1,3,2] 顺序启动
         a1.start(); a3.start(); a2.start();
         a1.join();  a3.join();  a2.join();
-        System.out.println(sb2.toString()); // 期望：firstsecondthird
+        assertEquals("firstsecondthird", sb2.toString());
+        System.out.println("passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0560;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/subarray-sum-equals-k/ */
 
 /*
@@ -41,9 +43,4 @@ public class Main {
         assertEquals(1, solution3.subarraySum(new int[]{5}, 5));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

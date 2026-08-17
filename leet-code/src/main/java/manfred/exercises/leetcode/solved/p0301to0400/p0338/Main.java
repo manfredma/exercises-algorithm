@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0338;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/counting-bits/ */
 
 import java.util.Arrays;
@@ -22,7 +24,4 @@ public class Main {
         assertArrayEquals(new int[]{0, 1, 1, 2, 1, 2}, solution.countBits(5));
     }
 
-    private static void assertArrayEquals(int[] expected, int[] actual) {
-        if (!Arrays.equals(expected, actual)) throw new AssertionError("expected: " + Arrays.toString(expected) + ", actual: " + Arrays.toString(actual));
-    }
 }

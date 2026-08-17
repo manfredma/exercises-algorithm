@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1041;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/robot-bounded-in-circle/ */
 
 /*
@@ -31,10 +34,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: instructions = "GGLLGG" → 期望 true
-        System.out.println(solution.isRobotBounded("GGLLGG"));
+        assertTrue(solution.isRobotBounded("GGLLGG"));
         // 示例 2: instructions = "GG" → 期望 false
-        System.out.println(solution.isRobotBounded("GG"));
+        assertFalse(solution.isRobotBounded("GG"));
         // 示例 3: instructions = "GL" → 期望 true
-        System.out.println(solution.isRobotBounded("GL"));
+        assertTrue(solution.isRobotBounded("GL"));
+        System.out.println("passed");
     }
 }

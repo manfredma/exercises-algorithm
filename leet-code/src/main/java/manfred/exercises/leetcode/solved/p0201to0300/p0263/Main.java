@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0263;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/ugly-number/ */
 
 /*
@@ -12,11 +15,12 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0263;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // 示例 1: n = 6 → 期望 true
-        System.out.println(solution.isUgly(6));
-        // 示例 2: n = 1 → 期望 true
-        System.out.println(solution.isUgly(1));
-        // 示例 3: n = 14 → 期望 false
-        System.out.println(solution.isUgly(14));
+        // 示例 1: n = 6 → 题面 Output: true
+        assertTrue(solution.isUgly(6));
+        // 示例 2: n = 1 → 题面 Output: true
+        assertTrue(solution.isUgly(1));
+        // 示例 3: n = 14 → 题面 Output: false
+        assertFalse(solution.isUgly(14));
+        System.out.println("p0263 passed");
     }
 }

@@ -11,6 +11,8 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0016;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/3sum-closest/ */
 
 /**
@@ -19,6 +21,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0016;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.threeSumClosest(new int[]{1, 1, 1, 0}, -100));
+        // nums=[1,1,1,0], target=-100，三数之和最小为 0+1+1=2，最接近 -100
+        assertEquals(2, solution.threeSumClosest(new int[]{1, 1, 1, 0}, -100));
+        System.out.println("p0016 passed");
     }
 }

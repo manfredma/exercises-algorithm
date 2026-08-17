@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1372;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/ */
 
 /**
@@ -62,7 +64,4 @@ public class Main {
         return root;
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

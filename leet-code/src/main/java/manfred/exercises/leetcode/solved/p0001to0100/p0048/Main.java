@@ -43,6 +43,8 @@ rotate the input matrix in-place such that it becomes:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0048;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/rotate-image/ */
 
 /**
@@ -50,27 +52,36 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0048;
  */
 public class Main {
     public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        // 题面示例 1：顺时针旋转 90 度
         int[][] x = new int[][]{
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        Solution solution = new Solution();
-        printArray(x);
         solution.rotate(x);
-        printArray(x);
+        assertArrayEquals(new int[][]{
+                {7, 4, 1},
+                {8, 5, 2},
+                {9, 6, 3}
+        }, x);
 
+        // 题面示例 2
         x = new int[][]{
                 {5, 1, 9, 11},
                 {2, 4, 8, 10},
                 {13, 3, 6, 7},
                 {15, 14, 12, 16}
         };
-
-        printArray(x);
         solution.rotate(x);
-        printArray(x);
-
+        assertArrayEquals(new int[][]{
+                {15, 13, 2, 5},
+                {14, 3, 4, 1},
+                {12, 6, 8, 9},
+                {16, 7, 10, 11}
+        }, x);
+        System.out.println("p0048 passed");
     }
 
     private static void printArray(int[][] x) {

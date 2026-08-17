@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0416;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/partition-equal-subset-sum/ */
 
 /*
@@ -29,9 +31,4 @@ public class Main {
         assertEquals(false, solution.canPartition(new int[] {1, 2, 3, 5}));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

@@ -1,8 +1,6 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0682;
 
-/** 题目链接：https://leetcode.cn/problems/baseball-game/ */
-
-import java.util.Arrays;
+import static manfred.exercises.assertion.Assert.*;
 
 /*
 你现在是一场采用特殊赛制棒球比赛的记录员。这场比赛由若干回合组成，
@@ -26,12 +24,14 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: ["5","2","C","D","+"] → 期望 30
-        System.out.println(solution.calPoints(new String[]{"5", "2", "C", "D", "+"}));
+        assertEquals(30, solution.calPoints(new String[]{"5", "2", "C", "D", "+"}));
 
         // 示例 2: ["5","-2","4","C","D","9","+","+"] → 期望 27
-        System.out.println(solution.calPoints(new String[]{"5", "-2", "4", "C", "D", "9", "+", "+"}));
+        assertEquals(27, solution.calPoints(new String[]{"5", "-2", "4", "C", "D", "9", "+", "+"}));
 
         // 示例 3: ["1"] → 期望 1
-        System.out.println(solution.calPoints(new String[]{"1"}));
+        assertEquals(1, solution.calPoints(new String[]{"1"}));
+
+        System.out.println("p0682 passed");
     }
 }

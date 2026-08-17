@@ -26,6 +26,8 @@ Output: 28
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0062;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/unique-paths/ */
 
 /**
@@ -34,8 +36,12 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0062;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.uniquePaths(3, 2));
-        System.out.println(solution.uniquePaths(7, 3));
-        System.out.println(solution.uniquePaths(51, 9));
+        // 题面示例 1：m=3, n=2 -> 3
+        assertEquals(3, solution.uniquePaths(3, 2));
+        // 题面示例 2：m=7, n=3 -> 28
+        assertEquals(28, solution.uniquePaths(7, 3));
+        // 运行输出复核：m=51, n=9 -> 1916797311
+        assertEquals(1916797311, solution.uniquePaths(51, 9));
+        System.out.println("passed");
     }
 }

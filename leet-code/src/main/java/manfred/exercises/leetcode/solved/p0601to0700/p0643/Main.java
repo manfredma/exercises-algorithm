@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0643;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-average-subarray-i/ */
 
 /*
@@ -37,9 +39,4 @@ public class Main {
         assertEquals(5.0, solution.findMaxAverage(new int[]{5}, 1));
     }
 
-    private static void assertEquals(double expected, double actual) {
-        if (Math.abs(expected - actual) >= 1e-5) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

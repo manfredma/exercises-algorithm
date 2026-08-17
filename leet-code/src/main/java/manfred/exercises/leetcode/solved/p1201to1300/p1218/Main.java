@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1218;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/ */
 
 /*
@@ -32,12 +34,13 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: arr=[1,2,3,4], difference=1 → 期望 4
-        System.out.println(solution.longestSubsequence(new int[]{1, 2, 3, 4}, 1));
+        assertEquals(4, solution.longestSubsequence(new int[]{1, 2, 3, 4}, 1));
 
         // 示例 2: arr=[1,3,5,7], difference=1 → 期望 1
-        System.out.println(solution.longestSubsequence(new int[]{1, 3, 5, 7}, 1));
+        assertEquals(1, solution.longestSubsequence(new int[]{1, 3, 5, 7}, 1));
 
         // 示例 3: arr=[1,5,7,8,5,3,4,2,1], difference=-2 → 期望 4
-        System.out.println(solution.longestSubsequence(new int[]{1, 5, 7, 8, 5, 3, 4, 2, 1}, -2));
+        assertEquals(4, solution.longestSubsequence(new int[]{1, 5, 7, 8, 5, 3, 4, 2, 1}, -2));
+        System.out.println("passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0518;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/coin-change-ii/ */
 
 /*
@@ -14,10 +16,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: amount = 5, coins = [1, 2, 5] → 期望 4
-        System.out.println(solution.change(5, new int[]{1, 2, 5}));
+        assertEquals(4, solution.change(5, new int[]{1, 2, 5}));
         // 示例 2: amount = 3, coins = [2] → 期望 0
-        System.out.println(solution.change(3, new int[]{2}));
+        assertEquals(0, solution.change(3, new int[]{2}));
         // 示例 3: amount = 10, coins = [10] → 期望 1
-        System.out.println(solution.change(10, new int[]{10}));
+        assertEquals(1, solution.change(10, new int[]{10}));
+
+        System.out.println("p0518 passed");
     }
 }

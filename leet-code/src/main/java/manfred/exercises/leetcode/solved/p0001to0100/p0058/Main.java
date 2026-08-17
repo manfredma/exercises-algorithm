@@ -13,6 +13,8 @@ Output: 5
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0058;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/length-of-last-word/ */
 
 /**
@@ -21,6 +23,8 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0058;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.lengthOfLastWord("Hello World"));
+        // 题面示例："Hello World" 最后一个单词 "World" 长度为 5
+        assertEquals(5, solution.lengthOfLastWord("Hello World"));
+        System.out.println("passed");
     }
 }

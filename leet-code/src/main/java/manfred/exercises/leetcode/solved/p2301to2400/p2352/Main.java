@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2301to2400.p2352;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/equal-row-and-column-pairs/ */
 
 /*
@@ -60,7 +62,4 @@ public class Main {
         assertEquals(0, solution2.equalPairs(new int[][] {{1, 2}, {3, 4}}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError();
-    }
 }

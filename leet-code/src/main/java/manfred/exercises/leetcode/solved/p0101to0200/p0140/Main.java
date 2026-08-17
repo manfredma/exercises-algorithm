@@ -44,6 +44,11 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0140;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static manfred.exercises.assertion.Assert.*;
 
 /**
  * LeetCode 第 140 题的测试入口。
@@ -51,18 +56,28 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
-        System.out.println(solution.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
-        System.out.println(solution.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))));
+        assertStringSet(Arrays.asList("cats and dog", "cat sand dog"), solution.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
+        assertStringSet(Arrays.asList("pine apple pen apple", "pineapple pen apple", "pine applepen apple"), solution.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
+        assertTrue(solution.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))).isEmpty());
 
         Solution2 solution2 = new Solution2();
-        System.out.println(solution2.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
-        System.out.println(solution2.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
-        System.out.println(solution2.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))));
+        assertStringSet(Arrays.asList("cats and dog", "cat sand dog"), solution2.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
+        assertStringSet(Arrays.asList("pine apple pen apple", "pineapple pen apple", "pine applepen apple"), solution2.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
+        assertTrue(solution2.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))).isEmpty());
 
         Solution3 solution3 = new Solution3();
-        System.out.println(solution3.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
-        System.out.println(solution3.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
-        System.out.println(solution3.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))));
+        assertStringSet(Arrays.asList("cats and dog", "cat sand dog"), solution3.wordBreak("catsanddog", new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"))));
+        assertStringSet(Arrays.asList("pine apple pen apple", "pineapple pen apple", "pine applepen apple"), solution3.wordBreak("pineapplepenapple", new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"))));
+        assertTrue(solution3.wordBreak("catsandog", new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"))).isEmpty());
+
+        System.out.println("p0140 passed");
+    }
+
+    private static void assertStringSet(List<String> expected, List<String> actual) {
+        Set<String> expectedSet = new HashSet<>(expected);
+        Set<String> actualSet = new HashSet<>(actual);
+        if (!expectedSet.equals(actualSet)) {
+            fail("expected set: " + expectedSet + ", actual set: " + actualSet);
+        }
     }
 }

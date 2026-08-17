@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0658;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-k-closest-elements/ */
 
 import java.util.Arrays;
@@ -21,9 +23,4 @@ public class Main {
         assertEquals(Arrays.asList(1, 1, 2, 3), solution.findClosestElements(new int[]{1, 1, 2, 3, 4, 5}, 4, -1));
     }
 
-    private static void assertEquals(List<Integer> expected, List<Integer> actual) {
-        if (!expected.equals(actual)) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

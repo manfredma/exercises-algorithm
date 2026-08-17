@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1572;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/matrix-diagonal-sum/ */
 
 /*
@@ -33,12 +35,13 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: mat=[[1,2,3],[4,5,6],[7,8,9]] → 期望 25
-        System.out.println(solution.diagonalSum(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
+        assertEquals(25, solution.diagonalSum(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
 
         // 示例 2: mat=[[1,1,1,1],...] → 期望 8
-        System.out.println(solution.diagonalSum(new int[][]{{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}}));
+        assertEquals(8, solution.diagonalSum(new int[][]{{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}}));
 
         // 示例 3: mat=[[5]] → 期望 5
-        System.out.println(solution.diagonalSum(new int[][]{{5}}));
+        assertEquals(5, solution.diagonalSum(new int[][]{{5}}));
+        System.out.println("passed");
     }
 }

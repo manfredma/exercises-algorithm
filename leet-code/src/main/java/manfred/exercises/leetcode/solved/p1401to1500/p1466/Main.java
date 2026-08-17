@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1466;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/ */
 
 /*
@@ -44,10 +46,4 @@ public class Main {
         assertEquals(0, solution.minReorder(3, new int[][]{{1, 0}, {2, 0}}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
-        System.out.println("通过：" + expected);
-    }
 }

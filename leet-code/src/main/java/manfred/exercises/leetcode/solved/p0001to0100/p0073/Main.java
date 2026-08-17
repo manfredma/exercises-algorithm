@@ -40,6 +40,8 @@ Could you devise a constant space solution?
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0073;
 
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
+
 /** 题目链接：https://leetcode.cn/problems/set-matrix-zeroes/ */
 
 /**
@@ -48,31 +50,31 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0073;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        // 题面示例 1
         int[][] x = new int[][]{
                 {1, 1, 1},
                 {1, 0, 1},
                 {1, 1, 1}
         };
         solution.setZeroes(x);
-        print(x);
+        assertArrayEquals(new int[][]{
+                {1, 0, 1},
+                {0, 0, 0},
+                {1, 0, 1}
+        }, x);
 
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        // 题面示例 2
         x = new int[][]{
                 {0, 1, 2, 0},
                 {3, 4, 5, 2},
                 {1, 3, 1, 5}
         };
         solution.setZeroes(x);
-        print(x);
-    }
-
-    private static void print(int[][] r) {
-        System.out.println();
-        for (int i = 0; i < r.length; i++) {
-            for (int j = 0; j < r[i].length; j++) {
-                System.out.print(r[i][j] + " ");
-            }
-            System.out.println();
-        }
+        assertArrayEquals(new int[][]{
+                {0, 0, 0, 0},
+                {0, 4, 5, 0},
+                {0, 3, 1, 0}
+        }, x);
+        System.out.println("passed");
     }
 }

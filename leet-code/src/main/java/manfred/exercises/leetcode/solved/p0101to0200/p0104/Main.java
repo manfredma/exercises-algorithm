@@ -19,6 +19,8 @@ return its depth = 3.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0104;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-depth-of-binary-tree/ */
 
 /**
@@ -38,6 +40,8 @@ public class Main {
         treeNode3.left = treeNode4;
         treeNode3.right = treeNode5;
 
-        System.out.println(new Solution().maxDepth(treeNode1));
+        assertEquals(3, new Solution().maxDepth(treeNode1));
+
+        System.out.println("p0104 passed");
     }
 }

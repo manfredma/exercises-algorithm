@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0763;
 
+import static manfred.exercises.assertion.Assert.*;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -46,8 +48,6 @@ public class Main {
     }
 
     private static void assertListEquals(List<Integer> expected, List<Integer> actual) {
-        if (!expected.equals(actual)) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
+        assertEquals(expected, actual);
     }
 }

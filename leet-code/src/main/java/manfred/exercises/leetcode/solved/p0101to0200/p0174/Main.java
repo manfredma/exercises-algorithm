@@ -30,9 +30,9 @@ even the first room the knight enters and the bottom-right room where the prince
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0174;
 
-/** 题目链接：https://leetcode.cn/problems/dungeon-game/ */
+import static manfred.exercises.assertion.Assert.*;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/dungeon-game/ */
 
 /**
  * LeetCode 第 174 题的测试入口。
@@ -45,12 +45,8 @@ public class Main {
                 {10, 30, -5}
         };
 
-        for (int i = 0; i < input.length; i++) {
-            System.out.println(Arrays.toString(input[i]));
-        }
-        System.out.println();
-        int x = new Solution().calculateMinimumHP(input);
-        System.out.println();
-        System.out.println(x);
+        // 题面：该 dungeon 下骑士的最小初始健康为 7
+        assertEquals(7, new Solution().calculateMinimumHP(input));
+        System.out.println("p0174 passed");
     }
 }

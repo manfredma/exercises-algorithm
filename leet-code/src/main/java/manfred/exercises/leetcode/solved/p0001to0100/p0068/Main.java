@@ -60,8 +60,11 @@ Output:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0068;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/text-justification/ */
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -75,8 +78,15 @@ public class Main {
         };
         Solution solution = new Solution();
         List<String> result = solution.fullJustify(words, 20);
-        for (String s : result) {
-            System.out.println(s);
-        }
+        List<String> expected = Arrays.asList(
+                "Science  is  what we",
+                "understand      well",
+                "enough to explain to",
+                "a  computer.  Art is",
+                "everything  else  we",
+                "do                  "
+        );
+        assertEquals(expected, result);
+        System.out.println("passed");
     }
 }

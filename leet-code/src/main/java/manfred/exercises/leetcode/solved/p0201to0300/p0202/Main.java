@@ -20,6 +20,8 @@ Explanation:
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0202;
 
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/happy-number/ */
 
 /**
@@ -28,6 +30,8 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0202;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isHappy(19));
+        // 题面示例: 19 → true
+        assertTrue(solution.isHappy(19));
+        System.out.println("p0202 passed");
     }
 }

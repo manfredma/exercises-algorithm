@@ -12,6 +12,12 @@ Output: 1->2->3
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0083;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-list/ */
 
 /**
@@ -33,10 +39,17 @@ public class Main {
         Solution solution = new Solution();
         solution.deleteDuplicates(l1);
 
-        ListNode cu = l1;
-        while (null != cu) {
-            System.out.print(cu.val + " -> ");
-            cu = cu.next;
+        // 题面示例 2: 1->1->2->3->3 去重后为 1->2->3
+        assertEquals(Arrays.asList(1, 2, 3), toList(l1));
+        System.out.println("p0083 passed");
+    }
+
+    private static List<Integer> toList(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while (head != null) {
+            list.add(head.val);
+            head = head.next;
         }
+        return list;
     }
 }

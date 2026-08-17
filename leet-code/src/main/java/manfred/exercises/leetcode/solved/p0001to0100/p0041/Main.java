@@ -19,6 +19,8 @@ Your algorithm should run in O(n) time and uses constant extra space.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0041;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/first-missing-positive/ */
 
 /**
@@ -27,8 +29,9 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0041;
 public class Main {
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.firstMissingPositive(new int[]{1, 2, 0}));
-        System.out.println(s.firstMissingPositive(new int[]{3, 4, -1, 1}));
-        System.out.println(s.firstMissingPositive(new int[]{7, 8, 9, 11, 12}));
+        assertEquals(3, s.firstMissingPositive(new int[]{1, 2, 0}));
+        assertEquals(2, s.firstMissingPositive(new int[]{3, 4, -1, 1}));
+        assertEquals(1, s.firstMissingPositive(new int[]{7, 8, 9, 11, 12}));
+        System.out.println("p0041 passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1116;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/print-zero-even-odd/ */
 
 /*
@@ -55,12 +57,10 @@ public class Main {
         evenThread.join(1000);
         oddThread.join(1000);
         if (zeroThread.isAlive() || evenThread.isAlive() || oddThread.isAlive()) {
-            throw new AssertionError("线程未在预期时间内结束");
+            fail("线程未在预期时间内结束");
         }
 
-        if (!expected.equals(output.toString())) {
-            throw new AssertionError("期望：" + expected + "，实际：" + output);
-        }
+        assertEquals(expected, output.toString());
         System.out.println("通过：" + expected);
     }
 

@@ -21,6 +21,8 @@ Output: -1
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0033;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/search-in-rotated-sorted-array/ */
 
 /**
@@ -29,10 +31,11 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0033;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.search(new int[]{8, 9, 2, 3, 4}, 9));
-        System.out.println(solution.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
-        System.out.println(solution.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
-        System.out.println(solution.search(new int[]{1, 3}, 0));
-        System.out.println(solution.search(new int[]{3, 5, 1}, 5));
+        assertEquals(1, solution.search(new int[]{8, 9, 2, 3, 4}, 9));
+        assertEquals(4, solution.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
+        assertEquals(-1, solution.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
+        assertEquals(-1, solution.search(new int[]{1, 3}, 0));
+        assertEquals(1, solution.search(new int[]{3, 5, 1}, 5));
+        System.out.println("p0033 passed");
     }
 }

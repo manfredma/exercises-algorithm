@@ -22,6 +22,9 @@ Would this affect the run-time complexity? How and why?
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0081;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/ */
 
 /**
@@ -30,9 +33,14 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0081;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.search(new int[]{3, 1}, 1));
-        System.out.println(solution.search(new int[]{1, 3}, 2));
-        System.out.println(solution.search(new int[]{2, 5, 6, 0, 0, 1, 2}, 0));
-        System.out.println(solution.search(new int[]{2, 5, 6, 0, 0, 1, 2}, 3));
+        // 手算：[3,1] 含 1
+        assertTrue(solution.search(new int[]{3, 1}, 1));
+        // 手算：[1,3] 不含 2
+        assertFalse(solution.search(new int[]{1, 3}, 2));
+        // 题面示例 1：[2,5,6,0,0,1,2] 含 0
+        assertTrue(solution.search(new int[]{2, 5, 6, 0, 0, 1, 2}, 0));
+        // 题面示例 2：[2,5,6,0,0,1,2] 不含 3
+        assertFalse(solution.search(new int[]{2, 5, 6, 0, 0, 1, 2}, 3));
+        System.out.println("passed");
     }
 }

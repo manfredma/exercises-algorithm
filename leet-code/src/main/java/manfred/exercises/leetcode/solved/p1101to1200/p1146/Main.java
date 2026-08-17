@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1146;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/snapshot-array/ */
 
 /*
@@ -42,10 +44,4 @@ public class Main {
         assertEquals(5, snapshotArray.get(0, 0));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
-        System.out.println("通过：" + expected);
-    }
 }

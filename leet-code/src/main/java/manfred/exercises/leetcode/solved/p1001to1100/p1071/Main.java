@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1071;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/greatest-common-divisor-of-strings/ */
 
 /*
@@ -33,12 +35,13 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: str1="ABCABC", str2="ABC" → 期望 "ABC"
-        System.out.println(solution.gcdOfStrings("ABCABC", "ABC"));
+        assertEquals("ABC", solution.gcdOfStrings("ABCABC", "ABC"));
         // 示例 2: str1="ABABAB", str2="ABAB" → 期望 "AB"
-        System.out.println(solution.gcdOfStrings("ABABAB", "ABAB"));
+        assertEquals("AB", solution.gcdOfStrings("ABABAB", "ABAB"));
         // 示例 3: str1="LEET", str2="CODE" → 期望 ""
-        System.out.println(solution.gcdOfStrings("LEET", "CODE"));
+        assertEquals("", solution.gcdOfStrings("LEET", "CODE"));
         // 示例 4: str1="AAAAAB", str2="AAA" → 期望 ""
-        System.out.println(solution.gcdOfStrings("AAAAAB", "AAA"));
+        assertEquals("", solution.gcdOfStrings("AAAAAB", "AAA"));
+        System.out.println("passed");
     }
 }

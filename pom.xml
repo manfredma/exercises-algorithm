@@ -12,6 +12,8 @@
     <name>exercises-algorithm</name>
 
     <modules>
+        <!-- 练习程序运行时断言 -->
+        <module>exercise-assert</module>
         <!-- LeetCode 练习 -->
         <module>leet-code</module>
         <!-- CTCI 面试题 -->

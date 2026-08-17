@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0450;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/delete-node-in-a-bst/ */
 /* 删除 BST 中值为 key 的节点，并保持二叉搜索树性质。
 示例：root = [5,3,6,2,4,null,7], key = 3；key = 0；root = []，key = 0。 */
@@ -30,15 +32,6 @@ public class Main {
         return root;
     }
 
-    private static void assertNotNull(TreeNode node) {
-        if (node == null) throw new AssertionError();
-    }
 
-    private static void assertSame(TreeNode expected, TreeNode actual) {
-        if (expected != actual) throw new AssertionError();
-    }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

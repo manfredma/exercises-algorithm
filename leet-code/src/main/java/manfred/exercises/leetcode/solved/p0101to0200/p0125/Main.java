@@ -15,6 +15,8 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0125;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/valid-palindrome/ */
 
 /**
@@ -23,7 +25,9 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0125;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(solution.isPalindrome("race a car"));
+        assertTrue(solution.isPalindrome("A man, a plan, a canal: Panama"));
+        assertFalse(solution.isPalindrome("race a car"));
+
+        System.out.println("p0125 passed");
     }
 }

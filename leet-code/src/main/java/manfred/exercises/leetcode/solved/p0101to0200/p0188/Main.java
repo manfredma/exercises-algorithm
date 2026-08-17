@@ -22,6 +22,8 @@ Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0188;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/ */
 
 /**
@@ -30,9 +32,14 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0188;
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
-        System.out.println(solution.maxProfit(2, new int[]{6, 1, 3, 2, 4, 7}));
-        System.out.println(solution.maxProfit(2, new int[]{3, 3, 5, 0, 0, 3, 1, 4}));
-        System.out.println(solution.maxProfit(2, new int[]{2, 4, 1}));
-        System.out.println(solution.maxProfit(2, new int[]{3, 2, 6, 5, 0, 3}));
+        // (2, [6,1,3,2,4,7])：运行输出 7，需复核
+        assertEquals(7, solution.maxProfit(2, new int[]{6, 1, 3, 2, 4, 7}));
+        // (2, [3,3,5,0,0,3,1,4])：运行输出 6，需复核
+        assertEquals(6, solution.maxProfit(2, new int[]{3, 3, 5, 0, 0, 3, 1, 4}));
+        // 题面示例 1
+        assertEquals(2, solution.maxProfit(2, new int[]{2, 4, 1}));
+        // 题面示例 2
+        assertEquals(7, solution.maxProfit(2, new int[]{3, 2, 6, 5, 0, 3}));
+        System.out.println("p0188 passed");
     }
 }

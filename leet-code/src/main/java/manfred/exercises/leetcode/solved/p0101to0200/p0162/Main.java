@@ -25,6 +25,8 @@ Your solution should be in logarithmic complexity.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0162;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-peak-element/ */
 
 /**
@@ -33,7 +35,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0162;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.findPeakElement(new int[]{1, 2, 3, 1}));
-        System.out.println(solution.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4}));
+        // 题面示例 1：[1,2,3,1] 仅 index 2 为 peak
+        assertEquals(2, solution.findPeakElement(new int[]{1, 2, 3, 1}));
+        // 题面示例 2：[1,2,1,3,5,6,4] 允许返回 1 或 5（多解，用范围断言）
+        assertInRange(solution.findPeakElement(new int[]{1, 2, 1, 3, 5, 6, 4}), 1, 5);
+        System.out.println("p0162 passed");
     }
 }

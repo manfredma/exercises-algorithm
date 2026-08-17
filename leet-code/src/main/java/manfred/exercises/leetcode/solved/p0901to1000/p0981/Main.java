@@ -1,8 +1,6 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0981;
 
-/** 题目链接：https://leetcode.cn/problems/time-based-key-value-store/ */
-
-import java.util.Arrays;
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
 /*
 设计一个基于时间的键值数据结构 TimeMap：
@@ -19,7 +17,7 @@ import java.util.Arrays;
 /**
  * LeetCode 第 981 题的测试入口。
  *
- * <p>按示例 1 的调用序列驱动 TimeMap，逐个打印 get 结果。
+ * <p>按示例 1 的调用序列驱动 TimeMap，断言 get 结果。
  */
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +33,8 @@ public class Main {
         outputs[6] = timeMap.get("foo", 5);   // 期望 "bar2"
 
         // 期望：[null, null, "bar", "bar", null, "bar2", "bar2"]
-        System.out.println(Arrays.toString(outputs));
+        assertArrayEquals(new Object[]{null, null, "bar", "bar", null, "bar2", "bar2"}, outputs);
+
+        System.out.println("p0981 passed");
     }
 }

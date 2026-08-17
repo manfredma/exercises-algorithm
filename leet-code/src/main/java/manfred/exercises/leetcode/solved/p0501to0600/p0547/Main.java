@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0547;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-provinces/ */
 
 /*
@@ -39,10 +41,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: [[1,1,0],[1,1,0],[0,0,1]] → 期望 2
-        System.out.println(solution.findCircleNum(
+        assertEquals(2, solution.findCircleNum(
                 new int[][]{{1, 1, 0}, {1, 1, 0}, {0, 0, 1}}));
         // 示例 2: [[1,0,0],[0,1,0],[0,0,1]] → 期望 3
-        System.out.println(solution.findCircleNum(
+        assertEquals(3, solution.findCircleNum(
                 new int[][]{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}));
+
+        System.out.println("p0547 passed");
     }
 }

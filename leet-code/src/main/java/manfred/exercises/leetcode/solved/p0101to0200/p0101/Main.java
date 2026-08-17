@@ -23,6 +23,8 @@ Bonus points if you could solve it both recursively and iteratively.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0101;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/symmetric-tree/ */
 
 /**
@@ -48,7 +50,7 @@ public class Main {
         treeNode3.left = treeNode6;
         treeNode3.right = treeNode7;
 
-        System.out.println(solution.isSymmetric(treeNode1));
+        assertTrue(solution.isSymmetric(treeNode1));
 
         treeNode1 = new TreeNode(1);
         treeNode2 = new TreeNode(2);
@@ -62,6 +64,8 @@ public class Main {
         treeNode2.right = treeNode4;
         treeNode3.right = treeNode5;
 
-        System.out.println(solution.isSymmetric(treeNode1));
+        assertFalse(solution.isSymmetric(treeNode1));
+
+        System.out.println("p0101 passed");
     }
 }

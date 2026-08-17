@@ -25,6 +25,9 @@ You may assume both s and t have the same length.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0205;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/isomorphic-strings/ */
 
 /**
@@ -33,8 +36,12 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0205;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isIsomorphic("egg", "add"));
-        System.out.println(solution.isIsomorphic("foo", "bar"));
-        System.out.println(solution.isIsomorphic("paper", "title"));
+        // 题面示例 1: "egg","add" → true
+        assertTrue(solution.isIsomorphic("egg", "add"));
+        // 题面示例 2: "foo","bar" → false
+        assertFalse(solution.isIsomorphic("foo", "bar"));
+        // 题面示例 3: "paper","title" → true
+        assertTrue(solution.isIsomorphic("paper", "title"));
+        System.out.println("p0205 passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0345;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-vowels-of-a-string/ */
 
 /*
@@ -25,8 +27,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 "IceCreAm" → 期望 "AceCreIm"
-        System.out.println(solution.reverseVowels("IceCreAm"));
+        assertEquals("AceCreIm", solution.reverseVowels("IceCreAm"));
         // 示例 2: 输入 "leetcode" → 期望 "leotcede"
-        System.out.println(solution.reverseVowels("leetcode"));
+        assertEquals("leotcede", solution.reverseVowels("leetcode"));
+        System.out.println("p0345 passed");
     }
 }

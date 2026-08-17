@@ -12,6 +12,8 @@ Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cu
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0132;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/palindrome-partitioning-ii/ */
 
 /**
@@ -20,8 +22,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0132;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.minCut("aab"));
-        System.out.println(solution.minCut("abcde"));
-        System.out.println(solution.minCut("aa"));
+        assertEquals(1, solution.minCut("aab"));
+        assertEquals(4, solution.minCut("abcde"));
+        assertEquals(0, solution.minCut("aa"));
+
+        System.out.println("p0132 passed");
     }
 }

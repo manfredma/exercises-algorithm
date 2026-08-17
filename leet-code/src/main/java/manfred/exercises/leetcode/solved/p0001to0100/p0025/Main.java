@@ -20,6 +20,8 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0025;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-nodes-in-k-group/ */
 
 /**
@@ -38,17 +40,9 @@ public class Main {
         n3.next = n4;
         n4.next = n5;
         n5.next = n6;
-        ListNode l = n1;
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
-        }
-        System.out.println();
-        l = new Solution().reverseKGroup(n1, 2);
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
-        }
+        // 1->2->3->4->5->6 按 k=2 翻转后为 2->1->4->3->6->5
+        ListNode l = new Solution().reverseKGroup(n1, 2);
+        assertArrayEquals(new int[]{2, 1, 4, 3, 6, 5}, listValues(l));
 
         n1.next = n2;
         n2.next = n3;
@@ -56,11 +50,24 @@ public class Main {
         n4.next = n5;
         n5.next = n6;
         n6.next = null;
-        System.out.println();
         l = new Solution2().reverseKGroup(n1, 2);
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        assertArrayEquals(new int[]{2, 1, 4, 3, 6, 5}, listValues(l));
+        System.out.println("p0025 passed");
+    }
+
+    private static int[] listValues(ListNode head) {
+        int count = 0;
+        ListNode cur = head;
+        while (cur != null) {
+            count++;
+            cur = cur.next;
         }
+        int[] values = new int[count];
+        cur = head;
+        for (int i = 0; i < count; i++) {
+            values[i] = cur.val;
+            cur = cur.next;
+        }
+        return values;
     }
 }

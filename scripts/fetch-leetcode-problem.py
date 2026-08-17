@@ -179,7 +179,7 @@ def parse_method_signature(meta_json):
             'boolean': 'boolean', 'double': 'double',
             'long': 'long', 'list<integer>': 'List<Integer>',
             'list<string>': 'List<String>', 'list<list<integer>>': 'List<List<Integer>>',
-            'void': 'void',
+            'void': 'void', 'character': 'char', 'character[]': 'char[]',
         }
 
         def to_java(t):

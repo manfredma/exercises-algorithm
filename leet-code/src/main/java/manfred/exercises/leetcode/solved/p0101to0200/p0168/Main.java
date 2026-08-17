@@ -27,6 +27,8 @@ Output: "ZY"
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0168;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/excel-sheet-column-title/ */
 
 /**
@@ -35,15 +37,16 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0168;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // AB
-        System.out.println(solution.convertToTitle(28));
-        // AJHX
-        System.out.println(solution.convertToTitle(24568));
-        // B
-        System.out.println(solution.convertToTitle(2));
-        // ZY
-        System.out.println(solution.convertToTitle(701));
-        // AZ
-        System.out.println(solution.convertToTitle(52));
+        // 题面示例 2 / 注释
+        assertEquals("AB", solution.convertToTitle(28));
+        // AJHX（注释/运行确认）
+        assertEquals("AJHX", solution.convertToTitle(24568));
+        // B（手算：2 -> B）
+        assertEquals("B", solution.convertToTitle(2));
+        // 题面示例 3
+        assertEquals("ZY", solution.convertToTitle(701));
+        // AZ（手算：52 = 1*26 + 26 -> AZ）
+        assertEquals("AZ", solution.convertToTitle(52));
+        System.out.println("p0168 passed");
     }
 }

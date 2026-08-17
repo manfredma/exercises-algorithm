@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1137;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/n-th-tribonacci-number/ */
 
 /*
@@ -25,8 +27,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n = 4 → 期望 4
-        System.out.println(solution.tribonacci(4));
+        assertEquals(4, solution.tribonacci(4));
         // 示例 2: n = 25 → 期望 1389537
-        System.out.println(solution.tribonacci(25));
+        assertEquals(1389537, solution.tribonacci(25));
+        System.out.println("passed");
     }
 }

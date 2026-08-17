@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0289;
 
-/** 题目链接：https://leetcode.cn/problems/game-of-life/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/game-of-life/ */
 
 /*
 根据百度百科，生命游戏，简称为生命，是英国数学家约翰·何顿·康威在 1970 年发明的细胞自动机。
@@ -37,16 +37,15 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        // 示例 1: → 期望 [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
+        // 示例 1: 题面 Output
         int[][] board1 = {{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
         solution.gameOfLife(board1);
-        for (int[] row : board1) System.out.println(Arrays.toString(row));
+        assertEquals(new int[][]{{0,0,0},{1,0,1},{0,1,1},{0,1,0}}, board1);
 
-        System.out.println("---");
-
-        // 示例 2: → 期望 [[1,1],[1,1]]
+        // 示例 2: 题面 Output
         int[][] board2 = {{1,1},{1,0}};
         solution.gameOfLife(board2);
-        for (int[] row : board2) System.out.println(Arrays.toString(row));
+        assertEquals(new int[][]{{1,1},{1,1}}, board2);
+        System.out.println("p0289 passed");
     }
 }

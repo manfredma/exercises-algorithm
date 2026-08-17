@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p1501to1600.p1502;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/can-make-arithmetic-progression-from-sequence/ */
 
 /*
@@ -24,8 +27,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: arr = [3,5,1] → 期望 true
-        System.out.println(solution.canMakeArithmeticProgression(new int[]{3, 5, 1}));
+        assertTrue(solution.canMakeArithmeticProgression(new int[]{3, 5, 1}));
         // 示例 2: arr = [1,2,4] → 期望 false
-        System.out.println(solution.canMakeArithmeticProgression(new int[]{1, 2, 4}));
+        assertFalse(solution.canMakeArithmeticProgression(new int[]{1, 2, 4}));
+        System.out.println("passed");
     }
 }

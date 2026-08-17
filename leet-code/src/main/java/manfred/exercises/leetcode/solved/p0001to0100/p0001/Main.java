@@ -12,6 +12,8 @@
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0001;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/two-sum/ */
 
 /**
@@ -21,8 +23,7 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] result = solution.twoSum(new int[]{2, 7, 11, 15}, 9);
-        for (int i : result) {
-            System.out.println(i);
-        }
+        assertArrayEquals(new int[]{0, 1}, result);
+        System.out.println("p0001 passed");
     }
 }

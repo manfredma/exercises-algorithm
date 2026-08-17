@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0208;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/implement-trie-prefix-tree/ */
 
 /*
@@ -52,9 +54,4 @@ public class Main {
         assertEquals(false, trie2.search("apples"));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

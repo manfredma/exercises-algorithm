@@ -29,14 +29,18 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0139;
 
 import java.util.Arrays;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /**
  * LeetCode 第 139 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.wordBreak("leetcode", Arrays.asList(new String[]{"leet", "code"})));
-        System.out.println(solution.wordBreak("applepenapple", Arrays.asList(new String[]{"apple", "pen"})));
-        System.out.println(solution.wordBreak("catsandog", Arrays.asList(new String[]{"cats", "dog", "sand", "and", "cat"})));
+        assertTrue(solution.wordBreak("leetcode", Arrays.asList(new String[]{"leet", "code"})));
+        assertTrue(solution.wordBreak("applepenapple", Arrays.asList(new String[]{"apple", "pen"})));
+        assertFalse(solution.wordBreak("catsandog", Arrays.asList(new String[]{"cats", "dog", "sand", "and", "cat"})));
+
+        System.out.println("p0139 passed");
     }
 }

@@ -49,6 +49,9 @@ Output: false
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0087;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/scramble-string/ */
 
 /**
@@ -57,11 +60,14 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0087;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isScramble("great", "rgeat"));
-        System.out.println(solution.isScramble("abcde", "caebd"));
+        // 题面示例 1："rgeat" 是 "great" 的扰动串
+        assertTrue(solution.isScramble("great", "rgeat"));
+        // 题面示例 2："caebd" 不是 "abcde" 的扰动串
+        assertFalse(solution.isScramble("abcde", "caebd"));
 
         Solution2 solution2 = new Solution2();
-        System.out.println(solution2.isScramble("great", "rgeat"));
-        System.out.println(solution2.isScramble("abcde", "caebd"));
+        assertTrue(solution2.isScramble("great", "rgeat"));
+        assertFalse(solution2.isScramble("abcde", "caebd"));
+        System.out.println("passed");
     }
 }

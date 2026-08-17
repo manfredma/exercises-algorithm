@@ -19,6 +19,8 @@ Explanation: The square root of 8 is 2.82842..., and since
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0069;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/sqrtx/ */
 
 /**
@@ -27,9 +29,14 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0069;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.mySqrt(101));
-        System.out.println(solution.mySqrt(100));
-        System.out.println(solution.mySqrt(4));
-        System.out.println(solution.mySqrt(8));
+        // 101 的整数平方根为 10（10^2=100 <= 101, 11^2=121 > 101）
+        assertEquals(10, solution.mySqrt(101));
+        // 100 的整数平方根为 10
+        assertEquals(10, solution.mySqrt(100));
+        // 题面示例 1：sqrt(4) = 2
+        assertEquals(2, solution.mySqrt(4));
+        // 题面示例 2：sqrt(8) 截断小数部分为 2
+        assertEquals(2, solution.mySqrt(8));
+        System.out.println("passed");
     }
 }

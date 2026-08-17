@@ -16,6 +16,10 @@ Could you optimize your algorithm to use only O(k) extra space?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0119;
 
+import java.util.Arrays;
+
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/pascals-triangle-ii/ */
 
 /**
@@ -23,6 +27,8 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0119;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution().getRow(3));
+        assertEquals(Arrays.asList(1, 3, 3, 1), new Solution().getRow(3));
+
+        System.out.println("p0119 passed");
     }
 }

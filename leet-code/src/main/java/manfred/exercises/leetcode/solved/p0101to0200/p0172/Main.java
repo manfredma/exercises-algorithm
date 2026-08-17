@@ -17,6 +17,8 @@ Note: Your solution should be in logarithmic time complexity.
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0172;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/factorial-trailing-zeroes/ */
 
 /**
@@ -25,7 +27,10 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0172;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.trailingZeroes(3));
-        System.out.println(solution.trailingZeroes(5));
+        // 题面示例 1
+        assertEquals(0, solution.trailingZeroes(3));
+        // 题面示例 2
+        assertEquals(1, solution.trailingZeroes(5));
+        System.out.println("p0172 passed");
     }
 }

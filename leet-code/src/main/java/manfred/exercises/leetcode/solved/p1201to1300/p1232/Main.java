@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1232;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/check-if-it-is-a-straight-line/ */
 
 /*
@@ -30,10 +33,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] → 期望 true
-        System.out.println(solution.checkStraightLine(
+        assertTrue(solution.checkStraightLine(
                 new int[][]{{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {6, 7}}));
         // 示例 2: [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]] → 期望 false
-        System.out.println(solution.checkStraightLine(
+        assertFalse(solution.checkStraightLine(
                 new int[][]{{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}}));
+        System.out.println("passed");
     }
 }

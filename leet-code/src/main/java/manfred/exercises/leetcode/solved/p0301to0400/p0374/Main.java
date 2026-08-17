@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0374;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/guess-number-higher-or-lower/ */
 
 /*
@@ -17,10 +19,11 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0374;
 public class Main {
     public static void main(String[] args) {
         // 示例 1: 输入 n = 10, pick = 6 → 期望 6
-        System.out.println(new Solution(6).guessNumber(10));
+        assertEquals(6, new Solution(6).guessNumber(10));
         // 示例 2: 输入 n = 1, pick = 1 → 期望 1
-        System.out.println(new Solution(1).guessNumber(1));
+        assertEquals(1, new Solution(1).guessNumber(1));
         // 示例 3: 输入 n = 2, pick = 1 → 期望 1
-        System.out.println(new Solution(1).guessNumber(2));
+        assertEquals(1, new Solution(1).guessNumber(2));
+        System.out.println("p0374 passed");
     }
 }

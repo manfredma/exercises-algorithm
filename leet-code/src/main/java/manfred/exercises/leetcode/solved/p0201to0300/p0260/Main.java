@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0260;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/single-number-iii/ */
 
 import java.util.Arrays;
@@ -39,12 +41,12 @@ public class Main {
     private static void assertNumbers(int[] nums, int[] expected) {
         int[] actual = new Solution().singleNumber(nums);
         if (actual == null || actual.length != 2) {
-            throw new AssertionError("期望返回两个数字");
+            fail("期望返回两个数字");
         }
         Arrays.sort(actual);
         Arrays.sort(expected);
         if (!Arrays.equals(expected, actual)) {
-            throw new AssertionError("期望：" + Arrays.toString(expected) + "，实际：" + Arrays.toString(actual));
+            fail("期望：" + Arrays.toString(expected) + "，实际：" + Arrays.toString(actual));
         }
         System.out.println("通过：" + Arrays.toString(expected));
     }

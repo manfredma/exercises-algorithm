@@ -22,6 +22,8 @@ You may assume that all words are consist of lowercase letters a-z.
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0211;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/design-add-and-search-words-data-structure/ */
 
 /**
@@ -33,9 +35,11 @@ public class Main {
         wordDictionary.addWord("bad");
         wordDictionary.addWord("dad");
         wordDictionary.addWord("mad");
-        System.out.println(wordDictionary.search("pad"));
-        System.out.println(wordDictionary.search("bad"));
-        System.out.println(wordDictionary.search(".ad"));
-        System.out.println(wordDictionary.search("b.."));
+        // 题面示例
+        assertFalse(wordDictionary.search("pad"));
+        assertTrue(wordDictionary.search("bad"));
+        assertTrue(wordDictionary.search(".ad"));
+        assertTrue(wordDictionary.search("b.."));
+        System.out.println("p0211 passed");
     }
 }

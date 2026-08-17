@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0436;
 
-/** 题目链接：https://leetcode.cn/problems/find-right-interval/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/find-right-interval/ */
 
 /*
 给你一个区间数组 intervals，其中 intervals[i] = [starti, endi]，且每个 starti 都不同。
@@ -28,13 +28,14 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 intervals = [[1,2]] → 期望 [-1]
-        System.out.println(Arrays.toString(solution.findRightInterval(
-                new int[][]{{1, 2}})));
+        assertArrayEquals(new int[]{-1}, solution.findRightInterval(
+                new int[][]{{1, 2}}));
         // 示例 2: 输入 intervals = [[3,4],[2,3],[1,2]] → 期望 [-1,0,1]
-        System.out.println(Arrays.toString(solution.findRightInterval(
-                new int[][]{{3, 4}, {2, 3}, {1, 2}})));
+        assertArrayEquals(new int[]{-1, 0, 1}, solution.findRightInterval(
+                new int[][]{{3, 4}, {2, 3}, {1, 2}}));
         // 示例 3: 输入 intervals = [[1,4],[2,3],[3,4]] → 期望 [-1,2,-1]
-        System.out.println(Arrays.toString(solution.findRightInterval(
-                new int[][]{{1, 4}, {2, 3}, {3, 4}})));
+        assertArrayEquals(new int[]{-1, 2, -1}, solution.findRightInterval(
+                new int[][]{{1, 4}, {2, 3}, {3, 4}}));
+        System.out.println("p0436 passed");
     }
 }

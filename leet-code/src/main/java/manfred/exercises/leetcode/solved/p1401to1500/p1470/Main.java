@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1470;
 
-/** 题目链接：https://leetcode.cn/problems/shuffle-the-array/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/shuffle-the-array/ */
 
 /*
 给你一个数组 nums，数组中有 2n 个元素，按 [x1,x2,...,xn,y1,y2,...,yn] 的格式排列。
@@ -15,10 +15,14 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums = [2,5,1,3,4,7], n = 3 → 期望 [2,3,5,4,1,7]
-        System.out.println(Arrays.toString(solution.shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3)));
+        assertArrayEquals(new int[]{2, 3, 5, 4, 1, 7},
+                solution.shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3));
         // 示例 2: nums = [1,2,3,4,4,3,2,1], n = 4 → 期望 [1,4,2,3,3,2,4,1]
-        System.out.println(Arrays.toString(solution.shuffle(new int[]{1, 2, 3, 4, 4, 3, 2, 1}, 4)));
+        assertArrayEquals(new int[]{1, 4, 2, 3, 3, 2, 4, 1},
+                solution.shuffle(new int[]{1, 2, 3, 4, 4, 3, 2, 1}, 4));
         // 示例 3: nums = [1,1,2,2], n = 2 → 期望 [1,2,1,2]
-        System.out.println(Arrays.toString(solution.shuffle(new int[]{1, 1, 2, 2}, 2)));
+        assertArrayEquals(new int[]{1, 2, 1, 2},
+                solution.shuffle(new int[]{1, 1, 2, 2}, 2));
+        System.out.println("passed");
     }
 }

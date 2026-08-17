@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0746;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/min-cost-climbing-stairs/ */
 
 /*
@@ -26,8 +28,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: cost = [10,15,20] → 期望 15
-        System.out.println(solution.minCostClimbingStairs(new int[]{10, 15, 20}));
+        assertEquals(15, solution.minCostClimbingStairs(new int[]{10, 15, 20}));
         // 示例 2: cost = [1,100,1,1,1,100,1,1,100,1] → 期望 6
-        System.out.println(solution.minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
+        assertEquals(6, solution.minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
+
+        System.out.println("p0746 passed");
     }
 }

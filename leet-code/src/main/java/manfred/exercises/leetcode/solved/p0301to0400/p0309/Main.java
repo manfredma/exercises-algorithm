@@ -14,6 +14,8 @@ Explanation: transactions = [buy, sell, cooldown, buy, sell]
  */
 package manfred.exercises.leetcode.solved.p0301to0400.p0309;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/ */
 
 /**
@@ -22,6 +24,8 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0309;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.maxProfit(new int[]{1, 2, 3, 0, 2}));
+        // 示例: 输入 [1,2,3,0,2] → 期望 3
+        assertEquals(3, solution.maxProfit(new int[]{1, 2, 3, 0, 2}));
+        System.out.println("p0309 passed");
     }
 }

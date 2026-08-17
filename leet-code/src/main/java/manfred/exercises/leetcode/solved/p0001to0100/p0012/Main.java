@@ -48,6 +48,8 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0012;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/integer-to-roman/ */
 
 /**
@@ -56,10 +58,11 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0012;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.intToRoman(3));
-        System.out.println(solution.intToRoman(4));
-        System.out.println(solution.intToRoman(9));
-        System.out.println(solution.intToRoman(58));
-        System.out.println(solution.intToRoman(1994));
+        assertEquals("III", solution.intToRoman(3));
+        assertEquals("IV", solution.intToRoman(4));
+        assertEquals("IX", solution.intToRoman(9));
+        assertEquals("LVIII", solution.intToRoman(58));
+        assertEquals("MCMXCIV", solution.intToRoman(1994));
+        System.out.println("p0012 passed");
     }
 }

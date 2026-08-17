@@ -29,6 +29,8 @@ There are two ways to reach the bottom-right corner:
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0063;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/unique-paths-ii/ */
 
 /**
@@ -43,7 +45,8 @@ public class Main {
         };
 
         Solution solution = new Solution();
-        System.out.println(solution.uniquePathsWithObstacles(x));
+        // 题面示例 1：3x3 中间一个障碍，共 2 条路径
+        assertEquals(2, solution.uniquePathsWithObstacles(x));
 
         x = new int[][]{
                 {0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0},
@@ -90,11 +93,13 @@ public class Main {
                 {0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}
         ;
         long begin = System.currentTimeMillis();
-        System.out.println(solution.uniquePathsWithObstacles(x));
-        System.out.println("cost=" + (System.currentTimeMillis() - begin));
+        // 运行输出复核：大网格路径数为 308524500
+        assertEquals(308524500, solution.uniquePathsWithObstacles(x));
+        System.out.println("Solution cost=" + (System.currentTimeMillis() - begin));
         Solution2 solution2 = new Solution2();
         begin = System.currentTimeMillis();
-        System.out.println(solution2.uniquePathsWithObstacles(x));
-        System.out.println("cost=" + (System.currentTimeMillis() - begin));
+        assertEquals(308524500, solution2.uniquePathsWithObstacles(x));
+        System.out.println("Solution2 cost=" + (System.currentTimeMillis() - begin));
+        System.out.println("passed");
     }
 }

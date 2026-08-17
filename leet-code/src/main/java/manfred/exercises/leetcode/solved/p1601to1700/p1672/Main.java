@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1601to1700.p1672;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/richest-customer-wealth/ */
 
 /*
@@ -36,12 +38,13 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: accounts = [[1,2,3],[3,2,1]] → 期望 6
-        System.out.println(solution.maximumWealth(new int[][]{{1, 2, 3}, {3, 2, 1}}));
+        assertEquals(6, solution.maximumWealth(new int[][]{{1, 2, 3}, {3, 2, 1}}));
 
         // 示例 2: accounts = [[1,5],[7,3],[3,5]] → 期望 10
-        System.out.println(solution.maximumWealth(new int[][]{{1, 5}, {7, 3}, {3, 5}}));
+        assertEquals(10, solution.maximumWealth(new int[][]{{1, 5}, {7, 3}, {3, 5}}));
 
         // 示例 3: accounts = [[2,8,7],[7,1,3],[1,9,5]] → 期望 17
-        System.out.println(solution.maximumWealth(new int[][]{{2, 8, 7}, {7, 1, 3}, {1, 9, 5}}));
+        assertEquals(17, solution.maximumWealth(new int[][]{{2, 8, 7}, {7, 1, 3}, {1, 9, 5}}));
+        System.out.println("passed");
     }
 }

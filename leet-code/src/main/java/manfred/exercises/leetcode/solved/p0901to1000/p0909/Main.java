@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0909;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/snakes-and-ladders/ */
 
 /*
@@ -40,10 +42,12 @@ public class Main {
             {-1,-1,-1,-1,-1,-1},
             {-1,15,-1,-1,-1,-1}
         };
-        System.out.println(solution.snakesAndLadders(board1));
+        assertEquals(4, solution.snakesAndLadders(board1));
 
         // 示例 2 → 期望 1
         int[][] board2 = {{-1,-1},{-1,3}};
-        System.out.println(solution.snakesAndLadders(board2));
+        assertEquals(1, solution.snakesAndLadders(board2));
+
+        System.out.println("p0909 passed");
     }
 }

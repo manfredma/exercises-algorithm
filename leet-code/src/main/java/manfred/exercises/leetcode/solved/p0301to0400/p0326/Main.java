@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0326;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/power-of-three/ */
 
 /*
@@ -13,12 +15,13 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n = 27 → 期望 true
-        System.out.println(solution.isPowerOfThree(27));
+        assertTrue(solution.isPowerOfThree(27));
         // 示例 2: n = 0 → 期望 false
-        System.out.println(solution.isPowerOfThree(0));
+        assertFalse(solution.isPowerOfThree(0));
         // 示例 3: n = 9 → 期望 true
-        System.out.println(solution.isPowerOfThree(9));
+        assertTrue(solution.isPowerOfThree(9));
         // 示例 4: n = 45 → 期望 false
-        System.out.println(solution.isPowerOfThree(45));
+        assertFalse(solution.isPowerOfThree(45));
+        System.out.println("p0326 passed");
     }
 }

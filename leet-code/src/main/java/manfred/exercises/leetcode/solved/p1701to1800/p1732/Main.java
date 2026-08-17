@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1701to1800.p1732;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-the-highest-altitude/ */
 
 /*
@@ -34,9 +36,4 @@ public class Main {
         assertEquals(0, solution.largestAltitude(new int[]{-4, -3, -2, -1, 4, 3, 2}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

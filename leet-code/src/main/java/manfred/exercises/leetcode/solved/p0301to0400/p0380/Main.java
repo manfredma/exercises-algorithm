@@ -1,5 +1,10 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0380;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertInRange;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/insert-delete-getrandom-o1/ */
 
 /*
@@ -28,12 +33,16 @@ package manfred.exercises.leetcode.solved.p0301to0400.p0380;
 public class Main {
     public static void main(String[] args) {
         RandomizedSet randomizedSet = new RandomizedSet();
-        System.out.println(randomizedSet.insert(1));    // 期望 true
-        System.out.println(randomizedSet.remove(2));    // 期望 false
-        System.out.println(randomizedSet.insert(2));    // 期望 true
-        System.out.println(randomizedSet.getRandom());  // 期望 1 或 2
-        System.out.println(randomizedSet.remove(1));    // 期望 true
-        System.out.println(randomizedSet.insert(2));    // 期望 false
-        System.out.println(randomizedSet.getRandom());  // 期望 2
+        // 示例: 题面 Output
+        assertTrue(randomizedSet.insert(1));    // true
+        assertFalse(randomizedSet.remove(2));   // false
+        assertTrue(randomizedSet.insert(2));    // true
+        // getRandom 在 {1,2} 中等概率返回
+        assertInRange(randomizedSet.getRandom(), 1, 2);
+        assertTrue(randomizedSet.remove(1));    // true
+        assertFalse(randomizedSet.insert(2));   // false
+        // 此时集合仅剩 {2}，getRandom 必返回 2
+        assertEquals(2, randomizedSet.getRandom());
+        System.out.println("p0380 passed");
     }
 }

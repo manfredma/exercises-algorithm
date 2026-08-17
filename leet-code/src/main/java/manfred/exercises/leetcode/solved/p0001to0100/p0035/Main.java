@@ -24,6 +24,8 @@ Output: 0
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0035;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/search-insert-position/ */
 
 /**
@@ -32,9 +34,10 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0035;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.searchInsert(new int[] {1,3,5,6}, 7));
-        System.out.println(solution.searchInsert(new int[] {1,3,5,6}, 5));
-        System.out.println(solution.searchInsert(new int[] {1,3,5,6}, 2));
-        System.out.println(solution.searchInsert(new int[] {1,3,5,6}, 0));
+        assertEquals(4, solution.searchInsert(new int[] {1,3,5,6}, 7));
+        assertEquals(2, solution.searchInsert(new int[] {1,3,5,6}, 5));
+        assertEquals(1, solution.searchInsert(new int[] {1,3,5,6}, 2));
+        assertEquals(0, solution.searchInsert(new int[] {1,3,5,6}, 0));
+        System.out.println("p0035 passed");
     }
 }

@@ -19,6 +19,8 @@ You can assume that you can always reach the last index.
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0045;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/jump-game-ii/ */
 
 /**
@@ -27,13 +29,15 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0045;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.jump(new int[]{2, 3, 1, 1, 4}));
+        assertEquals(2, solution.jump(new int[]{2, 3, 1, 1, 4}));
         int[] i = new int[25002];
         for (int j = 0; j < 25000; j++) {
             i[j] = 25000 - j;
         }
         i[25000] = 1;
         i[25001] = 0;
-        System.out.println(solution.jump(i));
+        // 从索引 0 可直接跳到索引 25000，再跳 1 步到达末尾，最少 2 步
+        assertEquals(2, solution.jump(i));
+        System.out.println("p0045 passed");
     }
 }

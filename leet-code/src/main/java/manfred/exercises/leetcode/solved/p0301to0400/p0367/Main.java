@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0367;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/valid-perfect-square/ */
 
 /*
@@ -36,9 +38,4 @@ public class Main {
         assertEquals(false, solution.isPerfectSquare(2147483647));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

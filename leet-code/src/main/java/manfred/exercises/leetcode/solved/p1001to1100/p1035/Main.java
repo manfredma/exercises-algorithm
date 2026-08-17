@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1035;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/uncrossed-lines/ */
 
 /*
@@ -44,10 +46,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums1 = [1,4,2], nums2 = [1,2,4] → 期望 2
-        System.out.println(solution.maxUncrossedLines(new int[]{1, 4, 2}, new int[]{1, 2, 4}));
+        assertEquals(2, solution.maxUncrossedLines(new int[]{1, 4, 2}, new int[]{1, 2, 4}));
         // 示例 2: nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2] → 期望 3
-        System.out.println(solution.maxUncrossedLines(new int[]{2, 5, 1, 2, 5}, new int[]{10, 5, 2, 1, 5, 2}));
+        assertEquals(3, solution.maxUncrossedLines(new int[]{2, 5, 1, 2, 5}, new int[]{10, 5, 2, 1, 5, 2}));
         // 示例 3: nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1] → 期望 2
-        System.out.println(solution.maxUncrossedLines(new int[]{1, 3, 7, 1, 7, 5}, new int[]{1, 9, 2, 5, 1}));
+        assertEquals(2, solution.maxUncrossedLines(new int[]{1, 3, 7, 1, 7, 5}, new int[]{1, 9, 2, 5, 1}));
+        System.out.println("passed");
     }
 }

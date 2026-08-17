@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0101to0200.p0114;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/ */
 
 /*
@@ -74,15 +76,15 @@ public class Main {
         for (TreeNode cur = root; cur != null; cur = cur.right) {
             actual.add(cur.val);
             if (cur.left != null) {
-                throw new AssertionError("节点 " + cur.val + " 的 left 未置空");
+                fail("节点 " + cur.val + " 的 left 未置空");
             }
         }
         if (actual.size() != expected.length) {
-            throw new AssertionError("expected 长度 " + expected.length + ", actual 长度 " + actual.size() + ": " + actual);
+            fail("expected 长度 " + expected.length + ", actual 长度 " + actual.size() + ": " + actual);
         }
         for (int i = 0; i < expected.length; i++) {
             if (expected[i] != actual.get(i)) {
-                throw new AssertionError("expected: " + java.util.Arrays.toString(expected) + ", actual: " + actual);
+                fail("expected: " + java.util.Arrays.toString(expected) + ", actual: " + actual);
             }
         }
     }

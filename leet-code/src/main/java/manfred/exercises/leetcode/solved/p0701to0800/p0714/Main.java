@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0714;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/ */
 
 /*
@@ -15,8 +17,10 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: prices = [1, 3, 2, 8, 4, 9], fee = 2 → 期望 8
-        System.out.println(solution.maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
+        assertEquals(8, solution.maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
         // 示例 2: prices = [1,3,7,5,10,3], fee = 3 → 期望 6
-        System.out.println(solution.maxProfit(new int[]{1, 3, 7, 5, 10, 3}, 3));
+        assertEquals(6, solution.maxProfit(new int[]{1, 3, 7, 5, 10, 3}, 3));
+
+        System.out.println("p0714 passed");
     }
 }

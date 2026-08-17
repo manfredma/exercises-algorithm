@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0215;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/kth-largest-element-in-an-array/ */
 
 /**
@@ -17,7 +19,10 @@ public class Main {
          * Output: 4
          */
         Solution solution = new Solution();
-        System.out.println(solution.findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2));
-        System.out.println(solution.findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+        // 示例 1: nums = [3,2,1,5,6,4], k = 2 → 期望 5
+        assertEquals(5, solution.findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        // 示例 2: nums = [3,2,3,1,2,4,5,5,6], k = 4 → 期望 4
+        assertEquals(4, solution.findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+        System.out.println("p0215 passed");
     }
 }

@@ -33,6 +33,8 @@ If this function is called many times, how would you optimize it?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0191;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/number-of-1-bits/ */
 
 /**
@@ -40,8 +42,12 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0191;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution2().hammingWeight(3));
-        System.out.println(new Solution2().hammingWeight(4));
-        System.out.println(new Solution2().hammingWeight(-3));
+        // 3 的二进制 11，含 2 个 1（手算）
+        assertEquals(2, new Solution2().hammingWeight(3));
+        // 4 的二进制 100，含 1 个 1（手算）
+        assertEquals(1, new Solution2().hammingWeight(4));
+        // -3 的二进制 31 个 1（题面示例 3）
+        assertEquals(31, new Solution2().hammingWeight(-3));
+        System.out.println("p0191 passed");
     }
 }

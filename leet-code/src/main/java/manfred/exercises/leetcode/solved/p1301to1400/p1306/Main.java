@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1301to1400.p1306;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/jump-game-iii/ */
 
 /*
@@ -54,9 +56,4 @@ public class Main {
         assertEquals(false, solution.canReach(new int[]{1, 1}, 0));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

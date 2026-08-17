@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0347;
 
+import static manfred.exercises.assertion.Assert.*;
+
 import java.util.Arrays;
 
 /** 题目链接：https://leetcode.cn/problems/top-k-frequent-elements/ */
@@ -66,7 +68,7 @@ public class Main {
         Arrays.sort(e);
         Arrays.sort(a);
         if (!Arrays.equals(e, a)) {
-            throw new AssertionError("expected: " + Arrays.toString(expected) + ", actual: " + Arrays.toString(actual));
+            fail("expected: " + Arrays.toString(expected) + ", actual: " + Arrays.toString(actual));
         }
     }
 }

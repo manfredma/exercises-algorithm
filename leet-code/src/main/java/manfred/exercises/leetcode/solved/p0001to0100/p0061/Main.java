@@ -22,6 +22,12 @@ rotate 4 steps to the right: 2->0->1->NULL
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0061;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/rotate-list/ */
 
 /**
@@ -29,12 +35,16 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0061;
  */
 public class Main {
     public static void main(String[] args) {
-        testBasic(5, 2);
-        testBasic(5, 1);
-        testBasic(5, 6);
+        // 题面示例 1 变体: size=5, k=2 → 4->5->1->2->3
+        testBasic(5, 2, Arrays.asList(4, 5, 1, 2, 3));
+        // size=5, k=1 → 5->1->2->3->4
+        testBasic(5, 1, Arrays.asList(5, 1, 2, 3, 4));
+        // size=5, k=6 ≡ k=1 → 5->1->2->3->4
+        testBasic(5, 6, Arrays.asList(5, 1, 2, 3, 4));
+        System.out.println("p0061 passed");
     }
 
-    private static void testBasic(int size, int x) {
+    private static void testBasic(int size, int x, List<Integer> expected) {
         System.out.println("size=" + size + ", rotate=" + x);
         ListNode n1 = new ListNode(1);
         ListNode pre = n1;
@@ -49,11 +59,16 @@ public class Main {
             l = l.next;
         }
         System.out.println("NULL");
-        l = new Solution().rotateRight(n1, x);
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        ListNode r = new Solution().rotateRight(n1, x);
+        assertEquals(expected, toList(r));
+    }
+
+    private static List<Integer> toList(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while (head != null) {
+            list.add(head.val);
+            head = head.next;
         }
-        System.out.println("NULL");
+        return list;
     }
 }

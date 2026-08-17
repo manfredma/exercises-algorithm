@@ -32,6 +32,9 @@ Can you solve it without using extra space?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0142;
 
+import static manfred.exercises.assertion.Assert.assertNull;
+import static manfred.exercises.assertion.Assert.assertSame;
+
 /** 题目链接：https://leetcode.cn/problems/linked-list-cycle-ii/ */
 
 /**
@@ -40,6 +43,21 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0142;
 public class Main {
 
     public static void main(String[] args) {
-        new Solution();
+        Solution solution = new Solution();
+        // 题面示例 1：head = [3,2,0,-4], pos = 1 -> 环入口为索引 1 的节点(值为 2)
+        ListNode n0 = new ListNode(3);
+        ListNode n1 = new ListNode(2);
+        ListNode n2 = new ListNode(0);
+        ListNode n3 = new ListNode(-4);
+        n0.next = n1;
+        n1.next = n2;
+        n2.next = n3;
+        n3.next = n1;
+        assertSame(n1, solution.detectCycle(n0));
+
+        // 题面示例 3：head = [1], pos = -1 -> 无环，返回 null
+        ListNode single = new ListNode(1);
+        assertNull(solution.detectCycle(single));
+        System.out.println("p0142 passed");
     }
 }

@@ -19,6 +19,8 @@ Explanation:
 
 package manfred.exercises.leetcode.solved.p0101to0200.p0199;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/binary-tree-right-side-view/ */
 
 /**
@@ -38,7 +40,8 @@ public class Main {
         treeNode2.left = treeNode5;
         treeNode2.right = treeNode4;
 
-        System.out.println(new Solution().rightSideView(treeNode1));
-
+        // 构造树：1->(2->(5,4), 3)，右视图为 [1, 3, 4]（运行确认，与题面示例一致）
+        assertArrayEquals(new Integer[]{1, 3, 4}, new Solution().rightSideView(treeNode1).toArray());
+        System.out.println("p0199 passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1275;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/find-winner-on-a-tic-tac-toe-game/ */
 
 /*
@@ -16,12 +18,13 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: moves = [[0,0],[2,0],[1,1],[2,1],[2,2]] → 期望 "A"
-        System.out.println(solution.tictactoe(new int[][]{{0,0},{2,0},{1,1},{2,1},{2,2}}));
+        assertEquals("A", solution.tictactoe(new int[][]{{0,0},{2,0},{1,1},{2,1},{2,2}}));
 
         // 示例 2: moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]] → 期望 "B"
-        System.out.println(solution.tictactoe(new int[][]{{0,0},{1,1},{0,1},{0,2},{1,0},{2,0}}));
+        assertEquals("B", solution.tictactoe(new int[][]{{0,0},{1,1},{0,1},{0,2},{1,0},{2,0}}));
 
         // 示例 3: moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]] → 期望 "Draw"
-        System.out.println(solution.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}}));
+        assertEquals("Draw", solution.tictactoe(new int[][]{{0,0},{1,1},{2,0},{1,0},{1,2},{2,1},{0,1},{0,2},{2,2}}));
+        System.out.println("passed");
     }
 }

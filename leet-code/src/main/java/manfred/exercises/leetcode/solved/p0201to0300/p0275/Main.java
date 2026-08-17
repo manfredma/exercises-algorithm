@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0275;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/h-index-ii/ */
 
 /*
@@ -20,9 +22,4 @@ public class Main {
         assertEquals(2, solution.hIndex(new int[]{1, 2, 100}));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

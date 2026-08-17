@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0232;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+import static manfred.exercises.assertion.Assert.assertFalse;
+
 /** 题目链接：https://leetcode.cn/problems/implement-queue-using-stacks/ */
 
 /**
@@ -54,8 +57,12 @@ public class Main {
         MyQueue myQueue = new MyQueue();
         myQueue.push(1); // queue is: [1]
         myQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)
-        System.out.println(myQueue.peek()); // return 1
-        System.out.println(myQueue.pop()); // return 1, queue is [2]
-        System.out.println(myQueue.empty()); // return false
+        // 示例 1: 题面 Output: peek 返回 1
+        assertEquals(1, myQueue.peek());
+        // 示例 1: 题面 Output: pop 返回 1，队列变为 [2]
+        assertEquals(1, myQueue.pop());
+        // 示例 1: 题面 Output: empty 返回 false
+        assertFalse(myQueue.empty());
+        System.out.println("p0232 passed");
     }
 }

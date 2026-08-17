@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0443;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/string-compression/ */
 
 import java.util.Arrays;
@@ -55,9 +57,7 @@ public class Main {
         int actualLength = solution.compress(chars);
         char[] actual = Arrays.copyOf(chars, actualLength);
         char[] expectedChars = expected.toCharArray();
-        if (!Arrays.equals(expectedChars, actual)) {
-            throw new AssertionError("期望：" + expected + "，实际：" + new String(actual));
-        }
+        assertArrayEquals(expectedChars, actual);
         System.out.println("通过：" + expected);
     }
 }

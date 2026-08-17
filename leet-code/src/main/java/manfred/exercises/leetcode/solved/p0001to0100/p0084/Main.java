@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0001to0100.p0084;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/largest-rectangle-in-histogram/ */
 
 /*
@@ -49,9 +51,4 @@ public class Main {
         assertEquals(expected, solution3.largestRectangleArea(heights));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

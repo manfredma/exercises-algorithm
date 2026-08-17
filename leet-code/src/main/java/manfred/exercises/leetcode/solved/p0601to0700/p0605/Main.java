@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0605;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/can-place-flowers/ */
 
 /*
@@ -19,9 +21,11 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: flowerbed = [1,0,0,0,1], n = 1 → 期望 true
-        System.out.println(solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1));
+        assertTrue(solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1));
 
         // 示例 2: flowerbed = [1,0,0,0,1], n = 2 → 期望 false
-        System.out.println(solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 2));
+        assertFalse(solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 2));
+
+        System.out.println("p0605 passed");
     }
 }

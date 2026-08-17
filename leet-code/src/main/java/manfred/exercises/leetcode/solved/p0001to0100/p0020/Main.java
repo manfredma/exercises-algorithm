@@ -30,6 +30,8 @@ Output: true
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0020;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/valid-parentheses/ */
 
 /**
@@ -38,10 +40,11 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0020;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.isValid("()"));
-        System.out.println(solution.isValid("()[]{}"));
-        System.out.println(solution.isValid("(]"));
-        System.out.println(solution.isValid("([)]"));
-        System.out.println(solution.isValid("{[]}"));
+        assertTrue(solution.isValid("()"));
+        assertTrue(solution.isValid("()[]{}"));
+        assertFalse(solution.isValid("(]"));
+        assertFalse(solution.isValid("([)]"));
+        assertTrue(solution.isValid("{[]}"));
+        System.out.println("p0020 passed");
     }
 }

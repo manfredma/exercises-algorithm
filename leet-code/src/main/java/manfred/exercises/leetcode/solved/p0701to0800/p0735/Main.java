@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0735;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/asteroid-collision/ */
 
 import java.util.Arrays;
@@ -63,12 +65,4 @@ public class Main {
         assertArrayEquals(new int[] {-2, -1, 1, 2}, solution.asteroidCollision(new int[] {-2, -1, 1, 2}));
     }
 
-    private static void assertArrayEquals(int[] expected, int[] actual) {
-        if (!Arrays.equals(expected, actual))
-            throw new AssertionError(
-                    "expected: "
-                            + Arrays.toString(expected)
-                            + ", actual: "
-                            + Arrays.toString(actual));
-    }
 }

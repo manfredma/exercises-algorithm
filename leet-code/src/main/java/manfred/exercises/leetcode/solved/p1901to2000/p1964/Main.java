@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p1901to2000.p1964;
 
-/** 题目链接：https://leetcode.cn/problems/find-the-longest-valid-obstacle-course-at-each-position/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/find-the-longest-valid-obstacle-course-at-each-position/ */
 
 /*
 你打算构建一些障碍赛跑路线。给你一个 下标从 0 开始 的整数数组 obstacles，数组长度为 n，
@@ -26,12 +26,13 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: obstacles = [1,2,3,2] → 期望 [1,2,3,3]
-        System.out.println(Arrays.toString(solution.longestObstacleCourseAtEachPosition(new int[]{1, 2, 3, 2})));
+        assertArrayEquals(new int[]{1, 2, 3, 3}, solution.longestObstacleCourseAtEachPosition(new int[]{1, 2, 3, 2}));
 
         // 示例 2: obstacles = [2,2,1] → 期望 [1,2,1]
-        System.out.println(Arrays.toString(solution.longestObstacleCourseAtEachPosition(new int[]{2, 2, 1})));
+        assertArrayEquals(new int[]{1, 2, 1}, solution.longestObstacleCourseAtEachPosition(new int[]{2, 2, 1}));
 
         // 示例 3: obstacles = [3,1,5,6,4,2] → 期望 [1,1,2,3,2,2]
-        System.out.println(Arrays.toString(solution.longestObstacleCourseAtEachPosition(new int[]{3, 1, 5, 6, 4, 2})));
+        assertArrayEquals(new int[]{1, 1, 2, 3, 2, 2}, solution.longestObstacleCourseAtEachPosition(new int[]{3, 1, 5, 6, 4, 2}));
+        System.out.println("passed");
     }
 }

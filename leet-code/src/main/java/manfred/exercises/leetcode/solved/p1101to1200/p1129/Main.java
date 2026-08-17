@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1129;
 
-/** 题目链接：https://leetcode.cn/problems/shortest-path-with-alternating-colors/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/shortest-path-with-alternating-colors/ */
 
 /*
 给定有向图节点数 n（节点 0..n-1），每条边为红色或蓝色，可能有自环/平行边。
@@ -19,10 +19,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: n=3, red=[[0,1],[1,2]], blue=[] → 期望 [0,1,-1]
-        System.out.println(Arrays.toString(solution.shortestAlternatingPaths(
-                3, new int[][]{{0, 1}, {1, 2}}, new int[][]{})));
+        assertArrayEquals(new int[]{0, 1, -1}, solution.shortestAlternatingPaths(
+                3, new int[][]{{0, 1}, {1, 2}}, new int[][]{}));
         // 示例 2: n=3, red=[[0,1]], blue=[[2,1]] → 期望 [0,1,-1]
-        System.out.println(Arrays.toString(solution.shortestAlternatingPaths(
-                3, new int[][]{{0, 1}}, new int[][]{{2, 1}})));
+        assertArrayEquals(new int[]{0, 1, -1}, solution.shortestAlternatingPaths(
+                3, new int[][]{{0, 1}}, new int[][]{{2, 1}}));
+        System.out.println("passed");
     }
 }

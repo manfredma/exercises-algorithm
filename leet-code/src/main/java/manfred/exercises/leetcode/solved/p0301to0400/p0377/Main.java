@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0377;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/combination-sum-iv/ */
 
 /*
@@ -14,8 +16,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: nums = [1,2,3], target = 4 → 期望 7
-        System.out.println(solution.combinationSum4(new int[]{1, 2, 3}, 4));
+        assertEquals(7, solution.combinationSum4(new int[]{1, 2, 3}, 4));
         // 示例 2: nums = [9], target = 3 → 期望 0
-        System.out.println(solution.combinationSum4(new int[]{9}, 3));
+        assertEquals(0, solution.combinationSum4(new int[]{9}, 3));
+        System.out.println("p0377 passed");
     }
 }

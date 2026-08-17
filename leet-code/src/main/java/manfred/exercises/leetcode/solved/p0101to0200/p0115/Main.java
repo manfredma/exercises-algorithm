@@ -41,6 +41,8 @@ babgbag
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0115;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/distinct-subsequences/ */
 
 /**
@@ -49,11 +51,13 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0115;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.numDistinct("rabbbit", "rabbit"));
-        System.out.println(solution.numDistinct("babgbag", "bag"));
+        assertEquals(3, solution.numDistinct("rabbbit", "rabbit"));
+        assertEquals(5, solution.numDistinct("babgbag", "bag"));
 
         Solution2 solution2 = new Solution2();
-        System.out.println(solution2.numDistinct("rabbbit", "rabbit"));
-        System.out.println(solution2.numDistinct("babgbag", "bag"));
+        assertEquals(3, solution2.numDistinct("rabbbit", "rabbit"));
+        assertEquals(5, solution2.numDistinct("babgbag", "bag"));
+
+        System.out.println("p0115 passed");
     }
 }

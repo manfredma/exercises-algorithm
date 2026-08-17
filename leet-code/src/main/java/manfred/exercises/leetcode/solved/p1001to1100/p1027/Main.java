@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1027;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/longest-arithmetic-subsequence/ */
 
 /*
@@ -41,10 +43,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 期望 4
-        System.out.println(solution.longestArithSeqLength(new int[]{3, 6, 9, 12}));
+        assertEquals(4, solution.longestArithSeqLength(new int[]{3, 6, 9, 12}));
         // 示例 2: 期望 3
-        System.out.println(solution.longestArithSeqLength(new int[]{9, 4, 7, 2, 10}));
+        assertEquals(3, solution.longestArithSeqLength(new int[]{9, 4, 7, 2, 10}));
         // 示例 3: 期望 4
-        System.out.println(solution.longestArithSeqLength(new int[]{20, 1, 15, 3, 10, 5, 8}));
+        assertEquals(4, solution.longestArithSeqLength(new int[]{20, 1, 15, 3, 10, 5, 8}));
+        System.out.println("passed");
     }
 }

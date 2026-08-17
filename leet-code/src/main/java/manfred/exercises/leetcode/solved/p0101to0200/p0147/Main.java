@@ -24,6 +24,11 @@ Output: -1->0->3->4->5
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0147;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/insertion-sort-list/ */
 
 /**
@@ -33,6 +38,7 @@ public class Main {
     public static void main(String[] args) {
         test1();
         test2();
+        System.out.println("p0147 passed");
     }
 
     private static void test1() {
@@ -48,12 +54,8 @@ public class Main {
         Solution solution = new Solution();
         ListNode head = solution.insertionSortList(node1);
 
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(" -> " + cur.val);
-            cur = cur.next;
-        }
-        System.out.println();
+        // Input: 4->2->1->3 → Output: 1->2->3->4
+        assertArrayEquals(new int[]{1, 2, 3, 4}, toArray(head));
     }
 
     private static void test2() {
@@ -71,11 +73,21 @@ public class Main {
         Solution solution = new Solution();
         ListNode head = solution.insertionSortList(node1);
 
+        // Input: -1->5->3->4->0 → Output: -1->0->3->4->5
+        assertArrayEquals(new int[]{-1, 0, 3, 4, 5}, toArray(head));
+    }
+
+    private static int[] toArray(ListNode head) {
+        List<Integer> values = new ArrayList<>();
         ListNode cur = head;
         while (cur != null) {
-            System.out.print(" -> " + cur.val);
+            values.add(cur.val);
             cur = cur.next;
         }
-        System.out.println();
+        int[] result = new int[values.size()];
+        for (int i = 0; i < values.size(); i++) {
+            result[i] = values.get(i);
+        }
+        return result;
     }
 }

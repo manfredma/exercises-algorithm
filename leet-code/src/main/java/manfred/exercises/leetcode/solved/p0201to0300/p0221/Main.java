@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0221;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/maximal-square/ */
 
 /**
@@ -31,19 +33,23 @@ public class Main {
          * Output: 0
          */
         Solution solution = new Solution();
-        System.out.println(solution.maximalSquare(new char[][]{
+        // 示例 1: matrix 4x5 → 期望 4
+        assertEquals(4, solution.maximalSquare(new char[][]{
                 {'1', '0', '1', '0', '0'},
                 {'1', '0', '1', '1', '1'},
                 {'1', '1', '1', '1', '1'},
                 {'1', '0', '0', '1', '0'}
         }));
 
-        System.out.println(solution.maximalSquare(new char[][]{
+        // 示例 2: matrix [["0","1"],["1","0"]] → 期望 1
+        assertEquals(1, solution.maximalSquare(new char[][]{
                 {'0', '1'},
                 {'1', '0'}
         }));
-        System.out.println(solution.maximalSquare(new char[][]{
+        // 示例 3: matrix [["0"]] → 期望 0
+        assertEquals(0, solution.maximalSquare(new char[][]{
                 {'0'}
         }));
+        System.out.println("p0221 passed");
     }
 }

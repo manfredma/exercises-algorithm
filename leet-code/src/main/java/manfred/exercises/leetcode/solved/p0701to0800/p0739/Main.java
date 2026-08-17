@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0701to0800.p0739;
 
-/** 题目链接：https://leetcode.cn/problems/daily-temperatures/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/daily-temperatures/ */
 
 /*
 给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指对于第 i
@@ -32,10 +32,15 @@ public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
         // 示例 1: temperatures = [73,74,75,71,69,72,76,73] → 期望 [1,1,4,2,1,1,0,0]
-        System.out.println(Arrays.toString(solution.dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73})));
+        assertArrayEquals(new int[]{1, 1, 4, 2, 1, 1, 0, 0},
+                solution.dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73}));
         // 示例 2: temperatures = [30,40,50,60] → 期望 [1,1,1,0]
-        System.out.println(Arrays.toString(solution.dailyTemperatures(new int[]{30, 40, 50, 60})));
+        assertArrayEquals(new int[]{1, 1, 1, 0},
+                solution.dailyTemperatures(new int[]{30, 40, 50, 60}));
         // 示例 3: temperatures = [30,60,90] → 期望 [1,1,0]
-        System.out.println(Arrays.toString(solution.dailyTemperatures(new int[]{30, 60, 90})));
+        assertArrayEquals(new int[]{1, 1, 0},
+                solution.dailyTemperatures(new int[]{30, 60, 90}));
+
+        System.out.println("p0739 passed");
     }
 }

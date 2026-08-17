@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1001to1100.p1004;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/max-consecutive-ones-iii/ */
 
 /*
@@ -36,9 +38,4 @@ public class Main {
                 new int[]{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3));
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

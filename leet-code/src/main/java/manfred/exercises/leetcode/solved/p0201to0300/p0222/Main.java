@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0222;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/count-complete-tree-nodes/ */
 
 /**
@@ -17,6 +19,8 @@ public class Main {
         treeNode.right.left = new TreeNode();
 
         Solution solution = new Solution();
-        System.out.println(solution.countNodes(treeNode));
+        // 完全二叉树节点数：根 + 左 + 右 + 左左 + 左右 + 右左 = 6
+        assertEquals(6, solution.countNodes(treeNode));
+        System.out.println("p0222 passed");
     }
 }

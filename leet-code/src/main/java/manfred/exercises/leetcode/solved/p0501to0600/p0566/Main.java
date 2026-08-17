@@ -36,9 +36,9 @@ The given r and c are all positive.
  */
 package manfred.exercises.leetcode.solved.p0501to0600.p0566;
 
-/** 题目链接：https://leetcode.cn/problems/reshape-the-matrix/ */
+import static manfred.exercises.assertion.Assert.assertArrayEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/reshape-the-matrix/ */
 
 /**
  * LeetCode 第 566 题的测试入口。
@@ -46,22 +46,18 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        // 示例 1 变体: nums = [[1,2,3,4]], r = 2, c = 2 → 期望 [[1,2],[3,4]]
         int[][] r = solution.matrixReshape(new int[][]{{1, 2, 3, 4}}, 2, 2);
-        for (int i = 0; i < r.length; i++) {
-            System.out.println(Arrays.toString(r[i]));
-        }
+        assertArrayEquals(new int[][]{{1, 2}, {3, 4}}, r);
 
-        System.out.println("-------------------------------------------------");
+        // 示例 2: nums = [[1,2],[3,4]], r = 1, c = 4 → 期望 [[1,2,3,4]]
         r = solution.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 1, 4);
-        for (int i = 0; i < r.length; i++) {
-            System.out.println(Arrays.toString(r[i]));
-        }
+        assertArrayEquals(new int[][]{{1, 2, 3, 4}}, r);
 
-        System.out.println("-------------------------------------------------");
+        // 示例 2 变体: nums = [[1,2],[3,4]], r = 2, c = 4 → 期望 原矩阵 [[1,2],[3,4]]
         r = solution.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 2, 4);
-        for (int i = 0; i < r.length; i++) {
-            System.out.println(Arrays.toString(r[i]));
-        }
+        assertArrayEquals(new int[][]{{1, 2}, {3, 4}}, r);
 
+        System.out.println("p0566 passed");
     }
 }

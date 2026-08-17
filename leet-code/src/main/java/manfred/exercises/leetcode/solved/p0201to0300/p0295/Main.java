@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0295;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-median-from-data-stream/ */
 
 /*
@@ -45,9 +47,4 @@ public class Main {
         assertEquals(2.0, medianFinder.findMedian());
     }
 
-    private static void assertEquals(double expected, double actual) {
-        if (Math.abs(expected - actual) > 1e-5) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

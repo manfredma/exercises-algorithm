@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0427;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+
 /** 题目链接：https://leetcode.cn/problems/construct-quad-tree/ */
 
 /*
@@ -31,12 +33,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        // 示例 1 → 期望根节点 isLeaf=false, val=true
+        // 示例 1: grid = [[0,1],[1,0]] → 期望根节点 isLeaf=false（四个值不全相同）
         int[][] grid1 = {{0, 1}, {1, 0}};
         Node root1 = solution.construct(grid1);
-        System.out.println("isLeaf=" + root1.isLeaf + ", val=" + root1.val);
+        assertFalse(root1.isLeaf, "示例1 根节点应为非叶节点");
 
-        // 示例 2 → 期望根节点 isLeaf=false
+        // 示例 2: grid 8x8 → 期望根节点 isLeaf=false
         int[][] grid2 = {
             {1, 1, 1, 1, 0, 0, 0, 0},
             {1, 1, 1, 1, 0, 0, 0, 0},
@@ -48,6 +50,7 @@ public class Main {
             {1, 1, 1, 1, 0, 0, 0, 0}
         };
         Node root2 = solution.construct(grid2);
-        System.out.println("isLeaf=" + root2.isLeaf + ", val=" + root2.val);
+        assertFalse(root2.isLeaf, "示例2 根节点应为非叶节点");
+        System.out.println("p0427 passed");
     }
 }

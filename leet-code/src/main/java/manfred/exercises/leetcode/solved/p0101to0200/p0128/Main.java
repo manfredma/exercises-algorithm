@@ -14,7 +14,7 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0128;
 
 /** 题目链接：https://leetcode.cn/problems/longest-consecutive-sequence/ */
 
-import java.util.Arrays;
+import static manfred.exercises.assertion.Assert.*;
 
 /**
  * LeetCode 第 128 题的测试入口。
@@ -22,12 +22,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
-        System.out.println(solution.longestConsecutive(new int[]{
+        assertEquals(5, solution.longestConsecutive(new int[]{
                 4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3}));
-        System.out.println(solution.longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
-        int[] x = new int[]{
-                4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3};
-        Arrays.sort(x);
-        System.out.println(Arrays.toString(x));
+        assertEquals(4, solution.longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
+
+        System.out.println("p0128 passed");
     }
 }

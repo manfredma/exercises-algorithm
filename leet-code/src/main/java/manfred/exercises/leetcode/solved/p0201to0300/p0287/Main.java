@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0287;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/find-the-duplicate-number/ */
 
 /*
@@ -33,13 +35,14 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0287;
 public class Main {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
-        // 示例 1: nums = [1,3,4,2,2] → 期望 2
-        System.out.println(solution.findDuplicate(new int[]{1, 3, 4, 2, 2}));
-        // 示例 2: nums = [3,1,3,4,2] → 期望 3
-        System.out.println(solution.findDuplicate(new int[]{3, 1, 3, 4, 2}));
-        // 示例 3: nums = [3,3,3,3,3] → 期望 3
-        System.out.println(solution.findDuplicate(new int[]{3, 3, 3, 3, 3}));
-        // 示例 4: nums = [2,5,9,6,9,3,8,9,7,1] → 期望 9
-        System.out.println(solution.findDuplicate(new int[]{2, 5, 9, 6, 9, 3, 8, 9, 7, 1}));
+        // 示例 1: nums = [1,3,4,2,2] → 题面 Output: 2
+        assertEquals(2, solution.findDuplicate(new int[]{1, 3, 4, 2, 2}));
+        // 示例 2: nums = [3,1,3,4,2] → 题面 Output: 3
+        assertEquals(3, solution.findDuplicate(new int[]{3, 1, 3, 4, 2}));
+        // 示例 3: nums = [3,3,3,3,3] → 题面 Output: 3
+        assertEquals(3, solution.findDuplicate(new int[]{3, 3, 3, 3, 3}));
+        // 示例 4: nums = [2,5,9,6,9,3,8,9,7,1] → 题面 Output: 9
+        assertEquals(9, solution.findDuplicate(new int[]{2, 5, 9, 6, 9, 3, 8, 9, 7, 1}));
+        System.out.println("p0287 passed");
     }
 }

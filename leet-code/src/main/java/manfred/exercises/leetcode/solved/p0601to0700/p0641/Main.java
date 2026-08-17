@@ -35,6 +35,8 @@ Please do not use the built-in Deque library.
  */
 package manfred.exercises.leetcode.solved.p0601to0700.p0641;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/design-circular-deque/ */
 
 /**
@@ -45,22 +47,24 @@ public class Main {
         // set the size to be 3
         MyCircularDeque circularDeque = new MyCircularDeque(3);
         // return true
-        System.out.println(circularDeque.insertLast(1));
+        assertTrue(circularDeque.insertLast(1));
         // return true
-        System.out.println(circularDeque.insertLast(2));
+        assertTrue(circularDeque.insertLast(2));
         // return true
-        System.out.println(circularDeque.insertFront(3));
+        assertTrue(circularDeque.insertFront(3));
         // return false, the queue is full
-        System.out.println(circularDeque.insertFront(4));
+        assertFalse(circularDeque.insertFront(4));
         // return 2
-        System.out.println(circularDeque.getRear());
+        assertEquals(2, circularDeque.getRear());
         // return true
-        System.out.println(circularDeque.isFull());
+        assertTrue(circularDeque.isFull());
         // return true
-        System.out.println(circularDeque.deleteLast());
+        assertTrue(circularDeque.deleteLast());
         // return true
-        System.out.println(circularDeque.insertFront(4));
+        assertTrue(circularDeque.insertFront(4));
         // return 4
-        System.out.println(circularDeque.getFront());
+        assertEquals(4, circularDeque.getFront());
+
+        System.out.println("p0641 passed");
     }
 }

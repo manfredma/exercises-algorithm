@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0401to0500.p0474;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/ones-and-zeroes/ */
 
 /*
@@ -22,13 +24,14 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: 输入 strs = ["10","0001","111001","1","0"], m = 5, n = 3 → 期望 4
-        System.out.println(solution.findMaxForm(
+        assertEquals(4, solution.findMaxForm(
                 new String[]{"10", "0001", "111001", "1", "0"}, 5, 3));
         // 示例 2: 输入 strs = ["10","0","1"], m = 1, n = 1 → 期望 2
-        System.out.println(solution.findMaxForm(
+        assertEquals(2, solution.findMaxForm(
                 new String[]{"10", "0", "1"}, 1, 1));
         // 示例 3: 输入 strs = ["10"], m = 2, n = 2 → 期望 1
-        System.out.println(solution.findMaxForm(
+        assertEquals(1, solution.findMaxForm(
                 new String[]{"10"}, 2, 2));
+        System.out.println("p0474 passed");
     }
 }

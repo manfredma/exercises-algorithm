@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0646;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/maximum-length-of-pair-chain/ */
 
 /*
@@ -36,9 +38,11 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: pairs = [[1,2],[2,3],[3,4]] → 期望 2
-        System.out.println(solution.findLongestChain(new int[][]{{1, 2}, {2, 3}, {3, 4}}));
+        assertEquals(2, solution.findLongestChain(new int[][]{{1, 2}, {2, 3}, {3, 4}}));
 
         // 示例 2: pairs = [[1,2],[7,8],[4,5]] → 期望 3
-        System.out.println(solution.findLongestChain(new int[][]{{1, 2}, {7, 8}, {4, 5}}));
+        assertEquals(3, solution.findLongestChain(new int[][]{{1, 2}, {7, 8}, {4, 5}}));
+
+        System.out.println("p0646 passed");
     }
 }

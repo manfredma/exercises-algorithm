@@ -1,8 +1,8 @@
 package manfred.exercises.leetcode.solved.p0901to1000.p0994;
 
-/** 题目链接：https://leetcode.cn/problems/rotting-oranges/ */
+import static manfred.exercises.assertion.Assert.assertEquals;
 
-import java.util.Arrays;
+/** 题目链接：https://leetcode.cn/problems/rotting-oranges/ */
 
 /*
 在给定的 m x n 网格 grid 中，每个单元格可以有以下三个值之一：
@@ -44,10 +44,12 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: grid = [[2,1,1],[1,1,0],[0,1,1]] → 期望 4
-         System.out.println(solution.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}}));
+        assertEquals(4, solution.orangesRotting(new int[][]{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}));
         // 示例 2: grid = [[2,1,1],[0,1,1],[1,0,1]] → 期望 -1
-         System.out.println(solution.orangesRotting(new int[][]{{2,1,1},{0,1,1},{1,0,1}}));
+        assertEquals(-1, solution.orangesRotting(new int[][]{{2, 1, 1}, {0, 1, 1}, {1, 0, 1}}));
         // 示例 3: grid = [[0,2]] → 期望 0
-         System.out.println(solution.orangesRotting(new int[][]{{0,2}}));
+        assertEquals(0, solution.orangesRotting(new int[][]{{0, 2}}));
+
+        System.out.println("p0994 passed");
     }
 }

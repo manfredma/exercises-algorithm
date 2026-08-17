@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p2201to2300.p2215;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/find-the-difference-of-two-arrays/ */
 
 import java.util.Arrays;
@@ -30,7 +32,7 @@ public class Main {
 
     private static void assertAnswer(List<List<Integer>> expected, List<List<Integer>> actual) {
         if (!toSets(expected).equals(toSets(actual)) || !hasDistinctValues(actual)) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
+            fail("expected: " + expected + ", actual: " + actual);
         }
     }
 

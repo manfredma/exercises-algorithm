@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0889;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/ */
 
 import java.util.ArrayList;
@@ -118,10 +120,4 @@ public class Main {
         return result;
     }
 
-    private static void assertArrayEquals(int[] expected, int[] actual) {
-        if (!Arrays.equals(expected, actual)) {
-            throw new AssertionError(
-                    "expected: " + Arrays.toString(expected) + ", actual: " + Arrays.toString(actual));
-        }
-    }
 }

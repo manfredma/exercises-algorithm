@@ -21,6 +21,11 @@ Output:
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0078;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.Arrays;
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/subsets/ */
 
 /**
@@ -29,6 +34,20 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0078;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.subsets(new int[]{1, 2, 3}));
+        // 示例: nums = [1,2,3] → 幂集共 8 个子集，顺序无关
+        List<List<Integer>> expected = Arrays.asList(
+                Arrays.asList(),
+                Arrays.asList(1),
+                Arrays.asList(2),
+                Arrays.asList(3),
+                Arrays.asList(1, 2),
+                Arrays.asList(1, 3),
+                Arrays.asList(2, 3),
+                Arrays.asList(1, 2, 3));
+        List<List<Integer>> actual = solution.subsets(new int[]{1, 2, 3});
+        assertEquals(expected.size(), actual.size());
+        assertTrue(expected.containsAll(actual));
+        assertTrue(actual.containsAll(expected));
+        System.out.println("p0078 passed");
     }
 }

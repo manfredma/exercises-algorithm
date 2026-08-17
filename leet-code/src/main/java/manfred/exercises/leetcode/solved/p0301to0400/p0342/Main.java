@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0342;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/power-of-four/ */
 
 /*
@@ -33,10 +35,4 @@ public class Main {
         assertEquals(true, solution.isPowerOfFour(1));
     }
 
-    private static void assertEquals(boolean expected, boolean actual) {
-        if (expected != actual) {
-            throw new AssertionError("期望：" + expected + "，实际：" + actual);
-        }
-        System.out.println("通过：" + expected);
-    }
 }

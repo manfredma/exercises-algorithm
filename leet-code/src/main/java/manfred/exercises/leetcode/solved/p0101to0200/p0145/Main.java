@@ -17,6 +17,10 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0145;
 
+import static manfred.exercises.assertion.Assert.*;
+
+import java.util.List;
+
 /** 题目链接：https://leetcode.cn/problems/binary-tree-postorder-traversal/ */
 
 /**
@@ -32,6 +36,8 @@ public class Main {
         treeNode2.left = treeNode3;
 
         Solution solution = new Solution();
-        System.out.println(solution.postorderTraversal(treeNode1));
+        // 后序遍历 [3,2,1]
+        List<Integer> result = solution.postorderTraversal(treeNode1);
+        assertArrayEquals(new Integer[]{3, 2, 1}, result.toArray());
     }
 }

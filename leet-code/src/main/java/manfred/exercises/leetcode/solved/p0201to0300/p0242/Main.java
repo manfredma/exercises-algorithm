@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0242;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/valid-anagram/ */
 
 /*
@@ -25,9 +28,10 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0242;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // 示例 1: s = "anagram", t = "nagaram" → 期望 true
-        System.out.println(solution.isAnagram("anagram", "nagaram"));
-        // 示例 2: s = "rat", t = "car" → 期望 false
-        System.out.println(solution.isAnagram("rat", "car"));
+        // 示例 1: s = "anagram", t = "nagaram" → 题面 Output: true
+        assertTrue(solution.isAnagram("anagram", "nagaram"));
+        // 示例 2: s = "rat", t = "car" → 题面 Output: false
+        assertFalse(solution.isAnagram("rat", "car"));
+        System.out.println("p0242 passed");
     }
 }

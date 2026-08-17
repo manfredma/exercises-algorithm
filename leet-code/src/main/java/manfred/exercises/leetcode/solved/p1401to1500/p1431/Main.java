@@ -1,5 +1,9 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1431;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
+import java.util.Arrays;
+
 /** 题目链接：https://leetcode.cn/problems/kids-with-the-greatest-number-of-candies/ */
 
 /*
@@ -30,10 +34,14 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: candies=[2,3,5,1,3], extraCandies=3 → 期望 [true,true,true,false,true]
-        System.out.println(solution.kidsWithCandies(new int[]{2, 3, 5, 1, 3}, 3));
+        assertEquals(Arrays.asList(true, true, true, false, true),
+                solution.kidsWithCandies(new int[]{2, 3, 5, 1, 3}, 3));
         // 示例 2: candies=[4,2,1,1,2], extraCandies=1 → 期望 [true,false,false,false,false]
-        System.out.println(solution.kidsWithCandies(new int[]{4, 2, 1, 1, 2}, 1));
+        assertEquals(Arrays.asList(true, false, false, false, false),
+                solution.kidsWithCandies(new int[]{4, 2, 1, 1, 2}, 1));
         // 示例 3: candies=[12,1,12], extraCandies=10 → 期望 [true,false,true]
-        System.out.println(solution.kidsWithCandies(new int[]{12, 1, 12}, 10));
+        assertEquals(Arrays.asList(true, false, true),
+                solution.kidsWithCandies(new int[]{12, 1, 12}, 10));
+        System.out.println("passed");
     }
 }

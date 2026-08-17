@@ -41,13 +41,17 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0127;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /**
  * LeetCode 第 127 题的测试入口。
  */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
-        System.out.println(solution.ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot","dot","dog","lot","log"))));
+        assertEquals(5, solution.ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))));
+        assertEquals(0, solution.ladderLength("hit", "cog", new ArrayList<>(Arrays.asList("hot","dot","dog","lot","log"))));
+
+        System.out.println("p0127 passed");
     }
 }

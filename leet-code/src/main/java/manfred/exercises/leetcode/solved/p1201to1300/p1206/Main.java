@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1206;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/design-skiplist/ */
 
 /**
@@ -14,15 +17,15 @@ public class Main {
         skiplist.add(4);
         // System.out.println("init: \n" + skiplist);
 
-        System.out.println(skiplist.search(0));   // return false.
-        System.out.println(skiplist.search(1));   // return true.
-        System.out.println(skiplist.erase(0));    // return false, 0 is not in skiplist.
+        assertFalse(skiplist.search(0));   // return false.
+        assertTrue(skiplist.search(1));    // return true.
+        assertFalse(skiplist.erase(0));   // return false, 0 is not in skiplist.
         // System.out.println("after erase 0: \n" + skiplist);
-        System.out.println(skiplist.erase(1));    // return true.
+        assertTrue(skiplist.erase(1));     // return true.
         // System.out.println("after erase 1: \n" + skiplist);
-        System.out.println(skiplist.search(1));   // return false, 1 has already been erased.
+        assertFalse(skiplist.search(1));   // return false, 1 has already been erased.
         // System.out.println("after erase 1: \n" + skiplist);
-        System.out.println(skiplist.erase(3));   // return true
+        assertTrue(skiplist.erase(3));    // return true
         System.out.println("after erase 3: \n" + skiplist);
 
         System.out.println("=============================================================");
@@ -33,16 +36,16 @@ public class Main {
         skiplistV2.add(4);
         // System.out.println("init: \n" + skiplist);
 
-        System.out.println(skiplistV2.search(0));   // return false.
-        System.out.println(skiplistV2.search(1));   // return true.
-        System.out.println(skiplistV2.erase(0));    // return false, 0 is not in skiplist.
+        assertFalse(skiplistV2.search(0));   // return false.
+        assertTrue(skiplistV2.search(1));     // return true.
+        assertFalse(skiplistV2.erase(0));    // return false, 0 is not in skiplist.
         // System.out.println("after erase 0: \n" + skiplist);
-        System.out.println(skiplistV2.erase(1));    // return true.
+        assertTrue(skiplistV2.erase(1));     // return true.
         // System.out.println("after erase 1: \n" + skiplist);
-        System.out.println(skiplistV2.search(1));   // return false, 1 has already been erased.
+        assertFalse(skiplistV2.search(1));   // return false, 1 has already been erased.
         // System.out.println("after erase 1: \n" + skiplist);
-        System.out.println(skiplistV2.erase(3));   // return true
+        assertTrue(skiplistV2.erase(3));    // return true
         System.out.println("after erase 3: \n" + skiplistV2);
-
+        System.out.println("passed");
     }
 }

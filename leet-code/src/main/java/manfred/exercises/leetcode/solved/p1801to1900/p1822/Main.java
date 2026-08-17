@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1801to1900.p1822;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/sign-of-the-product-of-an-array/ */
 
 /*
@@ -29,10 +31,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: [-1,-2,-3,-4,3,2,1] → 期望 1
-        System.out.println(solution.arraySign(new int[]{-1, -2, -3, -4, 3, 2, 1}));
+        assertEquals(1, solution.arraySign(new int[]{-1, -2, -3, -4, 3, 2, 1}));
         // 示例 2: [1,5,0,2,-3] → 期望 0
-        System.out.println(solution.arraySign(new int[]{1, 5, 0, 2, -3}));
+        assertEquals(0, solution.arraySign(new int[]{1, 5, 0, 2, -3}));
         // 示例 3: [-1,1,-1,1,-1] → 期望 -1
-        System.out.println(solution.arraySign(new int[]{-1, 1, -1, 1, -1}));
+        assertEquals(-1, solution.arraySign(new int[]{-1, 1, -1, 1, -1}));
+        System.out.println("passed");
     }
 }

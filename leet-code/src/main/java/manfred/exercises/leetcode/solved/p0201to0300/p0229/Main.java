@@ -1,5 +1,9 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0229;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
+import java.util.Arrays;
+
 /** 题目链接：https://leetcode.cn/problems/majority-element-ii/ */
 
 /**
@@ -34,9 +38,14 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.majorityElement(new int[]{3, 2, 3}));
-        System.out.println(solution.majorityElement(new int[]{3, 2, 3, 4, 3, 2, 2, 5}));
-        System.out.println(solution.majorityElement(new int[]{1}));
-        System.out.println(solution.majorityElement(new int[]{1, 2}));
+        // 示例 1: 题面 Output
+        assertEquals(Arrays.asList(3), solution.majorityElement(new int[]{3, 2, 3}));
+        // 自造用例: n=8, 阈值 ⌊8/3⌋=2, 3 与 2 各出现 3 次 > 2，候选顺序经 BM 投票后输出 [3,2]
+        assertEquals(Arrays.asList(3, 2), solution.majorityElement(new int[]{3, 2, 3, 4, 3, 2, 2, 5}));
+        // 示例 2: 题面 Output
+        assertEquals(Arrays.asList(1), solution.majorityElement(new int[]{1}));
+        // 示例 3: 题面 Output
+        assertEquals(Arrays.asList(1, 2), solution.majorityElement(new int[]{1, 2}));
+        System.out.println("p0229 passed");
     }
 }

@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1401to1500.p1448;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/count-good-nodes-in-binary-tree/ */
 
 /*
@@ -75,9 +77,4 @@ public class Main {
         return root;
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

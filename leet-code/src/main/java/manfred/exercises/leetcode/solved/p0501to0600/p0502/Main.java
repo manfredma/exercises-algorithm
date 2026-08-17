@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0502;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/ipo/ */
 
 /*
@@ -28,8 +30,9 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: k=2, w=0, profits=[1,2,3], capital=[0,1,1] → 期望 4
-        System.out.println(solution.findMaximizedCapital(2, 0, new int[]{1, 2, 3}, new int[]{0, 1, 1}));
+        assertEquals(4, solution.findMaximizedCapital(2, 0, new int[]{1, 2, 3}, new int[]{0, 1, 1}));
         // 示例 2: k=3, w=0, profits=[1,2,3], capital=[0,1,2] → 期望 6
-        System.out.println(solution.findMaximizedCapital(3, 0, new int[]{1, 2, 3}, new int[]{0, 1, 2}));
+        assertEquals(6, solution.findMaximizedCapital(3, 0, new int[]{1, 2, 3}, new int[]{0, 1, 2}));
+        System.out.println("p0502 passed");
     }
 }

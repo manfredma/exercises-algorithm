@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0001to0100.p0004;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/median-of-two-sorted-arrays/ */
 
 /*
@@ -54,9 +56,4 @@ public class Main {
         assertEquals(3.5, solution2.findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4, 5, 6}));
     }
 
-    private static void assertEquals(double expected, double actual) {
-        if (Math.abs(expected - actual) > 1e-5) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 }

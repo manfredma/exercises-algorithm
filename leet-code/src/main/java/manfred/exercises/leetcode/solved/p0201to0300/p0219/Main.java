@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0219;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/contains-duplicate-ii/ */
 
 /**
@@ -22,8 +25,12 @@ public class Main {
          * Output: false
          */
         Solution solution = new Solution();
-        System.out.println(solution.containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3));
-        System.out.println(solution.containsNearbyDuplicate(new int[]{1, 0, 1, 1}, 1));
-        System.out.println(solution.containsNearbyDuplicate(new int[]{1, 2, 3, 1, 2, 3}, 2));
+        // 示例 1: nums = [1,2,3,1], k = 3 → true
+        assertTrue(solution.containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3));
+        // 示例 2: nums = [1,0,1,1], k = 1 → true
+        assertTrue(solution.containsNearbyDuplicate(new int[]{1, 0, 1, 1}, 1));
+        // 示例 3: nums = [1,2,3,1,2,3], k = 2 → false
+        assertFalse(solution.containsNearbyDuplicate(new int[]{1, 2, 3, 1, 2, 3}, 2));
+        System.out.println("p0219 passed");
     }
 }

@@ -1,5 +1,8 @@
 package manfred.exercises.leetcode.solved.p0801to0900.p0860;
 
+import static manfred.exercises.assertion.Assert.assertFalse;
+import static manfred.exercises.assertion.Assert.assertTrue;
+
 /** 题目链接：https://leetcode.cn/problems/lemonade-change/ */
 
 /*
@@ -22,9 +25,11 @@ public class Main {
         Solution solution = new Solution();
 
         // 示例 1: bills = [5,5,5,10,20] → 期望 true
-        System.out.println(solution.lemonadeChange(new int[]{5, 5, 5, 10, 20}));
+        assertTrue(solution.lemonadeChange(new int[]{5, 5, 5, 10, 20}));
 
         // 示例 2: bills = [5,5,10,10,20] → 期望 false
-        System.out.println(solution.lemonadeChange(new int[]{5, 5, 10, 10, 20}));
+        assertFalse(solution.lemonadeChange(new int[]{5, 5, 10, 10, 20}));
+
+        System.out.println("p0860 passed");
     }
 }

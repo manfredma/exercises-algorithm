@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0501to0600.p0528;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/random-pick-with-weight/ */
 
 /*
@@ -49,15 +51,5 @@ public class Main {
         }
     }
 
-    private static void assertEquals(int expected, int actual) {
-        if (expected != actual) {
-            throw new AssertionError("expected: " + expected + ", actual: " + actual);
-        }
-    }
 
-    private static void assertInRange(int value, int min, int max) {
-        if (value < min || value > max) {
-            throw new AssertionError("expected range: [" + min + ", " + max + "], actual: " + value);
-        }
-    }
 }

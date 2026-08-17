@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0301to0400.p0383;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/ransom-note/ */
 
 /*
@@ -32,10 +34,11 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 示例 1: ransomNote = "a", magazine = "b" → 期望 false
-        System.out.println(solution.canConstruct("a", "b"));
+        assertFalse(solution.canConstruct("a", "b"));
         // 示例 2: ransomNote = "aa", magazine = "ab" → 期望 false
-        System.out.println(solution.canConstruct("aa", "ab"));
+        assertFalse(solution.canConstruct("aa", "ab"));
         // 示例 3: ransomNote = "aa", magazine = "aab" → 期望 true
-        System.out.println(solution.canConstruct("aa", "aab"));
+        assertTrue(solution.canConstruct("aa", "aab"));
+        System.out.println("p0383 passed");
     }
 }

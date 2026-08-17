@@ -25,6 +25,8 @@ You need to reduce multiple spaces between two words to a single space in the re
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0151;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/reverse-words-in-a-string/ */
 
 /**
@@ -33,8 +35,12 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0151;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reverseWords("the sky is blue"));
-        System.out.println(solution.reverseWords("  hello world!  "));
-        System.out.println(solution.reverseWords("a good   example"));
+        // 示例 1: "the sky is blue" → "blue is sky the"
+        assertEquals("blue is sky the", solution.reverseWords("the sky is blue"));
+        // 示例 2: "  hello world!  " → "world! hello"
+        assertEquals("world! hello", solution.reverseWords("  hello world!  "));
+        // 示例 3: "a good   example" → "example good a"
+        assertEquals("example good a", solution.reverseWords("a good   example"));
+        System.out.println("p0151 passed");
     }
 }

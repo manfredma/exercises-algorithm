@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p0601to0700.p0700;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/search-in-a-binary-search-tree/ */
 
 /*
@@ -28,7 +30,4 @@ public class Main {
         return root;
     }
 
-    private static void assertSame(TreeNode expected, TreeNode actual) {
-        if (expected != actual) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

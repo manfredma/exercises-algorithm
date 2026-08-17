@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1201to1300.p1268;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/search-suggestions-system/ */
 
 import java.util.List;
@@ -30,7 +32,4 @@ public class Main {
         assertEquals(expected, solution2.suggestedProducts(products.clone(), searchWord));
     }
 
-    private static void assertEquals(List<List<String>> expected, List<List<String>> actual) {
-        if (!expected.equals(actual)) throw new AssertionError("expected: " + expected + ", actual: " + actual);
-    }
 }

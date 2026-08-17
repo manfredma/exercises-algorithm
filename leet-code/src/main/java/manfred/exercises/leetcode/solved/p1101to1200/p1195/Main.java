@@ -1,7 +1,8 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1195;
 
+import static manfred.exercises.assertion.Assert.*;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -82,9 +83,7 @@ public class Main {
         buzz.join();
         fizzbuzz.join();
         number.join();
-        if (!Arrays.equals(expected, actual.toArray(new String[0]))) {
-            throw new AssertionError("expected: " + Arrays.toString(expected) + ", actual: " + actual);
-        }
+        assertArrayEquals(expected, actual.toArray(new String[0]));
     }
 
     private static void runUnchecked(InterruptibleAction action) {

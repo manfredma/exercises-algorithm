@@ -24,6 +24,8 @@ Two cells are connected if they are adjacent cells connected horizontally or ver
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0130;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/surrounded-regions/ */
 
 /**
@@ -31,13 +33,6 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0130;
  */
 public class Main {
     public static void main(String[] args) {
-//        test1();
-        test2();
-
-    }
-
-    private static void test2() {
-        // [["X","O","X","X"],["O","X","O","X"],["X","O","X","O"],["O","X","O","X"],["X","O","X","O"],["O","X","O","X"]]
         char[][] input = new char[][]{
                 {'X', 'O', 'X', 'X'},
                 {'O', 'X', 'O', 'X'},
@@ -46,35 +41,19 @@ public class Main {
                 {'X', 'O', 'X', 'O'},
                 {'O', 'X', 'O', 'X'}
         };
-        printCharArray(input);
 
         new Solution().solve(input);
 
-        printCharArray(input);
-    }
-
-    private static void test1() {
-        char[][] input = new char[][]{
-                {'X', 'X', 'X', 'X'},
-                {'X', 'O', 'O', 'X'},
-                {'X', 'X', 'O', 'X'},
-                {'X', 'O', 'X', 'X'}
+        char[][] expected = new char[][]{
+                {'X', 'O', 'X', 'X'},
+                {'O', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'O'},
+                {'O', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'O'},
+                {'O', 'X', 'O', 'X'}
         };
-        printCharArray(input);
+        assertArrayEquals(expected, input);
 
-        new Solution().solve(input);
-
-        printCharArray(input);
-    }
-
-    public static void printCharArray(char[][] charArray) {
-        System.out.println("print start _________________");
-        for (int i = 0; i < charArray.length; i++) {
-            for (int j = 0; j < charArray[i].length; j++) {
-                System.out.print(charArray[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println("print end __________________");
+        System.out.println("p0130 passed");
     }
 }

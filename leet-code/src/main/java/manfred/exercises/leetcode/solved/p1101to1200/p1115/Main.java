@@ -1,5 +1,7 @@
 package manfred.exercises.leetcode.solved.p1101to1200.p1115;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+
 /** 题目链接：https://leetcode.cn/problems/print-foobar-alternately/ */
 
 /*
@@ -30,28 +32,27 @@ class FooBar {
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         // 示例 1: n = 1 → 期望输出 "foobar"
-        test(1);
-        System.out.println();
+        assertEquals("foobar", test(1));
         // 示例 2: n = 2 → 期望输出 "foobarfoobar"
-        test(2);
-        System.out.println();
-        // 示例 2: n = 3 → 期望输出 "foobarfoobarfoobar"
-        test(3);
-        System.out.println();
+        assertEquals("foobarfoobar", test(2));
+        // 示例 3: n = 3 → 期望输出 "foobarfoobarfoobar"
+        assertEquals("foobarfoobarfoobar", test(3));
+        System.out.println("passed");
     }
 
-    private static void test(int n) throws InterruptedException {
+    private static String test(int n) throws InterruptedException {
         FooBar fooBar = new FooBar(n);
+        StringBuilder sb = new StringBuilder();
         Thread threadA = new Thread(() -> {
             try {
-                fooBar.foo(() -> System.out.print("foo"));
+                fooBar.foo(() -> sb.append("foo"));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
         });
         Thread threadB = new Thread(() -> {
             try {
-                fooBar.bar(() -> System.out.print("bar"));
+                fooBar.bar(() -> sb.append("bar"));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -60,5 +61,6 @@ public class Main {
         threadB.start();
         threadA.join();
         threadB.join();
+        return sb.toString();
     }
 }

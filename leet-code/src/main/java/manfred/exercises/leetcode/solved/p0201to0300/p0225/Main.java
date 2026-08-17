@@ -26,6 +26,9 @@ You may assume that all operations are valid (for example, no pop or top operati
  */
 package manfred.exercises.leetcode.solved.p0201to0300.p0225;
 
+import static manfred.exercises.assertion.Assert.assertEquals;
+import static manfred.exercises.assertion.Assert.assertFalse;
+
 /** 题目链接：https://leetcode.cn/problems/implement-stack-using-queues/ */
 
 /**
@@ -38,10 +41,11 @@ public class Main {
         stack.push(1);
         stack.push(2);
         // returns 2
-        System.out.println(stack.top());
+        assertEquals(2, stack.top());
         // returns 2
-        System.out.println(stack.pop());
+        assertEquals(2, stack.pop());
         // returns false
-        System.out.println(stack.empty());
+        assertFalse(stack.empty());
+        System.out.println("p0225 passed");
     }
 }

@@ -13,6 +13,8 @@ Output: 49
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0011;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/container-with-most-water/ */
 
 /**
@@ -21,6 +23,7 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0011;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.maxArea(new int[] {1,8,6,2,5,4,8,3,7}));
+        assertEquals(49, solution.maxArea(new int[] {1,8,6,2,5,4,8,3,7}));
+        System.out.println("p0011 passed");
     }
 }

@@ -27,6 +27,9 @@ Recursive approach is fine, implicit stack space does not count as extra space f
  */
 package manfred.exercises.leetcode.solved.p0101to0200.p0116;
 
+import static manfred.exercises.assertion.Assert.assertNull;
+import static manfred.exercises.assertion.Assert.assertSame;
+
 /** 题目链接：https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/ */
 
 /**
@@ -35,6 +38,27 @@ package manfred.exercises.leetcode.solved.p0101to0200.p0116;
 public class Main {
 
     public static void main(String[] args) {
-        new Solution();
+        Solution solution = new Solution();
+        // 题面示例：完美二叉树 [1,2,3,4,5,6,7]，填充每层 next 指针
+        Node n4 = new Node(4, null, null, null);
+        Node n5 = new Node(5, null, null, null);
+        Node n6 = new Node(6, null, null, null);
+        Node n7 = new Node(7, null, null, null);
+        Node n2 = new Node(2, n4, n5, null);
+        Node n3 = new Node(3, n6, n7, null);
+        Node n1 = new Node(1, n2, n3, null);
+
+        Node root = solution.connect(n1);
+        assertSame(n1, root);
+        // 第 2 层：2.next -> 3，3.next -> null
+        assertSame(n3, n2.next);
+        assertNull(n3.next);
+        // 第 3 层叶子：4.next -> 5 -> 6 -> 7 -> null
+        assertSame(n5, n4.next);
+        assertSame(n6, n5.next);
+        assertSame(n7, n6.next);
+        assertNull(n7.next);
+        assertNull(n1.next);
+        System.out.println("p0116 passed");
     }
 }
