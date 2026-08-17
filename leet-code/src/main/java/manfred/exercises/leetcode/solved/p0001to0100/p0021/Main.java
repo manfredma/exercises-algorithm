@@ -9,6 +9,8 @@ Output: 1->1->2->3->4->4
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0021;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/merge-two-sorted-lists/ */
 
 /**
@@ -16,22 +18,45 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0021;
  */
 public class Main {
     public static void main(String[] args) {
-        ListNode n1 = new ListNode(1);
-        ListNode n2 = new ListNode(2);
-        ListNode n3 = new ListNode(4);
-        n1.next = n2;
-        n2.next = n3;
+        // 示例: 1->2->4 与 1->3->4 → 1->1->2->3->4->4
+        ListNode l1 = buildList(new int[]{1, 2, 4});
+        ListNode m1 = buildList(new int[]{1, 3, 4});
+        ListNode l = new Solution().mergeTwoLists(l1, m1);
+        assertArrayEquals(new int[]{1, 1, 2, 3, 4, 4}, toValues(l));
 
-        ListNode m1 = new ListNode(1);
-        ListNode m2 = new ListNode(3);
-        ListNode m3 = new ListNode(4);
-        m1.next = m2;
-        m2.next = m3;
+        // 边界: 其中一条为空
+        ListNode l2 = buildList(new int[]{1, 2, 3});
+        ListNode empty = null;
+        ListNode r2 = new Solution().mergeTwoLists(l2, empty);
+        assertArrayEquals(new int[]{1, 2, 3}, toValues(r2));
 
-        ListNode l = new Solution().mergeTwoLists(n1, m1);
-        while (null != l) {
-            System.out.print(l.val + "->");
-            l = l.next;
+        // 边界: 两条均为空
+        ListNode r3 = new Solution().mergeTwoLists(null, null);
+        assertNull(r3);
+
+        System.out.println("p0021 passed");
+    }
+
+    private static ListNode buildList(int[] values) {
+        ListNode dummy = new ListNode(0);
+        ListNode cur = dummy;
+        for (int v : values) {
+            cur.next = new ListNode(v);
+            cur = cur.next;
         }
+        return dummy.next;
+    }
+
+    private static int[] toValues(ListNode head) {
+        int size = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            size++;
+        }
+        int[] arr = new int[size];
+        int i = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            arr[i++] = cur.val;
+        }
+        return arr;
     }
 }
