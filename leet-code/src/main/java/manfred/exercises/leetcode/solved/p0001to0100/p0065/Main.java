@@ -14,6 +14,7 @@ public class Main {
         assertFalse(s1.isNumber("abc"));
         assertFalse(s1.isNumber("1 a"));
         assertTrue(s1.isNumber(" -90e3   "));
+        assertTrue(s1.isNumber("-90E3"));
         assertFalse(s1.isNumber(" 1e"));
         assertFalse(s1.isNumber("e3"));
         assertFalse(s1.isNumber(" 99e2.5 "));

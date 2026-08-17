@@ -16,7 +16,7 @@
 | 10 | 正则表达式匹配 | 正则 | 有瑕疵 | ✅ 2026-08-17 重刷完成（Solution3 标准二维 DP 修正 Solution2 非标准前向填充，已归档） |
 | 13 | 罗马数字转整数 | 数值解析 | — | ✅ 2026-08-17 重刷完成（Solution2 栈+双倍扣减对照解，与 Solution 右邻直接加减对比，已归档） |
 | 44 | 通配符匹配 | 正则 | 合格 | ✅ 2026-08-17 重刷完成（Solution2 标准二维 DP 替代 Solution 的 NFA 自动机，已归档） |
-| 65 | 有效数字 | 正则 | 较差 | ✅ 2026-08-17 重刷完成（Solution2 游标解析器修复前导零/指数符号/大写E；新增 Solution3 DFA 状态机；旧 Solution 仍带小写e bug 作对照，已归档） |
+| 65 | 有效数字 | 正则 | 较差 | ✅ 2026-08-17 重刷完成（Solution2 游标解析器修复前导零/指数符号/大写E；新增 Solution3 DFA 状态机；旧 Solution 已补大写E支持，已归档） |
 | 93 | 复原 IP 地址 | 数值解析 | — | 🔄 wip `Solution3` 骨架已建，待填充 |
 | 150 | 逆波兰表达式求值 | 计算器 | 有瑕疵 | 🔄 wip `Solution2` 骨架已建，待填充 |
 | 224 | 基本计算器 | 计算器 | 合格 | 🔄 wip `Solution2` 骨架已建，待填充 |
@@ -39,7 +39,7 @@
 
 | 题号 | 题目 | 当前问题 | 改进方案 |
 | --- | --- | --- | --- |
-| 65 | 有效数字 | `Solution.java:32` 仅 `contains("e")` 认小写，大写 `E`（如 `-90E3`）判错；`charOfZero/One/Nine` 字段过度设计 | 统一 `toLowerCase()` 补 `E`；可选重写为 DFA 状态机系统性覆盖 `e+`/`.e3` 等边界 |
+| 65 | 有效数字 | ~~`Solution.java:32` 仅 `contains("e")` 认小写，大写 `E`（如 `-90E3`）判错~~（2026-08-17 已修：`replace('E','e')` 统一小写）；`charOfZero/One/Nine` 字段过度设计（不影响正确性，未改） | 已修大写 E；另重写 Solution2 游标解析器 + Solution3 DFA 状态机系统性覆盖 `e+`/`.e3` 等边界 |
 | 150 | 逆波兰表达式求值 | `Solution.java:26` 单元素输入 `["42"]` 空栈 `peek()` 抛 `EmptyStackException`；逆向算法绕且脆 | 重写为正向标准栈法（数字入栈，运算符弹二计算压回，约 10 行） |
 | 10 | 正则表达式匹配 | Solution 递归无 memo，`a*a*a*` 类用例指数 TLE；Solution2 DP 前向填充而非标准后向递推，退化 O(m²·n) | Solution 加 memo，或 Solution2 改标准递推 `dp[i][j]=dp[i][j-2]||(dp[i-1][j]&&match)`，回 O(m·n) |
 
