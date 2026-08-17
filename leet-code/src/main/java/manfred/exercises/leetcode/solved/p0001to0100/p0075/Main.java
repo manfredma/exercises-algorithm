@@ -18,6 +18,8 @@ Could you come up with a one-pass algorithm using only constant space?
  */
 package manfred.exercises.leetcode.solved.p0001to0100.p0075;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/sort-colors/ */
 
 /**
@@ -26,10 +28,21 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0075;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
+        // 示例: [2,0,2,1,1,0] → [0,0,1,1,2,2]
         int[] x = new int[]{2, 0, 2, 1, 1, 0};
         solution.sortColors(x);
-        for (int i : x) {
-            System.out.print(i + " ");
-        }
+        assertArrayEquals(new int[]{0, 0, 1, 1, 2, 2}, x);
+
+        // 边界: 已排序输入应保持不变
+        int[] y = new int[]{0, 0, 1, 1, 2, 2};
+        solution.sortColors(y);
+        assertArrayEquals(new int[]{0, 0, 1, 1, 2, 2}, y);
+
+        // 边界: 单元素
+        int[] z = new int[]{1};
+        solution.sortColors(z);
+        assertArrayEquals(new int[]{1}, z);
+
+        System.out.println("p0075 passed");
     }
 }

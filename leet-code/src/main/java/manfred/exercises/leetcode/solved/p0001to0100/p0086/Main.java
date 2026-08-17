@@ -12,6 +12,8 @@ Output: 1->2->2->4->3->5
 
 package manfred.exercises.leetcode.solved.p0001to0100.p0086;
 
+import static manfred.exercises.assertion.Assert.*;
+
 /** 题目链接：https://leetcode.cn/problems/partition-list/ */
 
 /**
@@ -19,24 +21,45 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0086;
  */
 public class Main {
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        ListNode l2 = new ListNode(4);
-        ListNode l3 = new ListNode(3);
-        ListNode l4 = new ListNode(2);
-        ListNode l5 = new ListNode(5);
-        ListNode l6 = new ListNode(2);
-
-        l1.next = l2;
-        l2.next = l3;
-        l3.next = l4;
-        l4.next = l5;
-        l5.next = l6;
-
+        // 示例: 1->4->3->2->5->2, x=3 → 1->2->2->4->3->5
+        ListNode head = buildList(new int[]{1, 4, 3, 2, 5, 2});
         Solution solution = new Solution();
-        ListNode r = solution.partition(l1, 3);
-        while (r != null) {
-            System.out.print(r.val + " -> ");
-            r = r.next;
+        ListNode r = solution.partition(head, 3);
+        assertArrayEquals(new int[]{1, 2, 2, 4, 3, 5}, toValues(r));
+
+        // 边界: 全部大于等于 x，原序保留
+        ListNode head2 = buildList(new int[]{4, 5, 6});
+        ListNode r2 = solution.partition(head2, 3);
+        assertArrayEquals(new int[]{4, 5, 6}, toValues(r2));
+
+        // 边界: 全部小于 x，原序保留
+        ListNode head3 = buildList(new int[]{1, 2});
+        ListNode r3 = solution.partition(head3, 3);
+        assertArrayEquals(new int[]{1, 2}, toValues(r3));
+
+        System.out.println("p0086 passed");
+    }
+
+    private static ListNode buildList(int[] values) {
+        ListNode dummy = new ListNode(0);
+        ListNode cur = dummy;
+        for (int v : values) {
+            cur.next = new ListNode(v);
+            cur = cur.next;
         }
+        return dummy.next;
+    }
+
+    private static int[] toValues(ListNode head) {
+        int size = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            size++;
+        }
+        int[] arr = new int[size];
+        int i = 0;
+        for (ListNode cur = head; cur != null; cur = cur.next) {
+            arr[i++] = cur.val;
+        }
+        return arr;
     }
 }
