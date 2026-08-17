@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0013;
+package manfred.exercises.leetcode.solved.p0001to0100.p0013;
 
 import static manfred.exercises.assertion.Assert.*;
 
@@ -16,7 +16,7 @@ public class Main {
         assertEquals(27, s1.romanToInt("XXVII"));
         assertEquals(1, s1.romanToInt("I"));
         assertEquals(3999, s1.romanToInt("MMMCMXCIX"));
-        // 新解法 Solution2：新增验证，骨架占位下 RED，待实现后通过
+        // 新解法 Solution2：再刷对照解验证（已实现，栈+双倍扣减，与 Solution 思路对比）
         Solution2 s2 = new Solution2();
         assertEquals(3, s2.romanToInt("III"));
         assertEquals(4, s2.romanToInt("IV"));

@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0044;
+package manfred.exercises.leetcode.solved.p0001to0100.p0044;
 
 import static manfred.exercises.assertion.Assert.*;
 
@@ -22,7 +22,7 @@ public class Main {
         assertTrue(s1.isMatch("aa", "*"));
         assertFalse(s1.isMatch("cb", "?a"));
         assertFalse(s1.isMatch("acdcb", "a*c?b"));
-        // 新解法 Solution2：新增验证，骨架占位下 RED，待实现后通过
+        // 新解法 Solution2：再刷解法验证（已实现，标准二维 DP，含空串/空模式/问号边界）
         Solution2 s2 = new Solution2();
         assertFalse(s2.isMatch("aa", "a"));
         assertTrue(s2.isMatch("aa", "*"));

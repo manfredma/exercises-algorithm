@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0044;
+package manfred.exercises.leetcode.solved.p0001to0100.p0044;
 
 import java.util.*;
 

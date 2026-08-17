@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0010;
+package manfred.exercises.leetcode.solved.p0001to0100.p0010;
 
 /*
  动态规划版本

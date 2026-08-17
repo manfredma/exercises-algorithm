@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0010;
+package manfred.exercises.leetcode.solved.p0001to0100.p0010;
 
 /**
  * LeetCode 第 10 题「正则表达式匹配」：动态规划，dp[i][j] 表示 s[0..i) 与 p[0..j) 是否匹配。

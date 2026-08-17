@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0065;
+package manfred.exercises.leetcode.solved.p0001to0100.p0065;
 
 /**
  * LeetCode 第 65 题「有效数字」：状态机或正则判断，处理整数、小数、指数格式。
