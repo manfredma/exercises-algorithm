@@ -22,7 +22,7 @@
 
 ## 示例 2
 
-![链表最大孪生和示例2](images/eg2drawio.png)
+![4节点序列4,2,2,3，中间值2高亮](images/eg2drawio.png)
 
 ```text
 输入：head = [4,2,2,3]

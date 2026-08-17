@@ -22,7 +22,7 @@
 
 ## 示例 2
 
-![最长交错路径示例2](images/sample_2_1702.png)
+![二叉树节点值1，Left/Right交替路径红色高亮](images/sample_2_1702.png)
 
 ```text
 输入：root = [1,1,1,null,1,null,null,1,1,null,1]
