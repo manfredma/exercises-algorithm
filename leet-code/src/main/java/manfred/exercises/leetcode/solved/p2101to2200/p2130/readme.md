@@ -9,7 +9,7 @@
 
 ## 示例 1
 
-![示例1](images/eg1drawio.png)
+![链表最大孪生和示例1](images/eg1drawio.png)
 
 ```text
 输入：head = [5,4,2,1]
@@ -22,7 +22,7 @@
 
 ## 示例 2
 
-![示例2](images/eg2drawio.png)
+![链表最大孪生和示例2](images/eg2drawio.png)
 
 ```text
 输入：head = [4,2,2,3]
@@ -36,7 +36,7 @@
 
 ## 示例 3
 
-![示例3](images/eg3drawio.png)
+![链表最大孪生和示例3](images/eg3drawio.png)
 
 ```text
 输入：head = [1,100000]

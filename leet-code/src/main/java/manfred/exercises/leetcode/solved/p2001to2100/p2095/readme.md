@@ -8,7 +8,7 @@
 
 ## 示例 1
 
-![示例1](images/eg1drawio.png)
+![删除链表中间节点示例1](images/eg1drawio.png)
 
 ```text
 输入：head = [1,3,4,7,1,2,6]
@@ -21,7 +21,7 @@
 
 ## 示例 2
 
-![示例2](images/eg2drawio.png)
+![删除链表中间节点示例2](images/eg2drawio.png)
 
 ```text
 输入：head = [1,2,3,4]
@@ -33,7 +33,7 @@
 
 ## 示例 3
 
-![示例3](images/eg3drawio.png)
+![删除链表中间节点示例3](images/eg3drawio.png)
 
 ```text
 输入：head = [2,1]

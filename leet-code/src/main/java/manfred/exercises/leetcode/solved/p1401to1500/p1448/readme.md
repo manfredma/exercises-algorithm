@@ -7,7 +7,7 @@
 
 ## 示例 1
 
-![示例1](images/test_sample_1.png)
+![二叉树好节点示例1](images/test_sample_1.png)
 
 ```text
 输入：root = [3,1,4,3,null,1,5]
@@ -21,7 +21,7 @@
 
 ## 示例 2
 
-![示例2](images/test_sample_2.png)
+![二叉树好节点示例2](images/test_sample_2.png)
 
 ```text
 输入：root = [3,3,null,4,2]
