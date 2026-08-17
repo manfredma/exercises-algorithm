@@ -5,7 +5,7 @@
 - groupId: `manfred.end`，artifactId: `exercises-algorithm`，version: `1.0-SNAPSHOT`
 - Java 版本: 8
 
-> 本文件是项目的**单一事实源**入口。`CLAUDE.md` 通过 `@AGENTS.md` 自动加载本文件。详细 SOP（如 LeetCode 抓取与归档流程）以独立文档形式按需查阅，见下表 Key Files，不常驻上下文。
+> 本文件是项目的**单一事实源**入口。`CLAUDE.md` 通过 `@AGENTS.md` 自动加载本文件。详细 SOP（如 LeetCode 各生命周期流程）以独立文档形式按需查阅，见下表 Key Files，不常驻上下文。
 
 ## Key Files（指南针）
 
@@ -13,7 +13,10 @@
 |------|-------------|
 | `pom.xml` | 父 POM，`<modules>` 列出所有模块，统一依赖版本 |
 | `CLAUDE.md` | Claude Code 入口，通过 `@AGENTS.md` 加载本文件 |
-| `docs/leetcode-problem-workflow.md` | LeetCode 抓取、初始化、README/题面注释、图片、归档与提交全流程 SOP（抓题/初始化前**必读**，按需查阅） |
+| `docs/leetcode-content-spec.md` | 题面抓取与规范（共享）：fetch 脚本、readme/Main 注释规范、图片、验证核对 |
+| `docs/leetcode-init-workflow.md` | 初始化新题流程（wip 空骨架 + 题面 + Main 用例） |
+| `docs/leetcode-refresh-workflow.md` | 重刷已解决题流程（拉回 wip + 新骨架 + 迁用例） |
+| `docs/leetcode-finish-workflow.md` | 完成收尾与提交流程（SOP 8 步 + 归档 + 提交，`/finish-leetcode`） |
 | `scripts/fetch-leetcode-problem.py` | 从 LeetCode 中文站 GraphQL 抓取题目元数据的本地脚本，按题号查询，输出 JSON |
 
 ## 项目结构
@@ -77,7 +80,8 @@ mvn clean test -Dsort.skip=true
 ### LeetCode 题目
 
 - 新题一律初始化在 `leet-code/src/main/java/manfred/exercises/leetcode/wip/pXXXX/`，包名 `manfred.exercises.leetcode.wip.pXXXX`，无需改 `pom.xml`。只有完成实现并通过 `Main` 验证后才归档到题号所在的 `solved` 百题段，并同步更新 package 声明与跨题 import。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
-- **抓取题面、初始化目录、README/题面注释、图片、归档与提交的完整 SOP 见 `docs/leetcode-problem-workflow.md`**——抓取或初始化任何题目前必读，并使用 `scripts/fetch-leetcode-problem.py`（走 LeetCode 中文站 GraphQL）以远程数据为唯一来源；抓取失败、超时或字段不完整时不得凭记忆、摘要或第三方题面补全。
+- **题面抓取、README/题面注释、图片、验证的统一规范见 `docs/leetcode-content-spec.md`**（抓题/刷新题面前必读）；生命周期流程按场景查阅：初始化新题 → `docs/leetcode-init-workflow.md`，重刷已解决题（拉回 wip + 新骨架） → `docs/leetcode-refresh-workflow.md`，完成收尾与归档提交 → `docs/leetcode-finish-workflow.md`（SOP 8 步；Claude Code 可用 `/finish-leetcode <题号>`）。
+- 抓取用 `scripts/fetch-leetcode-problem.py`（走 LeetCode 中文站 GraphQL），以远程数据为唯一来源；抓取失败、超时或字段不完整时不得凭记忆、摘要或第三方题面补全。仅刷新题面格式（不重刷解法）时，只跑 fetch 重写 `readme.md`，不动位置、package、`Solution.java`、`Main.java`。
 - Solution 类通常是 package-private（无 public 修饰），Main 类是 public 且有 `main` 方法；辅助数据结构（TreeNode、ListNode）定义在各自题目包下，跨题引用时直接 import。
 - 所有测试统一写在对应题目的 `Main.main` 中；禁止在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类，禁止在 `src/main/java` 下使用 `@Test` 注解。
 
@@ -87,11 +91,11 @@ mvn clean test -Dsort.skip=true
 
 ### 收尾 SOP
 
-每道 LeetCode 题目解法实现后、提交前，必须按 `docs/leetcode-problem-workflow.md` 顶部的「完成一题的收尾 SOP」清单逐项执行（补注释 → 补用例 → 编译 → 运行验证 → 归档 → 改 package → 归档后复验 → 更新 HOT100 进度 → 暂存提交推送）。未完成（Solution 仍空骨架、Main 有失败用例）的题目不得归档，留在 `wip` 并说明原因。Claude Code 可用 `/finish-leetcode <题号>` 命令执行其中机械步骤；注释与用例需人工判断。
+每道 LeetCode 题目解法实现后、提交前，必须按 `docs/leetcode-finish-workflow.md` 顶部的「完成一题的收尾 SOP」清单逐项执行（补注释 → 补用例 → 编译 → 运行验证 → 归档 → 改 package → 归档后复验 → 更新 HOT100 进度 → 暂存提交推送）。未完成（Solution 仍空骨架、Main 有失败用例）的题目不得归档，留在 `wip` 并说明原因。Claude Code 可用 `/finish-leetcode <题号>` 命令执行其中机械步骤；注释与用例需人工判断。
 
 ## Git 工作流
 
 - 默认直接在 `main` 分支开发、提交和推送。
 - 除非用户明确要求，否则不要创建或切换功能分支，也不要创建 Pull Request。
 - 提交时按最小可独立验证的逻辑单元拆分；不要将无关变更合并为一个提交。
-- 用户要求"提交"某道 LeetCode 题目时，必须先判断该题是否已完成：若解法已实现且对应 `Main` 验证通过，先将题目从 `wip` 归档到题号所在的 `solved` 百题段、更新 package 与跨题 import，再暂存、提交和推送；未完成的题目才保留在 `wip`，并在提交前说明原因。
+- 用户要求“提交”某道 LeetCode 题目时，必须先判断该题是否已完成：若解法已实现且对应 `Main` 验证通过，先将题目从 `wip` 归档到题号所在的 `solved` 百题段、更新 package 与跨题 import，再暂存、提交和推送；未完成的题目才保留在 `wip`，并在提交前说明原因。
