@@ -1,13 +1,20 @@
-package manfred.exercises.leetcode.wip.p0093;
+package manfred.exercises.leetcode.solved.p0001to0100.p0093;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-动态规划版本
- */
 /**
- * LeetCode 第93题 复原 IP 地址的动态规划解法，用二维缓存数组自底向上枚举所有合法 IP 段组合。
+ * LeetCode 第 93 题「复原 IP 地址」：动态规划，二维缓存自底向上枚举所有合法段组合。
+ * <p>
+ * 思路：cache[i][j] = 从下标 j 起、切成 i+1 段的所有合法拼接串。i=0 为单段 base case
+ * （j 到串尾的子串须无前导 0 且 ≤255）；i>0 时枚举本段终点 k，cache[i][j] 由
+ * 「本段 + '.' + cache[i-1][k]」组合而成。自底向上填满 cache[3][0] 即四段全解。
+ * <p>
+ * 关键点：从右向左填表保证依赖的 cache[i-1][k] 已就绪；单段前导 0 仅允许 "0" 本身。
+ * 复杂度：时间 O(n²)（每状态枚举段长），空间 O(n²)（4×n 个 List，每个最多存串）。
+ * <p>
+ * 与 {@link Solution} 演进：旧解用 num/2 分治（仅对 2 幂段数有效）；本解通用递推，
+ * 段数任意可扩展。对照 {@link Solution3} 的 BFS 层序为再刷解。
  */
 class Solution2 {
     public List<String> restoreIpAddresses(String s) {
