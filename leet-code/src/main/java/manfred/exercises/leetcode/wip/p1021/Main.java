@@ -6,9 +6,9 @@ import static manfred.exercises.assertion.Assert.*;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        assertEquals("()()()", solution.removeOuterParentheses("(()())(())"));
-        assertEquals("()()()()(())", solution.removeOuterParentheses("(()())(())(()(()))"));
-        assertEquals("", solution.removeOuterParentheses("()()"));
+        assertEquals("()()()", solution.removeOuterParentheses("(()())(())"), "input=\"(()())(())\"");
+        assertEquals("()()()()(())", solution.removeOuterParentheses("(()())(())(()(()))"), "input=\"(()())(())(()(()))\"");
+        assertEquals("", solution.removeOuterParentheses("()()"), "input=\"()()\"");
         System.out.println("leet#1021 passed");
     }
 }

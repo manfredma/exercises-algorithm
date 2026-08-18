@@ -6,9 +6,9 @@ import static manfred.exercises.assertion.Assert.*;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        assertEquals("H2O", solution.countOfAtoms("H2O"));
-        assertEquals("H2MgO2", solution.countOfAtoms("Mg(OH)2"));
-        assertEquals("K4N2O14S4", solution.countOfAtoms("K4(ON(SO3)2)2"));
+        assertEquals("H2O", solution.countOfAtoms("H2O"), "input=\"H2O\"");
+        assertEquals("H2MgO2", solution.countOfAtoms("Mg(OH)2"), "input=\"Mg(OH)2\"");
+        assertEquals("K4N2O14S4", solution.countOfAtoms("K4(ON(SO3)2)2"), "input=\"K4(ON(SO3)2)2\"");
         System.out.println("leet#0726 passed");
     }
 }

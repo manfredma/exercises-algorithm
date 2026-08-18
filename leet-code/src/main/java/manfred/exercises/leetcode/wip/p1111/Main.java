@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         // 注意：本题答案不唯一（任意合法拆分即可），这里用官方示例输出做断言
-        assertEquals(new int[]{0, 1, 1, 1, 1, 0}, solution.maxDepthAfterSplit("(()())"));
-        assertEquals(new int[]{0, 0, 0, 1, 1, 0, 1, 1}, solution.maxDepthAfterSplit("()(())()"));
+        assertEquals(new int[]{0, 1, 1, 1, 1, 0}, solution.maxDepthAfterSplit("(()())"), "input=\"(()())\"");
+        assertEquals(new int[]{0, 0, 0, 1, 1, 0, 1, 1}, solution.maxDepthAfterSplit("()(())()"), "input=\"()(())()\"");
         System.out.println("leet#1111 passed");
     }
 }
