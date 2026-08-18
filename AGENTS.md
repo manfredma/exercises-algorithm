@@ -93,6 +93,20 @@ mvn clean test -Dsort.skip=true
 
 每道 LeetCode 题目解法实现后、提交前，必须按 `docs/leetcode-finish-workflow.md` 顶部的「完成一题的收尾 SOP」清单逐项执行（补注释 → 补用例 → 编译 → 运行验证 → 归档 → 改 package → 归档后复验 → 更新 HOT100 进度 → 暂存提交推送）。未完成（Solution 仍空骨架、Main 有失败用例）的题目不得归档，留在 `wip` 并说明原因。Claude Code 可用 `/finish-leetcode <题号>` 命令执行其中机械步骤；注释与用例需人工判断。
 
+**归档前注释自检（机械步骤，不得靠记忆）**：归档迁移目录前，对该题所有 `.java` 跑一次占位/过时注释扫描，确认无残留才归档：
+
+```bash
+grep -rnE "再刷骨架|待填充|待实现|骨架占位|RED，待实现" wip/pXXXX/*.java
+```
+
+- 命中即说明某 Solution 的类 Javadoc 仍是骨架占位，或 Main 仍有「骨架占位下 RED，待实现后通过」之类过时注释——归档前必须改掉。
+- 仅凭「Main 编译运行全绿」不能代替此项：Main 通过 ≠ 注释齐全，二者是独立校验项。
+- 历史上多次在归档后才发现某 Solution Javadoc 漏改（0008、0150 等），故必须用 grep 机械核验而非记忆。
+
+### 跨工具通用性约束（重要）
+
+项目特定知识、规则、SOP 必须写在**仓库内**（`AGENTS.md`、`docs/`、`CLAUDE.md` 等），不得记录到 Claude Code 的私有记忆（`~/.claude/.../memory/`）。原因：私有记忆仅 Claude Code 可读，切换到 Codex 或其他 AI agent 时无法继承，会造成规则丢失。仓库内文件是所有 agent 的单一事实源。Claude Code 私有记忆只用于记录「这个用户是谁、工作偏好」等跨项目通用的 agent 行为反馈，不存项目特定知识。
+
 ## Git 工作流
 
 - 默认直接在 `main` 分支开发、提交和推送。
