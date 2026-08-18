@@ -15,6 +15,8 @@ boolean empty() 如果栈是空的，返回 true ；否则，返回 false 。
 ## 示例
 
 ```text
+示例：
+
 输入：
 ["MyStack", "push", "push", "top", "pop", "empty"]
 [[], [1], [2], [], [], []]
@@ -32,8 +34,11 @@ myStack.empty(); // 返回 False
 
 ## 提示
 
+- 提示：
 - 1 <= x <= 9
 - 最多调用100 次 push、pop、top 和 empty
 - 每次调用 pop 和 top 都保证栈不为空
 
 ## 进阶
+
+进阶：你能否仅用一个队列来实现栈。

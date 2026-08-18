@@ -12,6 +12,8 @@ int next()将指针向右移动，然后返回指针处的数字。
 ## 示例
 
 ```text
+示例：
+
 输入
 ["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"]
 [[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]
@@ -33,10 +35,14 @@ bSTIterator.hasNext(); // 返回 False
 
 ## 提示
 
+- 提示：
 - 树中节点的数目在范围 [1, 10^5] 内
 - 0 <= Node.val <= 10^6
 - 最多调用 10^5 次 hasNext 和 next 操作
 
 ## 进阶
 
+进阶：
+
+	
 你可以设计一个满足下述条件的解决方案吗？next() 和 hasNext() 操作均摊时间复杂度为 O(1) ，并使用 O(h) 内存。其中 h 是树的高度。
