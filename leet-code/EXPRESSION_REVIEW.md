@@ -20,7 +20,7 @@
 | 93 | 复原 IP 地址 | 数值解析 | — | ✅ 2026-08-18 重刷完成（Solution3 BFS 层序 + Solution4 标准回溯；Solution 分治/Solution2 DP 保留对照，已归档） |
 | 150 | 逆波兰表达式求值 | 计算器 | 有瑕疵 | ✅ 2026-08-18 重刷完成（Solution2 正向栈法 BiFunction 映射；Solution3 性能优化 switch+int[] 栈；旧 Solution 已修空栈 bug，已归档） |
 | 224 | 基本计算器 | 计算器 | 合格 | ✅ 2026-08-18 重刷完成（Solution2 递归下降通用骨架 + Solution3 符号跟踪栈特化解；旧 Solution AST+调度场保留对照，已归档） |
-| 227 | 基本计算器 II | 计算器 | 优秀（旧解达标） | 🔄 wip `Solution3` 骨架已建，待填充 |
+| 227 | 基本计算器 II | 计算器 | 优秀（旧解达标） | ✅ 2026-08-18 重刷完成（Solution3 递归下降+lastAdded 撤销技巧 O(1) 空间；旧 Solution 混合栈/Solution2 符号栈补 Javadoc 保留对照，已归档） |
 | 241 | 为运算表达式设计优先级 | 计算器 | — | 🔄 wip `Solution` 骨架已建，待填充 |
 | 282 | 给表达式添加运算符 | 计算器 | 优秀（旧解达标） | 🔄 wip `Solution3` 骨架已建，待填充 |
 | 636 | 函数的独占时间 | 括号 | — | 🔄 wip `Solution` 骨架已建，待填充 |

@@ -1,38 +1,19 @@
-package manfred.exercises.leetcode.wip.p0227;
+package manfred.exercises.leetcode.solved.p0201to0300.p0227;
 
 import java.util.Stack;
 
 /**
- * 给你一个字符串表达式 s ，请你实现一个基本计算器来计算并返回它的值。
+ * LeetCode 第 227 题「基本计算器 II」：混合栈，数字与运算符同栈，乘除即时算、加减末尾汇总。
  * <p>
- * 整数除法仅保留整数部分。
+ * 思路：replaceAll 去空格后扫描——数字与运算符依次压入 {@code Stack<Object>}；遇 {@code *}{@code /}
+ * 立即弹栈顶两元素（左操作数与运算符）计算后压回；遇 {@code +}{@code -} 仅压栈。
+ * 扫完遍历栈：从首元素起，按 +/- 把后续数字累加得到结果。
  * <p>
- * 你可以假设给定的表达式总是有效的。所有中间结果将在[-2^31, 2^31- 1] 的范围内。
+ * 缺点：{@code Stack<Object>} 装箱与 (Character)/(Integer) 强转类型不安全且慢；
+ * replaceAll 多一次 O(n) 串拷贝。保留作对照。
+ * 复杂度：时间 O(n)，空间 O(n)。
  * <p>
- * 注意：不允许使用任何将字符串作为数学表达式计算的内置函数，比如 eval() 。
- * <p>
- * <p>
- * 示例 1：
- * <p>
- * 输入：s = "3+2*2"
- * 输出：7
- * 示例 2：
- * <p>
- * 输入：s = " 3/2 "
- * 输出：1
- * 示例 3：
- * <p>
- * 输入：s = " 3+5 / 2 "
- * 输出：5
- *
- * <p>
- * 提示：
- * <p>
- * 1 <= s.length <= 3 * 105
- * s 由整数和算符 ('+', '-', '*', '/') 组成，中间由一些空格隔开
- * s 表示一个 有效表达式
- * 表达式中的所有整数都是非负整数，且在范围 [0, 2^31 - 1] 内
- * 题目数据保证答案是一个 32-bit 整数
+ * 对照 {@link Solution2}（符号跟踪栈，preSign 单趟更优）、{@link Solution3}（递归下降 + lastAdded 撤销技巧）。
  */
 class Solution {
     public int calculate(String s) {
