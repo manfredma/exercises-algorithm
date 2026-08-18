@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p0224;
+package manfred.exercises.leetcode.solved.p0201to0300.p0224;
 
 import java.util.ArrayList;
 import java.util.List;
