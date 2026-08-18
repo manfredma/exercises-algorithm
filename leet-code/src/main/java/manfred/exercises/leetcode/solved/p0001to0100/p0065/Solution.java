@@ -14,16 +14,15 @@ package manfred.exercises.leetcode.solved.p0001to0100.p0065;
  */
 class Solution {
 
-    private char charOfZero = '0';
-    private char charOfOne = '1';
-    private char charOfNine = '9';
+    private final char charOfZero = '0';
+    private final char charOfNine = '9';
 
     public boolean isNumber(String s) {
         if (null == s) {
             return false;
         }
         s = s.trim();
-        if (s.length() == 0) {
+        if (s.isEmpty()) {
             return false;
         }
 
@@ -56,14 +55,14 @@ class Solution {
     }
 
     private boolean isNormalDecimal(String s) {
-        if (null == s || 0 == s.length()) {
+        if (null == s || s.isEmpty()) {
             return false;
         }
         // 按符号'.'拆解
         if (s.contains(".") && s.indexOf(".") == s.lastIndexOf(".")) {
             String[] x = s.split("\\.");
             if (x.length == 2) {
-                if (x[0].length() == 0 && x[1].isEmpty()) {
+                if (x[0].isEmpty() && x[1].isEmpty()) {
                     return false;
                 }
                 return (x[0].isEmpty() || isAllDigital(x[0])) && (x[1].isEmpty() || isAllDigital(x[1]));
