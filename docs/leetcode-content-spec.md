@@ -34,6 +34,37 @@ python3 scripts/fetch-leetcode-problem.py <题号>
 - README 正文中的 Markdown 特殊字符必须按字面量可见：运算符等优先使用行内代码，示例放入 `text` 代码块，不能让字符被 Markdown 语法吞掉或额外显示转义符。
 - HTML 下标转换为 Unicode 下标（如 `Rᵢ`、`Cⱼ`）；不得简化为普通字符，也不得使用 IntelliJ Markdown 预览不会渲染的 `<sub>` 标签。脚本输出的 `contentCn` 已完成此转换。
 
+## Main 断言规范
+
+`Main.java` 的断言统一用 `exercise-assert` 模块的 `manfred.exercises.assertion.Assert`（`import static` 导入）。断言支持**带描述（desc）重载**与**调用位置行号兜底**，失败信息格式 `[desc] expected: X, actual: Y (at File:line)`，便于在多解法、多用例中定位失败点。
+
+### 用法约定（新题与重刷题默认遵循）
+
+- **优先用带 desc 的重载**，desc 须能标识「是哪个用例」：
+  - 输入是字符串且简短：直接用输入串，如 `assertEquals(expected, sol.method("H2O"), "input=\"H2O\"")`。
+  - 输入是数组/列表/长串：用简短标签，如 `"n=2, 4 logs"`、`"case 1"`，或截断后的输入。
+  - 用 `TestEntry` 循环（如 p0224）：用 `t.toString()` 作 desc。
+- **desc 不传也可工作**（无 desc 版本保留），但失败信息只有行号、无用例内容，定位较慢；新写代码应带 desc。
+- **List 等无序结果**需排序后比较：可用现有手写 wrapper（如 `assertListEquals(e, a, desc)` 内部 sort），或调用前自行排序再 `assertEquals(e, a, desc)`。`Assert.deepEquals` 不排序。
+- 保留旧解法测试块时，新旧解法的断言都应带 desc（desc 含输入即可，行号已能区分解法）。
+
+### 示例
+
+```java
+import static manfred.exercises.assertion.Assert.*;
+
+// 直接断言带 desc
+assertEquals(7, sol.calculate("3+2*2"), "input=\"3+2*2\"");
+assertTrue(sol.isMatch("aa", "a*"), "input=\"aa\",p=\"a*\"");
+
+// TestEntry 循环带 desc
+for (TestEntry t : cases) {
+    assertEquals(t.result, sol.calculate(t.expression), t.toString());
+}
+```
+
+> 断言类源码：`exercise-assert/src/main/java/manfred/exercises/assertion/Assert.java`。带 desc 重载列表：`assertEquals(Object/long/double, ..., String)`、`assertNull/assertNotNull/assertSame/assertInRange(..., String)`。`assertTrue/assertFalse(condition, message)` 失败时 `message` 为 null 会显示通用提示而非字面 `"null"`。
+
 ## 图片规范
 
 - 以脚本输出的 `images` 为**唯一来源**。每张图片下载至当前题目目录的 `images/`，README 使用本地相对路径引用，**不得保留 LeetCode 外链**。
