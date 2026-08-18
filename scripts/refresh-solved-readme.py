@@ -52,7 +52,7 @@ def format_readme(data):
             end = markers[i + 1].start() if i + 1 < len(markers) else len(content)
             seg = content[start:end]
             label = m.group(1)
-            body = re.sub(r'^[ \t]*' + re.escape(label) + r'\s*[：:][ \t]*', '', seg, count=1).strip()
+            body = re.sub(r'^[ \t]*' + re.escape(label), '', seg, count=1).strip()
             if re.match(r'示例|Example', label):
                 num_m = re.search(r'\d+', label)
                 ex_title = "示例 " + num_m.group() if num_m else "示例"
