@@ -30,17 +30,17 @@ public class Main {
         // 旧解法 Solution：保留验证，确保不被破坏（应通过）
         Solution s1 = new Solution();
         for (TestEntry t : expression) {
-            assertEquals(t.result, s1.calculate(t.expression));
+            assertEquals(t.result, s1.calculate(t.expression), t.toString());
         }
         // 新解法 Solution2：递归下降解析器验证（已实现，文法递归 + int[] 游标）
         Solution2 s2 = new Solution2();
         for (TestEntry t : expression) {
-            assertEquals(t.result, s2.calculate(t.expression));
+            assertEquals(t.result, s2.calculate(t.expression), t.toString());
         }
         // 新解法 Solution3：符号跟踪栈验证（已实现，单趟 O(n) 无递归）
         Solution3 s3 = new Solution3();
         for (TestEntry t : expression) {
-            assertEquals(t.result, s3.calculate(t.expression));
+            assertEquals(t.result, s3.calculate(t.expression), t.toString());
         }
         System.out.println("leet#0224 passed");
     }
