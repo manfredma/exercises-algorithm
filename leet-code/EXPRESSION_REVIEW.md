@@ -23,7 +23,7 @@
 | 227 | 基本计算器 II | 计算器 | 优秀（旧解达标） | ✅ 2026-08-18 重刷完成（Solution3 递归下降+lastAdded 撤销技巧 O(1) 空间；旧 Solution 混合栈/Solution2 符号栈补 Javadoc 保留对照，已归档） |
 | 241 | 为运算表达式设计优先级 | 计算器 | — | 🔄 wip `Solution` 骨架已建，待填充 |
 | 282 | 给表达式添加运算符 | 计算器 | 优秀（旧解达标） | 🔄 wip `Solution3` 骨架已建，待填充 |
-| 636 | 函数的独占时间 | 括号 | — | 🔄 wip `Solution` 骨架已建，待填充 |
+| 636 | 函数的独占时间 | 括号 | — | ✅ 2026-08-19 重刷完成（Solution 调用帧累计法 + Solution2 函数栈与上一时间点法，均为 O(n)，已归档） |
 | 726 | 原子的数量 | 化学式 | — | 🔄 wip `Solution` 骨架已建，待填充 |
 | 736 | Parse Lisp Expression | 计算器 | — | 🔄 wip `Solution` 骨架已建，待填充 |
 | 770 | 基本计算器 IV | 计算器 | — | 🔄 wip `Solution` 骨架已建，待填充 |
