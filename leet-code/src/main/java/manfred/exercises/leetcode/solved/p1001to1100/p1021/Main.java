@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p1021;
+package manfred.exercises.leetcode.solved.p1001to1100.p1021;
 
 import static manfred.exercises.assertion.Assert.*;
 
@@ -9,6 +9,8 @@ public class Main {
         assertEquals("()()()", solution.removeOuterParentheses("(()())(())"), "input=\"(()())(())\"");
         assertEquals("()()()()(())", solution.removeOuterParentheses("(()())(())(()(()))"), "input=\"(()())(())(()(()))\"");
         assertEquals("", solution.removeOuterParentheses("()()"), "input=\"()()\"");
+        assertEquals("", solution.removeOuterParentheses("()"), "single primitive");
+        assertEquals("(())", solution.removeOuterParentheses("((()))"), "nested primitive");
         System.out.println("leet#1021 passed");
     }
 }
