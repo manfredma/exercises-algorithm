@@ -3,6 +3,14 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0236;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 236 题「二叉树的最近公共祖先」：深度优先搜索记录根到两个目标的路径。
+ *
+ * <p>遍历过程中分别维护根到 {@code p}、{@code q} 的路径，两个路径最后一个相同节点就是
+ * 最近公共祖先。{@link Solution2} 使用标准后序递归，代码更简洁。</p>
+ *
+ * <p>时间复杂度 {@code O(n)}，两条路径与递归栈的空间复杂度为 {@code O(h)}。</p>
+ */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         List<TreeNode> root2p = new ArrayList<>();

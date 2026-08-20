@@ -4,6 +4,14 @@ package manfred.exercises.leetcode.solved.p0201to0300.p0235;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * LeetCode 第 235 题「二叉搜索树的最近公共祖先」：分别记录根到两个目标的搜索路径。
+ *
+ * <p>利用 BST 性质找到根到 {@code p}、{@code q} 的两条路径，再从根开始比较，最后一个
+ * 相同节点即为最近公共祖先。{@link Solution2} 直接利用 BST 分叉性质一次遍历，空间更优。</p>
+ *
+ * <p>时间复杂度 {@code O(h)}，空间复杂度 {@code O(h)}，其中 {@code h} 为树高。</p>
+ */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         List<TreeNode> path2p = search(root, p);

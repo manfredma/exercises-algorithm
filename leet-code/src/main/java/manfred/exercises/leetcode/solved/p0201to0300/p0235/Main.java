@@ -1,8 +1,7 @@
 package manfred.exercises.leetcode.solved.p0201to0300.p0235;
 
-import static manfred.exercises.assertion.Assert.assertEquals;
+import static manfred.exercises.assertion.Assert.assertSame;
 
-/** 题目链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/ */
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -16,6 +15,8 @@ import java.util.Deque;
 */
 /**
  * LeetCode 第 235 题的测试入口。
+ *
+ * @see <a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/">LeetCode 中文站</a>
  */
 public class Main {
     public static void main(String[] args) {
@@ -23,17 +24,28 @@ public class Main {
         TreeNode root = buildTree(new Integer[]{6, 2, 8, 0, 4, 7, 9, null, null, 3, 5});
 
         Solution solution = new Solution();
+        Solution2 solution2 = new Solution2();
 
         // 示例 1: p = 2, q = 8 → 题面 Output: 6
         TreeNode p1 = find(root, 2);
         TreeNode q1 = find(root, 8);
-        assertEquals(6, solution.lowestCommonAncestor(root, p1, q1).val);
+        assertLca(root, p1, q1, root, solution, solution2, "example 1: split at root");
 
         // 示例 2: p = 2, q = 4 → 题面 Output: 2
         TreeNode p2 = find(root, 2);
         TreeNode q2 = find(root, 4);
-        assertEquals(2, solution.lowestCommonAncestor(root, p2, q2).val);
-        System.out.println("p0235 passed");
+        assertLca(root, p2, q2, p2, solution, solution2, "example 2: target is ancestor");
+
+        TreeNode p3 = find(root, 0);
+        TreeNode q3 = find(root, 5);
+        assertLca(root, p3, q3, p2, solution, solution2, "both targets below left subtree");
+        System.out.println("leet#0235 passed");
+    }
+
+    private static void assertLca(TreeNode root, TreeNode p, TreeNode q, TreeNode expected,
+                                  Solution solution, Solution2 solution2, String desc) {
+        assertSame(expected, solution.lowestCommonAncestor(root, p, q), "Solution " + desc);
+        assertSame(expected, solution2.lowestCommonAncestor(root, p, q), "Solution2 " + desc);
     }
 
     /** 按 LeetCode 层序数组构造二叉树，null 表示空节点。 */
