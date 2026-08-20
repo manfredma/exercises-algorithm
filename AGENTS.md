@@ -83,7 +83,7 @@ mvn clean test -Dsort.skip=true
 - **题面抓取、README/题面注释、图片、验证的统一规范见 `docs/leetcode-content-spec.md`**（抓题/刷新题面前必读）；生命周期流程按场景查阅：初始化新题 → `docs/leetcode-init-workflow.md`，重刷已解决题（拉回 wip + 新骨架） → `docs/leetcode-refresh-workflow.md`，完成收尾与归档提交 → `docs/leetcode-finish-workflow.md`（SOP 8 步；Claude Code 可用 `/finish-leetcode <题号>`）。
 - 抓取用 `scripts/fetch-leetcode-problem.py`（走 LeetCode 中文站 GraphQL），以远程数据为唯一来源；抓取失败、超时或字段不完整时不得凭记忆、摘要或第三方题面补全。仅刷新题面格式（不重刷解法）时，只跑 fetch 重写 `readme.md`，不动位置、package、`Solution.java`、`Main.java`。
 - Solution 类通常是 package-private（无 public 修饰），Main 类是 public 且有 `main` 方法；辅助数据结构（TreeNode、ListNode）定义在各自题目包下，跨题引用时直接 import。
-- 所有测试统一写在对应题目的 `Main.main` 中；禁止在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类，禁止在 `src/main/java` 下使用 `@Test` 注解。断言用 `exercise-assert` 模块的 `Assert`（`import static`），**新题与重刷题默认用带 desc 重载**（`assertEquals(expected, actual, "input=..."`），失败信息含用例内容与行号，规范见 [`docs/leetcode-content-spec.md`](docs/leetcode-content-spec.md)「Main 断言规范」节。
+- 所有测试统一写在对应题目的 `Main.main` 中；禁止在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类，禁止在 `src/main/java` 下使用 `@Test` 注解。断言用 `exercise-assert` 模块的 `Assert`（`import static`），**新题与重刷题默认用带 desc 重载**（`assertEquals(expected, actual, "input=..."`），失败信息含用例内容与行号，规范见 [`docs/leetcode-content-spec.md`](docs/leetcode-content-spec.md)「Main 断言规范」节。`Main` 的题目链接必须放进 imports 后、紧贴类声明的 Javadoc，使用 `@see <a href="https://leetcode.cn/problems/{slug}/">LeetCode 中文站</a>`；不得保留孤立的题目链接文档注释。
 
 ### Java 8 约束
 

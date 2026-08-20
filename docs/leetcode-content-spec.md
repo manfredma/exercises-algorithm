@@ -28,9 +28,20 @@ python3 scripts/fetch-leetcode-problem.py <题号>
 ## README 与题面注释规范
 
 - 题面描述、全部示例、解释和提示必须完整保留，**不能概括或改写**。
-- README 标题下写入链接，`Main.java` 题面注释前写入链接，两者使用本次抓取的**同一 `slug`**：
+- README 标题下与 `Main.java` 的类级 Javadoc 中均写入链接，两者使用本次抓取的**同一 `slug`**：
   - `readme.md`：`> 题目链接：[LeetCode 中文站](https://leetcode.cn/problems/{slug}/)`
-  - `Main.java`：`/** 题目链接：https://leetcode.cn/problems/{slug}/ */`
+  - `Main.java`：imports 之后、`public class Main` 之前的类级 Javadoc 内使用：
+
+    ```java
+    /**
+     * LeetCode 第 XXXX 题的测试入口。
+     *
+     * @see <a href="https://leetcode.cn/problems/{slug}/">LeetCode 中文站</a>
+     */
+    public class Main {
+    ```
+
+    题目链接 Javadoc 必须紧贴其声明；不得将孤立的 `/** 题目链接：... */` 置于 imports 前后。
 - README 正文中的 Markdown 特殊字符必须按字面量可见：运算符等优先使用行内代码，示例放入 `text` 代码块，不能让字符被 Markdown 语法吞掉或额外显示转义符。
 - HTML 下标转换为 Unicode 下标（如 `Rᵢ`、`Cⱼ`）；不得简化为普通字符，也不得使用 IntelliJ Markdown 预览不会渲染的 `<sub>` 标签。脚本输出的 `contentCn` 已完成此转换。
 
