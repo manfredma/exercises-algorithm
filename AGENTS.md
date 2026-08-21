@@ -60,7 +60,7 @@ exercises-algorithm/
 每道 LeetCode 题目目录包含：
 
 - `Solution.java` — 主要解法
-- `Solution2.java` / `SolutionV2.java` — 备选解法（按需）
+- `Solution2.java` / `Solution3.java` … — 备选解法（按需，命名以数字递增为主；若该题已有 `SolutionV2` 则延续 V 风格）
 - `Main.java` — 测试入口（有 `public static void main(String[] args)`）
 - `TreeNode.java` / `ListNode.java` — 题目辅助数据结构（按需）
 

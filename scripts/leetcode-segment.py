@@ -100,7 +100,8 @@ def main():
     if print_mv:
         wip_dir = WIP / prob
         print()
-        print("# 归档命令（从 wip 移到 solved 段）：")
+        print("# 归档命令（在项目根执行；先 cd 到 leetcode 包目录，后续路径相对该目录）：")
+        print("cd leet-code/src/main/java/manfred/exercises/leetcode")
         print(f"mkdir -p solved/{seg}")
         print(f"git mv wip/{prob} solved/{seg}/{prob}")
         print("# 更新 package（wip → solved）：")

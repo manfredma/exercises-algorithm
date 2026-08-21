@@ -10,7 +10,7 @@
 | 需数学推导的题 | `p3096` | Solution Javadoc 用 `<p>` 段展开公式推导（如 `2*alice > total`） |
 | 树 / 图题 | `p0257` | `treeOf(Integer...)` 层序建树工具、`assertPaths` 顺序无关断言、本地图片引用 |
 
-> 三道均为单解法；多解法（`Solution2` / `SolutionV2`）的演进关系写法目前无现成模板，需时新立一题补充。
+> 前三道（p3069 / p3096 / p0257）均为单解法；多解法演进关系写法参照 p3105（`Solution` 分支内结算 vs `Solution2` 循环末尾统一结算，`Solution` 类 Javadoc 注明两者差异与取舍）。
 
 ## Solution Javadoc 规范
 
