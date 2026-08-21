@@ -1,4 +1,4 @@
-package manfred.exercises.leetcode.wip.p3110;
+package manfred.exercises.leetcode.solved.p3101to3200.p3110;
 
 import static manfred.exercises.assertion.Assert.*;
 
