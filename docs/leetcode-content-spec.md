@@ -44,6 +44,7 @@ python3 scripts/fetch-leetcode-problem.py <题号>
     题目链接 Javadoc 必须紧贴其声明；不得将孤立的 `/** 题目链接：... */` 置于 imports 前后。
 - README 正文中的 Markdown 特殊字符必须按字面量可见：运算符等优先使用行内代码，示例放入 `text` 代码块，不能让字符被 Markdown 语法吞掉或额外显示转义符。
 - HTML 下标转换为 Unicode 下标（如 `Rᵢ`、`Cⱼ`）；不得简化为普通字符，也不得使用 IntelliJ Markdown 预览不会渲染的 `<sub>` 标签。脚本输出的 `contentCn` 已完成此转换。
+- readme 结构（标题 / 示例 / 提示排版）与成品模板参照见 [`leetcode-template-conventions.md`](leetcode-template-conventions.md)。
 
 ## Main 断言规范
 

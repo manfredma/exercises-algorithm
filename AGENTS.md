@@ -17,14 +17,16 @@
 | `docs/leetcode-init-workflow.md` | 初始化新题流程（wip 空骨架 + 题面 + Main 用例） |
 | `docs/leetcode-refresh-workflow.md` | 重刷已解决题流程（拉回 wip + 新骨架 + 迁用例） |
 | `docs/leetcode-finish-workflow.md` | 完成收尾与提交流程（SOP 8 步 + 归档 + 提交，`/finish-leetcode`） |
+| `docs/leetcode-template-conventions.md` | 三道模板（p3069/p3096/p0257）的写法规范要点，初始化新题的成品参照 |
 | `scripts/fetch-leetcode-problem.py` | 从 LeetCode 中文站 GraphQL 抓取题目元数据的本地脚本，按题号查询，输出 JSON |
+| `scripts/leetcode-segment.py` | 按题号算归档段目录与 package 声明，校验 wip/solved 现状；归档前必跑，禁止口算段目录 |
 
 ## 项目结构
 
 ```
 exercises-algorithm/
 ├── pom.xml              ← 父 POM，统一依赖版本管理
-├── leet-code/           ← LeetCode 全部题目（560+ 题，第 1-1400 题）
+├── leet-code/           ← LeetCode 全部题目（560+ 题，题号 1–3200）
 ├── ctci/                ← 《Cracking the Coding Interview》第1章面试题
 ├── common-algorithm/    ← 常用算法（排序、字符串匹配、动态规划、图）
 ├── data-structure/      ← 数据结构（堆、BST、红黑树、图）
@@ -34,7 +36,7 @@ exercises-algorithm/
 
 ## 模块职责
 
-- **LeetCode 练习** `leet-code`：560+ 题，第 1-1400 题
+- **LeetCode 练习** `leet-code`：560+ 题，题号 1–3200
 - **CTCI 面试题** `ctci`：《Cracking the Coding Interview》第1章
 - **数据结构与算法** `common-algorithm` · `data-structure`
 - **其他** `data` · `leet-code-grap`
@@ -79,8 +81,8 @@ mvn clean test -Dsort.skip=true
 
 ### LeetCode 题目
 
-- 新题一律初始化在 `leet-code/src/main/java/manfred/exercises/leetcode/wip/pXXXX/`，包名 `manfred.exercises.leetcode.wip.pXXXX`，无需改 `pom.xml`。只有完成实现并通过 `Main` 验证后才归档到题号所在的 `solved` 百题段，并同步更新 package 声明与跨题 import。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
-- **题面抓取、README/题面注释、图片、验证的统一规范见 `docs/leetcode-content-spec.md`**（抓题/刷新题面前必读）；生命周期流程按场景查阅：初始化新题 → `docs/leetcode-init-workflow.md`，重刷已解决题（拉回 wip + 新骨架） → `docs/leetcode-refresh-workflow.md`，完成收尾与归档提交 → `docs/leetcode-finish-workflow.md`（SOP 8 步；Claude Code 可用 `/finish-leetcode <题号>`）。
+- 新题一律初始化在 `leet-code/src/main/java/manfred/exercises/leetcode/wip/pXXXX/`，包名 `manfred.exercises.leetcode.wip.pXXXX`，无需改 `pom.xml`。只有完成实现并通过 `Main` 验证后才归档到题号所在的 `solved` 百题段（段目录由 `scripts/leetcode-segment.py` 计算，不得口算；见 `docs/leetcode-finish-workflow.md` 步骤 5），并同步更新 package 声明与跨题 import。不得将空骨架或仍在修改的题目放入 `solved`，也不得把已完成题目长期保留在 `wip`。
+- **题面抓取、README/题面注释、图片、验证的统一规范见 `docs/leetcode-content-spec.md`**（抓题/刷新题面前必读）；成品写法模板（Solution/Main/readme 结构）见 `docs/leetcode-template-conventions.md`，以 p3069 / p3096 / p0257 为参照；生命周期流程按场景查阅：初始化新题 → `docs/leetcode-init-workflow.md`，重刷已解决题（拉回 wip + 新骨架） → `docs/leetcode-refresh-workflow.md`，完成收尾与归档提交 → `docs/leetcode-finish-workflow.md`（SOP 8 步；Claude Code 可用 `/finish-leetcode <题号>`）。
 - 抓取用 `scripts/fetch-leetcode-problem.py`（走 LeetCode 中文站 GraphQL），以远程数据为唯一来源；抓取失败、超时或字段不完整时不得凭记忆、摘要或第三方题面补全。仅刷新题面格式（不重刷解法）时，只跑 fetch 重写 `readme.md`，不动位置、package、`Solution.java`、`Main.java`。
 - Solution 类通常是 package-private（无 public 修饰），Main 类是 public 且有 `main` 方法；辅助数据结构（TreeNode、ListNode）定义在各自题目包下，跨题引用时直接 import。
 - 所有测试统一写在对应题目的 `Main.main` 中；禁止在 `leet-code/src/test/java` 下新增或保留 JUnit/TestNG 测试类，禁止在 `src/main/java` 下使用 `@Test` 注解。断言用 `exercise-assert` 模块的 `Assert`（`import static`），**新题与重刷题默认用带 desc 重载**（`assertEquals(expected, actual, "input=..."`），失败信息含用例内容与行号，规范见 [`docs/leetcode-content-spec.md`](docs/leetcode-content-spec.md)「Main 断言规范」节。`Main` 的题目链接必须放进 imports 后、紧贴类声明的 Javadoc，使用 `@see <a href="https://leetcode.cn/problems/{slug}/">LeetCode 中文站</a>`；不得保留孤立的题目链接文档注释。
